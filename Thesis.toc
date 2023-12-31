@@ -13,32 +13,38 @@
 \contentsline {subsection}{\numberline {1.4.1}System parameters}{5}{subsection.1.4.1}%
 \contentsline {chapter}{\numberline {2}OFDM radar signal processing}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Structure of OFDM signal}{7}{section.2.1}%
-\contentsline {paragraph}{Subcarriers and frequency spacing \newline }{7}{paragraph*.13}%
-\contentsline {paragraph}{Implementation\newline }{8}{paragraph*.15}%
-\contentsline {paragraph}{Guard interval and cyclic prefix\newline }{8}{paragraph*.17}%
+\contentsline {subsubsection}{Subcarriers and frequency spacing}{7}{subsubsection*.13}%
+\contentsline {subsubsection}{Implementation}{8}{subsubsection*.15}%
+\contentsline {subsubsection}{Guard interval and cyclic prefix}{8}{subsubsection*.17}%
 \contentsline {section}{\numberline {2.2}OFDM radar processing}{9}{section.2.2}%
-\contentsline {paragraph}{Effect of targets on OFDM frames\newline }{10}{paragraph*.20}%
-\contentsline {paragraph}{Radar problem formulation\newline }{10}{paragraph*.24}%
+\contentsline {paragraph}{Effect of targets on OFDM frames:}{10}{paragraph*.20}%
+\contentsline {paragraph}{Radar problem formulation:}{10}{paragraph*.24}%
 \contentsline {subsection}{\numberline {2.2.1}Non ambiguous range and speed}{11}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Range and speed resolution}{11}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Periodogram-based estimation algorithms}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Window functions}{13}{subsection.2.3.1}%
 \contentsline {chapter}{\numberline {3}TDD pattern of the OFDM frame}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Ideal system performance}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Effect of empty UL symbols}{16}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Frame sampling strategies}{18}{section.3.3}%
-\contentsline {paragraph}{Single DL pattern\newline }{18}{paragraph*.39}%
-\contentsline {paragraph}{Decimation at constant interval\newline }{18}{paragraph*.40}%
-\contentsline {paragraph}{Decimation and multi-frame processing\newline }{18}{paragraph*.41}%
+\contentsline {paragraph}{Single DL pattern:}{18}{paragraph*.39}%
+\contentsline {paragraph}{Decimation at constant interval:}{18}{paragraph*.40}%
+\contentsline {paragraph}{Decimation and multi-frame processing:}{18}{paragraph*.41}%
 \contentsline {chapter}{\numberline {4}Radar detection and thresholding}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Constant False Alarm Rate}{22}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Cell-averaging CFAR}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Performance of CA-CFAR}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Robust CA-CFAR}{25}{subsection.4.2.2}%
+\contentsline {paragraph}{Greatest-of CA-CFAR:}{25}{paragraph*.55}%
+\contentsline {paragraph}{Censored-statistics CA-CFAR:}{25}{paragraph*.56}%
+\contentsline {section}{\numberline {4.3}Range-adjusted exponential threshold}{26}{section.4.3}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{25}{chapter*.53}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{27}{chapter*.58}%
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix A}{27}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix B}{29}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{31}{appendix*.57}%
-\contentsline {chapter}{List of Figures}{33}{appendix*.60}%
-\contentsline {chapter}{List of Tables}{35}{appendix*.62}%
-\contentsline {chapter}{List of Symbols}{37}{appendix*.64}%
-\contentsline {chapter}{Acknowledgements}{39}{appendix*.67}%
+\contentsline {chapter}{\numberline {A}Appendix A}{29}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Appendix B}{31}{appendix.B}%
+\contentsline {chapter}{Abbreviations}{33}{appendix*.62}%
+\contentsline {chapter}{List of Figures}{35}{appendix*.65}%
+\contentsline {chapter}{List of Tables}{37}{appendix*.67}%
+\contentsline {chapter}{List of Symbols}{39}{appendix*.69}%
+\contentsline {chapter}{Acknowledgements}{41}{appendix*.72}%

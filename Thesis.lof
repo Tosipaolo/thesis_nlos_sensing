@@ -16,5 +16,6 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52.35 dB, \newline $v_{\text {res}} = 0.091$ m/s, $ v_{\text {unamb}} = 8.76$ m/s}}}{19}{subfigure.5.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {10 processed frames, decimated, combined, SNR = 54.66 dB, \newline $v_{\text {res}} = 0.054$ m/s, $ v_{\text {unamb}} = 8.76$ m/s}}}{19}{subfigure.5.4}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}\relax }}{25}{figure.caption.54}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

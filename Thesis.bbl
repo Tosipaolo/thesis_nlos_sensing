@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -80,6 +80,13 @@ J.~Proakis.
 \newblock Electrical engineering series. McGraw-Hill, 2001.
 \newblock ISBN 978-0-07-232111-1.
 
+\bibitem[Richards(2005)]{Richards_2014}
+M.~Richards.
+\newblock \emph{Fundamentals of Radar Signal Processing}.
+\newblock Professional Engineering. McGraw-Hill Education, 2005.
+\newblock ISBN 978-0-07-177648-6.
+\newblock URL \url{https://books.google.it/books?id=j91oJ22ldoQC}.
+
 \bibitem[Richards et~al.(2010)Richards, Scheer, and
   Holm]{Richards_Scheer_Holm_2010}
 M.~Richards, J.~Scheer, and W.~Holm.
@@ -109,6 +116,15 @@ H.~Viswanathan and T.~Wild.
 \newblock Building a network with a sixth sense, Apr 2021.
 \newblock URL
   \url{https://www.bell-labs.com/institute/blog/building-network-sixth-sense/#gref}.
+
+\bibitem[Wagner et~al.(2017)Wagner, Feger, and
+  Stelzer]{Wagner_Feger_Stelzer_2017}
+T.~Wagner, R.~Feger, and A.~Stelzer.
+\newblock Radar signal processing for jointly estimating tracks and
+  micro-doppler signatures.
+\newblock \emph{IEEE Access}, 5:\penalty0 1220–1238, 2017.
+\newblock ISSN 2169-3536.
+\newblock \doi{10.1109/ACCESS.2017.2667720}.
 
 \bibitem[Wang et~al.(2022)Wang, Varshney, Gentile, Blandino, Chuang, and
   Golmie]{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022}

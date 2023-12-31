@@ -20,23 +20,23 @@ Received UL symbols do not contain any useful information for radar processing, 
 Without modifying the OFDM frame, the system can carry out radar processing with the following performance:
 
 \begin{itemize}
-    \item \textbf{unambiguous speed}
+    \item \textbf{Unambiguous speed}
      \vspace{-\baselineskip} % Remove extra whitespace
             \begin{equation}
-                v_{\text{unamb}} = \frac{c_0}{2f_C T_S} = 613.15\text{ m/s}
+                v_{\text{unamb}} = \frac{c_0}{2f_C T_S} = 613.15\text{ m/s}.
             \end{equation}
            
-     \item \textbf{unambiguous range}
+     \item \textbf{Unambiguous range}
             \begin{equation}
-                d_{\text{unamb}} = \frac{c_0}{2\Delta_f} = 1250.0\text{ m}
+                d_{\text{unamb}} = \frac{c_0}{2\Delta_f} = 1250.0\text{ m}.
             \end{equation}
-     \item \textbf{speed resolution}
+     \item \textbf{Speed resolution}
             \begin{equation}
-                v_{\text{res}} = \frac{c_0}{2T_Sf_CM} = 0.603 \text{ m/s}
+                v_{\text{res}} = \frac{c_0}{2T_Sf_CM} = 0.603 \text{ m/s}.
             \end{equation} 
-     \item \textbf{range resolution}
+     \item \textbf{Range resolution}
             \begin{equation}
-                d_{\text{res}} = \frac{c_0}{2\Delta_fN} = 0.789 \text{ m}
+                d_{\text{res}} = \frac{c_0}{2\Delta_fN} = 0.789 \text{ m}.
             \end{equation}  
 \end{itemize}
 
@@ -53,14 +53,14 @@ Without modifying the OFDM frame, the system can carry out radar processing with
         \label{fig:SpectralReplicasDLULpattern}
     \end{figure}
     
-    In order to characterize the additional spectral replicas, the windowing function used to set all UL symbols to zero is analyzed. The windowing pattern can be expressed in the form:
+    In order to characterize the additional spectral replicas, the windowing function used to set all UL symbols to zero is analyzed. The windowing pattern can be expressed in the form
     
     \begin{align}
-        &\text{rect}\left( \frac{t + \tau}{104 \cdot T_S}\right) \ast \sum_{i=0}^7 \delta\left( t - i\cdot \frac{140}{1120}\cdot T_{\text{frame}} \right)  \\
-        &T_{\text{frame}} = 1120 \cdot T_S
+        &\text{rect}\left( \frac{t + \tau}{104 \cdot T_S}\right) \ast \sum_{i=0}^7 \delta\left( t - i\cdot \frac{140}{1120}\cdot T_{\text{frame}} \right),  \\
+        &T_{\text{frame}} = 1120 \cdot T_S.
     \end{align}
 
-    The windowing function (apart from a time-shift factor) is a rectangle function convoluted with a train of Dirac deltas with spacing of 140 samples, figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine function multiplied by a train of Dirac deltas.
+    The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine function multiplied by a train of Dirac deltas.
 
     The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency in figure \ref{fig:TDDproc_rectfunct_transform} appear as replicas in the periodogram. These peaks have enough power to be detected as actual targets, limiting the system's performance by reducing the effective unambiguous speed or by masking actual targets that would be detected near the replica. 
 
@@ -87,16 +87,16 @@ Without modifying the OFDM frame, the system can carry out radar processing with
         \label{fig:TDDstrategies}
     \end{figure}
 
-    \paragraph{Single DL pattern\newline}
-    In order to avoid processing blank UL symbols, the most straightforward approach would be processing only the first 104 DL symbols. The replicas would be avoided, but the time aperture of the measure would be reduced by a factor 8, decreasing the speed resolution from $0.603$ m/s to $\approx 5.88$ m/s, unusable for most of the sensing use cases.
+    \paragraph{Single DL pattern:}
+    in order to avoid processing blank UL symbols, the most straightforward approach would be processing only the first 104 DL symbols. The replicas would be avoided, but the time aperture of the measure would be reduced by a factor 8, decreasing the speed resolution from $0.603$ m/s to $\approx 5.88$ m/s, unusable for most of the sensing use cases.
     
-    \paragraph{Decimation at constant interval\newline}
-     A possible strategy is re-sampling the OFDM frame in time at a fixed pace, avoiding blank symbols. Replicas are not detected, but the lower number of processed symbols translates into a considerable loss of SNR in the periodogram. This affects NLOS sensing in particular, since targets observed from a reflection present a considerably lower peak power compared with the LOS components.
+    \paragraph{Decimation at constant interval:}
+     a possible strategy is re-sampling the OFDM frame in time at a fixed pace, avoiding blank symbols. Replicas are not detected, but the lower number of processed symbols translates into a considerable loss of SNR in the periodogram. This affects NLOS sensing in particular, since targets observed from a reflection present a considerably lower peak power compared with the LOS components.
 
      Reducing the number of available symbols with a fixed time-aperture translates in lower granularity of measurements and in a decrease in unambiguous speed. \protect\newline In the case of Figure \ref{fig:TDDperiodogram1FYesDec}, processing one symbol every 47, the obtained unambiguous speed is $13.05$ m/s. \protect\newline Speed resolution remains unchanged.
     
-     \paragraph{Decimation and multi-frame processing\newline}
-     Combining consecutive frames, it is possible to process an higher number of symbols, re-gaining a part of the SNR thanks to processing gain, all without observing replicas. The time aperture of the measurement is also increased, translating into a better speed resolution.
+     \paragraph{Decimation and multi-frame processing:}
+     combining consecutive frames, it is possible to process an higher number of symbols, re-gaining a part of the SNR thanks to processing gain, all without observing replicas. The time aperture of the measurement is also increased, translating into a better speed resolution.
 
      This approach introduces a trade-off between SNR (processing gain) and update rate. Increasing the time-aperture, some range migration effect can be observed, especially for fast moving targets. In the context of NLOS sensing, the impact of range migration on system performance is relatively minor compared to the benefits of increased speed resolution and higher signal-to-noise ratio, since the primary goal is not providing precise tracking or positioning data.
 
