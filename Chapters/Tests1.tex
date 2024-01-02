@@ -1,0 +1,50 @@
+\chapter{Determining the presence of NLOS component}
+
+The first set of practical measurements was carried out in order to determine the presence and observe the characteristics of the non-line-of-sight component of the signal. 
+
+\section{Measurements setup}
+
+The measurements were obtained using Nokia's sensing proof-of-concept described in section \ref{sec:intro-PoCarchitecture}. The system was mounted in an indoor scenario, with the receiver positioned at a height of $5,12$ m. The transmitter was positioned towards an open indoor area, located approximately 23 metres away from a warehouse rack (which was in front of a wall) and a cargo door.
+The objective was to obtain a non-line-of-sight measurement by reflecting the signal on the wall and on a moving target. 
+
+The tests were carried out using
+
+\begin{enumerate}
+	\item A human target.
+	\item A strong reflector (large metal cabinet with flat surfaces).
+\end{enumerate}
+
+The direction (azimuth $\theta$ and elevation $\varphi$) of the transmitted beam was fixed for the whole measurement.
+
+Before each test, a short calibration measure is performed, which includes only the static elements of the scenario. This calibration measure will be used in the post-processing steps for subspace-based clutter removal with the CRAP method  \cite{Henninger_Mandelli_Grudnitsky_Wild_Brink_2023}. 
+
+\section{Moving target without obstructions}
+
+The OFDM radar system will be able to determine the range and radial speed component (the angle of arrival AOA is fixed). During the initial measurement the antenna boresight was directed perpendicular to the wall,while the target moved radially between the transmitter and reflector.
+
+Beam elevation was chosen to be as high as possible in order to avoid line-of-sight from the transmitted beam's main lobe. Beam parameters are shown in table.
+
+
+% TODO: substitute placeholder table
+\begin{table}[H]
+	%\caption*{\textbf{Title of Table (optional)}}
+	\centering 
+	\begin{tabular}{|p{9em} c c c |}
+		\hline
+		\rowcolor{bluepoli!40} % comment this line to remove the color
+		\textbf{Substitute placeholder table} & \textbf{} & \textbf{} & \textbf{Time aperture [ms]} \T\B \\
+		\hline \hline
+		$\textbf{Standard frame}$ & 60,91 & 1120 & 10 \T\B \\
+		$\textbf{Decimated frame}$ & 45,16 & 24 & 10 \T\B\\
+		$\textbf{6 frames}$ & 52,35 & 96 & 60  \T\B\\
+		$\textbf{10 frames}$ & 54,66 & 160 & 100  \T\B\\
+		
+		\hline
+	\end{tabular}
+	\\[10pt]
+	\caption{Transmitted beam parameters for initial measurements.}
+	\label{table:TXBeamParams}
+\end{table}
+
+
+

@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -31,6 +31,14 @@ M.~Henninger, T.~E. Abrudan, S.~Mandelli, M.~Arnold, S.~Saur, V.-M. Kolmonen,
 \newblock \doi{10.1109/EuCNC/6GSummit54941.2022.9815663}.
 \newblock URL \url{http://arxiv.org/abs/2207.08512}.
 \newblock arXiv:2207.08512 [eess].
+
+\bibitem[Henninger et~al.(2023)Henninger, Mandelli, Grudnitsky, Wild, and
+  Brink]{Henninger_Mandelli_Grudnitsky_Wild_Brink_2023}
+M.~Henninger, S.~Mandelli, A.~Grudnitsky, T.~Wild, and S.~t. Brink.
+\newblock Crap: Clutter removal with acquisitions under phase noise.
+\newblock \penalty0 (arXiv:2306.00598), June 2023.
+\newblock \doi{10.48550/arXiv.2306.00598}.
+\newblock URL \url{http://arxiv.org/abs/2306.00598}.
 
 \bibitem[Hexa project()]{Hexa}
 Hexa project.

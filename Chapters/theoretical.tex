@@ -31,7 +31,7 @@ The time-domain can be expressed as
 
 where $a_{i,l}$ is the complex QAM symbol modulating the \textit{i-th} subcarrier in the \textit{l-th} symbol interval.
 
-\subsubsection{Implementation}
+\subsection{Implementation}
 The relation between the discrete samples of OFDM in the time and frequency domain enables a beneficial implementation.
 Sampling the signal at interval $T/N$ we obtain a discrete version
 
@@ -43,7 +43,7 @@ which is a discrete Fourier series DFS. When \textit{N} is a power of 2 the DFS 
 
 At the receiver, the time domain signal is sampled and each complex symbol is recovered by means of the FFT algorithm.
 
-\subsubsection{Guard interval and cyclic prefix}
+\subsection{Guard interval and cyclic prefix}
 A frequency selective channel will apply a time-dispersion effect on the OFDM signal. This causes each symbol to "leak" into the adjacent ones, causing inter-symbol interference ISI.
 
 In addition to ISI, also inter-carrier interference can be observed due to the loss of orthogonality of carriers.
@@ -99,7 +99,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of CP from each OFDM symbol, and computing the FFT of length $N_{subcarrriers}$ for every column of the matrix.
     
-    \paragraph{Effect of targets on OFDM frames:}
+    \subsection{Effect of targets on OFDM frames}
     each target reflection will influence different elements of the frame in a different way:
     
     \begin{enumerate}
@@ -127,7 +127,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
         (\mathbf F)_{k,l} =  \sum_{h=0}^{H-1} b_h \cdot e^{j2\pi T_O f_{D,h} l}\cdot e^{-j2\pi k \tau_h \Delta f} \cdot e^{j\varphi_h} + (\mathbf{Z})_{k,l}.
     \end{equation}
     
-    \paragraph{Radar problem formulation:}
+    \subsection{Radar problem formulation}
     
     the estimation of the round-trip delay and of the Doppler shift for each target is equivalent to a spectral estimation problem. As Braun describes it: \textit{estimation of frequencies of a superposition of discretely sampled complex sinusoids, and their number}.
     
@@ -189,7 +189,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     The input data for the periodogram is the CSI $\bm{F}$, and the periodogram is estimated in two dimensions
 
     \begin{align}
-        Per_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left( (  \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \label{eq:periodogram_full}\\
+        \text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left(  \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \label{eq:periodogram_full}\\
         &= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2. \label{eq:periodogram_cper}
     \end{align}
 
@@ -208,12 +208,41 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
 	\subsection{Window functions}
 	
-	Window functions are commonly applied to signals when computing the periodogram. This operation is done to tune the sidelobes level.
+	Window functions are commonly applied to signals when computing the periodogram. This operation is done to tune the sidelobes level and enable precise detection of targets. 
 	
+		%TODO generate image w/ and w/o windowing 
+	
+	The two dimensional window matrix to be applied to the periodogram $\bm{W} \in \mathbb{R}^{N\times M}$ is multiplied element-wise with the matrix $\bm{F}$. When computing the periodogram equation \ref{eq:periodogram_full} becomes
+	
+	
+	   \begin{align}
+		\text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left( \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} (\bm{W})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \label{eq:periodogram_full_win}\\
+		&= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2. \label{eq:periodogram_cper_win}
+	\end{align}
 	 
+	 If no windowing is considered then $(\bm{W})_{k,l} = 1$, as in a simple boxcar window.
+	 
+	 In the proposed OFDM radar system, the following window types are of interest:
+	 
+	 \begin{itemize}
+	 	\item Rectangular (Boxcar) windows.
+	 	\item Hamming windows.
+	 	\item Blackman-Harris windows.
+	 	\item Dolph-Chebyshev windows.
+	 \end{itemize}
 	
 	
-	%TODO generate image w/ and w/o windowing 
+	Since the width of the main lobe and the hight of its peak is different from each window the windowing operation results in a SNR loss when computing the periodogram.
+	The overall processing gain can be updated as
+	
+	\begin{align}
+		PG = 10\log_{10}(NM) + \text{SNR}_{\bm{w}_d} + \text{SNR}_{\bm{w}_v}
+	\end{align}
+	
+	where the SNR for each direction is equal to the DC bin of the periodogram of each window normalized by the width of the rectangular window.
+	
+	
+
 	
 
     

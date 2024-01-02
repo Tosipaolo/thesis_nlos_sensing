@@ -14,37 +14,40 @@
 \contentsline {chapter}{\numberline {2}OFDM radar signal processing}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Structure of OFDM signal}{7}{section.2.1}%
 \contentsline {subsubsection}{Subcarriers and frequency spacing}{7}{subsubsection*.13}%
-\contentsline {subsubsection}{Implementation}{8}{subsubsection*.15}%
-\contentsline {subsubsection}{Guard interval and cyclic prefix}{8}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.1.1}Implementation}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Guard interval and cyclic prefix}{8}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}OFDM radar processing}{9}{section.2.2}%
-\contentsline {paragraph}{Effect of targets on OFDM frames:}{10}{paragraph*.20}%
-\contentsline {paragraph}{Radar problem formulation:}{10}{paragraph*.24}%
-\contentsline {subsection}{\numberline {2.2.1}Non ambiguous range and speed}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Range and speed resolution}{11}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Periodogram-based estimation algorithms}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.1}Effect of targets on OFDM frames}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Radar problem formulation}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Non ambiguous range and speed}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Range and speed resolution}{11}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Periodogram-based estimation algorithms}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Window functions}{13}{subsection.2.3.1}%
 \contentsline {chapter}{\numberline {3}TDD pattern of the OFDM frame}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Ideal system performance}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Effect of empty UL symbols}{16}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Frame sampling strategies}{18}{section.3.3}%
-\contentsline {paragraph}{Single DL pattern:}{18}{paragraph*.39}%
-\contentsline {paragraph}{Decimation at constant interval:}{18}{paragraph*.40}%
-\contentsline {paragraph}{Decimation and multi-frame processing:}{18}{paragraph*.41}%
+\contentsline {paragraph}{Single DL pattern:}{18}{paragraph*.37}%
+\contentsline {paragraph}{Decimation at constant interval:}{18}{paragraph*.38}%
+\contentsline {paragraph}{Decimation and multi-frame processing:}{18}{paragraph*.39}%
 \contentsline {chapter}{\numberline {4}Radar detection and thresholding}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Constant False Alarm Rate}{22}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Cell-averaging CFAR}{23}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Performance of CA-CFAR}{24}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Robust CA-CFAR}{25}{subsection.4.2.2}%
-\contentsline {paragraph}{Greatest-of CA-CFAR:}{25}{paragraph*.55}%
-\contentsline {paragraph}{Censored-statistics CA-CFAR:}{25}{paragraph*.56}%
+\contentsline {paragraph}{Greatest-of CA-CFAR:}{25}{paragraph*.53}%
+\contentsline {paragraph}{Censored-statistics CA-CFAR:}{25}{paragraph*.54}%
 \contentsline {section}{\numberline {4.3}Range-adjusted exponential threshold}{26}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Determining the presence of NLOS component}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Measurements setup}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Moving target without obstructions}{27}{section.5.2}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{27}{chapter*.58}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{29}{chapter*.58}%
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix A}{29}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix B}{31}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{33}{appendix*.62}%
-\contentsline {chapter}{List of Figures}{35}{appendix*.65}%
-\contentsline {chapter}{List of Tables}{37}{appendix*.67}%
-\contentsline {chapter}{List of Symbols}{39}{appendix*.69}%
-\contentsline {chapter}{Acknowledgements}{41}{appendix*.72}%
+\contentsline {chapter}{\numberline {A}Appendix A}{33}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Appendix B}{35}{appendix.B}%
+\contentsline {chapter}{Abbreviations}{37}{appendix*.62}%
+\contentsline {chapter}{List of Figures}{39}{appendix*.65}%
+\contentsline {chapter}{List of Tables}{41}{appendix*.67}%
+\contentsline {chapter}{List of Symbols}{43}{appendix*.69}%
+\contentsline {chapter}{Acknowledgements}{45}{appendix*.72}%

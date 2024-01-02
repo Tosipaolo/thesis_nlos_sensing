@@ -127,7 +127,7 @@ Performance is also strongly influenced by the design of the reference window. T
 \end{figure}
 
 \subsection{Robust CA-CFAR}
-More complex CA-CFAR algorithms may provide better results under certain heterogeneous conditions, but at the cost of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
+More complex CA-CFAR algorithms may provide better results under certain heterogeneous conditions, but at the expense of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
 
 Some of the more common variations of the algorithm are the greatest-of CA-CFAR (GOCA-CFAR) and the censored statistics CA-CFAR (CSCA-CFAR), which are designed to suppress clutter-edge false alarms and mutual target masking, respectively.
 
@@ -151,7 +151,7 @@ In the measurement scenarios it happened that, due to the systems's high range a
 
 The main consequence is that target returns end up appearing like clutter to the CA-CFAR thresholding algorithm, and no NLOS target falls above threshold.
 
-As proposed in \cite{Wagner_Feger_Stelzer_2017}, a threshold with $1/R^2$ shape is used. This approach is able to identify the target returns, as well as unwanted components. Since this components appear as static in the range/doppler plane, they can be filtered out using a simple Kalman filter. Since their range does not change even though their relative speed is not zero, the filter will update its covariance matrix at each step until a certain threshold is exceeded.
+As proposed in \cite{Wagner_Feger_Stelzer_2017}, a threshold with $1/R^2$ shape can be used to address the problem. This approach is able to identify the target returns, as well as unwanted components. Since this components appear as static in the range/doppler plane, they can be filtered out using a simple Kalman filter. Since their range does not change even though their relative speed is not zero, the filter will update its covariance matrix at each step until a certain threshold is exceeded.
 
 
 
