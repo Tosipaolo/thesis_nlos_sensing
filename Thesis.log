@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.16)  2 JAN 2024 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.16)  3 JAN 2024 09:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1137,7 +1137,7 @@ IONE_COL_POSITIVO-eps-converted-to.pdf Images/02_ING_IND_INFORMAZIONE_COL_POSIT
 IVO.eps>
 (epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
-<Images/02_ING_IND_INFORMAZIONE_COL_POSITIVO-eps-converted-to.pdf, id=179, 493.
+<Images/02_ING_IND_INFORMAZIONE_COL_POSITIVO-eps-converted-to.pdf, id=183, 493.
 845pt x 227.85126pt>
 File: Images/02_ING_IND_INFORMAZIONE_COL_POSITIVO-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -1168,7 +1168,7 @@ to.pdf>
 i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
 (epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
-<./Images//./raggiera_polimi-eps-converted-to.pdf, id=181, 502.87875pt x 502.87
+<./Images//./raggiera_polimi-eps-converted-to.pdf, id=185, 502.87875pt x 502.87
 875pt>
 File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Images//./raggiera_polimi-eps-converted-to.pdf>
@@ -1284,7 +1284,7 @@ o.pdf>
 -eps-converted-to.pdf Images/logo_polimi_scritta.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
-<Images/logo_polimi_scritta-eps-converted-to.pdf, id=281, 313.17pt x 243.91125p
+<Images/logo_polimi_scritta-eps-converted-to.pdf, id=286, 313.17pt x 243.91125p
 t>
 File: Images/logo_polimi_scritta-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/logo_polimi_scritta-eps-converted-to.pdf>
@@ -1346,7 +1346,7 @@ d-to.pdf>
 tta-eps-converted-to.pdf ./Images//logo_polimi_scritta.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
-<./Images//logo_polimi_scritta-eps-converted-to.pdf, id=344, 313.17pt x 243.911
+<./Images//logo_polimi_scritta-eps-converted-to.pdf, id=349, 313.17pt x 243.911
 25pt>
 File: ./Images//logo_polimi_scritta-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1359,7 +1359,7 @@ ed on input line 15.
  <./Images//logo_polimi_scritta-eps-converted-to.pdf>] [8] [9] [10] [11]
 [12] [13]) (./Chapters/TDDprocessing.tex [14]
 Chapter 3.
-<Images/TDDprocessing/CSIMatrix_DLULpattern.png, id=441, 548.54938pt x 479.2906
+<Images/TDDprocessing/CSIMatrix_DLULpattern.png, id=446, 548.54938pt x 479.2906
 2pt>
 File: Images/TDDprocessing/CSIMatrix_DLULpattern.png Graphic file (type png)
 <use Images/TDDprocessing/CSIMatrix_DLULpattern.png>
@@ -1370,7 +1370,7 @@ n input line 13.
 
 
  <./Images/TDDprocessing/CSIMatrix_DLULpattern.png (PNG copy)>]
-<Images/TDDprocessing/SpectralReplicasDLULpattern.png, id=450, 540.0175pt x 359
+<Images/TDDprocessing/SpectralReplicasDLULpattern.png, id=455, 540.0175pt x 359
 .84438pt>
 File: Images/TDDprocessing/SpectralReplicasDLULpattern.png Graphic file (type p
 ng)
@@ -1390,7 +1390,7 @@ ed-to.pdf>
 unct-eps-converted-to.pdf Images/TDDprocessing/rectFunct.eps>
 (epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
-<Images/TDDprocessing/rectFunct-eps-converted-to.pdf, id=467, 463.7325pt x 347.
+<Images/TDDprocessing/rectFunct-eps-converted-to.pdf, id=472, 463.7325pt x 347.
 2975pt>
 File: Images/TDDprocessing/rectFunct-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1411,7 +1411,7 @@ form_of_rectFunct1-eps-converted-to.pdf Images/TDDprocessing/transform_of_rectF
 unct1.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
-<Images/TDDprocessing/transform_of_rectFunct1-eps-converted-to.pdf, id=468, 657
+<Images/TDDprocessing/transform_of_rectFunct1-eps-converted-to.pdf, id=473, 657
 .45625pt x 556.0775pt>
 File: Images/TDDprocessing/transform_of_rectFunct1-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -1430,7 +1430,7 @@ verted-to.pdf>
 rategies-eps-converted-to.pdf Images/TDDprocessing/TDDstrategies.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
-<Images/TDDprocessing/TDDstrategies-eps-converted-to.pdf, id=469, 2499.3375pt x
+<Images/TDDprocessing/TDDstrategies-eps-converted-to.pdf, id=474, 2499.3375pt x
  523.9575pt>
 File: Images/TDDprocessing/TDDstrategies-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1441,26 +1441,26 @@ f  used on input line 85.
  [17 <./Images/TDDprocessing/rectFunct-eps-converted-to.pdf> <./Images/TDDproce
 ssing/transform_of_rectFunct1-eps-converted-to.pdf>] [18 <./Images/TDDprocessin
 g/TDDstrategies-eps-converted-to.pdf>]
-<Images/TDDprocessing/periodogram1FNoDec.png, id=547, 309.7974pt x 293.4162pt>
+<Images/TDDprocessing/periodogram1FNoDec.png, id=552, 309.7974pt x 293.4162pt>
 File: Images/TDDprocessing/periodogram1FNoDec.png Graphic file (type png)
 <use Images/TDDprocessing/periodogram1FNoDec.png>
 Package pdftex.def Info: Images/TDDprocessing/periodogram1FNoDec.png  used on i
 nput line 114.
 (pdftex.def)             Requested size: 182.09486pt x 172.47382pt.
-<Images/TDDprocessing/periodogram1FYesDec.png, id=549, 309.7974pt x 288.5982pt>
+<Images/TDDprocessing/periodogram1FYesDec.png, id=554, 309.7974pt x 288.5982pt>
 
 File: Images/TDDprocessing/periodogram1FYesDec.png Graphic file (type png)
 <use Images/TDDprocessing/periodogram1FYesDec.png>
 Package pdftex.def Info: Images/TDDprocessing/periodogram1FYesDec.png  used on 
 input line 118.
 (pdftex.def)             Requested size: 182.09486pt x 169.64174pt.
-<Images/TDDprocessing/periodogram6frames.png, id=550, 314.6154pt x 297.7524pt>
+<Images/TDDprocessing/periodogram6frames.png, id=555, 314.6154pt x 297.7524pt>
 File: Images/TDDprocessing/periodogram6frames.png Graphic file (type png)
 <use Images/TDDprocessing/periodogram6frames.png>
 Package pdftex.def Info: Images/TDDprocessing/periodogram6frames.png  used on i
 nput line 124.
 (pdftex.def)             Requested size: 182.09486pt x 172.33759pt.
-<Images/TDDprocessing/periodogram10frames.png, id=551, 303.534pt x 291.489pt>
+<Images/TDDprocessing/periodogram10frames.png, id=556, 303.534pt x 291.489pt>
 File: Images/TDDprocessing/periodogram10frames.png Graphic file (type png)
 <use Images/TDDprocessing/periodogram10frames.png>
 Package pdftex.def Info: Images/TDDprocessing/periodogram10frames.png  used on 
@@ -1475,7 +1475,7 @@ Chapter 4.
 
 
 ] [22] [23] [24]
-<Images/radar_detect_threshold/self_masking_Richards2010.png, id=621, 1196.9718
+<Images/radar_detect_threshold/self_masking_Richards2010.png, id=626, 1196.9718
 8pt x 566.86781pt>
 File: Images/radar_detect_threshold/self_masking_Richards2010.png Graphic file 
 (type png)
@@ -1494,14 +1494,54 @@ Underfull \hbox (badness 1701) in paragraph at lines 35--35
 []|\T1/cmr/bx/n/12 Substitute place-
  []
 
-) (./Thesis.bbl [28]
+Package epstopdf Info: Source file: <Images/To-be-sorted/cali_static_per/cali_s
+tatic_per.eps>
+(epstopdf)                    date: 2024-01-02 16:24:07
+(epstopdf)                    size: 21679 bytes
+(epstopdf)             Output file: <Images/To-be-sorted/cali_static_per/cali_s
+tatic_per-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-01-02 23:56:16
+(epstopdf)                    size: 13750 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/To-be-sorted/cali_s
+tatic_per/cali_static_per-eps-converted-to.pdf Images/To-be-sorted/cali_static_
+per/cali_static_per.eps>
+(epstopdf)             \includegraphics on input line 59.
+Package epstopdf Info: Output file is already uptodate.
+<Images/To-be-sorted/cali_static_per/cali_static_per-eps-converted-to.pdf, id=6
+53, 463.7325pt x 347.2975pt>
+File: Images/To-be-sorted/cali_static_per/cali_static_per-eps-converted-to.pdf 
+Graphic file (type pdf)
+<use Images/To-be-sorted/cali_static_per/cali_static_per-eps-converted-to.pdf>
+Package pdftex.def Info: Images/To-be-sorted/cali_static_per/cali_static_per-ep
+s-converted-to.pdf  used on input line 59.
+(pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
+) (./Thesis.bbl [28] [29 <./Images/To-be-sorted/cali_static_per/cali_static_per
+-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
+(epstopdf)                    date: 2023-12-27 18:35:38
+(epstopdf)                    size: 1813066 bytes
+(epstopdf)             Output file: <./Images//./raggiera_polimi-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2023-12-27 18:35:38
+(epstopdf)                    size: 40456 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
+i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Images//./raggiera_polimi-eps-converted-to.pdf>
+Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
+ on input line 1.
+(pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
+ [30
+
+]
 Underfull \hbox (badness 1466) in paragraph at lines 67--73
 []\T1/cmr/m/n/12 S. Man-delli, M. Hen-ninger, M. Bauhofer, and T. Wild.  Sur-ve
 y on in-te-
  []
 
-[29
-
+[31
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 123--127
@@ -1515,7 +1555,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--127
 l-[]labs . com / institute / blog /
  []
 
-[30]) [31]
+[32]) [33]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
 (epstopdf)                    date: 2023-12-27 18:35:38
 (epstopdf)                    size: 1813066 bytes
@@ -1532,11 +1572,11 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 228.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [32
+ [34
 
 ]
 Appendix A.
-[33
+[35
 
 
 ]
@@ -1556,11 +1596,11 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 236.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [34
+ [36
 
 ]
 Appendix B.
-(./Chapters/Abbreviations.tex [35
+(./Chapters/Abbreviations.tex [37
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -1579,9 +1619,9 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 1.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [36
+ [38
 
-]) [37
+]) [39
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -1600,13 +1640,13 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 243.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [38
+ [40
 
 ] (./Thesis.lof)
 \tf@lof=\write6
 \openout6 = `Thesis.lof'.
 
- [39
+ [41
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -1625,14 +1665,14 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 246.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [40
+ [42
 
 ]
 (./Thesis.lot)
 \tf@lot=\write7
 \openout7 = `Thesis.lot'.
 
- [41
+ [43
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -1651,9 +1691,9 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 250.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [42
+ [44
 
-] [43
+] [45
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -1672,9 +1712,9 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 264.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [44
+ [46
 
-] [45
+] [47
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -1693,7 +1733,7 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 267.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [46
+ [48
 
 ]
 
@@ -1702,13 +1742,13 @@ See the caption package documentation for explanation.
 
 (./Thesis.aux)
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 10A30CF63CEDDE8B397F4A8F9A96483D;7226.
+(rerunfilecheck)             Checksum: 79943626C4DA8FE64748DDD8788C8B1C;7527.
  ) 
 Here is how much of TeX's memory you used:
- 30639 strings out of 477985
- 576869 string characters out of 5840057
+ 30654 strings out of 477985
+ 577511 string characters out of 5840057
  1873388 words of memory out of 5000000
- 49993 multiletter control sequences out of 15000+600000
+ 50002 multiletter control sequences out of 15000+600000
  539272 words of font info for 97 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,28n,89p,1195b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1734,10 +1774,10 @@ type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 e/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fo
 nts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on Thesis.pdf (54 pages, 4993522 bytes).
+Output written on Thesis.pdf (56 pages, 5006110 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
- 749 compressed objects within 8 object streams
- 223 named destinations out of 1000 (max. 500000)
- 433 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 990 PDF objects out of 1000 (max. 8388607)
+ 770 compressed objects within 8 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
