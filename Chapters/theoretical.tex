@@ -242,6 +242,31 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	where the SNR for each direction is equal to the DC bin of the periodogram of each window normalized by the width of the rectangular window.
 	
 	
+	\subsection{Welch's method}
+	
+	The Welch method, or window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by computing the periodogram in exchange for lowering of the frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
+
+	In the Welch method, the signal is divided into data segments, the periodogram is then computed separately for each segment and then averaged.
+	
+	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}\footnote{\texttt{https://ccrma.stanford.edu/$\sim$jos/sasp/Welch\_s\_Method.html}}, the \textit{m}-th windowed and zero padded frame is
+	
+	\begin{align}
+		x_m(n) = w(n)x(n + mR), \; n=0,1,\ldots, M-1, m=0,1,\ldots, K-1,
+	\end{align}
+	
+	where R is the window's hop size and K the number of available segments. The periodogram of the \textit{m}-th block is obtained as
+	
+	\begin{align}
+		\text{PER}_{x_m,M}(w_k) = \frac{1}{M} |\text{FFT}_{N,k}(x_m)|^2 = \frac{1}{M}\left|\sum_{n=0}^{N-1}x_m(n)e^{-j2\pi nk/N}\right|^2.
+	\end{align}
+	
+	The Welch estimate of the PSD is then given by
+	
+	\begin{align}
+		\hat{S}^W_x(w_k) = \frac{1}{K}\sum_{m=0}^{K-1}\text{PER}_{x_m,M}(w_k).
+	\end{align}
+	
+	
 
 	
 

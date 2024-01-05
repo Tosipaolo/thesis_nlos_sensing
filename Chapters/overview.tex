@@ -1,0 +1,106 @@
+\chapter{Overview of 6G ISAC}
+
+The fifth generation of wireless communication systems introduced, with the 5G New Radio (NR), support for radio-access-technology-based localization, precise positioning protocol and the possibility of measuring gaps on the New Radio (NR) carrier. This enables the UE to estimate positions with time difference of arrival measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019} . \newline
+The NR positioning protocol can also integrate satellite-based positioning systems and can be deployed as a private network solution with active user localization as in \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
+The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
+
+With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (also known as JCAS or ICAS) has been a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}. 
+
+It is said that 6G will function as a network with a sixth sense \cite{Viswanathan_Wild_2021}. Radio signals transmitted by base stations, or users do not only carry data. Propagation channels bear information about the environment in which the signal is transmitted. 
+
+Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analyzing the channel response, it is possible to extract information about position, speed, type and shape of an object.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Images/logo_polimi_scritta.eps}
+	\caption{Caption of the Figure to appear in the List of Figures.}
+	\label{fig:ISAC-scheme}
+\end{figure}
+
+
+For 6G, the RF sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:ISAC-scheme} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
+
+\section{Technological enablers}
+
+
+Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing. Hence one of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
+
+Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHZ and 400 MHz in respectively 5G NR and mmWave NR, it can be expected from 5G evolution and 6G systems to use bandwiths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
+
+Spectrum choice will determine the overall capabilities of the system \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. The frequency ranges that are being considered for 6G \cite{Hexa} are:
+
+\begin{itemize}
+	\item Frequency Range 1 (FR1): from 600 MHz to 6 GHz;
+	\item Frequency Range 2 (FR2): mmWave, from 24 GHz to 71 GHz;
+	\item the new Frequency Range 3 (FR3), not yet specified: from 7 to 20 GHz
+\end{itemize}
+
+Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}. \\
+Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection.
+
+
+
+\section{Sensing use-cases}
+
+A number of use-cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and some of the  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
+
+Defining probable scenarios and use cases for ISAC 
+
+% TODO
+
+\subsection{Human activities}
+
+
+
+\subsection{Non-line-of-sight sensing}
+
+
+
+Non-line-of-sight sensing could potentially offer a range of potential advantages. While not yet an established solution this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
+
+One significant advantage of non-line-of-sight sensing could be the ability to achieve "around the corner" detection, a capability that remains unfeasible with traditional fixed camera or LIDAR systems. By employing advanced sensing techniques and algorithms, non-line-of-sight systems have the potential to detect and track objects and individuals even when direct line-of-sight visibility is obstructed.
+
+Furthermore, non-line-of-sight sensing could be a cost-effective enhancement of cellular sensing systems, making them a viable alternative to expensive ad hoc systems. Instead of requiring the deployment of infrastructure or specialized equipment, early explorations of non-line-of-sight sensing suggest the possibility of leveraging existing network hardware and extend its capabilities. This potential cost efficiency could make non-line-of-sight sensing an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
+
+Additionally, the adoption of non-line-of-sight sensing could unlock new use cases that have yet to be fully explored. For instance, in industrial environments, the technology's potential to detect humans within obscured or complex settings could enhance safety protocols and improve accident prevention measures. Intrusion detection systems could also benefit from non-line-of-sight sensing, as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points. 
+.
+
+\section{Proof of concept architecture}
+\label{sec:intro-PoCarchitecture}
+
+The goal of ISAC is to make the most use of the deployed communication hardware to perform sensing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. Using Option 7-2 (FFT/iFFT done in RU, frequency domain IQ transported on fronthaul) of the possible 5G splits, it is possible to use the same type of Remote Unit (RU) for both communication and sensing.
+
+The architecture considered in this work is based on a FR2 5G communication hardware. The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU).
+
+The primary gNB RU and the sniffer are mounted in proximity and are \textit{co-located}. This allows the system to behave as a monostatic radar.
+
+The gNB RU operates in TDD mode, while the sniffer operates only in uplink (UL) mode.
+
+\subsection{System parameters}
+
+The system specifications are indicated in table \ref{table:PoCparams}.
+
+\begin{table}[H]
+	%\caption*{\textbf{Title of Table (optional)}}
+	\centering 
+	\begin{tabular}{|p{9em} c c |}
+		\hline
+		\rowcolor{bluepoli!40} % comment this line to remove the color
+		\textbf{Parameter} & \textbf{Description} & \textbf{Value}  \T\B \\
+		\hline \hline
+		$\bm{f_C}$ & carrier frequency & 27,4 GHz \T\B \\
+		$\bm{B}$ & bandwidth & 200 MHz \T\B\\
+		$\bm{\Delta_f}$ & subcarrier spacing & 120 kHz  \T\B\\
+		$\bm{T_S = 1/\Delta_f + T_{CP}}$ & symbol time & 8,923 $\mu s$  \T\B\\
+		$\bm{T_{CP} = T_S/8}$ & cyclic prefix time & 1,115 $\mu s$  \T\B\\
+		$\bm{N}$ & number of subcarriers & 1584  \T\B\\
+		$\bm{M}$ & number of symbols & 1120  \B\\
+		
+		\hline
+	\end{tabular}
+	\\[10pt]
+	\caption{List of system parameters from NOKIA proof of concept installation.}
+	\label{table:PoCparams}
+\end{table}
+
+The system is equipped with analog beamforming and measurements can be obtained using a fixed beam chosen by an antenna codebook.

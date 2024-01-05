@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -110,6 +110,23 @@ F.~Schaich and T.~Wild.
 \newblock ISBN 978-1-4799-2890-3.
 \newblock \doi{10.1109/ISCCSP.2014.6877912}.
 
+\bibitem[Smith(accessed <date>)]{SASPWEB2011}
+J.~O. Smith.
+\newblock \emph{Spectral Audio Signal Processing}.
+\newblock
+  \htmladdnormallink{\texttt{http:}}{http://ccrma.stanford.edu/~jos/sasp/}\texttt{//\-ccrma.stanford.edu/\-\~{}jos/\-sasp/},
+  accessed <date>.
+\newblock online book, 2011 edition.
+
+\bibitem[Spagnolini(2018)]{Spagnolini_ch14}
+U.~Spagnolini.
+\newblock \emph{Spectral Analysis}, chapter~14, pages 267--309.
+\newblock John Wiley \& Sons, Ltd, 2018.
+\newblock ISBN 9781119294016.
+\newblock \doi{https://doi.org/10.1002/9781119294016.ch14}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119294016.ch14}.
+
 \bibitem[Stoica et~al.(2011)Stoica, Babu, and
   Li]{Stoica_New_Method_Parameter_Estimation}
 P.~Stoica, P.~Babu, and J.~Li.
@@ -143,6 +160,14 @@ J.~Wang, N.~Varshney, C.~Gentile, S.~Blandino, J.~Chuang, and N.~Golmie.
   23416–23440, Dec. 2022.
 \newblock ISSN 2327-4662, 2372-2541.
 \newblock \doi{10.1109/JIOT.2022.3190845}.
+
+\bibitem[Welch(1967)]{Welch_period}
+P.~Welch.
+\newblock The use of fast fourier transform for the estimation of power
+  spectra: A method based on time averaging over short, modified periodograms.
+\newblock \emph{IEEE Transactions on Audio and Electroacoustics}, 15\penalty0
+  (2):\penalty0 70--73, 1967.
+\newblock \doi{10.1109/TAU.1967.1161901}.
 
 \bibitem[Wild et~al.(2021)Wild, Braun, and
   Viswanathan]{Wild_Braun_Viswanathan_2021}
