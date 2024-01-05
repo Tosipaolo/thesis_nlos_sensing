@@ -2,7 +2,7 @@
 \label{chap_OFDM}
 
 Orthogonal frequency division modulation has been adopted in the current generation of wireless communication systems and will be adopted for 6G as well.
-OFDM splits the wireless signal into multiple subcarriers, each modulated by a data stream. Multi carrier transmission offers numerous advantages such as high spectral efficiency and robustness to multipath fading. These factors make OFDM the ideal candidate for current and next generation high-bit rate applications and it's currently used in 5G and in IEEE 802.11 (WiFi).
+OFDM splits the wireless signal into multiple subcarriers, each modulated by a data stream. Multi carrier transmission offers numerous advantages such as high spectral efficiency and robustness to multipath fading. These factors make OFDM the ideal candidate for current and next generation high bit-rate applications and it's currently used in 5G and in IEEE 802.11 (WiFi).
 
 
 
@@ -23,7 +23,7 @@ Each set of modulated data transmitted in a single time slot will be referred as
 
 Orthogonality of subcarriers is guaranteed by a frequency spacing $\Delta f$ of $1/T$, where $T$ is the duration of a single rectangular baseband pulse.
 
-The time-domain can be expressed as
+The time-domain signal can be expressed as
 
 \begin{equation}
     s(t) = \sum_l\sum_{i=0}^{N-1} a_{i,l}\cdot \sqrt{\frac{1}{T}} rect \left( \frac{t-T/2 - lT}{T} \right)\exp{\left(\frac{j2\pi it}{T}\right)},
@@ -63,24 +63,24 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     Since OFDM signals are orthogonal to each other, data is sent at the same time without interference. This could allow OFDM-based radar systems to overcome the possible limitations of FMCW radars in terms of mutual interference \cite{Goppelt_Blöcher_Menzel_2010}.
     %
     
-    During the radar operation each OFDM frame is reflected by passive targets. The received signal is a superposition of the effect of the reflection of all the targets hit by the wave front, as described in section 3.2 of \cite{Braun2014OFDMRA}.
+    During the radar operation each OFDM frame is reflected by passive targets. The received signal is a superposition of the effect of the reflection of all the targets hit by the wave front, as described in section 3.2 of \cite{Braun2014OFDMRA}, by Braun.
     
-    The received signal is then:
+    The received signal is then
     
     \begin{equation}
     \label{eq:received_signal_mltiple_targets}
-        r(t) = \sum_{h=0}^{H-1} b_h s(t-\tau_h)e^{j2\pi f_{D,h}t}e^{j\hat{\varphi}_h} + \hat{z}(t)
+        r(t) = \sum_{h=0}^{H-1} b_h s(t-\tau_h)e^{j2\pi f_{D,h}t}e^{j\hat{\varphi}_h} + \hat{z}(t),
     \end{equation}
     
     where $s(t)$ is influenced by the factors:
     
     \begin{itemize}
-        \item Magnitude attenuation factor $$b_h = \sqrt{\frac{c_0\sigma_{RCS,h}}{(4\pi)^3 d_h^4f_C^2}}$$
+        \item Magnitude attenuation factor $$b_h = \sqrt{\frac{c_0\sigma_{RCS,h}}{(4\pi)^3 d_h^4f_C^2}},$$
     that depends on the distance of the target $d_h$, its radar cross section (RCS), the speed of light $c_0$ and the carrier frequency $f_C$.
     
-        \item Time delay $\tau_h = 2\frac{d_h}{c_0}$ which is the round trip time of the reflected signal.
+        \item Time delay $\tau_h = 2\frac{d_h}{c_0},$ which is the round trip time of the reflected signal.
     
-        \item A Doppler shift term introduced by the relative speed of the target $f_{d,h}. = 2 \frac{v_{rel,h}}{c_0}f_C$;
+        \item A Doppler shift term introduced by the relative speed of the target $f_{d,h} = 2 \frac{v_{rel,h}}{c_0}f_C$.
         \item A random phase rotation $\varphi_h$.
         \item Additive white Gaussian noise $\hat{z}(t)$.
     \end{itemize}
@@ -116,7 +116,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     The channel state information matrix (CSI) is obtained from the received frame $\mathbf{F}_{Rx}$ by removing the known transmitted frame $\mathbf{F}_{Tx}$, which serves no purpose for radar estimation. After element-wise division the CSI is
     
     \begin{equation}
-        (\mathbf F)_{k,l} = \frac{(\mathbf F_{Rx})_{k,l}}{(\mathbf F_{Tx})_{k,l}} = b_0 \cdot e^{j2\pi T_0 f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + \frac{(\mathbf{\Tilde{Z}})_{k,l}}{(\mathbf F_{Tx})_{k,l}}.
+        (\mathbf F)_{k,l} = \frac{(\mathbf F_{Rx})_{k,l}}{(\mathbf F_{Tx})_{k,l}} = b_0 \cdot e^{j2\pi T_0 f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + \frac{(\mathbf{\Tilde{Z}})_{k,l}}{(\mathbf F_{Tx})_{k,l}}\label{eq:CSI_frame}.    
     \end{equation}
     
     An alternative noise matrix $(\mathbf{Z})_{k,l}$ can be defined since, after division by the transmitted frame, the noise process will be white if $(\mathbf{\Tilde{Z}})$ is white.
@@ -129,13 +129,30 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     \subsection{Radar problem formulation}
     
-    the estimation of the round-trip delay and of the Doppler shift for each target is equivalent to a spectral estimation problem. As Braun describes it: \textit{estimation of frequencies of a superposition of discretely sampled complex sinusoids, and their number}.
+    The estimation of the round-trip delay and of the Doppler shift for each target is equivalent to a spectral estimation problem. As Braun describes it: \textit{"Estimation of frequencies of a superposition of discretely sampled complex sinusoids, and their number"}.
     
     Multiple methods can be considered to solve this problem. They can be categorised as parametric, semiparametric, or nonparametric \cite{Stoica_New_Method_Parameter_Estimation}. 
     
     In the nonparametric class the most established method is the periodogram (also referred as single-frequency least-squares method), and gives optimal results for sinusoids that are well resolved.
     
     Other established methods, which are more computationally expensive in general, are MUSIC and ESPRIT, belonging to the parametric class.
+    
+    \subsection{Assumptions for OFDM radar systems}
+    \label{sub:assumptions_ofdm_radar}
+    The following assumptions simplify the design of the algorithm, as described in section 3.2.1 of \cite{Braun2014OFDMRA}.
+    
+    \begin{enumerate}
+    	\item No other distortion other than AWGN is induced by the transmit and receive front-ends.
+    	\item The CP duration is larger than the round-trip propagation time for the furthermost target.
+    	\item The sub-carrier distance is at least one order of magnitude larger than the largest occurring Doppler shift.
+    	
+		Assumptions 2 and 3 ensure that the received matrix will not undergo de-orthogonalisation, which is necessary for element-wise division in equation \ref{eq:CSI_frame}. These conditions ensure that the OFDM symbols are not delayed more than the CP and are not shifted by a large Doppler shift. If these conditions are met, demodulation can occur correctly.
+    	
+    	\item The Doppler shift is the same on every sub-carrier.
+    	\item The target’s distance remains constant during the transmission of one frame.
+    	
+    	These assumptions are approximations of the actual conditions, as they are never exactly true for non-zero Doppler shifts. However they are good approximations if the center frequency of the system is far greater then the total bandwidth and if the OFDM frames duration remains in the order of milliseconds.
+    \end{enumerate}
     
     \subsection{Non ambiguous range and speed}
     
@@ -232,11 +249,11 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	 \end{itemize}
 	
 	
-	Since the width of the main lobe and the hight of its peak is different from each window the windowing operation results in a SNR loss when computing the periodogram.
+	Since the width of the main lobe and the height of its peak is different from each window the windowing operation results in a SNR loss when computing the periodogram.
 	The overall processing gain can be updated as
 	
 	\begin{align}
-		PG = 10\log_{10}(NM) + \text{SNR}_{\bm{w}_d} + \text{SNR}_{\bm{w}_v}
+		PG = 10\log_{10}(NM) + \text{SNR}_{\bm{w}_d} + \text{SNR}_{\bm{w}_v},
 	\end{align}
 	
 	where the SNR for each direction is equal to the DC bin of the periodogram of each window normalized by the width of the rectangular window.
@@ -244,9 +261,8 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	
 	\subsection{Welch's method}
 	
-	The Welch method, or window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by computing the periodogram in exchange for lowering of the frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
-
-	In the Welch method, the signal is divided into data segments, the periodogram is then computed separately for each segment and then averaged.
+	This method, also known as window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by calculating the periodogram in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
+	The signal is divided into $M$ data segments of $N$ samples, the periodogram is then computed separately for each segment and then averaged.
 	
 	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}\footnote{\texttt{https://ccrma.stanford.edu/$\sim$jos/sasp/Welch\_s\_Method.html}}, the \textit{m}-th windowed and zero padded frame is
 	
@@ -265,6 +281,9 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	\begin{align}
 		\hat{S}^W_x(w_k) = \frac{1}{K}\sum_{m=0}^{K-1}\text{PER}_{x_m,M}(w_k).
 	\end{align}
+	
+	The overall data can be windowed before computing the periodogram, reducing sidelobe level in the spectral estimate, at the expense of frequency resolution. If $w(n)$ is a rectangular window then the periodograms are formed from non-overlapping successive blocks of data (we can refer to this case as Barlett's method). For different kinds of windows the hop size $R$ cannot exceed half of the frame length $M/2$. In general $R$ is chosen so that consecutive windows overlap and add to a constant.
+	
 	
 	
 

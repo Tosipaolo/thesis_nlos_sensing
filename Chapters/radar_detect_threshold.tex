@@ -61,14 +61,9 @@ Solving this for $p_{FA,bin}$ we obtain the value of the threshold as
 
 Zero padding the periodogram does not add information useful for the target estimation problem, but it only reduces quantization noise. The contribution of a single bin is spread out between multiple contiguous bins when zero padding.
 
-Noise power is estimated from the periodogram averaging over bins where the target is not expected. For an OFDM signal the two main assumptions are:
+Noise power is estimated from the periodogram averaging over bins where the target is not expected.
 
-\begin{itemize}
-	\item the CP duration is larger than the round-trip propagation time for the furthermost target,
-	\item subcarrier spacing is at least one order of magnitude larger than the largest occurring doppler shift.
-\end{itemize}
-
-From the first assumption the maximum target delay and consequently the maximum range bin in which we can observe a target are given by
+From assumption 3 in \ref{sub:assumptions_ofdm_radar} the maximum target delay and consequently the maximum range bin in which we can observe a target are given by
 \begin{align}
 	\tau_{max} =& \frac{N_{max}}{N_{\text{Per}}}T = T_G ,\\
 	N_{max} =& \frac{T_G}{T}N_{\text{Per}}.

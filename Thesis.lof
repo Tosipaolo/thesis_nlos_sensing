@@ -6,21 +6,21 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Caption of the Figure to appear in the List of Figures.}}{7}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively}}{15}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{16}{figure.caption.37}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function}}}{17}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Transform of the windowing function, FFT over 2048 points, absolute value}}}{17}{subfigure.3.2}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames}}{18}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing}}{19}{figure.caption.44}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single processed frame, no decimation, SNR = 60,91 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 613,15$ m/s }}}{19}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Single processed frame, decimated, \newlineSNR = 45,16 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 13,05$ m/s}}}{19}{subfigure.5.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52,35 dB, \newline $v_{\text {res}} = 0,091$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{19}{subfigure.5.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {10 processed frames, decimated, combined, SNR = 54.66 dB, \newline $v_{\text {res}} = 0,054$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{19}{subfigure.5.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively}}{17}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{18}{figure.caption.37}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function}}}{19}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Transform of the windowing function, FFT over 2048 points, absolute value}}}{19}{subfigure.3.2}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames}}{20}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing}}{21}{figure.caption.44}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single processed frame, no decimation, SNR = 60,91 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 613,15$ m/s }}}{21}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Single processed frame, decimated, \newlineSNR = 45,16 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 13,05$ m/s}}}{21}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52,35 dB, \newline $v_{\text {res}} = 0,091$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{21}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {10 processed frames, decimated, combined, SNR = 54.66 dB, \newline $v_{\text {res}} = 0,054$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{21}{subfigure.5.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{25}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{27}{figure.caption.56}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{29}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Processed periodogram, separated in processing regions.}}{29}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{30}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{31}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Processed periodogram, separated in processing regions.}}{31}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{32}{figure.caption.63}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
