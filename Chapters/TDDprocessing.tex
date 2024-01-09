@@ -102,6 +102,8 @@ Without modifying the OFDM frame, the system can carry out radar processing with
 
 
     In Figures \ref{fig:TDDperiodogram1FNoDec}-\ref{fig:TDDperiodogram10frames} it is possible to observe the effects of the various strategies when applied to a OFDM radar measurement where both the NLOS and LOS components are present for a single target.
+    
+    In order to increase the number of available frames, the processed frame stride can be set to be lower then the number of combined frames. Letting the processed time-window overlap allows to increase the update rate, 
 
 
 % 2x2 figure scheme
@@ -153,3 +155,5 @@ Without modifying the OFDM frame, the system can carry out radar processing with
     \label{table:TDDstratcomparison}
 \end{table}
 
+
+\section{Effect of CP removal in multiple frame processing}
