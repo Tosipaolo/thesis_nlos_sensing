@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  9 JAN 2024 17:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  10 JAN 2024 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,14 +1025,7 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \c@theorem=\count362
 \c@proposition=\count363
 \c@algsubstate=\count364
-) (./Thesis.aux
-
-LaTeX Warning: Label `fig:Test1_moving_avg' multiply defined.
-
-
-LaTeX Warning: Label `fig:Test1_moving_avg@cref' multiply defined.
-
-)
+) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -1547,7 +1540,7 @@ Chapter 6.
 File: Images/Test1/base-lateral_view.png Graphic file (type png)
 <use Images/Test1/base-lateral_view.png>
 Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
- 25.
+ 26.
 (pdftex.def)             Requested size: 409.71692pt x 202.27254pt.
 [31
 
@@ -1556,7 +1549,7 @@ Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
 <Images/Test1/base-top_view.png, id=732, 509.5035pt x 116.3547pt>
 File: Images/Test1/base-top_view.png Graphic file (type png)
 <use Images/Test1/base-top_view.png>
-Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 36.
+Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 37.
 
 (pdftex.def)             Requested size: 455.24411pt x 103.9637pt.
  [32 <./Images/Test1/base-lateral_view.png> <./Images/Test1/base-top_view.png>]
@@ -1569,7 +1562,7 @@ ted-to.pdf>
 (epstopdf)                    size: 13983 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Test1/cali_static_p
 er_t1-eps-converted-to.pdf Images/Test1/cali_static_per_t1.eps>
-(epstopdf)             \includegraphics on input line 72.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 <Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=744, 463.7325pt x 347
 .2975pt>
@@ -1577,26 +1570,26 @@ File: Images/Test1/cali_static_per_t1-eps-converted-to.pdf Graphic file (type p
 df)
 <use Images/Test1/cali_static_per_t1-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/cali_static_per_t1-eps-converted-to.pdf  
-used on input line 72.
+used on input line 73.
 (pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
  [33 <./Images/Test1/cali_static_per_t1-eps-converted-to.pdf>]
 <Images/Test1/nlos-los-separation.png, id=787, 760.34062pt x 344.78813pt>
 File: Images/Test1/nlos-los-separation.png Graphic file (type png)
 <use Images/Test1/nlos-los-separation.png>
 Package pdftex.def Info: Images/Test1/nlos-los-separation.png  used on input li
-ne 85.
+ne 86.
 (pdftex.def)             Requested size: 409.71692pt x 185.79875pt.
  [34 <./Images/Test1/nlos-los-separation.PNG>]
 <Images/Test1/NLOS-proc-pipeline.png, id=794, 781.41937pt x 336.25626pt>
 File: Images/Test1/NLOS-proc-pipeline.png Graphic file (type png)
 <use Images/Test1/NLOS-proc-pipeline.png>
 Package pdftex.def Info: Images/Test1/NLOS-proc-pipeline.png  used on input lin
-e 108.
+e 109.
 (pdftex.def)             Requested size: 409.71692pt x 176.30629pt.
 <Images/Test1/detect_hist.png, id=797, 387.63pt x 231.702pt>
 File: Images/Test1/detect_hist.png Graphic file (type png)
 <use Images/Test1/detect_hist.png>
-Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 128.
+Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 129.
 (pdftex.def)             Requested size: 318.66948pt x 190.48123pt.
  [35 <./Images/Test1/NLOS-proc-pipeline.png (PNG copy)>]
 <Images/Test1/moving_avg-transformed_wtext.png, id=805, 1707.37875pt x 1093.083
@@ -1604,42 +1597,43 @@ Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 128.
 File: Images/Test1/moving_avg-transformed_wtext.png Graphic file (type png)
 <use Images/Test1/moving_avg-transformed_wtext.png>
 Package pdftex.def Info: Images/Test1/moving_avg-transformed_wtext.png  used on
- input line 152.
+ input line 153.
 (pdftex.def)             Requested size: 318.66948pt x 204.01866pt.
  [36 <./Images/Test1/detect_hist.png>]
-<Images/Test1/detect_hist_strong_ref.png, id=814, 346.896pt x 222.504pt>
+<Images/Test1/detect_hist_strong_ref.png, id=815, 346.896pt x 222.504pt>
 File: Images/Test1/detect_hist_strong_ref.png Graphic file (type png)
 <use Images/Test1/detect_hist_strong_ref.png>
 Package pdftex.def Info: Images/Test1/detect_hist_strong_ref.png  used on input
- line 163.
+ line 164.
 (pdftex.def)             Requested size: 318.66948pt x 204.41078pt.
-) (./Thesis.bbl [37 <./Images/Test1/moving_avg-transformed_wtext.png> <./Images
-/Test1/detect_hist_strong_ref.png>]
-Package epstopdf Info: Source file: <./Images/./raggiera_polimi.eps>
-(epstopdf)                    date: 2024-01-02 16:14:11
-(epstopdf)                    size: 1813066 bytes
-(epstopdf)             Output file: <./Images/./raggiera_polimi-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2024-01-02 16:14:11
-(epstopdf)                    size: 40456 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Images/./raggiera_polimi
--eps-converted-to.pdf ./Images/./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 1.
+ [37 <./Images/Test1/moving_avg-transformed_wtext.png> <./Images/Test1/detect_h
+ist_strong_ref.png>]
+Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
+(epstopdf)                    date: 2024-01-10 11:26:40
+(epstopdf)                    size: 40661 bytes
+(epstopdf)             Output file: <Images/Test1/kf_track-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2024-01-10 11:29:28
+(epstopdf)                    size: 35005 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/Test1/kf_track-eps-
+converted-to.pdf Images/Test1/kf_track.eps>
+(epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
-File: ./Images/./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
-<use ./Images/./raggiera_polimi-eps-converted-to.pdf>
-Package pdftex.def Info: ./Images/./raggiera_polimi-eps-converted-to.pdf  used 
-on input line 1.
-(pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [38
-
-]
+<Images/Test1/kf_track-eps-converted-to.pdf, id=825, 463.7325pt x 347.2975pt>
+File: Images/Test1/kf_track-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Test1/kf_track-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
+put line 175.
+(pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
+)
+(./Thesis.bbl [38 <./Images/Test1/kf_track-eps-converted-to.pdf>]
 Underfull \hbox (badness 1466) in paragraph at lines 67--73
 []\T1/cmr/m/n/12 S. Man-delli, M. Hen-ninger, M. Bauhofer, and T. Wild.  Sur-ve
 y on in-te-
  []
 
 [39
+
 
 ]
 ! Undefined control sequence.
@@ -1762,7 +1756,13 @@ on input line 246.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [48
 
-] (./Thesis.lof)
+] (./Thesis.lof
+Overfull \hbox (12.24883pt too wide) in paragraph at lines 30--30
+ [][] [][][]\T1/cmr/m/n/12 Detection rate ob-served for pas-sive metal re-flec-
+tor tar-get in mixed LOS/NLOS 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `Thesis.lof'.
 
@@ -1787,8 +1787,7 @@ on input line 249.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [50
 
-]
-(./Thesis.lot)
+] (./Thesis.lot)
 \tf@lot=\write7
 \openout7 = `Thesis.lot'.
 
@@ -1865,18 +1864,14 @@ See the caption package documentation for explanation.
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B3E60B36B6777BF4CDFB7F4A232C4B79;9207.
+(rerunfilecheck)             Checksum: C629E3F158984895722F47FE87DEF2D1;9218.
  ) 
 Here is how much of TeX's memory you used:
- 30673 strings out of 474174
- 576852 string characters out of 5749678
+ 30687 strings out of 474174
+ 577369 string characters out of 5749678
  1945460 words of memory out of 5000000
- 52105 multiletter control sequences out of 15000+600000
+ 52118 multiletter control sequences out of 15000+600000
  585708 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,28n,93p,1195b,678s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1904,10 +1899,10 @@ lic/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt100
 0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Thesis.pdf (64 pages, 7202119 bytes).
+Output written on Thesis.pdf (64 pages, 7235566 bytes).
 PDF statistics:
- 1137 PDF objects out of 1200 (max. 8388607)
- 890 compressed objects within 9 object streams
- 267 named destinations out of 1000 (max. 500000)
- 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1182 PDF objects out of 1200 (max. 8388607)
+ 900 compressed objects within 9 object streams
+ 268 named destinations out of 1000 (max. 500000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 

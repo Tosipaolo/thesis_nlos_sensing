@@ -3,6 +3,7 @@
 The first set of practical measurements was carried out in order to determine the presence and observe the characteristics of the non-line-of-sight component of the signal. 
 
 \section{Measurements setup}
+\label{sec:Test1_meas_scenario}
 
 The measurements were obtained using Nokia's sensing proof-of-concept described in section \ref{sec:intro-PoCarchitecture}. The system was mounted in an indoor scenario, with the receiver positioned at a height of $5,12$ m. The transmitter was positioned towards an open indoor area, located approximately 23 metres away from a warehouse rack (which was in front of a wall) and a cargo door.
 The objective was to obtain a non-line-of-sight measurement by reflecting the signal on the wall and subsequently on a moving target. 
@@ -154,13 +155,25 @@ Although obtained in a controlled single target scenario, this measure opens the
 	\label{fig:Test1_moving_avg}
 \end{figure}
 
-\subsection{Observation of detection with a strong reflector}
+\section{Observation on detection rate of a strong reflector}
 
-
+The same measurement described in the previous section was repeated by moving the strong reflector described in \ref{sec:Test1_meas_scenario} in the same pattern as in the human case.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist_strong_ref.png}
-	\caption{Detection rate observed for human target in mixed LOS/NLOS measurement.}
-	\label{fig:Test1_moving_avg}
+	\caption{Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}
+	\label{fig:Test1_detect_rate_strong_ref}
 \end{figure}
+
+The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and is not masked by clutter.
+
+Passing the NLOS measurements to a Kalman filter it was possible to track the target in the range/Doppler plane, as shown in figure \ref{fig:Test1_kf_track_strong_ref}. This result is to show that one of the main limitation of NLOS signals is the strength of the target return. Objects with large RCS are easier to separate from the noisy background and the effect of fading and obstruction is relatively small.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/Test1/kf_track.eps}
+	\caption{Output of KF tracking the target in the range/speed plane.}
+	\label{fig:Test1_kf_track_strong_ref}
+\end{figure}
+

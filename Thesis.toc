@@ -49,14 +49,14 @@
 \contentsline {subsection}{\numberline {6.2.3}Processing of the NLOS region}{35}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Observed detection rate}{35}{subsection.6.2.4}%
 \contentsline {subsubsection}{Moving average of detection rate}{36}{subsubsection*.68}%
-\contentsline {subsection}{\numberline {6.2.5}Observation of detection with a strong reflector}{37}{subsection.6.2.5}%
+\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{37}{section.6.3}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{39}{chapter*.72}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{39}{chapter*.73}%
 \vspace {2em}
 \contentsline {chapter}{\numberline {A}Appendix A}{43}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Appendix B}{45}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{47}{appendix*.76}%
-\contentsline {chapter}{List of Figures}{49}{appendix*.79}%
-\contentsline {chapter}{List of Tables}{51}{appendix*.81}%
-\contentsline {chapter}{List of Symbols}{53}{appendix*.83}%
-\contentsline {chapter}{Acknowledgements}{55}{appendix*.86}%
+\contentsline {chapter}{Abbreviations}{47}{appendix*.77}%
+\contentsline {chapter}{List of Figures}{49}{appendix*.80}%
+\contentsline {chapter}{List of Tables}{51}{appendix*.82}%
+\contentsline {chapter}{List of Symbols}{53}{appendix*.84}%
+\contentsline {chapter}{Acknowledgements}{55}{appendix*.87}%

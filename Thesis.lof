@@ -27,6 +27,7 @@
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{35}{figure.caption.66}%
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{36}{figure.caption.67}%
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{37}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{37}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{37}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{38}{figure.caption.71}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
