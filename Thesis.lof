@@ -4,12 +4,12 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Caption of the Figure to appear in the List of Figures.}}{3}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Caption of the Figure to appear in the List of Figures.}}{7}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 4.}}{7}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively}}{17}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{18}{figure.caption.37}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function}}}{19}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Transform of the windowing function, FFT over 2048 points, absolute value}}}{19}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function.}}}{19}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram of the windowing function, FFT over 2048 points.}}}{19}{subfigure.3.2}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames}}{20}{figure.caption.40}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing}}{22}{figure.caption.44}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single processed frame, no decimation, SNR = 60,91 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 613,15$ m/s }}}{22}{subfigure.5.1}%

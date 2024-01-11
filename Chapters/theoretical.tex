@@ -12,8 +12,8 @@ OFDM modulation efficiently distributes the signal over a discrete-time and disc
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.3\textwidth]{logo_polimi_scritta.eps}
-    \caption{Caption of the Figure to appear in the List of Figures.}
+    \includegraphics[width=0.7\textwidth]{images/theoretical/ofdm/ofdm_psd_mod.png}
+    \caption{Example of power spectral density of an OFDM signal with N = 4.}
     \label{fig:quadtree}
 \end{figure}
 
@@ -58,11 +58,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 
 
 \section{OFDM radar processing}
-    
-    % TODO: prob. remove or move somewhere else
-    Since OFDM signals are orthogonal to each other, data is sent at the same time without interference. This could allow OFDM-based radar systems to overcome the possible limitations of FMCW radars in terms of mutual interference \cite{Goppelt_Blöcher_Menzel_2010}.
-    %
-    
+        
     During the radar operation each OFDM frame is reflected by passive targets. The received signal is a superposition of the effect of the reflection of all the targets hit by the wave front, as described in section 3.2 of \cite{Braun2014OFDMRA}, by Braun.
     
     The received signal is then
@@ -97,13 +93,13 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     where rows are different subcarriers and columns are different time slots.
     
-    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of CP from each OFDM symbol, and computing the FFT of length $N_{subcarrriers}$ for every column of the matrix.
+    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of CP from each OFDM symbol, and computing the FFT of length $N_{\text{subcarriers}}$ for every column of the matrix.
     
     \subsection{Effect of targets on OFDM frames}
-    each target reflection will influence different elements of the frame in a different way:
+    Each target reflection will influence different elements of the frame in a different way:
     
     \begin{enumerate}
-        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $F_{TX}$ by a factor $e^{j2\pi f_D T_0 l}, l = 0, \cdots, M-1$.
+        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $F_{TX}$ by a factor $e^{j2\pi f_D T_0 l},\quad  l = 0, \cdots, M-1$.
         \item A round trip delay $\tau$ will influence each subcarrier differently, based on its frequency. The corresponding phase shift on the k-th subcarrier is $e^{-j2\pi (k\Delta f + f_0)\tau}$.
     \end{enumerate}
     
@@ -200,7 +196,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     \end{align}
     
     
-    The transform is indicated as $FFT_{N_{per}}$ where $N_{Per} \geq N$ is the length of the FFT. When the input signal has $N < N_{Per}$, it is zero padded to the length of the FFT.
+    The transform is indicated as $\text{FFT}_{N_{per}}$ where $N_{Per} \geq N$ is the length of the FFT. When the input signal has $N < N_{Per}$, it is zero padded to the length of the FFT.
     The transform can be calculated in the most efficient way when $N_{Per}$ is a power of 2, hence it is recommended to zero pad the input signal to the closest one.
 
     The input data for the periodogram is the CSI $\bm{F}$, and the periodogram is estimated in two dimensions
@@ -211,21 +207,25 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     \end{align}
 
 
-    Each target captured in the CSI, hence a sinusoid in $\bm{F}$, will result in a peak in $Per_{\bm{F}}(n,m)$. By detecting these peaks their 2D coordinates in the periodogram can be obtained, eventually using interpolation for finer precision.
-
-    For each target, its sinusoids' frequencies $\hat{\Omega}_d$ (column-wise) and $\hat{\Omega}_v$ (row-wise) are estimated.
+    Each target captured in the CSI, \ie a sinusoid in $\bm{F}$, results in a peak in $Per_{\bm{F}}(n,m)$.
+    For each target, the frequencies of its sinusoids $\hat{\Omega}_d$ (column-wise) and $\hat{\Omega}_v$ (row-wise) in $\bm{F}$ will correspond to peaks at position $(\hat{n}, \hat{m})$ in the periodogram. Inversely, if $\text{Per}_{\bm{F}}(\hat{n},\hat{m})$ is a peak value, then the corresponding oscillation frequencies in $\bm{F}$ are $\hat{\Omega}_d = 2\pi\hat{n}/N_{\text{Per}}$ column-wise and $\hat{\Omega}_v = 2\pi\hat{m}/M_{\text{Per}}$ row-wise.
+    
     These frequencies are converted into distance and relative speed as
 
     \begin{align}
-        \hat{d} &= \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta_f}, \\
-        \hat{v} &= \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_0}.
+        \hat{d} &= \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta_f} = \frac{\hat{n}c_0}{2\Delta_f N_\text{Per}}, \\
+        \hat{v} &= \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_0} =  \frac{\hat{m}c_0}{2f_cT_0 M_{\text{Per}}}.
     \end{align}
+    
+    % TODO: add from Braun's page 25
+    
+    
 
     As demonstrated by Braun, computing the periodogram results in a SNR gain of a factor $NM$. The numerator in \ref{eq:periodogram_full} is an accumulation of all the elements in $\bm{F}$ whereas the denominator is a superposition of complex Gaussian random variables.
     
 	\subsection{Window functions}
 	
-	Window functions are commonly applied to signals when computing the periodogram. This operation is done to tune the sidelobes level and enable precise detection of targets. 
+	Window functions are commonly applied to signals when computing the periodogram. This operation is done to tune the sidelobe level and enable precise detection of targets. 
 	
 		%TODO generate image w/ and w/o windowing 
 	
@@ -261,7 +261,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	
 	\subsection{Welch's method}
 	
-	This method, also known as window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by calculating the periodogram in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
+	This method, also known as window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by calculating the periodogram, in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
 	The signal is divided into $M$ data segments of $N$ samples, the periodogram is then computed separately for each segment and then averaged.
 	
 	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}\footnote{\texttt{https://ccrma.stanford.edu/$\sim$jos/sasp/Welch\_s\_Method.html}}, the \textit{m}-th windowed and zero padded frame is
@@ -282,7 +282,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 		\hat{S}^W_x(w_k) = \frac{1}{K}\sum_{m=0}^{K-1}\text{PER}_{x_m,M}(w_k).
 	\end{align}
 	
-	The overall data can be windowed before computing the periodogram, reducing sidelobe level in the spectral estimate, at the expense of frequency resolution. If $w(n)$ is a rectangular window then the periodograms are formed from non-overlapping successive blocks of data (we can refer to this case as Barlett's method). For different kinds of windows the hop size $R$ cannot exceed half of the frame length $M/2$. In general $R$ is chosen so that consecutive windows overlap and add to a constant.
+	The overall data can be windowed before computing the periodogram, reducing sidelobe level in the spectral estimate, at the expense of frequency resolution. If $w(n)$ is a rectangular window then the periodograms are formed from non-overlapping successive blocks of data (we can refer to this case as Barlett's method). For different kinds of windows the hop size $R$ shouldn't exceed half of the frame length $M/2$. In general $R$ is chosen so that consecutive windows overlap and add to a constant.
 	
 	
 	

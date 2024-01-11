@@ -6,25 +6,26 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Overview of 6G ISAC}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Technological enablers}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Sensing use-cases}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Human activities}{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Non-line-of-sight sensing}{5}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Proof of concept architecture}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}System parameters}{6}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.2}OFDM}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Sensing use-cases}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Human activities}{5}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Non-line-of-sight sensing}{5}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Proof of concept architecture}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}System parameters}{6}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}OFDM radar signal processing}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Structure of OFDM signal}{7}{section.3.1}%
-\contentsline {subsubsection}{Subcarriers and frequency spacing}{7}{subsubsection*.14}%
+\contentsline {subsubsection}{Subcarriers and frequency spacing}{8}{subsubsection*.14}%
 \contentsline {subsection}{\numberline {3.1.1}Implementation}{8}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Guard interval and cyclic prefix}{8}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}OFDM radar processing}{9}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Effect of targets on OFDM frames}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{11}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Assumptions for OFDM radar systems}{11}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{11}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{12}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Range and speed resolution}{12}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}Periodogram-based estimation algorithms}{12}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Window functions}{14}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Welch's method}{14}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Welch's method}{15}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}TDD pattern of the OFDM frame}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Ideal system performance}{18}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Effect of empty UL symbols}{18}{section.4.2}%

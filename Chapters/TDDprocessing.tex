@@ -2,7 +2,7 @@
 \label{chap:TDD pattern of the OFDM frame}
 
 
-Sensing radar processing was initially carried out on a per-OFDM-frame basis. \protect\newline Every $10$ ms the system would output a received OFDM frame for radar processing, generating an update to the target state. When processing the whole frame, the number of subcarriers and symbols is rather large, resulting in good radar performance and considerable SNR gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the presence of empty uplink (UL) symbols in the frame.
+Initially, sensing radar processing was performed on a per OFDM frame basis. \protect\newline Every $10$ ms the system would output a received OFDM frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant SNR gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the presence of empty uplink (UL) symbols in the frame.
     
 As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols and 36 UL symbols, repeated 8 times in each frame.
 
@@ -67,11 +67,11 @@ Without modifying the OFDM frame, the system can carry out radar processing with
 \begin{figure}[H]
     \centering
     
-    \subfloat[TDD windowing function\label{fig:TDDproc_rectfunct}]{%
-        \includegraphics[scale=0.5]{Images/TDDprocessing/rectFunct.eps}%
+    \subfloat[TDD windowing function.\label{fig:TDDproc_rectfunct}]{%
+        \includegraphics[scale=0.49]{Images/TDDprocessing/TDD_win.eps}%
     }\hfill
-    \subfloat[Transform of the windowing function, FFT over 2048 points, absolute value\label{fig:TDDproc_rectfunct_transform}]{%
-        \includegraphics[scale=0.335]{Images/TDDprocessing/transform_of_rectFunct1.eps}%
+    \subfloat[Periodogram of the windowing function, FFT over 2048 points.\label{fig:TDDproc_rectfunct_transform}]{%
+        \includegraphics[scale=0.49]{Images/TDDprocessing/periodogram_of_TDD_win.eps}%
     }
     
     \caption[]{}
