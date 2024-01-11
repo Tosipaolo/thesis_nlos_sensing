@@ -99,7 +99,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     Each target reflection will influence different elements of the frame in a different way:
     
     \begin{enumerate}
-        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $F_{TX}$ by a factor $e^{j2\pi f_D T_0 l},\quad  l = 0, \cdots, M-1$.
+        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $\bm{F}_{Tx}$ by a factor $e^{j2\pi f_D T_0 l},\quad  l = 0, \cdots, M-1$.
         \item A round trip delay $\tau$ will influence each subcarrier differently, based on its frequency. The corresponding phase shift on the k-th subcarrier is $e^{-j2\pi (k\Delta f + f_0)\tau}$.
     \end{enumerate}
     
@@ -129,7 +129,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     Multiple methods can be considered to solve this problem. They can be categorised as parametric, semiparametric, or nonparametric \cite{Stoica_New_Method_Parameter_Estimation}. 
     
-    In the nonparametric class the most established method is the periodogram (also referred as single-frequency least-squares method), and gives optimal results for sinusoids that are well resolved.
+    In the nonparametric class the most established method is the periodogram (also referred as single-frequency least-squares method), which gives optimal results for sinusoids that are well resolved.
     
     Other established methods, which are more computationally expensive in general, are MUSIC and ESPRIT, belonging to the parametric class.
     
@@ -147,14 +147,14 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     	\item The Doppler shift is the same on every sub-carrier.
     	\item The target’s distance remains constant during the transmission of one frame.
     	
-    	These assumptions are approximations of the actual conditions, as they are never exactly true for non-zero Doppler shifts. However they are good approximations if the center frequency of the system is far greater then the total bandwidth and if the OFDM frames duration remains in the order of milliseconds.
+    	These assumptions are approximations of the actual conditions, as they are never exactly true for non-zero Doppler shifts. However, they are good approximations if the center frequency of the system is far greater then the total bandwidth and if the OFDM frames duration remains in the order of milliseconds.
     \end{enumerate}
     
     \subsection{Non ambiguous range and speed}
     
         Due to the discrete nature of $\mathbf{F}$ range and speed measurements can be estimated without ambiguity if $|T_O f_D| < 1/2$ and $\tau \Delta f < 1$ are true.
         
-        From this, the unambiguous range and speed values of the system can be derived.
+        From this, the unambiguous range and speed values of the system can be derived as
         
         \begin{itemize}
             \item Max unambiguous range

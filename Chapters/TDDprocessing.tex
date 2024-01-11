@@ -101,11 +101,6 @@ Without modifying the OFDM frame, the system can carry out radar processing with
      This approach introduces a trade-off between SNR (processing gain) and update rate. Increasing the time-aperture, some range migration effect can be observed, especially for fast moving targets. In the context of NLOS sensing, the impact of range migration on system performance is relatively minor compared to the benefits of increased speed resolution and higher signal-to-noise ratio, since the primary goal is not providing precise tracking or positioning data.
 
 
-    In Figures \ref{fig:TDDperiodogram1FNoDec}-\ref{fig:TDDperiodogram10frames} it is possible to observe the effects of the various strategies when applied to a OFDM radar measurement where both the NLOS and LOS components are present for a single target.
-    
-    In order to increase the number of available frames, the processed frame stride can be set to be lower then the number of combined frames. Letting the processed time-window overlap allows to increase the update rate, 
-
-
 % 2x2 figure scheme
     \begin{figure}[H]
         \centering
@@ -133,6 +128,9 @@ Without modifying the OFDM frame, the system can carry out radar processing with
         \label{fig:allperiodogram-decimation}
     \end{figure}
 
+    In Figures \ref{fig:TDDperiodogram1FNoDec}-\ref{fig:TDDperiodogram10frames} it is possible to observe the effects of the various strategies when applied to a OFDM radar measurement where both the NLOS and LOS components are present for a single target.
+
+	In order to increase the number of available frames, the processed frame stride can be set to be lower then the number of combined frames. Letting the processed time-window overlap allows to increase the target update rate of the system.
 
     
 \begin{table}[H]
