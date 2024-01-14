@@ -5,8 +5,8 @@ The first set of practical measurements was carried out in order to determine th
 \section{Measurements setup}
 \label{sec:Test1_meas_scenario}
 
-The measurements were obtained using Nokia's sensing proof-of-concept described in section \ref{sec:intro-PoCarchitecture}. The system was mounted in an indoor scenario, with the receiver positioned at a height of $5,12$ m. The transmitter was positioned towards an open indoor area, located approximately 23 metres away from a warehouse rack (which was in front of a wall) and a cargo door.
-The objective was to obtain a non-line-of-sight measurement by reflecting the signal on the wall and subsequently on a moving target. 
+The measurements were obtained using Nokia's sensing proof-of-concept described in section \ref{sec:intro-PoCarchitecture}. The system was mounted in an indoor scenario, with gNB and sniffer positioned at a height of $5,12$ m. The transmitter was positioned towards an open indoor area, located approximately 23 metres away from a warehouse rack (which was in front of a wall) and a cargo door.
+The objective of the measurement was to obtain a non-line-of-sight scenario by reflecting the signal on the wall and subsequently sensing a moving target. 
 
 The tests were carried out using:
 
@@ -23,14 +23,18 @@ Before each test, a short calibration measure is performed, which includes only 
 % TODO: check if axes are needed
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Images/Test1/base-lateral_view}
+	\includegraphics[width=1\textwidth]{Images/Test1/base-lateral_view}
 	\caption{Lateral view of measurement scenario.}
 	\label{fig:Test1_base-lateral_view}
 \end{figure}
 
 \section{Moving target without obstructions}
 
-The OFDM radar system will be able to determine the range and radial speed component (the angle of arrival AOA is fixed). During the initial measurement the antenna boresight was directed perpendicular to the wall,while the target moved radially between the transmitter and reflector.
+The OFDM radar system will be able to determine the range and radial speed (the angle of arrival AOA is fixed) of a target. If an object is moving azimuthally inside the transmitted beam, it will appear as static to the sensing system.
+
+The aim of the test was to maximize the radial speed for the target under test, in order to analyze the characteristics of the signal generated from its reflection.
+
+During the initial measurement the antenna boresight was directed perpendicular to the wall,while the target moved radially between the transmitter and reflector.
 
 \begin{figure}[H]
 	\centering
@@ -61,9 +65,10 @@ Beam elevation was chosen to be as high as possible in order to avoid line-of-si
 	\label{table:Test1TXBeamParams}
 \end{table}
 
-Since only the radial component of speed can be measured, the aim of the test was to maximize this component in order to analyze the characteristics of the signal generated from the reflection.
 
 \subsection{Line-of-sight and non-line-of-sight separation}
+
+In order to process
 
 In addition to clutter removal, calibration measurements provide valuable information for the determination of the distance threshold at which targets can be accurately classified as NLOS. A portion of the calibration frames can be processed as radar frames, with a focus on the analysis of the zero-Doppler component.
 	
