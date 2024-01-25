@@ -2,7 +2,7 @@
 \label{chap:TDD pattern of the OFDM frame}
 
 
-Initially, sensing radar processing was performed on a per OFDM frame basis. \protect\newline Every $10$ ms the system would output a received OFDM frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant SNR gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the presence of empty uplink (UL) symbols in the frame.
+Initially, sensing radar processing was performed on a per OFDM frame basis. \protect\newline Every $10$ ms the system would output the received OFDM frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant SNR gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the presence of empty uplink (UL) symbols in the frame.
     
 As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols and 36 UL symbols, repeated 8 times in each frame.
 
@@ -15,7 +15,45 @@ Received UL symbols do not contain any useful information for radar processing, 
     \label{fig:CSIMatrix_DLULpattern}
 \end{figure}
 
-\section{Ideal system performance}
+
+\section{Effect of empty UL symbols}
+
+The removal of UL symbols acts as windowing the received frame in the time domain. This introduces additional spectral replicas in speed as shown in figure \ref{fig:SpectralReplicasDLULpattern}. Replicas seem to appear at a constant speed displacement from where actual targets lie, behaving similarly to replicas due to the radar's non-ambiguity speed.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Images/TDDprocessing/SpectralReplicasDLULpattern.png}
+	\caption{Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}
+	\label{fig:SpectralReplicasDLULpattern}
+\end{figure}
+
+In order to characterize the additional spectral replicas, the windowing function used to set all UL symbols to zero is analysed. The windowing pattern can be expressed in the form
+
+\begin{align}
+	&\text{rect}\left( \frac{t + \tau}{104 \cdot T_S}\right) \ast \sum_{i=0}^7 \delta\left( t - i\cdot \frac{140}{1120}\cdot T_{\text{frame}} \right),  \\
+	&T_{\text{frame}} = 1120 \cdot T_S.
+\end{align}
+
+The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, Figure \ref{fig:TDDproc_rectfunct_transform}, is a Dirichlet kernel multiplied by a train of Dirac deltas.
+
+The transform is then convoluted with the signal in frequency domain. The impulses adjacent to the one at zero-frequency in figure \ref{fig:TDDproc_rectfunct_transform} appear as replicas in the periodogram. Their power in the periodogram is lower compared with the main pulse, but strong enough to be separated from the noisy background to be detected as actual targets. System performance is limited, as replicas  reduce the effective unambiguous speed and could mask actual targets that would be detected nearby. 
+
+\begin{figure}[H]
+	\centering
+	
+	\subfloat[TDD windowing function.\label{fig:TDDproc_rectfunct}]{%
+		\includegraphics[scale=0.49]{Images/TDDprocessing/TDD_win.eps}%
+	}\hfill
+	\subfloat[Periodogram of the windowing function, FFT over 2048 points.\label{fig:TDDproc_rectfunct_transform}]{%
+		\includegraphics[scale=0.49]{Images/TDDprocessing/periodogram_of_TDD_win.eps}%
+	}
+	
+	\caption[]{}
+	\label{fig:TDDwindowingfunct}
+\end{figure}
+
+
+\section{Fundamental limits of system performance}
 
 Without modifying the OFDM frame, the system can carry out radar processing with the following performance:
 
@@ -40,43 +78,8 @@ Without modifying the OFDM frame, the system can carry out radar processing with
             \end{equation}  
 \end{itemize}
 
+These specifications are good enough for most indoor use cases. It is possible to sacrifice a part of the performance in order to apply some pre-processing steps, in order to avoid the presence of unwanted replicas in the periodogram.
 
-
-\section{Effect of empty UL symbols}
-    
-    The removal of UL symbols acts as windowing on the received frame. This introduces additional spectral replicas in speed as shown in figure \ref{fig:SpectralReplicasDLULpattern}. Replicas seem to appear at a constant speed displacement from where actual targets lie, behaving similarly to replicas due to the radar's non-ambiguity speed.
-    
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.55\textwidth]{Images/TDDprocessing/SpectralReplicasDLULpattern.png}
-        \caption{Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}
-        \label{fig:SpectralReplicasDLULpattern}
-    \end{figure}
-    
-    In order to characterize the additional spectral replicas, the windowing function used to set all UL symbols to zero is analyzed. The windowing pattern can be expressed in the form
-    
-    \begin{align}
-        &\text{rect}\left( \frac{t + \tau}{104 \cdot T_S}\right) \ast \sum_{i=0}^7 \delta\left( t - i\cdot \frac{140}{1120}\cdot T_{\text{frame}} \right),  \\
-        &T_{\text{frame}} = 1120 \cdot T_S.
-    \end{align}
-
-    The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine function multiplied by a train of Dirac deltas.
-
-    The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency in figure \ref{fig:TDDproc_rectfunct_transform} appear as replicas in the periodogram. These peaks have enough power to be detected as actual targets, limiting the system's performance by reducing the effective unambiguous speed or by masking actual targets that would be detected near the replica. 
-
-\begin{figure}[H]
-    \centering
-    
-    \subfloat[TDD windowing function.\label{fig:TDDproc_rectfunct}]{%
-        \includegraphics[scale=0.49]{Images/TDDprocessing/TDD_win.eps}%
-    }\hfill
-    \subfloat[Periodogram of the windowing function, FFT over 2048 points.\label{fig:TDDproc_rectfunct_transform}]{%
-        \includegraphics[scale=0.49]{Images/TDDprocessing/periodogram_of_TDD_win.eps}%
-    }
-    
-    \caption[]{}
-    \label{fig:TDDwindowingfunct}
-\end{figure}
 
 \section{Frame sampling strategies}
 

@@ -154,7 +154,10 @@ In the measurement scenarios it happened that, due to the systems's high range a
 
 The main consequence is that target returns end up appearing like clutter to the CA-CFAR thresholding algorithm, and no NLOS target falls above threshold.
 
-As proposed in \cite{Wagner_Feger_Stelzer_2017}, a threshold with $1/R^2$ shape can be used to address the problem. This approach is able to identify the target returns, as well as unwanted components. Since this components appear as static in the range/doppler plane, they can be filtered out using a simple Kalman filter. Since their range does not change even though their relative speed is not zero, the filter will update its covariance matrix at each step until a certain threshold is exceeded.
+As proposed in \cite{Wagner_Feger_Stelzer_2017}, a threshold with $1/R^2$ shape can be used to address the problem. 
+The exponential factor is combined with a standard CFAR threshold. CFAR is used as a constant lower bound, while the range-adjusted factor is used to account for the exponential power decay of radar returns depending on their distance.
+
+This approach is able to identify the target returns, as well as unwanted components. Since this components appear as static in the range/doppler plane, they can be filtered out using a simple Kalman filter. Since their range does not change even though their relative speed is not zero, the filter will update its covariance matrix at each step until a certain threshold is exceeded.
 
 
 

@@ -20,12 +20,12 @@ Channel information can be obtained by comparing the reflected signal with the k
 
 For 6G, the RF sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:ISAC-scheme} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
 
-\section{Technological enablers}
+\section{Spectrum choice for 6G sensing}
 
 
 Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing. Hence one of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
 
-Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHZ and 400 MHz in respectively 5G NR and mmWave NR, it can be expected from 5G evolution and 6G systems to use bandwiths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
+Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
 
 Spectrum choice will determine the overall capabilities of the system \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. The frequency ranges that are being considered for 6G \cite{Hexa} are:
 
@@ -35,10 +35,22 @@ Spectrum choice will determine the overall capabilities of the system \cite{Wild
 	\item the new Frequency Range 3 (FR3), not yet specified: from 7 to 20 GHz
 \end{itemize}
 
+Frequency range 1 is currently used for 5G capacity layers, providing bandwidth up to 100 MHz. For 6G, the main capacity layer will be placed in the "Golden Band" in 6-14 GHz, offering up to 400 MHz of bandwidth. FR2 in the millimetre frequency bands will start at 24 GHz and offer significantly more bandwidth, up to 800 MHz.
+
+Golden Band and FR2 are the most relevant candidates for defining the sensing spectrum in 6G. Their selection would make sense for wide area sensing and high resolution sensing respectively.
+
+Feasible use cases and possible scenarios will be driven by the characteristics and specifications offered by the frequency band of choice. It can be expected that FR2 will be used in micro-cellular deployments. They will be deployed in indoor environments, such as factory floors. Sensing targets in such environment will likely be pedestrians, passive factory objects and vehicles.
+Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will e vehicles for traffic monitoring, roadside safety and even detection of unmanned aerial vehicles (UAV) or drones.
+
+\section{Technological enablers}
+
+
 Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}. \\
 Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection.
 
 \section{OFDM}
+
+OFDM is the current waveform reference in ISAC. It is fully established in 4G and 5G communications systems and has also caught the attention of the radar world. OFDM provides the possibility for obtaining sensing information while retaining the communication capabilities. The main drawback of OFDM is the high peak-to-average power ratio (PAPR).
 
 % TODO: prob. remove or move somewhere else
 Since OFDM signals are orthogonal to each other, data is sent at the same time without interference. This could allow OFDM-based radar systems to overcome the possible limitations of FMCW radars in terms of mutual interference \cite{Goppelt_Blöcher_Menzel_2010}.
