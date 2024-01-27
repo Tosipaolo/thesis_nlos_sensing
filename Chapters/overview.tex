@@ -22,8 +22,8 @@ For 6G, the RF sensing capabilities should be integrated in-band, using the same
 
 \section{Spectrum choice for 6G sensing}
 
-
-Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing. Hence one of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
+% TODO: improve this
+ Hence one of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
 
 Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
 
@@ -44,8 +44,15 @@ Macro-cellular environments in the Golden Bands will dominate outdoors, where ta
 
 \section{Technological enablers}
 
+Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing.
 
-Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}. \\
+
+
+Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}.
+The general idea is to intelligently combine the signals received from multiple antennas to achieve the best signal-to-noise ratio and the highest data rate. The signal combination is performed in the digital domain, after conversion to baseband, which offers the possibility of applying a variety of algorithms.
+The all-digital approach is common at lower frequencies in 5G. For mmWave frequencies and above, digitally controlled analogue or hybrid beamforming is typically used.
+
+
 Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection.
 
 \section{OFDM}
