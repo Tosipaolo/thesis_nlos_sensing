@@ -7,12 +7,14 @@
 \contentsline {chapter}{\numberline {2}Overview of 6G ISAC}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Spectrum choice for 6G sensing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Technological enablers}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}OFDM}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Sensing use-cases}{5}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Human activities}{6}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Non-line-of-sight sensing}{6}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Proof of concept architecture}{6}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}System parameters}{7}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.2.1}Waveform candidates and OFDM}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Massive MIMO and digital beamforming}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Signal processing enhanced by AI/ML}{6}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Proof of concept architecture}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}System parameters}{6}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Sensing use-cases}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Human activities}{7}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Non-line-of-sight sensing}{7}{subsection.2.4.2}%
 \contentsline {chapter}{\numberline {3}OFDM radar signal processing}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Structure of OFDM signal}{9}{section.3.1}%
 \contentsline {subsubsection}{Subcarriers and frequency spacing}{10}{subsubsection*.14}%
@@ -28,8 +30,8 @@
 \contentsline {subsection}{\numberline {3.3.1}Window functions}{16}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Welch's method}{17}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}TDD pattern of the OFDM frame}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Effect of empty UL symbols}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Fundamental limits of system performance}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Ideal system performance}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Effect of empty UL symbols}{20}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Frame sampling strategies}{22}{section.4.3}%
 \contentsline {paragraph}{Single DL pattern:}{22}{paragraph*.41}%
 \contentsline {paragraph}{Decimation at constant interval:}{22}{paragraph*.42}%
@@ -53,11 +55,12 @@
 \contentsline {subsubsection}{Moving average of detection rate}{36}{subsubsection*.68}%
 \contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{37}{section.6.3}%
 \vspace {2em}
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{39}{chapter*.73}%
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix A}{41}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix B}{43}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{45}{appendix*.75}%
-\contentsline {chapter}{List of Figures}{47}{appendix*.78}%
-\contentsline {chapter}{List of Tables}{49}{appendix*.80}%
-\contentsline {chapter}{List of Symbols}{51}{appendix*.82}%
-\contentsline {chapter}{Acknowledgements}{53}{appendix*.85}%
+\contentsline {chapter}{\numberline {A}Appendix A}{43}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Appendix B}{45}{appendix.B}%
+\contentsline {chapter}{Abbreviations}{47}{appendix*.77}%
+\contentsline {chapter}{List of Figures}{49}{appendix*.80}%
+\contentsline {chapter}{List of Tables}{51}{appendix*.82}%
+\contentsline {chapter}{List of Symbols}{53}{appendix*.84}%
+\contentsline {chapter}{Acknowledgements}{55}{appendix*.87}%

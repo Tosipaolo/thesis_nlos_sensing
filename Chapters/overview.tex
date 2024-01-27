@@ -20,6 +20,8 @@ Channel information can be obtained by comparing the reflected signal with the k
 
 For 6G, the RF sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:ISAC-scheme} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
 
+Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection.
+
 \section{Spectrum choice for 6G sensing}
 
 % TODO: improve this
@@ -43,90 +45,102 @@ Feasible use cases and possible scenarios will be driven by the characteristics 
 Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will e vehicles for traffic monitoring, roadside safety and even detection of unmanned aerial vehicles (UAV) or drones.
 
 \section{Technological enablers}
+	
+	Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing.
+	
+	\subsection{Waveform candidates and OFDM}
+	Typical radar systems primarily employ frequency modulated continuous wave (FMCW)
+	
+	...
+	
+	Waveform design is a fundamental building block of any radar or communication systems. In typical radar systems the main waveform requirement is to have optimum autocorrelation properties, providing high dynamic range in the obtained measurements.
+	
+	...
+	
+	OFDM is the current waveform reference in ISAC. It is fully established in 4G and 5G communications systems and has also caught the attention of the radar world. OFDM provides the possibility for obtaining sensing information while retaining the communication capabilities. The main drawback of OFDM is the high peak-to-average power ratio (PAPR).
+	
+	% TODO: prob. remove or move somewhere else
+	Since OFDM signals are orthogonal to each other, data is sent at the same time without interference. This could allow OFDM-based radar systems to overcome the possible limitations of FMCW radars in terms of mutual interference \cite{Goppelt_Blöcher_Menzel_2010}.
+	%
+	
+	...
+	
+	\subsection{Massive MIMO and digital beamforming}
+	
+	Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}.
+	The general idea is to intelligently combine the signals received from multiple antennas to achieve the best signal-to-noise ratio and the highest data rate. The signal combination is performed in the digital domain, after conversion to baseband, which offers the possibility of applying a variety of algorithms.
+	
+	In 5G, beamforming commonly employs an all-digital approach at lower frequencies. However, for mmWave frequencies and above, digitally controlled analogue or hybrid beamforming is typically used. In the hybrid approach one beam gets scanned at a time. A beam sweep can be performed by the transmitting cells, and the procedure of computing the range-Doppler profile of all beams in a cell is referred to as beam sweep. A similar procedure to a beam sweep is already used in 5G NR for synchronization signalling \cite{Wild_Braun_Viswanathan_2021}.
+	
+	\subsection{Signal processing enhanced by AI/ML}
+	Generally, radar returns provide additional information beyond the range-Doppler profile. By analysing the channel information, it may be possible to extract target characteristics such as radar cross-section, micro-Doppler information, or the object's material or shape.
+	This additional information can be used to solve a classification problem of objects and returns detected in the radar datacube.
 
-Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing.
 
-
-
-Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}.
-The general idea is to intelligently combine the signals received from multiple antennas to achieve the best signal-to-noise ratio and the highest data rate. The signal combination is performed in the digital domain, after conversion to baseband, which offers the possibility of applying a variety of algorithms.
-The all-digital approach is common at lower frequencies in 5G. For mmWave frequencies and above, digitally controlled analogue or hybrid beamforming is typically used.
-
-
-Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection.
-
-\section{OFDM}
-
-OFDM is the current waveform reference in ISAC. It is fully established in 4G and 5G communications systems and has also caught the attention of the radar world. OFDM provides the possibility for obtaining sensing information while retaining the communication capabilities. The main drawback of OFDM is the high peak-to-average power ratio (PAPR).
-
-% TODO: prob. remove or move somewhere else
-Since OFDM signals are orthogonal to each other, data is sent at the same time without interference. This could allow OFDM-based radar systems to overcome the possible limitations of FMCW radars in terms of mutual interference \cite{Goppelt_Blöcher_Menzel_2010}.
-%
-
-...
+\section{Proof of concept architecture}
+	\label{sec:intro-PoCarchitecture}
+	
+	The goal of ISAC is to make the most use of the deployed communication hardware to perform sensing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. Using Option 7-2 (FFT/iFFT done in RU, frequency domain IQ transported on fronthaul) of the possible 5G splits, it is possible to use the same type of Remote Unit (RU) for both communication and sensing.
+	
+	The architecture considered in this work is based on a FR2 5G communication hardware. The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU).
+	
+	The primary gNB RU and the sniffer are mounted in proximity and are \textit{co-located}. This allows the system to behave as a monostatic radar.
+	
+	The gNB RU operates in TDD mode, while the sniffer operates only in uplink (UL) mode.
+	
+	\subsection{System parameters}
+	
+	The system specifications are indicated in table \ref{table:PoCparams}.
+	
+	\begin{table}[H]
+		%\caption*{\textbf{Title of Table (optional)}}
+		\centering 
+		\begin{tabular}{|p{9em} c c |}
+			\hline
+			\rowcolor{bluepoli!40} % comment this line to remove the color
+			\textbf{Parameter} & \textbf{Description} & \textbf{Value}  \T\B \\
+			\hline \hline
+			$\bm{f_C}$ & carrier frequency & 27,4 GHz \T\B \\
+			$\bm{B}$ & bandwidth & 200 MHz \T\B\\
+			$\bm{\Delta_f}$ & subcarrier spacing & 120 kHz  \T\B\\
+			$\bm{T_S = 1/\Delta_f + T_{CP}}$ & symbol time & 8,923 $\mu s$  \T\B\\
+			$\bm{T_{CP} = T_S/8}$ & cyclic prefix time & 1,115 $\mu s$  \T\B\\
+			$\bm{N}$ & number of subcarriers & 1584  \T\B\\
+			$\bm{M}$ & number of symbols & 1120  \B\\
+			
+			\hline
+		\end{tabular}
+		\\[10pt]
+		\caption{List of system parameters from NOKIA proof of concept installation.}
+		\label{table:PoCparams}
+	\end{table}
+	
+	The system is equipped with analog beamforming and measurements can be obtained using a fixed beam chosen by an antenna codebook.
 
 
 \section{Sensing use-cases}
 
-A number of use-cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and some of the  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
+	A number of use-cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and some of the  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
+	
+	Defining probable scenarios and use cases for ISAC 
+	
+	% TODO
+	
+	\subsection{Human activities}
+	
+	
+	
+	\subsection{Non-line-of-sight sensing}
+	
+	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity.
+	
+	Non-line-of-sight sensing could potentially offer a range of potential advantages. While not yet an established solution this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
+	
+	One significant advantage of non-line-of-sight sensing could be the ability to achieve "around the corner" detection, a capability that remains unfeasible with traditional fixed camera or LIDAR systems. By employing advanced sensing techniques and algorithms, non-line-of-sight systems have the potential to detect and track objects and individuals even when direct line-of-sight visibility is obstructed.
+	
+	Furthermore, non-line-of-sight sensing could be a cost-effective enhancement of cellular sensing systems, making them a viable alternative to expensive ad hoc systems. Instead of requiring the deployment of infrastructure or specialized equipment, early explorations of non-line-of-sight sensing suggest the possibility of leveraging existing network hardware and extend its capabilities. This potential cost efficiency could make non-line-of-sight sensing an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
+	
+	Additionally, the adoption of non-line-of-sight sensing could unlock new use cases that have yet to be fully explored. For instance, in industrial environments, the technology's potential to detect humans within obscured or complex settings could enhance safety protocols and improve accident prevention measures. Intrusion detection systems could also benefit from non-line-of-sight sensing, as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points. 
+	.
+	
 
-Defining probable scenarios and use cases for ISAC 
-
-% TODO
-
-\subsection{Human activities}
-
-
-
-\subsection{Non-line-of-sight sensing}
-
-The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity.
-
-Non-line-of-sight sensing could potentially offer a range of potential advantages. While not yet an established solution this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
-
-One significant advantage of non-line-of-sight sensing could be the ability to achieve "around the corner" detection, a capability that remains unfeasible with traditional fixed camera or LIDAR systems. By employing advanced sensing techniques and algorithms, non-line-of-sight systems have the potential to detect and track objects and individuals even when direct line-of-sight visibility is obstructed.
-
-Furthermore, non-line-of-sight sensing could be a cost-effective enhancement of cellular sensing systems, making them a viable alternative to expensive ad hoc systems. Instead of requiring the deployment of infrastructure or specialized equipment, early explorations of non-line-of-sight sensing suggest the possibility of leveraging existing network hardware and extend its capabilities. This potential cost efficiency could make non-line-of-sight sensing an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
-
-Additionally, the adoption of non-line-of-sight sensing could unlock new use cases that have yet to be fully explored. For instance, in industrial environments, the technology's potential to detect humans within obscured or complex settings could enhance safety protocols and improve accident prevention measures. Intrusion detection systems could also benefit from non-line-of-sight sensing, as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points. 
-.
-
-\section{Proof of concept architecture}
-\label{sec:intro-PoCarchitecture}
-
-The goal of ISAC is to make the most use of the deployed communication hardware to perform sensing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. Using Option 7-2 (FFT/iFFT done in RU, frequency domain IQ transported on fronthaul) of the possible 5G splits, it is possible to use the same type of Remote Unit (RU) for both communication and sensing.
-
-The architecture considered in this work is based on a FR2 5G communication hardware. The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU).
-
-The primary gNB RU and the sniffer are mounted in proximity and are \textit{co-located}. This allows the system to behave as a monostatic radar.
-
-The gNB RU operates in TDD mode, while the sniffer operates only in uplink (UL) mode.
-
-\subsection{System parameters}
-
-The system specifications are indicated in table \ref{table:PoCparams}.
-
-\begin{table}[H]
-	%\caption*{\textbf{Title of Table (optional)}}
-	\centering 
-	\begin{tabular}{|p{9em} c c |}
-		\hline
-		\rowcolor{bluepoli!40} % comment this line to remove the color
-		\textbf{Parameter} & \textbf{Description} & \textbf{Value}  \T\B \\
-		\hline \hline
-		$\bm{f_C}$ & carrier frequency & 27,4 GHz \T\B \\
-		$\bm{B}$ & bandwidth & 200 MHz \T\B\\
-		$\bm{\Delta_f}$ & subcarrier spacing & 120 kHz  \T\B\\
-		$\bm{T_S = 1/\Delta_f + T_{CP}}$ & symbol time & 8,923 $\mu s$  \T\B\\
-		$\bm{T_{CP} = T_S/8}$ & cyclic prefix time & 1,115 $\mu s$  \T\B\\
-		$\bm{N}$ & number of subcarriers & 1584  \T\B\\
-		$\bm{M}$ & number of symbols & 1120  \B\\
-		
-		\hline
-	\end{tabular}
-	\\[10pt]
-	\caption{List of system parameters from NOKIA proof of concept installation.}
-	\label{table:PoCparams}
-\end{table}
-
-The system is equipped with analog beamforming and measurements can be obtained using a fixed beam chosen by an antenna codebook.

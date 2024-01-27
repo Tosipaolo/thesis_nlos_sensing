@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 4.}}{9}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively}}{19}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{20}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{20}{figure.caption.37}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function.}}}{21}{subfigure.3.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram of the windowing function, FFT over 2048 points.}}}{21}{subfigure.3.2}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames}}{22}{figure.caption.40}%
