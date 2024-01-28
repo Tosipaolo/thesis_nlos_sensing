@@ -7,27 +7,27 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 4.}}{9}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively}}{19}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{20}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}}{20}{figure.caption.33}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function.}}}{21}{subfigure.3.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram of the windowing function, FFT over 2048 points.}}}{21}{subfigure.3.2}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames}}{22}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing}}{23}{figure.caption.44}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single processed frame, no decimation, SNR = 60,91 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 613,15$ m/s }}}{23}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Single processed frame, decimated, \newlineSNR = 45,16 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 13,05$ m/s}}}{23}{subfigure.5.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52,35 dB, \newline $v_{\text {res}} = 0,091$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{23}{subfigure.5.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {10 processed frames, decimated, combined, SNR = 54.66 dB, \newline $v_{\text {res}} = 0,054$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{23}{subfigure.5.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing}}{24}{figure.caption.44}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Standard processing, no decimation, SNR = 60,91 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 613,15$ m/s }}}{24}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Single frame, decimated, \newlineSNR = 45,16 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 13,05$ m/s}}}{24}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52,35 dB, \newline $v_{\text {res}} = 0,091$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{24}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {10 processed frames, decimated, combined, SNR = 54.66 dB, \newline $v_{\text {res}} = 0,054$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{24}{subfigure.5.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.}}{28}{figure.caption.54}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{29}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.}}{30}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{31}{figure.caption.57}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{32}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{32}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{33}{figure.caption.64}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Processed periodogram, separated in processing regions.}}{34}{figure.caption.65}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{35}{figure.caption.66}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{36}{figure.caption.67}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{37}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{37}{figure.caption.70}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{38}{figure.caption.71}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{34}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{34}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{35}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Processed periodogram, separated in processing regions.}}{36}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{37}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{38}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{39}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{39}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{40}{figure.caption.71}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
