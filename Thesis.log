@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1550,7 +1550,7 @@ Chapter 6.
 File: Images/Test1/base-lateral_view.png Graphic file (type png)
 <use Images/Test1/base-lateral_view.png>
 Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
- 26.
+ 29.
 (pdftex.def)             Requested size: 455.24411pt x 224.74942pt.
 [33
 
@@ -1559,7 +1559,7 @@ Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
 <Images/Test1/base-top_view.png, id=797, 509.5035pt x 116.3547pt>
 File: Images/Test1/base-top_view.png Graphic file (type png)
 <use Images/Test1/base-top_view.png>
-Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 41.
+Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 44.
 
 (pdftex.def)             Requested size: 455.24411pt x 103.9637pt.
  [34 <./Images/Test1/base-lateral_view.png> <./Images/Test1/base-top_view.png>]
@@ -1572,7 +1572,7 @@ ted-to.pdf>
 (epstopdf)                    size: 13983 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Test1/cali_static_p
 er_t1-eps-converted-to.pdf Images/Test1/cali_static_per_t1.eps>
-(epstopdf)             \includegraphics on input line 78.
+(epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
 <Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=808, 463.7325pt x 347
 .2975pt>
@@ -1580,27 +1580,27 @@ File: Images/Test1/cali_static_per_t1-eps-converted-to.pdf Graphic file (type p
 df)
 <use Images/Test1/cali_static_per_t1-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/cali_static_per_t1-eps-converted-to.pdf  
-used on input line 78.
+used on input line 81.
 (pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
  [35 <./Images/Test1/cali_static_per_t1-eps-converted-to.pdf>]
 <Images/Test1/nlos-los-separation.png, id=851, 760.34062pt x 344.78813pt>
 File: Images/Test1/nlos-los-separation.png Graphic file (type png)
 <use Images/Test1/nlos-los-separation.png>
 Package pdftex.def Info: Images/Test1/nlos-los-separation.png  used on input li
-ne 91.
+ne 94.
 (pdftex.def)             Requested size: 409.71692pt x 185.79875pt.
  [36 <./Images/Test1/nlos-los-separation.PNG>]
 <Images/Test1/NLOS-proc-pipeline.png, id=858, 781.41937pt x 336.25626pt>
 File: Images/Test1/NLOS-proc-pipeline.png Graphic file (type png)
 <use Images/Test1/NLOS-proc-pipeline.png>
 Package pdftex.def Info: Images/Test1/NLOS-proc-pipeline.png  used on input lin
-e 114.
+e 117.
 (pdftex.def)             Requested size: 409.71692pt x 176.30629pt.
  [37 <./Images/Test1/NLOS-proc-pipeline.png (PNG copy)>]
 <Images/Test1/detect_hist.png, id=866, 387.63pt x 231.702pt>
 File: Images/Test1/detect_hist.png Graphic file (type png)
 <use Images/Test1/detect_hist.png>
-Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 135.
+Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 138.
 (pdftex.def)             Requested size: 318.66948pt x 190.48123pt.
  [38 <./Images/Test1/detect_hist.png>]
 <Images/Test1/moving_avg-transformed_wtext.png, id=876, 1707.37875pt x 1093.083
@@ -1608,13 +1608,13 @@ Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 135.
 File: Images/Test1/moving_avg-transformed_wtext.png Graphic file (type png)
 <use Images/Test1/moving_avg-transformed_wtext.png>
 Package pdftex.def Info: Images/Test1/moving_avg-transformed_wtext.png  used on
- input line 159.
+ input line 162.
 (pdftex.def)             Requested size: 318.66948pt x 204.01866pt.
 <Images/Test1/detect_hist_strong_ref.png, id=878, 346.896pt x 222.504pt>
 File: Images/Test1/detect_hist_strong_ref.png Graphic file (type png)
 <use Images/Test1/detect_hist_strong_ref.png>
 Package pdftex.def Info: Images/Test1/detect_hist_strong_ref.png  used on input
- line 170.
+ line 173.
 (pdftex.def)             Requested size: 318.66948pt x 204.41078pt.
  [39 <./Images/Test1/moving_avg-transformed_wtext.png> <./Images/Test1/detect_h
 ist_strong_ref.png>]
@@ -1627,13 +1627,13 @@ Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
 (epstopdf)                    size: 35005 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Test1/kf_track-eps-
 converted-to.pdf Images/Test1/kf_track.eps>
-(epstopdf)             \includegraphics on input line 181.
+(epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 <Images/Test1/kf_track-eps-converted-to.pdf, id=889, 463.7325pt x 347.2975pt>
 File: Images/Test1/kf_track-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Test1/kf_track-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
-put line 181.
+put line 184.
 (pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
 )
 (./Thesis.bbl [40 <./Images/Test1/kf_track-eps-converted-to.pdf>]
@@ -1890,7 +1890,7 @@ lic/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt100
 0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Thesis.pdf (68 pages, 7288138 bytes).
+Output written on Thesis.pdf (68 pages, 7288166 bytes).
 PDF statistics:
  1248 PDF objects out of 1440 (max. 8388607)
  935 compressed objects within 10 object streams
