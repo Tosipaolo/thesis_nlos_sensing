@@ -8,7 +8,7 @@ With the objective of expanding the capabilities of the mobile network, Integrat
 
 It is said that 6G will function as a network with a sixth sense \cite{Viswanathan_Wild_2021}. Radio signals transmitted by base stations, or users do not only carry data. Propagation channels bear information about the environment in which the signal is transmitted. 
 
-Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analyzing the channel response, it is possible to extract information about position, speed, type and shape of an object.
+Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analysing the channel response, it is possible to extract information about position, speed, type and shape of an object.
 
 \begin{figure}[H]
 	\centering
@@ -29,7 +29,7 @@ Integrated sensing and communications will benefit from the current massive depl
 
 Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
 
-Spectrum choice will determine the overall capabilities of the system \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. The frequency ranges that are being considered for 6G \cite{Hexa} are:
+Spectrum choice will be the determinant factor for the definition of overall capabilities of the system. The frequency ranges that are being considered for 6G \cite{Hexa} are:
 
 \begin{itemize}
 	\item Frequency Range 1 (FR1): from 600 MHz to 6 GHz;
@@ -49,21 +49,18 @@ Macro-cellular environments in the Golden Bands will dominate outdoors, where ta
 	Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing.
 	
 	\subsection{Waveform candidates and OFDM}
-	Typical radar systems primarily employ frequency modulated continuous wave (FMCW)
 	
-	...
+	Waveform design is a fundamental building block of any radar or communication systems. 
+	Radar waveforms can be broadly classified as continuous or pulsed. Both types can be further categorised according to whether the wave is modulated in frequency or phase. 
 	
-	Waveform design is a fundamental building block of any radar or communication systems. In typical radar systems the main waveform requirement is to have optimum autocorrelation properties, providing high dynamic range in the obtained measurements.
+	The typical waveform used in stand-alone short range radar processing is based on a frequency modulated continuous wave (FMCW), largely applied in the automotive radar use case. For other radar applications numerous other waveforms have been designed (\eg chirp, pseudorandom, phase and frequency coding, etc.). Current mobile communications are dominated by single-carrier and multi-carrier waveforms (OFDM).
+	 
+	In the context of integrated communication and sensing in 6G, FMCW waveforms fall short of the available communication capacity and are unable to deliver the traffic rate expected from 6G networks. 
+	For this reason, OFDM has become the current waveform reference in ISAC. Fully established in 4G and 5G communications systems, it has also attracted the attention of the radar world.
+	In typical radar systems, the main requirement for the waveform is that it has optimum autocorrelation characteristics to provide a high dynamic range in the measurements. Multicarrier waveforms, such as OFDM, offer the possibility of obtaining sensor information by using signal processing techniques that reduce the autocorrelation requirements \cite{Sturm_Wiesbeck_2011}.The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP required for communication and radar processing.
 	
-	...
-	
-	OFDM is the current waveform reference in ISAC. It is fully established in 4G and 5G communications systems and has also caught the attention of the radar world. OFDM provides the possibility for obtaining sensing information while retaining the communication capabilities. The main drawback of OFDM is the high peak-to-average power ratio (PAPR).
-	
-	% TODO: prob. remove or move somewhere else
-	Since OFDM signals are orthogonal to each other, data is sent at the same time without interference. This could allow OFDM-based radar systems to overcome the possible limitations of FMCW radars in terms of mutual interference \cite{Goppelt_Blöcher_Menzel_2010}.
-	%
-	
-	...
+	OFDM offers great multiplexing capabilities, both in time and in frequency, by defining  \textit{OFDM resource elements}. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by PAPR constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
+
 	
 	\subsection{Massive MIMO and digital beamforming}
 	

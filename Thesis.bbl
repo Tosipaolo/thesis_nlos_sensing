@@ -11,14 +11,6 @@ K.~Braun.
 \newblock 2014.
 \newblock URL \url{https://d-nb.info/104838490X/34}.
 
-\bibitem[Goppelt et~al.(2010)Goppelt, Blöcher, and
-  Menzel]{Goppelt_Blöcher_Menzel_2010}
-M.~Goppelt, H.-L. Blöcher, and W.~Menzel.
-\newblock Automotive radar – investigation of mutual interference mechanisms.
-\newblock 8:\penalty0 55–60, Sept. 2010.
-\newblock ISSN 1684-9965.
-\newblock \doi{10.5194/ars-8-55-2010}.
-
 \bibitem[Henninger et~al.(2022)Henninger, Abrudan, Mandelli, Arnold, Saur,
   Kolmonen, Klein, Schlitter, and
   Brink]{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
@@ -128,6 +120,15 @@ P.~Stoica, P.~Babu, and J.~Li.
 \newblock \emph{IEEE Transactions on Signal Processing}, 59\penalty0
   (1):\penalty0 35--47, 2011.
 \newblock \doi{10.1109/TSP.2010.2086452}.
+
+\bibitem[Sturm and Wiesbeck(2011)]{Sturm_Wiesbeck_2011}
+C.~Sturm and W.~Wiesbeck.
+\newblock Waveform design and signal processing aspects for fusion of wireless
+  communications and radar sensing.
+\newblock \emph{Proceedings of the IEEE}, 99\penalty0 (7):\penalty0
+  1236–1259, July 2011.
+\newblock ISSN 0018-9219, 1558-2256.
+\newblock \doi{10.1109/JPROC.2011.2131110}.
 
 \bibitem[Viswanathan and Wild(2021)]{Viswanathan_Wild_2021}
 H.~Viswanathan and T.~Wild.

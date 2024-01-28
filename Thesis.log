@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  27 JAN 2024 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1619,7 +1619,7 @@ put line 181.
 (pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
 )
 (./Thesis.bbl [38 <./Images/Test1/kf_track-eps-converted-to.pdf>]
-Underfull \hbox (badness 1466) in paragraph at lines 67--73
+Underfull \hbox (badness 1466) in paragraph at lines 59--65
 []\T1/cmr/m/n/12 S. Man-delli, M. Hen-ninger, M. Bauhofer, and T. Wild.  Sur-ve
 y on in-te-
  []
@@ -1628,13 +1628,13 @@ y on in-te-
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 133--137
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 []\T1/cmr/m/n/12 H. Viswanathan and T. Wild.  Build-ing a net-work with a sixth
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--137
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 \T1/cmr/m/n/12 sense, Apr 2021.  URL [][]$\T1/cmtt/m/n/12 https : / / www . bel
 l-[]labs . com / institute / blog /
  []
@@ -1842,7 +1842,7 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  30693 strings out of 474174
- 577319 string characters out of 5749678
+ 577277 string characters out of 5749678
  1949460 words of memory out of 5000000
  52119 multiletter control sequences out of 15000+600000
  585708 words of font info for 103 fonts, out of 8000000 for 9000
@@ -1872,7 +1872,7 @@ lic/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt100
 0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Thesis.pdf (66 pages, 7284830 bytes).
+Output written on Thesis.pdf (66 pages, 7285437 bytes).
 PDF statistics:
  1239 PDF objects out of 1440 (max. 8388607)
  928 compressed objects within 10 object streams

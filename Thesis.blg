@@ -5,7 +5,6 @@ The style file: abbrvnat.bst
 Database file #1: Thesis_bibliography.bib
 Warning--I didn't find a database entry for "SASPWEB2011"
 Warning--empty booktitle in Braun2014OFDMRA
-Warning--empty journal in Goppelt_Blöcher_Menzel_2010
 Warning--empty journal in Henninger_Mandelli_Grudnitsky_Wild_Brink_2023
 Warning--there's a number but no volume in Henninger_Mandelli_Grudnitsky_Wild_Brink_2023
 Warning--empty year in Hexa
@@ -19,43 +18,43 @@ Warning--empty journal in Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023
 Warning--there's a number but no volume in Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023
 You've used 22 entries,
             2773 wiz_defined-function locations,
-            772 strings with 10009 characters,
-and the built_in function-call counts, 10909 in all, are:
-= -- 995
-> -- 615
-< -- 13
-+ -- 211
-- -- 189
-* -- 890
-:= -- 1644
+            773 strings with 10045 characters,
+and the built_in function-call counts, 10901 in all, are:
+= -- 998
+> -- 606
+< -- 14
++ -- 208
+- -- 186
+* -- 886
+:= -- 1640
 add.period$ -- 103
 call.type$ -- 22
-change.case$ -- 125
+change.case$ -- 124
 chr.to.int$ -- 22
-cite$ -- 57
-duplicate$ -- 512
-empty$ -- 859
-format.name$ -- 213
-if$ -- 2338
+cite$ -- 56
+duplicate$ -- 511
+empty$ -- 863
+format.name$ -- 212
+if$ -- 2340
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 24
 newline$ -- 151
 num.names$ -- 80
-pop$ -- 261
+pop$ -- 257
 preamble$ -- 1
-purify$ -- 109
+purify$ -- 108
 quote$ -- 0
-skip$ -- 415
+skip$ -- 416
 stack$ -- 0
-substring$ -- 309
-swap$ -- 95
+substring$ -- 321
+swap$ -- 96
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 217
-warning$ -- 13
+warning$ -- 12
 while$ -- 72
 width$ -- 0
-write$ -- 347
-(There were 14 warnings)
+write$ -- 348
+(There were 13 warnings)
