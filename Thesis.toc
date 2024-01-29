@@ -8,59 +8,60 @@
 \contentsline {section}{\numberline {2.1}Spectrum choice for 6G sensing}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Technological enablers}{5}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Waveform candidates and OFDM}{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Massive MIMO and digital beamforming}{6}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Signal processing enhanced by AI/ML}{6}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Proof of concept architecture}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}System parameters}{7}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Sensing use-cases}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Human activities}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Non-line-of-sight sensing}{7}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}OFDM radar signal processing}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Structure of OFDM signal}{9}{section.3.1}%
-\contentsline {subsubsection}{Subcarriers and frequency spacing}{10}{subsubsection*.14}%
-\contentsline {subsection}{\numberline {3.1.1}Implementation}{10}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Guard interval and cyclic prefix}{10}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}OFDM radar processing}{11}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Effect of targets on OFDM frames}{12}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{13}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Assumptions for OFDM radar systems}{13}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{14}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Range and speed resolution}{14}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Periodogram-based estimation algorithms}{14}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Window functions}{16}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Welch's method}{17}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}TDD pattern of the OFDM frame}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Effect of empty UL symbols}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}PoC's fundamental performance limits}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Frame sampling strategies}{22}{section.4.3}%
-\contentsline {paragraph}{Single DL pattern:}{22}{paragraph*.41}%
-\contentsline {paragraph}{Decimation at constant interval:}{22}{paragraph*.42}%
-\contentsline {paragraph}{Decimation and multi-frame processing:}{23}{paragraph*.43}%
-\contentsline {section}{\numberline {4.4}Effect of CP removal in multiple frame processing}{25}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Radar detection and thresholding}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Constant False Alarm Rate}{28}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Cell-averaging CFAR}{29}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Performance of CA-CFAR}{30}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Robust CA-CFAR}{31}{subsection.5.2.2}%
-\contentsline {paragraph}{Greatest-of CA-CFAR:}{31}{paragraph*.58}%
-\contentsline {paragraph}{Censored-statistics CA-CFAR:}{32}{paragraph*.59}%
-\contentsline {section}{\numberline {5.3}Range-adjusted exponential threshold}{32}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{33}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Measurements setup}{33}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Moving target without obstructions}{34}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Line-of-sight and non-line-of-sight separation}{35}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Line-of-sight component as ground truth}{36}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Processing of the NLOS region}{37}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Observed detection rate}{37}{subsection.6.2.4}%
-\contentsline {subsubsection}{Moving average of detection rate}{38}{subsubsection*.68}%
-\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{39}{section.6.3}%
+\contentsline {subsection}{\numberline {2.2.2}5G functional splits}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Massive MIMO and digital beamforming}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Signal processing enhanced by AI/ML}{7}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Proof of concept architecture}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}System parameters}{8}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Sensing use-cases}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Human activities}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Non-line-of-sight sensing}{9}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}OFDM radar signal processing}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Structure of OFDM signal}{11}{section.3.1}%
+\contentsline {subsubsection}{Subcarriers and frequency spacing}{12}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {3.1.1}Implementation}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Guard interval and cyclic prefix}{12}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}OFDM radar processing}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Effect of targets on OFDM frames}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Assumptions for OFDM radar systems}{15}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{16}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Range and speed resolution}{16}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Periodogram-based estimation algorithms}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Window functions}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Welch's method}{19}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}TDD pattern of the OFDM frame}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Effect of empty UL symbols}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}PoC's fundamental performance limits}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Frame sampling strategies}{24}{section.4.3}%
+\contentsline {paragraph}{Single DL pattern:}{24}{paragraph*.42}%
+\contentsline {paragraph}{Decimation at constant interval:}{24}{paragraph*.43}%
+\contentsline {paragraph}{Decimation and multi-frame processing:}{25}{paragraph*.44}%
+\contentsline {section}{\numberline {4.4}Effect of CP removal in multiple frame processing}{27}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Radar detection and thresholding}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Constant False Alarm Rate}{30}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Cell-averaging CFAR}{31}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Performance of CA-CFAR}{32}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Robust CA-CFAR}{33}{subsection.5.2.2}%
+\contentsline {paragraph}{Greatest-of CA-CFAR:}{33}{paragraph*.59}%
+\contentsline {paragraph}{Censored-statistics CA-CFAR:}{34}{paragraph*.60}%
+\contentsline {section}{\numberline {5.3}Range-adjusted exponential threshold}{34}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Measurements setup}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Moving target without obstructions}{36}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Line-of-sight and non-line-of-sight separation}{37}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Line-of-sight component as ground truth}{38}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Processing of the NLOS region}{39}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Observed detection rate}{39}{subsection.6.2.4}%
+\contentsline {subsubsection}{Moving average of detection rate}{40}{subsubsection*.69}%
+\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{41}{section.6.3}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{41}{chapter*.73}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{43}{chapter*.74}%
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix A}{45}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix B}{47}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{49}{appendix*.77}%
-\contentsline {chapter}{List of Figures}{51}{appendix*.80}%
-\contentsline {chapter}{List of Tables}{53}{appendix*.82}%
-\contentsline {chapter}{List of Symbols}{55}{appendix*.84}%
-\contentsline {chapter}{Acknowledgements}{57}{appendix*.87}%
+\contentsline {chapter}{\numberline {A}Appendix A}{47}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Appendix B}{49}{appendix.B}%
+\contentsline {chapter}{Abbreviations}{51}{appendix*.78}%
+\contentsline {chapter}{List of Figures}{53}{appendix*.81}%
+\contentsline {chapter}{List of Tables}{55}{appendix*.83}%
+\contentsline {chapter}{List of Symbols}{57}{appendix*.85}%
+\contentsline {chapter}{Acknowledgements}{59}{appendix*.88}%

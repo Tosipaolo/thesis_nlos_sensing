@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -45,6 +45,16 @@ R.~Keating, M.~Saily, J.~Hulkkonen, and J.~Karjalainen.
 \newblock ISBN 978-1-72812-527-5.
 \newblock \doi{10.1109/ISWCS.2019.8877160}.
 \newblock URL \url{https://ieeexplore.ieee.org/document/8877160/}.
+
+\bibitem[Larsen et~al.(2019)Larsen, Checko, and
+  Christiansen]{Larsen_Checko_Christiansen_2019}
+L.~M.~P. Larsen, A.~Checko, and H.~L. Christiansen.
+\newblock A survey of the functional splits proposed for 5g mobile crosshaul
+  networks.
+\newblock \emph{IEEE Communications Surveys \& Tutorials}, 21\penalty0
+  (1):\penalty0 146–172, 2019.
+\newblock ISSN 1553-877X.
+\newblock \doi{10.1109/COMST.2018.2868805}.
 
 \bibitem[Larsson et~al.(2014)Larsson, Edfors, Tufvesson, and
   Marzetta]{MIMO-next-gen}

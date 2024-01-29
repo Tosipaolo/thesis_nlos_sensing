@@ -16,45 +16,45 @@ Warning--empty publisher in OFDMWireless
 Warning--empty booktitle in Schaich_Wild_2014
 Warning--empty journal in Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023
 Warning--there's a number but no volume in Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023
-You've used 22 entries,
+You've used 23 entries,
             2773 wiz_defined-function locations,
-            773 strings with 10045 characters,
-and the built_in function-call counts, 10901 in all, are:
-= -- 998
-> -- 606
+            782 strings with 10337 characters,
+and the built_in function-call counts, 11439 in all, are:
+= -- 1048
+> -- 636
 < -- 14
-+ -- 208
-- -- 186
-* -- 886
-:= -- 1640
-add.period$ -- 103
-call.type$ -- 22
-change.case$ -- 124
-chr.to.int$ -- 22
-cite$ -- 56
-duplicate$ -- 511
-empty$ -- 863
-format.name$ -- 212
-if$ -- 2340
++ -- 218
+- -- 195
+* -- 938
+:= -- 1724
+add.period$ -- 108
+call.type$ -- 23
+change.case$ -- 130
+chr.to.int$ -- 23
+cite$ -- 58
+duplicate$ -- 532
+empty$ -- 906
+format.name$ -- 222
+if$ -- 2452
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 151
-num.names$ -- 80
-pop$ -- 257
+missing$ -- 25
+newline$ -- 158
+num.names$ -- 84
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 113
 quote$ -- 0
-skip$ -- 416
+skip$ -- 431
 stack$ -- 0
-substring$ -- 321
-swap$ -- 96
+substring$ -- 350
+swap$ -- 97
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 217
+type$ -- 228
 warning$ -- 12
-while$ -- 72
+while$ -- 76
 width$ -- 0
-write$ -- 348
+write$ -- 365
 (There were 13 warnings)

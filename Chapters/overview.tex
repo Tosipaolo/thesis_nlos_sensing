@@ -60,7 +60,24 @@ Macro-cellular environments in the Golden Bands will dominate outdoors, where ta
 	In typical radar systems, the main requirement for the waveform is that it has optimum autocorrelation characteristics to provide a high dynamic range in the measurements. Multicarrier waveforms, such as OFDM, offer the possibility of obtaining sensor information by using signal processing techniques that reduce the autocorrelation requirements \cite{Sturm_Wiesbeck_2011}.The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP required for communication and radar processing.
 	
 	OFDM offers great multiplexing capabilities, both in time and in frequency, by defining  \textit{OFDM resource elements}. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by PAPR constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
+	
+	\subsection{5G functional splits}
+	
+	A functional split determines the number of functions implemented locally at the antenna site and, consequently, the functions to be implemented in a centralised datacenter \cite{Larsen_Checko_Christiansen_2019}. 
+ 	This solution was developed to define a flexible approach to the centralised radio access network (C-RAN) concept, that could work with the high data rates expected in 5G. 
+	In NR, the radio processing stack defined by 3GPP is split between a distributed unit (DU) and a centralised unit (CU). 
+	The general idea is to keep functions close to the user in the DU, while placing more complex and computationally intensive functions in the CU. The CU is usually represented by powerful datacenters.
+	Allocating more functions in the DU means less traffic on the fronthaul network, but requires more powerful and expensive hardware at the antenna site.
+	 
+	Functional splits allow for a fairly flexible architecture of the system. Additional functionality, such as network sensing, can be implemented at the antenna site by adding dedicated processing hardware.
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{Images/overview/5Gsplits_Larsen.png}
+		\caption{Scheme representing the LTE protocol stack, showing proposed functional splits \cite{Larsen_Checko_Christiansen_2019}. }
+		\label{fig:Overview-LTE_stack_splits}
+	\end{figure}
+	 
 	
 	\subsection{Massive MIMO and digital beamforming}
 	
@@ -79,11 +96,28 @@ Macro-cellular environments in the Golden Bands will dominate outdoors, where ta
 \section{Proof of concept architecture}
 	\label{sec:intro-PoCarchitecture}
 	
-	The goal of ISAC is to make the most use of the deployed communication hardware to perform sensing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. Using Option 7-2 (FFT/iFFT done in RU, frequency domain IQ transported on fronthaul) of the possible 5G splits, it is possible to use the same type of Remote Unit (RU) for both communication and sensing.
+	One of the objectives of ISAC is to make the best use of the deployed communication hardware to perform sensing. 
+	The architecture considered in this work is based on a FR2 5G commercial communication hardware.
 	
-	The architecture considered in this work is based on a FR2 5G communication hardware. The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU).
+	Using option 7-2 of the proposed 5G splits, shown in Figure \ref{fig:Overview-LTE_stack_splits}, it is possible to use the same type of Remote Unit (RU) for both communication and sensing.
+	Option 7-2 splits the network at the physical layer (PHY) level, which handles the conversion of digital data to the analogue radio signal in the downlink (DL) direction, while doing the opposite in the uplink (UL) direction.
+	This split defines the FFT/iFFT performed in the RU, while the frequency domain IQ is transported on the fronthaul.
 	
-	The primary gNB RU and the sniffer are mounted in proximity and are \textit{co-located}. This allows the system to behave as a monostatic radar.
+	The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU). The sniffer is synchronized with the gNB by the same synchronization source
+	
+	The primary gNB RU and the sniffer are mounted in proximity and are \textit{co-located}. This allows the system to behave as a monostatic radar.The SPU receives the complex IQ signal as input for further sensing processing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.\
+	
+	The SPU processing chain for sensing is structured as follows:
+	
+	\begin{itemize}
+		\item \textit{Reference and reflected signal reception}. Receive and process packets from gNB and Sniffer. Each radio frame has dimension $NxM$, where N is the number of subcarriers and M the number of OFDM symbols.
+		\item \textit{Channel computation}. Channel information is obtained by performing element-wise division between received and transmitted frames.
+		\item \textit{Clutter removal}. Before every measurement, the channel of the corresponding scenario without targets is saved during a calibration step and it is subtracted from the reflected signal at runtime.
+		\item \textit{Periodogram computation}. The spectral response of the channel information is obtained by computing N FFTs followed by M iFFTs on the result. The response is then converted in a 2D Range-Doppler map of the observed targets. 
+		\item \textit{Peak extraction}. Identifying the peaks in the periodogram allows to retrieve the range-speed information of targets present on the scene.
+		\item \textit{Target tracking}. A Kalman Filter (KF) can be used to track the detected targets. 
+	\end{itemize} 
+	A more detailed description on how the processing chain is structured,  based on \cite{Braun2014OFDMRA}, will be presented in Chapter \ref{chap:theoretical_OFDM}.
 	
 	The gNB RU operates in TDD mode, while the sniffer operates only in uplink (UL) mode.
 	
@@ -124,22 +158,23 @@ Macro-cellular environments in the Golden Bands will dominate outdoors, where ta
 	Defining probable scenarios and use cases for ISAC 
 	
 	% TODO
+	...
 	
 	\subsection{Human activities}
 	
-	
+	...
 	
 	\subsection{Non-line-of-sight sensing}
 	
 	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity.
 	
-	Non-line-of-sight sensing could potentially offer a range of potential advantages. While not yet an established solution this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
+	Non-line-of-sight sensing could potentially offer a range of potential advantages. While not yet an established solution, this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
 	
 	One significant advantage of non-line-of-sight sensing could be the ability to achieve "around the corner" detection, a capability that remains unfeasible with traditional fixed camera or LIDAR systems. By employing advanced sensing techniques and algorithms, non-line-of-sight systems have the potential to detect and track objects and individuals even when direct line-of-sight visibility is obstructed.
 	
 	Furthermore, non-line-of-sight sensing could be a cost-effective enhancement of cellular sensing systems, making them a viable alternative to expensive ad hoc systems. Instead of requiring the deployment of infrastructure or specialized equipment, early explorations of non-line-of-sight sensing suggest the possibility of leveraging existing network hardware and extend its capabilities. This potential cost efficiency could make non-line-of-sight sensing an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
 	
 	Additionally, the adoption of non-line-of-sight sensing could unlock new use cases that have yet to be fully explored. For instance, in industrial environments, the technology's potential to detect humans within obscured or complex settings could enhance safety protocols and improve accident prevention measures. Intrusion detection systems could also benefit from non-line-of-sight sensing, as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points. 
-	.
+	
 	
 
