@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  29 JAN 2024 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  30 JAN 2024 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,11 +1350,11 @@ on input line 15.
 
 ] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 [5]
-<Images/overview/5Gsplits_Larsen.png, id=402, 510.90875pt x 588.69937pt>
+<Images/overview/5Gsplits_Larsen.png, id=403, 510.90875pt x 588.69937pt>
 File: Images/overview/5Gsplits_Larsen.png Graphic file (type png)
 <use Images/overview/5Gsplits_Larsen.png>
 Package pdftex.def Info: Images/overview/5Gsplits_Larsen.png  used on input lin
-e 76.
+e 78.
 (pdftex.def)             Requested size: 227.62206pt x 262.27132pt.
  [6 <./Images/overview/5Gsplits_Larsen.png (PNG copy)>] [7] [8] [9])
 (./Chapters/theoretical.tex [10]
@@ -1644,23 +1644,17 @@ Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
 put line 184.
 (pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
 )
-(./Thesis.bbl [42 <./Images/Test1/kf_track-eps-converted-to.pdf>]
-Underfull \hbox (badness 1466) in paragraph at lines 69--75
-[]\T1/cmr/m/n/12 S. Man-delli, M. Hen-ninger, M. Bauhofer, and T. Wild.  Sur-ve
-y on in-te-
- []
-
-[43
+(./Thesis.bbl [42 <./Images/Test1/kf_track-eps-converted-to.pdf>] [43
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
 []\T1/cmr/m/n/12 H. Viswanathan and T. Wild.  Build-ing a net-work with a sixth
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
 \T1/cmr/m/n/12 sense, Apr 2021.  URL [][]$\T1/cmtt/m/n/12 https : / / www . bel
 l-[]labs . com / institute / blog /
  []
@@ -1846,11 +1840,11 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F900702D7FF1D2D76C6FE52141CA5BD4;10380.
+(rerunfilecheck)             Checksum: 7346EC714B5563D29CC0B65E61843D32;10387.
  ) 
 Here is how much of TeX's memory you used:
  30713 strings out of 474174
- 577893 string characters out of 5749678
+ 577799 string characters out of 5749678
  1949460 words of memory out of 5000000
  52132 multiletter control sequences out of 15000+600000
  585708 words of font info for 103 fonts, out of 8000000 for 9000
@@ -1880,10 +1874,10 @@ lic/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt100
 0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Thesis.pdf (70 pages, 7336791 bytes).
+Output written on Thesis.pdf (70 pages, 7336470 bytes).
 PDF statistics:
- 1274 PDF objects out of 1440 (max. 8388607)
- 957 compressed objects within 10 object streams
+ 1275 PDF objects out of 1440 (max. 8388607)
+ 958 compressed objects within 10 object streams
  280 named destinations out of 1000 (max. 500000)
  592 words of extra memory for PDF output out of 10000 (max. 10000000)
 

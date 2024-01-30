@@ -5,41 +5,43 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Hex()]{Hexa}
+{Hexa Project: An European project aiming at the sustainable, inclusive, and
+  trustworthy 6G platform.}
+\newblock URL \url{https://hexa-x-ii.eu/}.
+
 \bibitem[Braun(2014)]{Braun2014OFDMRA}
 K.~Braun.
-\newblock Ofdm radar algorithms in mobile communication networks.
-\newblock 2014.
-\newblock URL \url{https://d-nb.info/104838490X/34}.
+\newblock \emph{OFDM Radar Algorithms in Mobile Communication Networks}.
+\newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
+  2014.
+\newblock URL \url{https://publikationen.bibliothek.kit.edu/1000038892}.
 
 \bibitem[Henninger et~al.(2022)Henninger, Abrudan, Mandelli, Arnold, Saur,
   Kolmonen, Klein, Schlitter, and
   Brink]{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
 M.~Henninger, T.~E. Abrudan, S.~Mandelli, M.~Arnold, S.~Saur, V.-M. Kolmonen,
-  S.~Klein, T.~Schlitter, and S.~t. Brink.
-\newblock Probabilistic 5g indoor positioning proof of concept with outlier
-  rejection.
+  S.~Klein, T.~Schlitter, and S.~T. Brink.
+\newblock {Probabilistic 5G Indoor Positioning Proof of Concept with Outlier
+  Rejection}.
 \newblock In \emph{2022 Joint European Conference on Networks and
   Communications \& 6G Summit (EuCNC/6G Summit)}, page 249–254, June 2022.
 \newblock \doi{10.1109/EuCNC/6GSummit54941.2022.9815663}.
-\newblock URL \url{http://arxiv.org/abs/2207.08512}.
-\newblock arXiv:2207.08512 [eess].
+\newblock URL \url{https://ieeexplore.ieee.org/document/9815663}.
 
-\bibitem[Henninger et~al.(2023)Henninger, Mandelli, Grudnitsky, Wild, and
-  Brink]{Henninger_Mandelli_Grudnitsky_Wild_Brink_2023}
-M.~Henninger, S.~Mandelli, A.~Grudnitsky, T.~Wild, and S.~t. Brink.
+\bibitem[Henninger et~al.(2023)Henninger, Mandelli, Grudnitsky, Wild, and ten
+  Brink]{Henninger_CRAP_2023}
+M.~Henninger, S.~Mandelli, A.~Grudnitsky, T.~Wild, and S.~ten Brink.
 \newblock Crap: Clutter removal with acquisitions under phase noise.
-\newblock \penalty0 (arXiv:2306.00598), June 2023.
-\newblock \doi{10.48550/arXiv.2306.00598}.
-\newblock URL \url{http://arxiv.org/abs/2306.00598}.
-
-\bibitem[Hexa project()]{Hexa}
-Hexa project.
-\newblock URL \url{https://hexa-x-ii.eu/}.
+\newblock In \emph{2023 2nd International Conference on 6G Networking (6GNet)},
+  pages 1--8, October 2023.
+\newblock \doi{10.1109/6GNet58894.2023.10317664}.
+\newblock URL \url{https://ieeexplore.ieee.org/document/10317664}.
 
 \bibitem[Keating et~al.(2019)Keating, Saily, Hulkkonen, and
   Karjalainen]{Keating_Saily_Hulkkonen_Karjalainen_2019}
 R.~Keating, M.~Saily, J.~Hulkkonen, and J.~Karjalainen.
-\newblock Overview of positioning in 5g new radio.
+\newblock {Overview of Positioning in 5G New Radio}.
 \newblock In \emph{2019 16th International Symposium on Wireless Communication
   Systems (ISWCS)}, page 320–324, Oulu, Finland, Aug. 2019. IEEE.
 \newblock ISBN 978-1-72812-527-5.
@@ -49,16 +51,17 @@ R.~Keating, M.~Saily, J.~Hulkkonen, and J.~Karjalainen.
 \bibitem[Larsen et~al.(2019)Larsen, Checko, and
   Christiansen]{Larsen_Checko_Christiansen_2019}
 L.~M.~P. Larsen, A.~Checko, and H.~L. Christiansen.
-\newblock A survey of the functional splits proposed for 5g mobile crosshaul
-  networks.
+\newblock {A Survey of the Functional Splits Proposed for 5G Mobile Crosshaul
+  Networks}.
 \newblock \emph{IEEE Communications Surveys \& Tutorials}, 21\penalty0
   (1):\penalty0 146–172, 2019.
 \newblock ISSN 1553-877X.
 \newblock \doi{10.1109/COMST.2018.2868805}.
 
-\bibitem[Larsson et~al.(2014)Larsson, Edfors, Tufvesson, and
-  Marzetta]{MIMO-next-gen}
-E.~G. Larsson, O.~Edfors, F.~Tufvesson, and T.~L. Marzetta.
+\bibitem[{Larsson, Erik G. and Edfors, Ove and Tufvesson, Fredrik and Marzetta,
+  Thomas L.}(2014)]{MIMO-next-gen}
+{Larsson, Erik G. and Edfors, Ove and Tufvesson, Fredrik and Marzetta, Thomas
+  L.}
 \newblock Massive mimo for next generation wireless systems.
 \newblock \emph{IEEE Communications Magazine}, 52\penalty0 (2):\penalty0
   186--195, 2014.
@@ -67,15 +70,16 @@ E.~G. Larsson, O.~Edfors, F.~Tufvesson, and T.~L. Marzetta.
 \bibitem[Mandelli et~al.(2023)Mandelli, Henninger, Bauhofer, and
   Wild]{Mandelli_Henninger_Bauhofer_Wild_2023}
 S.~Mandelli, M.~Henninger, M.~Bauhofer, and T.~Wild.
-\newblock Survey on integrated sensing and communication performance modeling
-  and use cases feasibility.
-\newblock \penalty0 (arXiv:2305.07144), June 2023.
-\newblock URL \url{http://arxiv.org/abs/2305.07144}.
-\newblock arXiv:2305.07144 [eess].
+\newblock {Survey on Integrated Sensing and Communication Performance Modeling
+  and Use Cases Feasibility}.
+\newblock In \emph{2023 2nd International Conference on 6G Networking (6GNet)},
+  page 1–8, Oct. 2023.
+\newblock \doi{10.1109/6GNet58894.2023.10317691}.
+\newblock URL \url{https://ieeexplore.ieee.org/document/10317691}.
 
 \bibitem[NOKIA, 6G explained()]{6G-explained-NOKIA}
 NOKIA, 6G explained.
-\newblock Nokia, 6g explained.
+\newblock {NOKIA, 6G explained}.
 \newblock URL
   \url{https://www.nokia.com/about-us/newsroom/articles/6g-explained/}.
 
@@ -90,20 +94,19 @@ J.~Proakis.
 \newblock Electrical engineering series. McGraw-Hill, 2001.
 \newblock ISBN 978-0-07-232111-1.
 
-\bibitem[Richards(2005)]{Richards_2014}
-M.~Richards.
-\newblock \emph{Fundamentals of Radar Signal Processing}.
-\newblock Professional Engineering. McGraw-Hill Education, 2005.
-\newblock ISBN 978-0-07-177648-6.
-\newblock URL \url{https://books.google.it/books?id=j91oJ22ldoQC}.
-
 \bibitem[Richards et~al.(2010)Richards, Scheer, and
   Holm]{Richards_Scheer_Holm_2010}
 M.~Richards, J.~Scheer, and W.~Holm.
-\newblock \emph{Principles of Modern Radar}.
+\newblock \emph{{Principles of Modern Radar}}.
 \newblock Principles of Modern Radar. SciTech Pub., 2010.
 \newblock ISBN 978-1-891121-52-4.
 \newblock URL \url{https://books.google.it/books?id=w-MPDQAAQBAJ}.
+
+\bibitem[Richards(2014)]{Richards_2014}
+M.~A. Richards.
+\newblock \emph{{Fundamentals of radar signal processing}}.
+\newblock McGraw-Hill Education, New York, second edition edition, 2014.
+\newblock ISBN 978-0-07-179833-4.
 
 \bibitem[Schaich and Wild(2014)]{Schaich_Wild_2014}
 F.~Schaich and T.~Wild.
@@ -133,8 +136,8 @@ P.~Stoica, P.~Babu, and J.~Li.
 
 \bibitem[Sturm and Wiesbeck(2011)]{Sturm_Wiesbeck_2011}
 C.~Sturm and W.~Wiesbeck.
-\newblock Waveform design and signal processing aspects for fusion of wireless
-  communications and radar sensing.
+\newblock {Waveform Design and Signal Processing Aspects for Fusion of Wireless
+  Communications and Radar Sensing}.
 \newblock \emph{Proceedings of the IEEE}, 99\penalty0 (7):\penalty0
   1236–1259, July 2011.
 \newblock ISSN 0018-9219, 1558-2256.
@@ -142,15 +145,15 @@ C.~Sturm and W.~Wiesbeck.
 
 \bibitem[Viswanathan and Wild(2021)]{Viswanathan_Wild_2021}
 H.~Viswanathan and T.~Wild.
-\newblock Building a network with a sixth sense, Apr 2021.
+\newblock {Building a network with a sixth sense}, Apr 2021.
 \newblock URL
-  \url{https://www.bell-labs.com/institute/blog/building-network-sixth-sense/#gref}.
+  \url{https://www.bell-labs.com/institute/blog/building-network-sixth-sense/}.
 
 \bibitem[Wagner et~al.(2017)Wagner, Feger, and
   Stelzer]{Wagner_Feger_Stelzer_2017}
 T.~Wagner, R.~Feger, and A.~Stelzer.
-\newblock Radar signal processing for jointly estimating tracks and
-  micro-doppler signatures.
+\newblock {Radar Signal Processing for Jointly Estimating Tracks and
+  Micro-Doppler Signatures}.
 \newblock \emph{IEEE Access}, 5:\penalty0 1220–1238, 2017.
 \newblock ISSN 2169-3536.
 \newblock \doi{10.1109/ACCESS.2017.2667720}.
@@ -176,8 +179,8 @@ P.~Welch.
 \bibitem[Wild et~al.(2021)Wild, Braun, and
   Viswanathan]{Wild_Braun_Viswanathan_2021}
 T.~Wild, V.~Braun, and H.~Viswanathan.
-\newblock Joint design of communication and sensing for beyond 5g and 6g
-  systems.
+\newblock {Joint Design of Communication and Sensing for Beyond 5G and 6G
+  Systems}.
 \newblock \emph{IEEE Access}, 9:\penalty0 30845–30857, 2021.
 \newblock ISSN 2169-3536.
 \newblock \doi{10.1109/ACCESS.2021.3059488}.
@@ -186,8 +189,9 @@ T.~Wild, V.~Braun, and H.~Viswanathan.
   Schaich]{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}
 T.~Wild, A.~Grudnitsky, S.~Mandelli, M.~Henninger, J.~Guan, and F.~Schaich.
 \newblock 6g integrated sensing and communication: From vision to realization.
-\newblock \penalty0 (arXiv:2305.01978), May 2023.
-\newblock URL \url{http://arxiv.org/abs/2305.01978}.
-\newblock arXiv:2305.01978 [eess].
+\newblock In \emph{2023 20th European Radar Conference (EuRAD)}, page
+  355–358, Sept. 2023.
+\newblock \doi{10.23919/EuRAD58043.2023.10289474}.
+\newblock URL \url{https://ieeexplore.ieee.org/document/10289474}.
 
 \end{thebibliography}

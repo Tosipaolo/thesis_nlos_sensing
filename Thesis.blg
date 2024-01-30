@@ -4,57 +4,50 @@ The top-level auxiliary file: Thesis.aux
 The style file: abbrvnat.bst
 Database file #1: Thesis_bibliography.bib
 Warning--I didn't find a database entry for "SASPWEB2011"
-Warning--empty booktitle in Braun2014OFDMRA
-Warning--empty journal in Henninger_Mandelli_Grudnitsky_Wild_Brink_2023
-Warning--there's a number but no volume in Henninger_Mandelli_Grudnitsky_Wild_Brink_2023
+Warning--to sort, need author or key in Hexa
 Warning--empty year in Hexa
-Warning--all relevant fields are empty in Hexa
-Warning--empty journal in Mandelli_Henninger_Bauhofer_Wild_2023
-Warning--there's a number but no volume in Mandelli_Henninger_Bauhofer_Wild_2023
 Warning--empty year in 6G-explained-NOKIA
 Warning--empty publisher in OFDMWireless
 Warning--empty booktitle in Schaich_Wild_2014
-Warning--empty journal in Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023
-Warning--there's a number but no volume in Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023
 You've used 23 entries,
             2773 wiz_defined-function locations,
-            782 strings with 10337 characters,
-and the built_in function-call counts, 11439 in all, are:
-= -- 1048
-> -- 636
-< -- 14
-+ -- 218
-- -- 195
-* -- 938
+            787 strings with 10610 characters,
+and the built_in function-call counts, 11696 in all, are:
+= -- 1091
+> -- 607
+< -- 18
++ -- 209
+- -- 186
+* -- 918
 := -- 1724
-add.period$ -- 108
+add.period$ -- 105
 call.type$ -- 23
-change.case$ -- 130
+change.case$ -- 128
 chr.to.int$ -- 23
-cite$ -- 58
-duplicate$ -- 532
-empty$ -- 906
-format.name$ -- 222
-if$ -- 2452
+cite$ -- 52
+duplicate$ -- 572
+empty$ -- 939
+format.name$ -- 213
+if$ -- 2553
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 25
-newline$ -- 158
+missing$ -- 24
+newline$ -- 156
 num.names$ -- 84
-pop$ -- 265
+pop$ -- 269
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 109
 quote$ -- 0
-skip$ -- 431
+skip$ -- 473
 stack$ -- 0
-substring$ -- 350
-swap$ -- 97
-text.length$ -- 5
+substring$ -- 391
+swap$ -- 138
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 228
-warning$ -- 12
-while$ -- 76
+warning$ -- 5
+while$ -- 80
 width$ -- 0
-write$ -- 365
-(There were 13 warnings)
+write$ -- 367
+(There were 6 warnings)
