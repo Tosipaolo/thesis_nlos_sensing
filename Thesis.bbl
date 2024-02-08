@@ -1,9 +1,14 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[6G-()]{6G-explained-NOKIA}
+{NOKIA, 6G explained}.
+\newblock URL
+  \url{https://www.nokia.com/about-us/newsroom/articles/6g-explained/}.
 
 \bibitem[Hex()]{Hexa}
 {Hexa Project: An European project aiming at the sustainable, inclusive, and
@@ -16,6 +21,25 @@ K.~Braun.
 \newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
   2014.
 \newblock URL \url{https://publikationen.bibliothek.kit.edu/1000038892}.
+
+\bibitem[Friedlander(2007)]{Friedlander_2007}
+B.~Friedlander.
+\newblock Waveform design for mimo radars.
+\newblock \emph{IEEE Transactions on Aerospace and Electronic Systems},
+  43\penalty0 (3):\penalty0 1227–1238, July 2007.
+\newblock ISSN 0018-9251.
+\newblock \doi{10.1109/TAES.2007.4383615}.
+
+\bibitem[Hadani et~al.(2017)Hadani, Rakib, Molisch, Ibars, Monk, Tsatsanis,
+  Delfeld, Goldsmith, and Calderbank]{OTFS_Hadani_2017}
+R.~Hadani, S.~Rakib, A.~F. Molisch, C.~Ibars, A.~Monk, M.~Tsatsanis,
+  J.~Delfeld, A.~Goldsmith, and R.~Calderbank.
+\newblock Orthogonal time frequency space (otfs) modulation for millimeter-wave
+  communications systems.
+\newblock In \emph{2017 IEEE MTT-S International Microwave Symposium (IMS)},
+  page 681–683, June 2017.
+\newblock \doi{10.1109/MWSYM.2017.8058662}.
+\newblock URL \url{https://ieeexplore.ieee.org/document/8058662}.
 
 \bibitem[Henninger et~al.(2022)Henninger, Abrudan, Mandelli, Arnold, Saur,
   Kolmonen, Klein, Schlitter, and
@@ -77,12 +101,6 @@ S.~Mandelli, M.~Henninger, M.~Bauhofer, and T.~Wild.
 \newblock \doi{10.1109/6GNet58894.2023.10317691}.
 \newblock URL \url{https://ieeexplore.ieee.org/document/10317691}.
 
-\bibitem[NOKIA, 6G explained()]{6G-explained-NOKIA}
-NOKIA, 6G explained.
-\newblock {NOKIA, 6G explained}.
-\newblock URL
-  \url{https://www.nokia.com/about-us/newsroom/articles/6g-explained/}.
-
 \bibitem[Prasad(2004)]{OFDMWireless}
 R.~Prasad.
 \newblock \emph{OFDM for Wireless Communications Systems}.
@@ -114,6 +132,12 @@ F.~Schaich and T.~Wild.
 \newblock page 457–460, May 2014.
 \newblock ISBN 978-1-4799-2890-3.
 \newblock \doi{10.1109/ISCCSP.2014.6877912}.
+
+\bibitem[Smith(accessed 2024)]{SASPWEB2011}
+J.~O. Smith.
+\newblock \emph{{Spectral Audio Signal Processing}}.
+\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed 2024.
+\newblock online book, 2011 edition.
 
 \bibitem[Spagnolini(2018)]{Spagnolini_ch14}
 U.~Spagnolini.
@@ -168,6 +192,16 @@ J.~Wang, N.~Varshney, C.~Gentile, S.~Blandino, J.~Chuang, and N.~Golmie.
 \newblock ISSN 2327-4662, 2372-2541.
 \newblock \doi{10.1109/JIOT.2022.3190845}.
 
+\bibitem[Wei et~al.(2021)Wei, Yuan, Li, Yuan, Bharatula, Hadani, and
+  Hanzo]{Wei_Yuan_OTFS_whitepaper_2021}
+Z.~Wei, W.~Yuan, S.~Li, J.~Yuan, G.~Bharatula, R.~Hadani, and L.~Hanzo.
+\newblock Orthogonal time-frequency space modulation: A promising
+  next-generation waveform.
+\newblock \emph{IEEE Wireless Communications}, 28\penalty0 (4):\penalty0
+  136–144, Aug. 2021.
+\newblock ISSN 1558-0687.
+\newblock \doi{10.1109/MWC.001.2000408}.
+
 \bibitem[Welch(1967)]{Welch_period}
 P.~Welch.
 \newblock The use of fast fourier transform for the estimation of power
@@ -193,5 +227,15 @@ T.~Wild, A.~Grudnitsky, S.~Mandelli, M.~Henninger, J.~Guan, and F.~Schaich.
   355–358, Sept. 2023.
 \newblock \doi{10.23919/EuRAD58043.2023.10289474}.
 \newblock URL \url{https://ieeexplore.ieee.org/document/10289474}.
+
+\bibitem[Zhang et~al.(2022)Zhang, Rahman, Wu, Huang, Guo, Chen, and
+  Yuan]{Zhang_Rahman_Wu_Huang_Guo_Chen_Yuan_2022}
+J.~A. Zhang, M.~L. Rahman, K.~Wu, X.~Huang, Y.~J. Guo, S.~Chen, and J.~Yuan.
+\newblock Enabling joint communication and radar sensing in mobile networks—a
+  survey.
+\newblock \emph{IEEE Communications Surveys \& Tutorials}, 24\penalty0
+  (1):\penalty0 306–345, 2022.
+\newblock ISSN 1553-877X.
+\newblock \doi{10.1109/COMST.2021.3122519}.
 
 \end{thebibliography}

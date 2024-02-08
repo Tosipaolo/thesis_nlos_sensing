@@ -4,29 +4,23 @@ The fifth generation of wireless communication systems introduced, with the 5G N
 The NR positioning protocol can also integrate satellite-based positioning systems and can be deployed as a private network solution with active user localization as in \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 
-With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (also known as JCAS or ICAS) has been a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}. 
+With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (also known as JCAS or ICAS) has been a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 
-It is said that 6G will function as a network with a sixth sense \cite{Viswanathan_Wild_2021}. Radio signals transmitted by base stations, or users do not only carry data. Propagation channels bear information about the environment in which the signal is transmitted. 
-
-Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analysing the channel response, it is possible to extract information about position, speed, type and shape of an object.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\textwidth]{Images/logo_polimi_scritta.eps}
-	\caption{Caption of the Figure to appear in the List of Figures.}
-	\label{fig:ISAC-scheme}
-\end{figure}
-
+It is said that 6G will function as a network with a sixth sense \cite{Viswanathan_Wild_2021}. Radio signals transmitted by base stations, or users do not only carry data. They are effected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
+Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated object.
 
 For 6G, the RF sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:ISAC-scheme} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
 
-Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection.
+Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection with extended coverage
 
 
 
 \section{Technological enablers}
 	
-	Radar and communication front-ends have become very similar, as a number of functions traditionally realized with hardware components are now implemented through virtualization and digital signal processing.
+	In recent years Radar and communication front-ends have become very similar, facilitating the integration of sensing and communication technology.
+	Traditional radar systems were heavily reliant on hardware components to perform their core functions. However, with the advent of advanced digital technologies, a substantial number of these functions are now being realized through virtualization and digital signal processing. 
+
+	This section will present some of the main technological aspects and digital technologies enabling joint functionality and the current research on RadCom systems.	
 	
 	\subsection{Spectrum choice for 6G sensing}
 	
@@ -50,18 +44,55 @@ Integrated sensing and communications will benefit from the current massive depl
 	Feasible use cases and possible scenarios will be driven by the characteristics and specifications offered by the frequency band of choice. It can be expected that FR2 will be used in micro-cellular deployments. They will be deployed in indoor environments, such as factory floors. Sensing targets in such environment will likely be pedestrians, passive factory objects and vehicles.
 	Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will e vehicles for traffic monitoring, roadside safety and even detection of unmanned aerial vehicles (UAV) or drones.
 	
-	\subsection{Waveform candidates and OFDM}
+	\subsection{Waveform candidates for ISAC}
 	
-	Waveform design is a fundamental building block of any radar or communication systems. 
-	Radar waveforms can be broadly classified as continuous or pulsed. Both types can be further categorised according to whether the wave is modulated in frequency or phase. 
+	Waveform design is a fundamental building block of any radar or communication systems. Traditional radar and communication systems use waveforms optimized for the respective use, that are, in general, very different \cite{Zhang_Rahman_Wu_Huang_Guo_Chen_Yuan_2022}.
 	
-	The typical waveform used in stand-alone short range radar processing is based on a frequency modulated continuous wave (FMCW), largely applied in the automotive radar use case. For other radar applications numerous other waveforms have been designed (\eg chirp, pseudorandom, phase and frequency coding, etc.). Current mobile communications are dominated by single-carrier and multi-carrier waveforms (OFDM).
+	In this work we refer to a communication-centric design, where the communication system is adapted and expanded in order to perform the sensing operation, sharing the main hardware and resources provided by the wireless mobile network.
 	 
-	In the context of integrated communication and sensing in 6G, FMCW waveforms fall short of the available communication capacity and are unable to deliver the traffic rate expected from 6G networks. 
-	For this reason, OFDM has become the current waveform reference in ISAC. Fully established in 4G and 5G communications systems, it has also attracted the attention of the radar world.
-	In typical radar systems, the main requirement for the waveform is that it has optimum autocorrelation characteristics to provide a high dynamic range in the measurements. Multicarrier waveforms, such as OFDM, offer the possibility of obtaining sensor information by using signal processing techniques that reduce the autocorrelation requirements \cite{Sturm_Wiesbeck_2011}.The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP required for communication and radar processing.
 	
-	OFDM offers great multiplexing capabilities, both in time and in frequency, by defining  \textit{OFDM resource elements}. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by PAPR constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
+	\subsubsection{Traditional radar waveforms}
+	
+	Conventional radar systems mainly consist of pulsed and continuous wave radar. Both types can be further categorised according to whether the wave is modulated in frequency or phase \cite{Friedlander_2007}.
+	Pulsed radar transmits short, typically unmodulated, pulses or bursts of pulses of large bandwidth, followed by a silent period, waiting for the reception of the echoed signal. Continuos wave radar are currently largely used in the automotive systems and the main example is the frequency modulated continuous wave (FMCW) radar. This systems transmit chirp signals with fixed or variable frequencies, which get shifted by the so called beat frequency when they get reflected by objects.
+	
+	Radar systems are typically designed to enable high power transmission with a relatively simple receiver structure. Two of the main design objectives are amplifier efficiency and ideal autocorrelation properties of the radar wave. Waveforms with low peak-to-average power ratio (PAPR) enable high efficiency and long range transmission.
+	
+	Due to their specialized signal shape and relatively simple hardware, this systems cannot support high data-rates for communication purposes, especially the ones that will be required by 6G.
+	
+	\subsubsection{Communication-centric waveforms}
+	
+	Current mobile communications are dominated by single-carrier and multi-carrier waveforms (OFDM).
+	OFDM has become the current waveform reference in ISAC. Fully established in 4G and 5G communications systems, in the last decade it has also attracted the attention of the radar world.
+	
+	OFDM offers great multiplexing capabilities, both in time and in frequency, through the definition \textit{OFDM resource elements} that can be dynamically allocated to users. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by PAPR constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
+	
+	Multicarrier waveforms offer the possibility of obtaining sensor information by using signal processing techniques that reduce the autocorrelation requirements required to radar waveforms \cite{Sturm_Wiesbeck_2011}.The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP required for the joint communication and sensing data processing.
+	
+	\subsubsection{Waveforms for next-gen communication networks}
+	
+	A major challenge for OFDM and multi-carrier signals is their performance in highly frequency-dispersive channels. 
+	The effect of phase noise and movement (Doppler spread) is enhanced at high carrier frequencies. 
+	Due to the expansion of 5G and 6G systems towards mmWave, tackling this challenge is fundamental for ensuring high performance under these circumstances.
+	
+	Orthogonal time frequency space (OTFS) has been proposed as a modulation effective in tackling this problems \cite{OTFS_Hadani_2017}. OTFS operates in the delay-Doppler domain. 
+	The fading, time-variant channel seen by an OFDM signal is transformed into a non-fading, time-independent channel through a 2D Fourier transform. 
+	Applying this transformation and equalization within this domain each symbol will experience similar gain during transmission.
+	
+	The Orthogonal Time Frequency Space (OTFS) modulation scheme can be interpreted as the sequence of two transformations. 
+	Firstly, the transmitter maps the complex symbols into discrete slots of the NxM delay-Doppler domain.
+	Secondly, these symbols are transformed in the time-frequency domain through a 2D inverse symplectic finite Fourier transform (iSFFT). The the time-domain signal is obtained by an M-point inverse Fourier transform (iFFT). 
+	The receiver will perform the inverse operation using FFT and SFFT respectively.
+	OTFS is an ideal waveform for integrating sensing and communication due to its inherent property of exploiting the delay-Doppler domain.
+	This is because information about the surrounding environment is necessary for improving communication performance.
+	
+	Although OTFS has proved to achieve a 3-7 dB advantage compared to OFDM in highly fading and mobility scenarios, however its implementation in real systems is hindered by some open research problems \cite{Wei_Yuan_OTFS_whitepaper_2021}. 
+	The primary challenge is to develop an efficient decoding method for OTFS symbols.
+	The output signal in the delay-Doppler domain is 2D circular convolution of the transmitted data symbols and the channel response. Although optimal detectors, such as maximum a posteriori (MAP) detectors, can mitigate channel interference and perfectly retrieve the original symbols, but they are too complex and costly.
+	
+	This work will focus on Orthogonal Frequency Division Multiplexing (OFDM), as it is the waveform currently used in 5G systems and in the proof of concept by Nokia. 
+	
+	 
 	
 	\subsection{5G functional splits}
 	
@@ -104,15 +135,20 @@ Integrated sensing and communications will benefit from the current massive depl
 	Using option 7-2 of the proposed 5G splits, shown in Figure \ref{fig:Overview-LTE_stack_splits}, it is possible to use the same type of Remote Unit (RU) for both communication and sensing.
 	Option 7-2 splits the network at the physical layer (PHY) level, which handles the conversion of digital data to the analogue radio signal in the downlink (DL) direction, while doing the opposite in the uplink (UL) direction.
 	This split defines the FFT/iFFT performed in the RU, while the frequency domain IQ is transported on the fronthaul.
+	The gNB RU operates in time-division duplexing (TDD) mode, where uplink is separated from downlink by the allocation of different time slots in the same frequency band. 	
+	The sniffer operates always in uplink (UL) mode, receiving both the signal transmitted by UEs and the reflected signals. 
 	
-	The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU). The sniffer is synchronized with the gNB by the same synchronization source
+	The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU). 
+	The sniffer is synchronized with the gNB by the same synchronization source. 
+	The SPU receives the complex IQ signal (on a per-radio frame basis),  after removal of the cyclic prefix (CP), as input for further sensing processing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.
 	
-	The primary gNB RU and the sniffer are mounted in proximity and are \textit{co-located}. This allows the system to behave as a monostatic radar.The SPU receives the complex IQ signal as input for further sensing processing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.\
+	This work considers a PoC deployment where the primary gNB RU and the sniffer are mounted in proximity and are co-located, allowing the system to behave as a monostatic radar. 
+	The scope of this work does not cover the case of bistatic radar.
 	
 	The SPU processing chain for sensing is structured as follows:
 	
 	\begin{itemize}
-		\item \textit{Reference and reflected signal reception}. Receive and process packets from gNB and Sniffer. Each radio frame has dimension $NxM$, where N is the number of subcarriers and M the number of OFDM symbols.
+		\item \textit{Reference and reflected signal reception}. Receive and process packets from gNB and Sniffer. Each radio frame has dimension NxM, where N is the number of subcarriers and M the number of OFDM symbols.
 		\item \textit{Channel computation}. Channel information is obtained by performing element-wise division between received and transmitted frames.
 		\item \textit{Clutter removal}. Before every measurement, the channel of the corresponding scenario without targets is saved during a calibration step and it is subtracted from the reflected signal at runtime.
 		\item \textit{Periodogram computation}. The spectral response of the channel information is obtained by computing N FFTs followed by M iFFTs on the result. The response is then converted in a 2D Range-Doppler map of the observed targets. 
@@ -121,7 +157,6 @@ Integrated sensing and communications will benefit from the current massive depl
 	\end{itemize} 
 	A more detailed description on how the processing chain is structured,  based on \cite{Braun2014OFDMRA}, will be presented in Chapter \ref{chap:theoretical_OFDM}.
 	
-	The gNB RU operates in TDD mode, while the sniffer operates only in uplink (UL) mode.
 	
 	\subsection{System parameters}
 	
