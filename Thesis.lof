@@ -17,17 +17,19 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52,35 dB, \newline $v_{\text {res}} = 0,091$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{28}{subfigure.5.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {10 processed frames, decimated, combined, SNR = 54.66 dB, \newline $v_{\text {res}} = 0,054$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{28}{subfigure.5.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.}}{34}{figure.caption.57}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{35}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.}}{34}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{35}{figure.caption.62}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins using CA-CFAR.}}}{36}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram of the windowing function, FFT over 2048 points.}}}{36}{subfigure.3.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{38}{figure.caption.64}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{38}{figure.caption.65}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{39}{figure.caption.67}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Processed periodogram, separated in processing regions.}}{40}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{41}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{42}{figure.caption.70}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{43}{figure.caption.72}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{43}{figure.caption.73}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{44}{figure.caption.74}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{40}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{40}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{41}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Processed periodogram, separated in processing regions.}}{42}{figure.caption.71}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{43}{figure.caption.72}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{44}{figure.caption.73}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{45}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{45}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{46}{figure.caption.77}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
