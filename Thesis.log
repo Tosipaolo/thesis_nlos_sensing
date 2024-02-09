@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  9 FEB 2024 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  9 FEB 2024 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1531,13 +1531,13 @@ File: Images/TDDprocessing/periodogram1FNoDec.png Graphic file (type png)
 Package pdftex.def Info: Images/TDDprocessing/periodogram1FNoDec.png  used on i
 nput line 133.
 (pdftex.def)             Requested size: 182.09486pt x 172.47382pt.
-<Images/TDDprocessing/periodogram1FYesDec.png, id=718, 309.7974pt x 288.5982pt>
-
+<Images/TDDprocessing/periodogram1FYesDec.png, id=718, 309.40594pt x 292.84406p
+t>
 File: Images/TDDprocessing/periodogram1FYesDec.png Graphic file (type png)
 <use Images/TDDprocessing/periodogram1FYesDec.png>
 Package pdftex.def Info: Images/TDDprocessing/periodogram1FYesDec.png  used on 
 input line 137.
-(pdftex.def)             Requested size: 182.09486pt x 169.64174pt.
+(pdftex.def)             Requested size: 182.09486pt x 172.35199pt.
 <Images/TDDprocessing/periodogram6frames.png, id=719, 314.6154pt x 297.7524pt>
 File: Images/TDDprocessing/periodogram6frames.png Graphic file (type png)
 <use Images/TDDprocessing/periodogram6frames.png>
@@ -1646,7 +1646,7 @@ g  used on input line 169.
  <./Images/radar_detect_threshold/ca_cfar_no_nlos_1.png> <./Images/radar_detect
 _threshold/ca_cfar_no_nlos_PER_1.png>] [37]) (./Chapters/Tests1.tex [38]
 Chapter 6.
-<Images/Test1/base-lateral_view.png, id=886, 513.8397pt x 253.6677pt>
+<Images/Test1/base-lateral_view.png, id=887, 513.8397pt x 253.6677pt>
 File: Images/Test1/base-lateral_view.png Graphic file (type png)
 <use Images/Test1/base-lateral_view.png>
 Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
@@ -1656,7 +1656,7 @@ Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
 
 
 ]
-<Images/Test1/base-top_view.png, id=896, 509.5035pt x 116.3547pt>
+<Images/Test1/base-top_view.png, id=897, 509.5035pt x 116.3547pt>
 File: Images/Test1/base-top_view.png Graphic file (type png)
 <use Images/Test1/base-top_view.png>
 Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 46.
@@ -1674,7 +1674,7 @@ ted-to.pdf>
 er_t1-eps-converted-to.pdf Images/Test1/cali_static_per_t1.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=907, 463.7325pt x 347
+<Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=908, 463.7325pt x 347
 .2975pt>
 File: Images/Test1/cali_static_per_t1-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1683,34 +1683,34 @@ Package pdftex.def Info: Images/Test1/cali_static_per_t1-eps-converted-to.pdf
 used on input line 83.
 (pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
  [41 <./Images/Test1/cali_static_per_t1-eps-converted-to.pdf>]
-<Images/Test1/nlos-los-separation.png, id=950, 760.34062pt x 344.78813pt>
+<Images/Test1/nlos-los-separation.png, id=951, 760.34062pt x 344.78813pt>
 File: Images/Test1/nlos-los-separation.png Graphic file (type png)
 <use Images/Test1/nlos-los-separation.png>
 Package pdftex.def Info: Images/Test1/nlos-los-separation.png  used on input li
 ne 96.
 (pdftex.def)             Requested size: 409.71692pt x 185.79875pt.
  [42 <./Images/Test1/nlos-los-separation.PNG>]
-<Images/Test1/NLOS-proc-pipeline.png, id=957, 781.41937pt x 336.25626pt>
+<Images/Test1/NLOS-proc-pipeline.png, id=958, 781.41937pt x 336.25626pt>
 File: Images/Test1/NLOS-proc-pipeline.png Graphic file (type png)
 <use Images/Test1/NLOS-proc-pipeline.png>
 Package pdftex.def Info: Images/Test1/NLOS-proc-pipeline.png  used on input lin
 e 119.
 (pdftex.def)             Requested size: 409.71692pt x 176.30629pt.
  [43 <./Images/Test1/NLOS-proc-pipeline.png (PNG copy)>]
-<Images/Test1/detect_hist.png, id=965, 387.63pt x 231.702pt>
+<Images/Test1/detect_hist.png, id=966, 387.63pt x 231.702pt>
 File: Images/Test1/detect_hist.png Graphic file (type png)
 <use Images/Test1/detect_hist.png>
 Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 140.
 (pdftex.def)             Requested size: 318.66948pt x 190.48123pt.
  [44 <./Images/Test1/detect_hist.png>]
-<Images/Test1/moving_avg-transformed_wtext.png, id=976, 1707.37875pt x 1093.083
+<Images/Test1/moving_avg-transformed_wtext.png, id=977, 1707.37875pt x 1093.083
 76pt>
 File: Images/Test1/moving_avg-transformed_wtext.png Graphic file (type png)
 <use Images/Test1/moving_avg-transformed_wtext.png>
 Package pdftex.def Info: Images/Test1/moving_avg-transformed_wtext.png  used on
  input line 164.
 (pdftex.def)             Requested size: 318.66948pt x 204.01866pt.
-<Images/Test1/detect_hist_strong_ref.png, id=978, 346.896pt x 222.504pt>
+<Images/Test1/detect_hist_strong_ref.png, id=979, 346.896pt x 222.504pt>
 File: Images/Test1/detect_hist_strong_ref.png Graphic file (type png)
 <use Images/Test1/detect_hist_strong_ref.png>
 Package pdftex.def Info: Images/Test1/detect_hist_strong_ref.png  used on input
@@ -1729,7 +1729,7 @@ Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
 converted-to.pdf Images/Test1/kf_track.eps>
 (epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/kf_track-eps-converted-to.pdf, id=989, 463.7325pt x 347.2975pt>
+<Images/Test1/kf_track-eps-converted-to.pdf, id=990, 463.7325pt x 347.2975pt>
 File: Images/Test1/kf_track-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Test1/kf_track-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
@@ -1938,12 +1938,18 @@ L3 programming layer <2023-12-11>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C36D2D196E0839FBF4B2CC39FAD47A87;10156.
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: C36D2D196E0839FBF4B2CC39FAD47A87;10156
+(rerunfilecheck)             After:  3C73BC687EEA2222C68C51253864C393;10289.
  ) 
 Here is how much of TeX's memory you used:
- 31375 strings out of 474174
- 593429 string characters out of 5749678
+ 31376 strings out of 474174
+ 593440 string characters out of 5749678
  1949460 words of memory out of 5000000
  52754 multiletter control sequences out of 15000+600000
  585708 words of font info for 103 fonts, out of 8000000 for 9000
@@ -1972,10 +1978,10 @@ dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts
 lic/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sftt1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt120
 0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Thesis.pdf (74 pages, 7477510 bytes).
+Output written on Thesis.pdf (74 pages, 7135424 bytes).
 PDF statistics:
- 1353 PDF objects out of 1440 (max. 8388607)
- 995 compressed objects within 10 object streams
- 298 named destinations out of 1000 (max. 500000)
+ 1354 PDF objects out of 1440 (max. 8388607)
+ 996 compressed objects within 10 object streams
+ 299 named destinations out of 1000 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

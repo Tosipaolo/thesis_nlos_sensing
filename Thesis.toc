@@ -50,6 +50,7 @@
 \contentsline {paragraph}{Greatest-of CA-CFAR:}{37}{paragraph*.65}%
 \contentsline {paragraph}{Censored-statistics CA-CFAR:}{37}{paragraph*.66}%
 \contentsline {section}{\numberline {5.3}Range-adjusted exponential threshold}{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Clutter removal}{38}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{39}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Measurements setup}{39}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Moving target without obstructions}{40}{section.6.2}%
