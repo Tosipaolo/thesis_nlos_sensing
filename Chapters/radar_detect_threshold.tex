@@ -101,7 +101,7 @@ Standard CFAR is an established method, howeverit was observed that estimating a
 		\includegraphics[scale=0.45]{Images/radar_detect_threshold/cfar_abv_thresh_PER.eps}%
 	}
 	
-	\caption[]{Example of CFAR thresholding, it can be observed that the strongest target positioned at 23 m presents strong sidelobes that are detected as target returns.}
+	\caption[]{Example of CFAR thresholding, it can be observed that the largest target positioned at 23 m (a wall) presents strong sidelobes that are detected as target returns.}
 	\label{fig:RadThesh_CFAR_abv_thresh_doubl}
 \end{figure}
 
@@ -147,7 +147,10 @@ Computationally CA-CFAR is more demanding than other thresholding techniques, as
 
 \subsubsection{Performance of CA-CFAR}
 
-In a heterogeneous environment multiple targets and changes in the interference power degrade CFAR performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are zones in which there is a sudden change in the statistics of the interfering power.
+The general assumption that each radar return occupies one single bin in the range-Doppler plane is not valid for OFDM radar systems, as the PSF is influenced by a number of factors.
+Zero padding and windowing in the periodogram define the width of the main lobe of the sinusoids in the 2D plane, while a large time aperture of the acquisition generally leads to a larger return due to range and Doppler spreading.
+
+In a heterogeneous radar frame multiple targets and changes in the interference power degrade CFAR performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are zones in which there is a sudden change in the statistics of the interfering power.
 
 Performance is also strongly influenced by the design of the reference window. The window should be designed to be as small as possible, in order to reduce the computational load due to the convolution operation and not to include interfering statistics far away from the CUT. The guard interval should be dimensioned according to the point spread function of the target return. An extended target could be counted in the reference window and lead to \textit{self masking}.
 
@@ -198,13 +201,18 @@ The main limitation posed by this algorithm is the increased computational cost 
 \section{Range-adjusted exponential threshold}
 
 	
-	In order to obviate to prolems of CFAR and CA-CFAR pre
+	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the OFDM radar case, due to the relatively high speed resolution returns occupy multiple cells in the periodogram and are not correctly detected.
 	
-\remove{	In the measurement scenarios it happened that, due to the systems's high range and doppler resolution, target returns presented a point spread function that occupied multiple cells of the periodogram. On the other hand, spectral artifacts due to decimation and/or combining of radio frames kept their original shape in the range/doppler plane. This phenomena is accentuated when windowing the signal before computing the periodogram.}
+	The idea is to adjust the threshold level accounting for the propagation loss of the target reflection, which is proportional to the square of the distance from the transmitter. 
 	
-	The main consequence is that target returns end up appearing like clutter to the CA-CFAR thresholding algorithm, and no NLOS target falls above threshold.
+	This solution was implemented combining the CFAR threshold, set as a lower bound, and the range-dependent exponential adjustement.
 	
-	As proposed in \cite{Wagner_Feger_Stelzer_2017}, a threshold with $1/R^2$ shape can be used to address the problem. This approach is able to identify the target returns, as well as unwanted components. Since this components appear as static in the range/doppler plane, they can be filtered out using a simple Kalman filter. Since their range does not change even though their relative speed is not zero, the filter will update its covariance matrix at each step until a certain threshold is exceeded.
+	\begin{align}
+		\eta_{\text{exp}} = \eta_{\text{CFAR}} + \frac{1}{d^2}
+	\end{align} 
+	
+	
+	Target can then be detected by searching for local peaks in the areas above threshold. A more refined result can be obtained by applying clustering algorithms.
 
 \section{Clutter removal}
 

@@ -37,19 +37,19 @@
 \contentsline {section}{\numberline {4.1}Effect of empty UL symbols}{24}{section.4.1}%
 \contentsline {section}{\numberline {4.2}PoC's fundamental performance limits}{25}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Frame sampling strategies}{26}{section.4.3}%
-\contentsline {paragraph}{Single DL pattern:}{26}{paragraph*.44}%
-\contentsline {paragraph}{Decimation at constant interval:}{26}{paragraph*.45}%
-\contentsline {paragraph}{Decimation and multi-frame processing:}{27}{paragraph*.46}%
+\contentsline {paragraph}{Single DL pattern:}{26}{paragraph*.45}%
+\contentsline {paragraph}{Decimation at constant interval:}{26}{paragraph*.46}%
+\contentsline {paragraph}{Decimation and multi-frame processing:}{27}{paragraph*.47}%
 \contentsline {section}{\numberline {4.4}Effect of CP removal in multiple frame processing}{29}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Radar target detection}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Constant False Alarm Rate}{31}{section.5.1}%
-\contentsline {subsubsection}{Estimation of noise power}{33}{subsubsection*.55}%
+\contentsline {subsubsection}{Estimation of noise power}{33}{subsubsection*.56}%
 \contentsline {section}{\numberline {5.2}Cell-averaging CFAR}{34}{section.5.2}%
-\contentsline {subsubsection}{Performance of CA-CFAR}{35}{subsubsection*.62}%
+\contentsline {subsubsection}{Performance of CA-CFAR}{35}{subsubsection*.63}%
 \contentsline {subsection}{\numberline {5.2.1}Robust CA-CFAR}{37}{subsection.5.2.1}%
-\contentsline {paragraph}{Greatest-of CA-CFAR:}{37}{paragraph*.65}%
-\contentsline {paragraph}{Censored-statistics CA-CFAR:}{37}{paragraph*.66}%
-\contentsline {section}{\numberline {5.3}Range-adjusted exponential threshold}{37}{section.5.3}%
+\contentsline {paragraph}{Greatest-of CA-CFAR:}{37}{paragraph*.66}%
+\contentsline {paragraph}{Censored-statistics CA-CFAR:}{38}{paragraph*.67}%
+\contentsline {section}{\numberline {5.3}Range-adjusted exponential threshold}{38}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Clutter removal}{38}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{39}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Measurements setup}{39}{section.6.1}%
@@ -58,15 +58,15 @@
 \contentsline {subsection}{\numberline {6.2.2}Line-of-sight component as ground truth}{42}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Processing of the NLOS region}{43}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Observed detection rate}{43}{subsection.6.2.4}%
-\contentsline {subsubsection}{Moving average of detection rate}{44}{subsubsection*.75}%
+\contentsline {subsubsection}{Moving average of detection rate}{44}{subsubsection*.77}%
 \contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{45}{section.6.3}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{47}{chapter*.80}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{47}{chapter*.82}%
 \vspace {2em}
 \contentsline {chapter}{\numberline {A}Appendix A}{51}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Appendix B}{53}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{55}{appendix*.84}%
-\contentsline {chapter}{List of Figures}{57}{appendix*.87}%
-\contentsline {chapter}{List of Tables}{59}{appendix*.89}%
-\contentsline {chapter}{List of Symbols}{61}{appendix*.91}%
-\contentsline {chapter}{Acknowledgements}{63}{appendix*.94}%
+\contentsline {chapter}{Abbreviations}{55}{appendix*.86}%
+\contentsline {chapter}{List of Figures}{57}{appendix*.89}%
+\contentsline {chapter}{List of Tables}{59}{appendix*.91}%
+\contentsline {chapter}{List of Symbols}{61}{appendix*.93}%
+\contentsline {chapter}{Acknowledgements}{63}{appendix*.96}%

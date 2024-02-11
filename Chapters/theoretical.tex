@@ -239,12 +239,12 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	 
 	 If no windowing is considered then $(\bm{W})_{k,l} = 1$, as in a simple boxcar window.
 	 
-	 In the proposed OFDM radar system, the following window types are of interest:
+	 In the proposed OFDM radar system, the following window types are of interest (Figure \ref{fig:OFDMwin_functions}):
 	 
 	 \begin{itemize}
 	 	\item Rectangular (Boxcar) windows.
 	 	\item Hamming windows.
-	 	\item Blackman-Harris windows.
+	 	\item Hann windows.
 	 	\item Dolph-Chebyshev windows.
 	 \end{itemize}
 	
@@ -257,6 +257,23 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	\end{align}
 	
 	where the SNR for each direction is equal to the DC bin of the periodogram of each window normalized by the width of the rectangular window.
+	
+	\begin{figure}[H]
+		\centering
+		
+		\subfloat[One-dimensional representation of the windows in time or frequency samples. Windows are normalized to unit energy.\label{fig:OFDMwin}]{%
+			\includegraphics[scale=0.7]{Images/theoretical/windows/window_functs.eps}%
+		}
+		\vspace{0.5cm}
+		\subfloat[Window functions in frequency domain, normalized to peak power of rectangular window.\label{fig:OFDMwin_freq}]{%
+			\includegraphics[scale=0.7]{Images/theoretical/windows/window_functs_freq.eps}%
+		}
+		
+		\caption[]{Window functions available for generating the 2D periodogram.}
+		\label{fig:OFDMwin_functions}
+	\end{figure}
+	
+	
 	
 	
 	\subsection{Welch's method}
