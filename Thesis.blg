@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis.aux
 The style file: abbrvnat.bst
@@ -9,45 +9,45 @@ Warning--empty year in 6G-explained-NOKIA
 Warning--empty year in Hexa
 Warning--empty publisher in OFDMWireless
 Warning--empty booktitle in Schaich_Wild_2014
-You've used 28 entries,
+You've used 29 entries,
             2773 wiz_defined-function locations,
-            825 strings with 11946 characters,
-and the built_in function-call counts, 14885 in all, are:
-= -- 1367
-> -- 843
-< -- 21
-+ -- 289
-- -- 261
-* -- 1205
-:= -- 2218
-add.period$ -- 128
-call.type$ -- 28
-change.case$ -- 166
-chr.to.int$ -- 28
-cite$ -- 64
-duplicate$ -- 697
-empty$ -- 1152
-format.name$ -- 293
-if$ -- 3218
+            833 strings with 12258 characters,
+and the built_in function-call counts, 15168 in all, are:
+= -- 1394
+> -- 853
+< -- 23
++ -- 293
+- -- 264
+* -- 1222
+:= -- 2268
+add.period$ -- 131
+call.type$ -- 29
+change.case$ -- 170
+chr.to.int$ -- 29
+cite$ -- 66
+duplicate$ -- 713
+empty$ -- 1175
+format.name$ -- 297
+if$ -- 3274
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 30
-newline$ -- 189
-num.names$ -- 104
-pop$ -- 346
+newline$ -- 194
+num.names$ -- 108
+pop$ -- 352
 preamble$ -- 1
-purify$ -- 143
+purify$ -- 146
 quote$ -- 0
-skip$ -- 580
+skip$ -- 591
 stack$ -- 0
-substring$ -- 507
-swap$ -- 166
-text.length$ -- 9
+substring$ -- 509
+swap$ -- 167
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 278
+type$ -- 289
 warning$ -- 6
-while$ -- 99
+while$ -- 102
 width$ -- 0
-write$ -- 447
+write$ -- 460
 (There were 6 warnings)

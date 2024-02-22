@@ -1,4 +1,4 @@
-\chapter{Overview of 6G ISAC}
+\chapter{Technology for Integrated sensing and communications}
 
 The fifth generation of wireless communication systems introduced, with the 5G New Radio (NR), support for radio-access-technology-based localization, precise positioning protocol and the possibility of measuring gaps on the New Radio (NR) carrier. This enables the UE to estimate positions with time difference of arrival measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019} . \newline
 The NR positioning protocol can also integrate satellite-based positioning systems and can be deployed as a private network solution with active user localization as in \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
@@ -160,7 +160,7 @@ Integrated sensing and communications will benefit from the current massive depl
 	
 	\subsection{System parameters}
 	
-	The system specifications are indicated in table \ref{table:PoCparams}.
+	The system specifications are indicated in table \ref{table:PoCparams}.They correspond to parameters for 5G NR systems with the numerology $\mu=3$. \cite{TS138211}. 
 	
 	\begin{table}[H]
 		%\caption*{\textbf{Title of Table (optional)}}
@@ -170,11 +170,12 @@ Integrated sensing and communications will benefit from the current massive depl
 			\rowcolor{bluepoli!40} % comment this line to remove the color
 			\textbf{Parameter} & \textbf{Description} & \textbf{Value}  \T\B \\
 			\hline \hline
+			$\bm{\mu}$ & 5G numerology & 3 \T\B \\
 			$\bm{f_C}$ & carrier frequency & 27,4 GHz \T\B \\
 			$\bm{B}$ & bandwidth & 200 MHz \T\B\\
 			$\bm{\Delta_f}$ & subcarrier spacing & 120 kHz  \T\B\\
 			$\bm{T_S = 1/\Delta_f + T_{CP}}$ & symbol time & 8,923 $\mu s$  \T\B\\
-			$\bm{T_{CP} = T_S/8}$ & cyclic prefix time & 1,115 $\mu s$  \T\B\\
+			$\bm{T_{CP}}$ & cyclic prefix time & 0,59 $\mu s$  \T\B\\
 			$\bm{N}$ & number of subcarriers & 1584  \T\B\\
 			$\bm{M}$ & number of symbols & 1120  \B\\
 			

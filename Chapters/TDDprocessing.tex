@@ -1,12 +1,8 @@
-\chapter{TDD pattern of the OFDM frame}
+\chapter{Effect of communication requirements on sensing performance}
 \label{chap:TDD pattern of the OFDM frame}
 
 
 Initially, sensing radar processing was performed on a per OFDM frame basis. \protect\newline Every $10$ ms the system would output a received OFDM frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant SNR gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the empty uplink (UL) symbols in the frame.
-    
-As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols and 36 UL symbols, repeated 8 times in each frame.
-
-Received UL symbols do not contain any useful information for radar processing, hence they are discarded (set to zero) before computing the periodogram.
 
 \begin{figure}[H]
     \centering
@@ -14,6 +10,10 @@ Received UL symbols do not contain any useful information for radar processing, 
     \caption{CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively}
     \label{fig:CSIMatrix_DLULpattern}
 \end{figure}
+
+As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols and 36 UL symbols, repeated 8 times in each frame.
+
+Received UL symbols do not contain any useful information for radar processing, hence they are discarded (set to zero) before computing the periodogram.
 
 \section{Effect of empty UL symbols}
     
@@ -175,4 +175,4 @@ Without modifying the OFDM frame, the system can carry out radar processing with
 \end{table}
 
 
-\section{Effect of CP removal in multiple frame processing}
+\section{Doppler artifacts}

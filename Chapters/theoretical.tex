@@ -48,6 +48,21 @@ A frequency selective channel will apply a time-dispersion effect on the OFDM si
 
 In addition to ISI, also inter-carrier interference can be observed due to the loss of orthogonality of carriers.
 
+\begin{figure}[H]
+	\centering
+	
+	\subfloat[Effect of time delay on transmitted OFDM symbols. At the receiver, the first symbol is delayed and leaks into the FFT block of the following symbol.\label{fig:OFDM_no_cp_isi}]{%
+		\includegraphics[scale=0.18]{Images/theoretical/ofdm/no_cp_isi.png}%
+	}
+	\vspace{0.5cm}
+	\subfloat[Effect of time delay on symbols with CP. The delayed symbol is circularly shifted in the same FFT block. Symbol and delay can be resolved.\label{fig:OFDM_cp_isi}]{%
+		\includegraphics[scale=0.18]{Images/theoretical/ofdm/cp_isi.png}%
+	}
+	
+	\caption[]{Example of the working of cyclic prefix in OFDM.}
+	\label{fig:OFDM_cyclic prefix}
+\end{figure}
+
 To avoid this phenomenon, a guard interval is added to each OFDM symbol. Typically its duration is $T_G = T/8$ or $T_G = T/4$, and the total ODFM symbol duration then becomes $T_s = T + T_G$.
 
 Due to the circular property of the discrete inverse Fourier transform, extending the time duration of the OFDM symbol by a guard time is equivalent to prepending a copy of the last $T_G/T$ portion of the symbol.
@@ -59,7 +74,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 
 \section{OFDM radar processing}
         
-    During the radar operation each OFDM frame is reflected by passive targets. The received signal is a superposition of the effect of the reflection of all the targets hit by the wave front, as described in section 3.2 of \cite{Braun2014OFDMRA}, by Braun.
+    During the radar operation each OFDM frame is reflected by passive targets. The received signal is a superposition of the effect of the reflection of all the targets hit by the wave front, as described in section 3.2 of \cite{Braun2014OFDMRA}, by Braun. For the sake of practicality, this brief summary will use the same terminology and notation.
     
     The received signal is then
     
@@ -269,7 +284,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 			\includegraphics[scale=0.7]{Images/theoretical/windows/window_functs_freq.eps}%
 		}
 		
-		\caption[]{Window functions available for generating the 2D periodogram.}
+		\caption[]{Window functions available for generating the periodogram.}
 		\label{fig:OFDMwin_functions}
 	\end{figure}
 	
@@ -281,7 +296,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	This method, also known as window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by calculating the periodogram, in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
 	The signal is divided into $M$ data segments of $N$ samples, the periodogram is then computed separately for each segment and then averaged.
 	
-	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}\footnote{\texttt{https://ccrma.stanford.edu/$\sim$jos/sasp/Welch\_s\_Method.html}}, the \textit{m}-th windowed and zero padded frame is
+	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}, the \textit{m}-th windowed and zero padded frame is
 	
 	\begin{align}
 		x_m(n) = w(n)x(n + mR), \; n=0,1,\ldots, M-1, m=0,1,\ldots, K-1,
