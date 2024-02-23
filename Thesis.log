@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  22 FEB 2024 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  23 FEB 2024 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1624,13 +1624,13 @@ Chapter 5.
 [33
 
 ] [34]
-<Images/radar_detect_threshold/cfar_abv_thresh.png, id=903, 462.528pt x 346.896
+<Images/radar_detect_threshold/cfar_abv_thresh.png, id=901, 462.528pt x 346.896
 pt>
 File: Images/radar_detect_threshold/cfar_abv_thresh.png Graphic file (type png)
 
 <use Images/radar_detect_threshold/cfar_abv_thresh.png>
 Package pdftex.def Info: Images/radar_detect_threshold/cfar_abv_thresh.png  use
-d on input line 98.
+d on input line 99.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
 Package epstopdf Info: Source file: <Images/radar_detect_threshold/cfar_abv_thr
 esh_PER.eps>
@@ -1643,15 +1643,15 @@ esh_PER-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Images/radar_detect_thresh
 old/cfar_abv_thresh_PER-eps-converted-to.pdf Images/radar_detect_threshold/cfar
 _abv_thresh_PER.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-<Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf, id=904
+<Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf, id=902
 , 463.7325pt x 347.2975pt>
 File: Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf Gr
 aphic file (type pdf)
 <use Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf>
 Package pdftex.def Info: Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-
-converted-to.pdf  used on input line 101.
+converted-to.pdf  used on input line 102.
 (pdftex.def)             Requested size: 208.67769pt x 156.28242pt.
  [35] [36 <./Images/radar_detect_threshold/cfar_abv_thresh.png> <./Images/radar
 _detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf>]
@@ -1661,7 +1661,7 @@ File: Images/radar_detect_threshold/cacfar_pipeline.png Graphic file (type png)
 
 <use Images/radar_detect_threshold/cacfar_pipeline.png>
 Package pdftex.def Info: Images/radar_detect_threshold/cacfar_pipeline.png  use
-d on input line 124.
+d on input line 125.
 (pdftex.def)             Requested size: 409.71692pt x 90.28552pt.
  [37 <./Images/radar_detect_threshold/cacfar_pipeline.png>]
 <Images/radar_detect_threshold/self_masking_Richards2010.png, id=977, 1196.9718
@@ -1670,7 +1670,7 @@ File: Images/radar_detect_threshold/self_masking_Richards2010.png Graphic file
 (type png)
 <use Images/radar_detect_threshold/self_masking_Richards2010.png>
 Package pdftex.def Info: Images/radar_detect_threshold/self_masking_Richards201
-0.png  used on input line 161.
+0.png  used on input line 162.
 (pdftex.def)             Requested size: 318.66948pt x 150.91122pt.
 <Images/radar_detect_threshold/ca_cfar_no_nlos_1.png, id=980, 462.22687pt x 347
 .04657pt>
@@ -1678,7 +1678,7 @@ File: Images/radar_detect_threshold/ca_cfar_no_nlos_1.png Graphic file (type pn
 g)
 <use Images/radar_detect_threshold/ca_cfar_no_nlos_1.png>
 Package pdftex.def Info: Images/radar_detect_threshold/ca_cfar_no_nlos_1.png  u
-sed on input line 171.
+sed on input line 172.
 (pdftex.def)             Requested size: 208.00017pt x 156.16951pt.
 <Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png, id=981, 462.22687pt x
  347.04657pt>
@@ -1686,11 +1686,11 @@ File: Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png Graphic file (typ
 e png)
 <use Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png>
 Package pdftex.def Info: Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.pn
-g  used on input line 174.
+g  used on input line 175.
 (pdftex.def)             Requested size: 208.00017pt x 156.16951pt.
  [38 <./Images/radar_detect_threshold/self_masking_Richards2010.png (PNG copy)>
 ] [39 <./Images/radar_detect_threshold/ca_cfar_no_nlos_1.png> <./Images/radar_d
-etect_threshold/ca_cfar_no_nlos_PER_1.png>]) (./Chapters/Tests1.tex [40] [41]
+etect_threshold/ca_cfar_no_nlos_PER_1.png>] [40]) (./Chapters/Tests1.tex [41]
 Package epstopdf Info: Source file: <./Images/./raggiera_polimi.eps>
 (epstopdf)                    date: 2024-01-02 16:14:11
 (epstopdf)                    size: 1813066 bytes
@@ -1711,7 +1711,7 @@ on input line 1.
 
 ]
 Chapter 6.
-<Images/Test1/base-lateral_view.png, id=1018, 513.8397pt x 253.6677pt>
+<Images/Test1/base-lateral_view.png, id=1027, 513.8397pt x 253.6677pt>
 File: Images/Test1/base-lateral_view.png Graphic file (type png)
 <use Images/Test1/base-lateral_view.png>
 Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
@@ -1720,7 +1720,7 @@ Package pdftex.def Info: Images/Test1/base-lateral_view.png  used on input line
 [43
 
 ]
-<Images/Test1/base-top_view.png, id=1028, 509.5035pt x 116.3547pt>
+<Images/Test1/base-top_view.png, id=1036, 509.5035pt x 116.3547pt>
 File: Images/Test1/base-top_view.png Graphic file (type png)
 <use Images/Test1/base-top_view.png>
 Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 46.
@@ -1736,49 +1736,49 @@ ted-to.pdf>
 (epstopdf)                    size: 13983 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Test1/cali_static_p
 er_t1-eps-converted-to.pdf Images/Test1/cali_static_per_t1.eps>
-(epstopdf)             \includegraphics on input line 83.
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=1039, 463.7325pt x 34
+<Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=1045, 463.7325pt x 34
 7.2975pt>
 File: Images/Test1/cali_static_per_t1-eps-converted-to.pdf Graphic file (type p
 df)
 <use Images/Test1/cali_static_per_t1-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/cali_static_per_t1-eps-converted-to.pdf  
-used on input line 83.
+used on input line 67.
 (pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
  [45 <./Images/Test1/cali_static_per_t1-eps-converted-to.pdf>]
-<Images/Test1/nlos-los-separation.png, id=1083, 760.34062pt x 344.78813pt>
+<Images/Test1/nlos-los-separation.png, id=1088, 760.34062pt x 344.78813pt>
 File: Images/Test1/nlos-los-separation.png Graphic file (type png)
 <use Images/Test1/nlos-los-separation.png>
 Package pdftex.def Info: Images/Test1/nlos-los-separation.png  used on input li
-ne 96.
+ne 80.
 (pdftex.def)             Requested size: 409.71692pt x 185.79875pt.
  [46 <./Images/Test1/nlos-los-separation.PNG>]
-<Images/Test1/NLOS-proc-pipeline.png, id=1090, 781.41937pt x 336.25626pt>
+<Images/Test1/NLOS-proc-pipeline.png, id=1095, 781.41937pt x 336.25626pt>
 File: Images/Test1/NLOS-proc-pipeline.png Graphic file (type png)
 <use Images/Test1/NLOS-proc-pipeline.png>
 Package pdftex.def Info: Images/Test1/NLOS-proc-pipeline.png  used on input lin
-e 119.
+e 103.
 (pdftex.def)             Requested size: 409.71692pt x 176.30629pt.
  [47 <./Images/Test1/NLOS-proc-pipeline.png (PNG copy)>]
-<Images/Test1/detect_hist.png, id=1098, 387.63pt x 231.702pt>
+<Images/Test1/detect_hist.png, id=1103, 387.63pt x 231.702pt>
 File: Images/Test1/detect_hist.png Graphic file (type png)
 <use Images/Test1/detect_hist.png>
-Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 140.
+Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 124.
 (pdftex.def)             Requested size: 318.66948pt x 190.48123pt.
  [48 <./Images/Test1/detect_hist.png>]
-<Images/Test1/moving_avg-transformed_wtext.png, id=1108, 1707.37875pt x 1093.08
+<Images/Test1/moving_avg-transformed_wtext.png, id=1113, 1707.37875pt x 1093.08
 376pt>
 File: Images/Test1/moving_avg-transformed_wtext.png Graphic file (type png)
 <use Images/Test1/moving_avg-transformed_wtext.png>
 Package pdftex.def Info: Images/Test1/moving_avg-transformed_wtext.png  used on
- input line 164.
+ input line 148.
 (pdftex.def)             Requested size: 318.66948pt x 204.01866pt.
-<Images/Test1/detect_hist_strong_ref.png, id=1110, 346.896pt x 222.504pt>
+<Images/Test1/detect_hist_strong_ref.png, id=1115, 346.896pt x 222.504pt>
 File: Images/Test1/detect_hist_strong_ref.png Graphic file (type png)
 <use Images/Test1/detect_hist_strong_ref.png>
 Package pdftex.def Info: Images/Test1/detect_hist_strong_ref.png  used on input
- line 175.
+ line 159.
 (pdftex.def)             Requested size: 318.66948pt x 204.41078pt.
  [49 <./Images/Test1/moving_avg-transformed_wtext.png> <./Images/Test1/detect_h
 ist_strong_ref.png>]
@@ -1791,13 +1791,13 @@ Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
 (epstopdf)                    size: 35005 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Test1/kf_track-eps-
 converted-to.pdf Images/Test1/kf_track.eps>
-(epstopdf)             \includegraphics on input line 186.
+(epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/kf_track-eps-converted-to.pdf, id=1120, 463.7325pt x 347.2975pt>
+<Images/Test1/kf_track-eps-converted-to.pdf, id=1125, 463.7325pt x 347.2975pt>
 File: Images/Test1/kf_track-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Test1/kf_track-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
-put line 186.
+put line 170.
 (pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
 )
 (./Thesis.bbl [50 <./Images/Test1/kf_track-eps-converted-to.pdf>]
@@ -1822,24 +1822,24 @@ TS 138 211, ETSI,
 
 
 ] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 []\T1/cmr/m/n/12 H. Viswanathan and T. Wild.  Build-ing a net-work with a sixth
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 \T1/cmr/m/n/12 sense, Apr 2021.  URL [][]$\T1/cmtt/m/n/12 https : / / www . bel
 l-[]labs . com / institute / blog /
  []
 
-
-Underfull \hbox (badness 1205) in paragraph at lines 232--239
+[53]
+Underfull \hbox (badness 1205) in paragraph at lines 252--259
 \T1/cmr/m/it/12 2023 20th Eu-ro-pean Radar Con-fer-ence (Eu-RAD)\T1/cmr/m/n/12 
 , page 355^^U358, Sept. 2023.
  []
 
-[53]) [54]
+) [54]
 Appendix A.
 [55
 
@@ -2021,14 +2021,14 @@ L3 programming layer <2023-12-11>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BBCA5298B3FF9EF825CFADD26EE31C95;10435.
+(rerunfilecheck)             Checksum: 94B150828599752DB37A82CD5D96B69D;10515.
  ) 
 Here is how much of TeX's memory you used:
- 31435 strings out of 474174
- 595481 string characters out of 5749678
+ 31443 strings out of 474174
+ 595731 string characters out of 5749678
  1948460 words of memory out of 5000000
- 52801 multiletter control sequences out of 15000+600000
- 585708 words of font info for 103 fonts, out of 8000000 for 9000
+ 52806 multiletter control sequences out of 15000+600000
+ 585367 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,28n,93p,1195b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
@@ -2054,10 +2054,10 @@ dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts
 lic/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sftt1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc120
 0.pfb>
-Output written on Thesis.pdf (78 pages, 7258791 bytes).
+Output written on Thesis.pdf (78 pages, 7259298 bytes).
 PDF statistics:
- 1486 PDF objects out of 1728 (max. 8388607)
- 1035 compressed objects within 11 object streams
- 311 named destinations out of 1000 (max. 500000)
+ 1489 PDF objects out of 1728 (max. 8388607)
+ 1039 compressed objects within 11 object streams
+ 315 named destinations out of 1000 (max. 500000)
  632 words of extra memory for PDF output out of 10000 (max. 10000000)
 

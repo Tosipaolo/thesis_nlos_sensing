@@ -20,7 +20,7 @@ The tests were carried out using:
 
 The direction (azimuth $\theta$ and elevation $\varphi$) of the transmitted beam was fixed for the whole measurement.
 
-Before each test, a short calibration measure is performed, which includes only the static elements of the scenario. The calibration data will be used in the post-processing steps for subspace-based clutter removal with the \textit{CRAP} method  \cite{Henninger_CRAP_2023}. 
+Before each test, a short calibration measure is performed, which includes only the static elements of the scenario. The calibration data will be used in the post-processing steps for clutter removal as described in section \ref{sec:clutter_removal}.
 
 \alert{TODO: NOW SHOW NEW MEAS USING ECA-C, COMPARE THE TWO, DISCUSS FALSE ALARMS RATES, DISCUSS POSITION OFFSET IN ECA-C}
 
@@ -39,7 +39,7 @@ The OFDM radar system will be able to determine the range and radial speed (the 
 
 The aim of the test was to maximize the radial speed for the target under test, in order to analyze the characteristics of the signal generated from its reflection.
 
-During the initial measurement the antenna boresight was directed perpendicular to the wall,while the target moved radially between the transmitter and reflector.
+During the initial measurement, the antenna boresight was directed perpendicular to the wall, while the target moved radially between the transmitter and reflector. The test actor moved towards the gNB and back multiple times in a straight line during the measurements.
 
 \begin{figure}[H]
 	\centering
@@ -49,26 +49,10 @@ During the initial measurement the antenna boresight was directed perpendicular 
 \end{figure}
 
 
-Beam elevation was chosen to be as high as possible in order to avoid line-of-sight from the transmitted beam's main lobe. Beam parameters are shown in table \ref{table:Test1TXBeamParams}.
+The beam elevation was selected to be as high as possible in order to pass over the target, and reflect on the wall, simulating a NLOS environment.
+Due to the rather large beamwidth and the strong power of the transmitted sidelobes of the OFDM signal, a LOS component was also detected by the sniffer.
+The direct target return provided additional information, which was then used as ground truth to determine the correct position of the person within the test area.
 
-
-% TODO: check if it's the case of adding something to the table
-\begin{table}[H]
-	%\caption*{\textbf{Title of Table (optional)}}
-	\centering 
-	\begin{tabular}{|p{9em} c c |}
-		\hline
-		\rowcolor{bluepoli!40} % comment this line to remove the color
-		\textbf{} & \textbf{$\theta$ (azimuth [\textdegree])} & \textbf{$\varphi$ (elevation [\textdegree])} \T\B \\
-		\hline \hline
-		$\textbf{TX beam}$ & $\approx 0$ & $4$ \T\B \\
-		
-		\hline
-	\end{tabular}
-	\\[10pt]
-	\caption{Transmitted beam parameters for initial measurements.}
-	\label{table:Test1TXBeamParams}
-\end{table}
 
 
 \subsection{Line-of-sight and non-line-of-sight separation}

@@ -28,14 +28,14 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins using CA-CFAR.}}}{39}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. LOS target at 6 m and corresponding NLOS path return at 40 m, -1,5 m/s.}}}{39}{subfigure.4.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{44}{figure.caption.71}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{44}{figure.caption.72}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{45}{figure.caption.74}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Processed periodogram, separated in processing regions.}}{46}{figure.caption.75}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{47}{figure.caption.76}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{48}{figure.caption.77}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{49}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{49}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{50}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{44}{figure.caption.74}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{44}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{45}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Processed periodogram, separated in processing regions.}}{46}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{47}{figure.caption.78}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{48}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{49}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{49}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{50}{figure.caption.83}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

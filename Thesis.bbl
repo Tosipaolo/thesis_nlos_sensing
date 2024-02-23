@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -29,6 +29,16 @@ K.~Braun.
 \newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
   2014.
 \newblock URL \url{https://publikationen.bibliothek.kit.edu/1000038892}.
+
+\bibitem[Colone et~al.(2009)Colone, O’Hagan, Lombardo, and
+  Baker]{Colone_ECA_2009}
+F.~Colone, D.~W. O’Hagan, P.~Lombardo, and C.~J. Baker.
+\newblock A multistage processing algorithm for disturbance removal and target
+  detection in passive bistatic radar.
+\newblock \emph{IEEE Transactions on Aerospace and Electronic Systems},
+  45\penalty0 (2):\penalty0 698–722, Apr. 2009.
+\newblock ISSN 0018-9251.
+\newblock \doi{10.1109/TAES.2009.5089551}.
 
 \bibitem[Friedlander(2007)]{Friedlander_2007}
 B.~Friedlander.
@@ -189,6 +199,16 @@ T.~Wagner, R.~Feger, and A.~Stelzer.
 \newblock \emph{IEEE Access}, 5:\penalty0 1220–1238, 2017.
 \newblock ISSN 2169-3536.
 \newblock \doi{10.1109/ACCESS.2017.2667720}.
+
+\bibitem[Wan et~al.(2012)Wan, Cheng, Gong, Zhao, and
+  Shao]{Wan_Cheng_Gong_Zhao_Shao_2012}
+X.~Wan, F.~Cheng, Z.~Gong, Z.~Zhao, and Q.~Shao.
+\newblock Multipath clutter rejection for digital radio mondiale-based hf
+  passive bistatic radar with ofdm waveform.
+\newblock \emph{IET Radar, Sonar \& Navigation}, 6\penalty0 (9):\penalty0
+  867–872, Dec. 2012.
+\newblock ISSN 1751-8784, 1751-8792.
+\newblock \doi{10.1049/iet-rsn.2012.0011}.
 
 \bibitem[Wang et~al.(2022)Wang, Varshney, Gentile, Blandino, Chuang, and
   Golmie]{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022}
