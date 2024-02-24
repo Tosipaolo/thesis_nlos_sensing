@@ -10,18 +10,18 @@
 \contentsline {section}{\numberline {2.1}Technological enablers}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Spectrum choice for 6G sensing}{4}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Waveform candidates for ISAC}{5}{subsection.2.1.2}%
-\contentsline {subsubsection}{Traditional radar waveforms}{5}{subsubsection*.10}%
+\contentsline {subsubsection}{Traditional radar waveforms}{6}{subsubsection*.10}%
 \contentsline {subsubsection}{Communication-centric waveforms}{6}{subsubsection*.11}%
-\contentsline {subsubsection}{Waveforms for next-gen communication networks}{6}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {2.1.3}5G functional splits}{7}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Massive MIMO and digital beamforming}{8}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Signal processing enhanced by AI/ML}{8}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}Proof of concept architecture}{9}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}System parameters}{10}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Sensing use-cases}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Human activities}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Non-line-of-sight sensing}{11}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}OFDM radar signal processing}{13}{chapter.3}%
+\contentsline {subsubsection}{Waveforms for next-gen communication networks}{7}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {2.1.3}5G functional splits}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Massive MIMO and digital beamforming}{9}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Signal processing enhanced by AI/ML}{9}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Proof of concept architecture}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}System parameters}{11}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Sensing use-cases}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Human activities}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Non-line-of-sight sensing}{12}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Signal processing for OFDM radar}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Structure of OFDM signal}{13}{section.3.1}%
 \contentsline {subsubsection}{Subcarriers and frequency spacing}{14}{subsubsection*.17}%
 \contentsline {subsection}{\numberline {3.1.1}Implementation}{14}{subsection.3.1.1}%
@@ -42,7 +42,7 @@
 \contentsline {paragraph}{Single DL pattern:}{28}{paragraph*.46}%
 \contentsline {paragraph}{Decimation at constant interval:}{29}{paragraph*.47}%
 \contentsline {paragraph}{Decimation and multi-frame processing:}{29}{paragraph*.48}%
-\contentsline {section}{\numberline {4.4}Doppler artifacts}{31}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Doppler artefacts observed for multiple frame processing}{31}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Radar frame processing}{33}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Radar search and detection}{33}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Constant False Alarm Rate}{33}{subsection.5.1.1}%

@@ -1,17 +1,27 @@
 \chapter{Technology for Integrated sensing and communications}
 
-The fifth generation of wireless communication systems introduced, with the 5G New Radio (NR), support for radio-access-technology-based localization, precise positioning protocol and the possibility of measuring gaps on the New Radio (NR) carrier. This enables the UE to estimate positions with time difference of arrival measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019} . \newline
-The NR positioning protocol can also integrate satellite-based positioning systems and can be deployed as a private network solution with active user localization as in \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
+The fifth generation of wireless communication systems, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the New Radio (NR) carrier. 
+This enables the UE to estimate the positions of active user equipment (UE) by measuring the time difference of arrival \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.
+
+The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 
-With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (also known as JCAS or ICAS) has been a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
+With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (ISAC, also known as JCAS or ICAS) has been a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 
 It is said that 6G will function as a network with a sixth sense \cite{Viswanathan_Wild_2021}. Radio signals transmitted by base stations, or users do not only carry data. They are effected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
-Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated object.
+Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
-For 6G, the RF sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:ISAC-scheme} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
+For 6G, the radio sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
 
-Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection with extended coverage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/introduction/isac-scheme-1.png}
+	\caption{Illustration of an ISAC scenario.}
+	\label{fig:isac-scheme-1}
+\end{figure}
+
+
+Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection with extended coverage.
 
 
 
@@ -20,11 +30,10 @@ Integrated sensing and communications will benefit from the current massive depl
 	In recent years Radar and communication front-ends have become very similar, facilitating the integration of sensing and communication technology.
 	Traditional radar systems were heavily reliant on hardware components to perform their core functions. However, with the advent of advanced digital technologies, a substantial number of these functions are now being realized through virtualization and digital signal processing. 
 
-	This section will present some of the main technological aspects and digital technologies enabling joint functionality and the current research on RadCom systems.	
+	This section will present some of the main technological aspects and digital technologies enabling joint functionality and the current research on radar in communication systems.	
 	
 	\subsection{Spectrum choice for 6G sensing}
-	
-	% TODO: improve this
+
 	One of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
 	
 	Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
@@ -120,10 +129,19 @@ Integrated sensing and communications will benefit from the current massive depl
 	In 5G, beamforming commonly employs an all-digital approach at lower frequencies. However, for mmWave frequencies and above, digitally controlled analogue or hybrid beamforming is typically used. In the hybrid approach one beam gets scanned at a time. A beam sweep can be performed by the transmitting cells, and the procedure of computing the range-Doppler profile of all beams in a cell is referred to as beam sweep. A similar procedure to a beam sweep is already used in 5G NR for synchronization signalling \cite{Wild_Braun_Viswanathan_2021}.
 	
 	\subsection{Signal processing enhanced by AI/ML}
-	Generally, radar returns provide additional information beyond the range-Doppler profile. By analysing the channel information, it may be possible to extract target characteristics such as radar cross-section, micro-Doppler information, or the object's material or shape.
-	This additional information can be used to solve a classification problem of objects and returns detected in the radar datacube.
+	Generally, radar returns provide additional information beyond the range-Doppler profile. 
+	By analysing the channel information, it may be possible to extract target characteristics such as radar cross-section, micro-Doppler information, or the object's material or shape.
+	This additional information can be used to solve a classification problem of objects and returns detected in the radar datacube (target information represented in the range-Doppler-angular domain).
 	
-	In recent years
+	Recent years have seen AI/ML emerging as a novel and powerful method for extracting and processing information effectively, often surpassing traditional methods.
+	In the radar world AI has been used to solve target classification problems. 
+	AI systems can accurately differentiate between various targets, such as aircraft, ships, and ground vehicles, based on their radar signatures. 
+	AI-powered radar systems can adapt and learn from new data, continuously improving their capabilities over time. 
+	This technology could assist the development of autonomous radar systems capable of making independent decisions based on the classification results. 
+	
+	 Furthermore, artificial intelligence and machine learning have been introduced in communication systems to optimize network resources, improve overall quality of service, solve optimization problems, and predict system load and traffic. 
+	 By combining sensing capabilities with artificial intelligence (AI), nodes could effortlessly integrate the physical and digital domains, giving the network situational capabilities.
+	
 
 
 \section{Proof of concept architecture}
@@ -206,8 +224,9 @@ Integrated sensing and communications will benefit from the current massive depl
 	
 	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity.
 	
-	Non-line-of-sight sensing could potentially offer a range of potential advantages. While not yet an established solution, this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
+	While not yet an established solution, this work delves into the prospective feasibility of non-line-of-sight sensing and its use-case possibilities in ISAC.
 	
+	Non-line-of-sight sensing could potentially offer a range of potential advantages.
 	One significant advantage of non-line-of-sight sensing could be the ability to achieve "around the corner" detection, a capability that remains unfeasible with traditional fixed camera or LIDAR systems. By employing advanced sensing techniques and algorithms, non-line-of-sight systems have the potential to detect and track objects and individuals even when direct line-of-sight visibility is obstructed.
 	
 	Furthermore, non-line-of-sight sensing could be a cost-effective enhancement of cellular sensing systems, making them a viable alternative to expensive ad hoc systems. Instead of requiring the deployment of infrastructure or specialized equipment, early explorations of non-line-of-sight sensing suggest the possibility of leveraging existing network hardware and extend its capabilities. This potential cost efficiency could make non-line-of-sight sensing an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.

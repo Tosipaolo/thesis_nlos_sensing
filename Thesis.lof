@@ -1,8 +1,8 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of an ISAC scenario.}}{1}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme representing the LTE protocol stack, showing proposed functional splits \cite {Larsen_Checko_Christiansen_2019}. }}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an ISAC scenario.}}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Scheme representing the LTE protocol stack, showing proposed functional splits \cite {Larsen_Checko_Christiansen_2019}. }}{8}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 5.}}{13}{figure.caption.16}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Effect of time delay on transmitted OFDM symbols. At the receiver, the first symbol is delayed and leaks into the FFT block of the following symbol.}}}{15}{subfigure.2.1}%
@@ -32,7 +32,7 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize clutter removal using CRAP.}}}{42}{subfigure.5.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\footnotesize no clutter removal, metal target at range of ca. 10 m moving at ca. 1 m/s.\newline Static clutter at ca. 23 m.}}}{42}{subfigure.5.4}%
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C, moving target.}}}{42}{subfigure.5.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize clutter removal using \newline CRAP, moving target.}}}{42}{subfigure.5.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize clutter removal using \newline CRAP, moving target. }}}{42}{subfigure.5.6}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.6.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.6.2}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. }}{44}{figure.caption.76}%
