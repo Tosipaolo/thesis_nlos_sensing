@@ -204,15 +204,21 @@ The main limitation posed by this algorithm is the increased computational cost 
 \subsection{Range-adjusted exponential threshold}
 
 	
-	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the OFDM radar case, due to the relatively high speed resolution returns occupy multiple cells in the periodogram and are not correctly detected.
+	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the OFDM radar case, due to the relatively high speed resolution, returns occupy multiple cells in the periodogram and are not correctly detected by CA-CFAR.
 	
 	The idea is to adjust the threshold level accounting for the propagation loss of the target reflection, which is proportional to the square of the distance from the transmitter. 
 	
 	This solution was implemented combining the CFAR threshold, set as a lower bound, and the range-dependent exponential adjustement.
 	
 	\begin{align}
-		\eta_{\text{exp}} = \eta_{\text{CFAR}} + \frac{1}{d^2}
+		\eta_{\text{exp}} = \eta_{\text{CFAR}} + \frac{\alpha}{d^2},
 	\end{align} 
+	
+	where $\alpha$ is an adjustment factor for the exponential term. For this particular implementation it was defined as the square root of the maximum return in the periodogram
+	
+	\begin{align}
+		\alpha = \sqrt{\max{ \left\{\text{Per}_{\bm{F}}(n,m)\right\} }}.
+	\end{align}
 	
 	
 	Target can then be detected by searching for local peaks in the areas above threshold. A more refined result can be obtained by applying clustering algorithms such as DBSCAN.
@@ -220,25 +226,81 @@ The main limitation posed by this algorithm is the increased computational cost 
 \section{Clutter removal}
 \label{sec:clutter_removal}
 
-Clutter removal in radar systems refers to the process of mitigating or eliminating unwanted signals or interference that arise from various sources (such as terrain, sea, or atmospheric conditions) and can obscure the detection of true radar targets.
-In general it is possible to refer clutter as any unwanted reflection from targets that are not of interest for the radar scope.
+	Clutter removal in radar systems refers to the process of mitigating or eliminating unwanted signals or interference that arise from various sources (such as terrain, sea, or atmospheric conditions) and can obscure the detection of true radar targets.
+	In general it is possible to refer clutter as any unwanted reflection from targets that are not of interest for the radar scope.
+	
+	In this work two implementations of clutter removal algorithms were applied to the CSI matrix.
+	Both of them work by projecting the signal into a subspace orthogonal to the clutter.
+	
+	Both algoritms make use of an offline clutter acquisition step, performed before the sensing task. This step is used to gather information about clutter to be removed at runtime.
+	
+	\paragraph{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}
+	This algorithm, described in \cite{Wan_Cheng_Gong_Zhao_Shao_2012}, applies ECA \cite{Colone_ECA_2009} on each subcarrier of the CSI matrix.
+	This approach is successful in removing the static clutter from the periodogram, at the cost of losing information on static targets and applying some distortion to targets moving at low speed.
+	
+	
+	\paragraph{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}
+	CRAP introduces a novel approach by vectorizing the CSI matrices and preserving all information in both domains, unlike ECA-C which only works on each subcarrier separately and focuses solely on the time domain of the signal \cite{Henninger_CRAP_2023}.
+	
+	A comparison between the two approaches can be seen in Figure \alert{FIGUREE}. It can be seen that CRAP is able to remove static clutter without distorting the position of the target.
+	
+	\alert{INSERT ECA IMAGES}
+	
+	\subsection{Clutter presence in NLOS}
+	
+	Even after applying clutter removal, static targets in the environment can still generate unwanted radar returns.
+	In a NLOS sensing setup it is fairly easy to distinguish moving targets from the underlying noise floor.
+	However, returns from static objects of interest will be present in the periodogram area where static clutter is more prevalent, as shown in Figure \ref{fig:Rad_clutter_comparison}.
+	This makes the effective separation through radar thresholding and identification of the target difficult.
 
-In this work two implementations of clutter removal algorithms were applied to the CSI matrix.
-Both of them work by projecting the signal into a subspace orthogonal to the clutter.
+	\begin{figure}[H]
+		\centering
+		
+		\subfloat[\label{fig:Rad_clutter_mov_target}]{%
+			\includegraphics[scale=0.49]{Images/radar_detect_threshold/clutter/clutter_mov_target1.png}%
+		}\hfill
+		\subfloat[\label{fig:Rad_clutter_stat_target}]{%
+			\includegraphics[scale=0.49]{Images/radar_detect_threshold/clutter/clutter_stat_target1.png}%
+		}
+		
+		\caption[]{Periodograms with moving \subref{fig:Rad_clutter_mov_target}, and static \subref{fig:Rad_clutter_stat_target} targets in NLOS.
+				Target is highlighted clearly when moving, while it appears as static clutter when it stops moving.}
+		\label{fig:Rad_clutter_comparison}
+	\end{figure}
 
-Both algoritms make use of an offline clutter acquisition step, performed before the sensing task. This step is used to gather information about clutter to be removed at runtime.
-
-\paragraph{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}
-This algorithm, described in \cite{Wan_Cheng_Gong_Zhao_Shao_2012}, applies ECA \cite{Colone_ECA_2009} on each subcarrier of the CSI matrix.
-This approach is successful in removing the static clutter from the periodogram, at the cost of losing information on static targets and applying some distortion to targets moving at low speed.
-
-
-\paragraph{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}
-CRAP introduces a novel approach by vectorizing the CSI matrices and preserving all information in both domains, unlike ECA-C which only works on each subcarrier separately and focuses solely on the time domain of the signal \cite{Henninger_CRAP_2023}.
-
-A comparison between the two approaches can be seen in Figure \alert{FIGUREE}. It can be seen that CRAP is able to remove static clutter without distorting the position of the target.
-
-\alert{INSERT ECA IMAGES}
+	For intrusion detection purposes, it is sufficient to focus the radar search on moving targets. 
+	Therefore, the static bins of the periodograms can be discarded for NLOS processing.
+	
+	\subsection{Line-of-sight and non-line-of-sight separation}
+	
+	
+	
+	In addition to clutter removal, calibration measurements provide valuable information for determining of the distance threshold at which targets can be accurately classified as NLOS. A portion of the calibration frames can be processed as radar frames, with a focus on the analysis of the zero-Doppler component.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{Images/Test1/cali_static_per_t1.eps}
+		\caption{Zero Doppler component of a periodogram generated from calibration measurements.}
+		\label{fig:Test1_cali_static_per}
+	\end{figure}
+	
+	As can be seen in the figure \ref{fig:Test1_cali_static_per}, a target with large RCS is present approximately $25$ m from the system. It was assumed that any return associated with a range greater than $25$ m was generated by a signal reflected from the main target. The figure also indicates that static clutter has a larger amplitude for ranges greater than $25$ m compared to lower ranges. This is due to the part of the beam that is reflected from the wall towards the environment and the associated returns.
+	
+	The distance of the main reflector of the NLOS components was estimated by averaging the measured distance of the strongest static return from one every fifty frames during calibration.
+	
+	Identifying static NLOS targets from the background was challenging due to the high power of clutter in the NLOS region, even after applying clutter removal techniques. However, it was easier to detect obscured targets by analysing the region of the periodogram associated to returns with non-zero relative speeds. The separation of the regions is highlighted in figure \ref{fig:Test1_nlos_los_separation}.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Images/Test1/nlos-los-separation.png}
+		\caption{Processed periodogram, separated in processing regions.}
+		\label{fig:Test1_nlos_los_separation}
+	\end{figure}
+	
+	
+	After the periodogram has been generated, this separation can be taken into account in the post-processing phase to process the NLOS section separately from the LOS section.
+	
 
 
 
