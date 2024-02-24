@@ -13,7 +13,7 @@ OFDM modulation efficiently distributes the signal over a discrete-time and disc
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{Images/theoretical/ofdm/ofdm_psd_mod.png}
-    \caption{Example of power spectral density of an OFDM signal with N = 4.}
+    \caption{Example of power spectral density of an OFDM signal with N = 5.}
     \label{fig:quadtree}
 \end{figure}
 
@@ -42,6 +42,8 @@ Sampling the signal at interval $T/N$ we obtain a discrete version
 which is a discrete Fourier series DFS. When \textit{N} is a power of 2 the DFS can be implemented in an efficient way by the IFFT algorithm.
 
 At the receiver, the time domain signal is sampled and each complex symbol is recovered by means of the FFT algorithm.
+
+\alert{INSERT OFDM SCHEME}
 
 \subsection{Guard interval and cyclic prefix}
 A frequency selective channel will apply a time-dispersion effect on the OFDM signal. This causes each symbol to "leak" into the adjacent ones, causing inter-symbol interference ISI.
@@ -89,9 +91,9 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
         \item Magnitude attenuation factor $$b_h = \sqrt{\frac{c_0\sigma_{RCS,h}}{(4\pi)^3 d_h^4f_C^2}},$$
     that depends on the distance of the target $d_h$, its radar cross section (RCS), the speed of light $c_0$ and the carrier frequency $f_C$.
     
-        \item Time delay $\tau_h = 2\frac{d_h}{c_0},$ which is the round trip time of the reflected signal.
+        \item Time delay $\tau_h = \frac{2d_h}{c_0},$ which is the round trip time of the reflected signal.
     
-        \item A Doppler shift term introduced by the relative speed of the target $f_{d,h} = 2 \frac{v_{rel,h}}{c_0}f_C$.
+        \item A Doppler shift term introduced by the relative speed of the target $f_{d,h} = \frac{2v_{rel,h}}{c_0}f_C$.
         \item A random phase rotation $\varphi_h$.
         \item Additive white Gaussian noise $\hat{z}(t)$.
     \end{itemize}

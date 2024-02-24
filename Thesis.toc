@@ -4,6 +4,8 @@
 \contentsline {chapter}{Contents\markboth {\MakeUppercase []{Contents}}{\MakeUppercase []{Contents}}}{v}{chapter*.6}%
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Thesis contribution}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Thesis outline}{2}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Technology for Integrated sensing and communications}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Technological enablers}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Spectrum choice for 6G sensing}{4}{subsection.2.1.1}%
@@ -24,8 +26,8 @@
 \contentsline {subsubsection}{Subcarriers and frequency spacing}{14}{subsubsection*.17}%
 \contentsline {subsection}{\numberline {3.1.1}Implementation}{14}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Guard interval and cyclic prefix}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}OFDM radar processing}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Effect of targets on OFDM frames}{16}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.2}OFDM radar processing}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Effect of targets on OFDM frames}{17}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{17}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Assumptions for OFDM radar systems}{18}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{18}{subsection.3.2.4}%
@@ -54,23 +56,24 @@
 \contentsline {section}{\numberline {5.2}Clutter removal}{41}{section.5.2}%
 \contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{41}{paragraph*.72}%
 \contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{41}{paragraph*.73}%
-\contentsline {subsection}{\numberline {5.2.1}Clutter presence in NLOS}{41}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Line-of-sight and non-line-of-sight separation}{42}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Measurements setup}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Moving target without obstructions}{46}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Line-of-sight component as ground truth}{47}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Processing of the NLOS region}{47}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Observed detection rate}{48}{subsection.6.2.3}%
-\contentsline {subsubsection}{Moving average of detection rate}{49}{subsubsection*.82}%
-\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{50}{section.6.3}%
+\contentsline {subsection}{\numberline {5.2.1}Clutter presence in NLOS}{42}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Line-of-sight and Non-line-of-sight separation}{43}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Modified periodogram}{44}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{47}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Measurements setup}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Moving target without obstructions}{48}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Line-of-sight component as ground truth}{49}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Processing of the NLOS region}{49}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Observed detection rate}{50}{subsection.6.2.3}%
+\contentsline {subsubsection}{Moving average of detection rate}{51}{subsubsection*.83}%
+\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{52}{section.6.3}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{53}{chapter*.87}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{55}{chapter*.88}%
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix A}{57}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix B}{59}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{61}{appendix*.91}%
-\contentsline {chapter}{List of Figures}{63}{appendix*.94}%
-\contentsline {chapter}{List of Tables}{65}{appendix*.96}%
-\contentsline {chapter}{List of Symbols}{67}{appendix*.98}%
-\contentsline {chapter}{Acknowledgements}{69}{appendix*.101}%
+\contentsline {chapter}{\numberline {A}Appendix A}{59}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Appendix B}{61}{appendix.B}%
+\contentsline {chapter}{Abbreviations}{63}{appendix*.92}%
+\contentsline {chapter}{List of Figures}{65}{appendix*.95}%
+\contentsline {chapter}{List of Tables}{67}{appendix*.97}%
+\contentsline {chapter}{List of Symbols}{69}{appendix*.99}%
+\contentsline {chapter}{Acknowledgements}{71}{appendix*.102}%

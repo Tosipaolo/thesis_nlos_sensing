@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme representing the LTE protocol stack, showing proposed functional splits \cite {Larsen_Checko_Christiansen_2019}. }}{8}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 4.}}{13}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 5.}}{13}{figure.caption.16}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Effect of time delay on transmitted OFDM symbols. At the receiver, the first symbol is delayed and leaks into the FFT block of the following symbol.}}}{15}{subfigure.2.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Effect of time delay on symbols with CP. The delayed symbol is circularly shifted in the same FFT block. Symbol and delay can be resolved.}}}{15}{subfigure.2.2}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {One-dimensional representation of the windows in time or frequency samples. Windows are normalized to unit energy.}}}{22}{subfigure.3.1}%
@@ -27,17 +27,23 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}}}{38}{figure.caption.65}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins using CA-CFAR.}}}{39}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. LOS target at 6 m and corresponding NLOS path return at 40 m, -1,5 m/s.}}}{39}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{42}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{42}{subfigure.5.2}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements.}}{43}{figure.caption.75}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Processed periodogram, separated in processing regions.}}{44}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize no clutter removal, static metal target at range of ca. 10 m. Clutter at ca. 23 m.}}}{42}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C.}}}{42}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize clutter removal using CRAP.}}}{42}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\footnotesize no clutter removal, metal target at range of ca. 10 m moving at ca. 1 m/s.\newline Static clutter at ca. 23 m.}}}{42}{subfigure.5.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C, moving target.}}}{42}{subfigure.5.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize clutter removal using \newline CRAP, moving target.}}}{42}{subfigure.5.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.6.2}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. }}{44}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Processed periodogram, separated in processing regions.}}{45}{figure.caption.77}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{46}{figure.caption.78}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{46}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{48}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{49}{figure.caption.81}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{50}{figure.caption.83}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{50}{figure.caption.84}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{51}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{48}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{48}{figure.caption.80}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{50}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{51}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{52}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{52}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{53}{figure.caption.86}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
