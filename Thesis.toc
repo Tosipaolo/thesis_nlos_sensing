@@ -23,39 +23,39 @@
 \contentsline {subsection}{\numberline {2.3.2}Non-line-of-sight sensing}{12}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Signal processing for OFDM radar}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Structure of OFDM signal}{13}{section.3.1}%
-\contentsline {subsubsection}{Subcarriers and frequency spacing}{14}{subsubsection*.17}%
-\contentsline {subsection}{\numberline {3.1.1}Implementation}{14}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Guard interval and cyclic prefix}{14}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.1}Subcarriers and frequency spacing}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Implementation}{14}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Guard interval and cyclic prefix}{15}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}OFDM radar processing}{16}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Effect of targets on OFDM frames}{17}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{17}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Assumptions for OFDM radar systems}{18}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{18}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Range and speed resolution}{19}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Periodogram-based estimation algorithms}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Window functions}{20}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Welch's method}{22}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.2.2}Radar problem formulation}{18}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Assumptions for OFDM radar systems}{19}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Non ambiguous range and speed}{19}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Range and speed resolution}{20}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Periodogram-based estimation algorithms}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Window functions}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Welch's method}{23}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Effect of communication requirements on sensing performance}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Effect of empty UL symbols}{26}{section.4.1}%
 \contentsline {section}{\numberline {4.2}PoC's fundamental performance limits}{27}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Frame sampling strategies}{28}{section.4.3}%
-\contentsline {paragraph}{Single DL pattern:}{28}{paragraph*.46}%
-\contentsline {paragraph}{Decimation at constant interval:}{29}{paragraph*.47}%
-\contentsline {paragraph}{Decimation and multi-frame processing:}{29}{paragraph*.48}%
+\contentsline {paragraph}{Single DL pattern:}{28}{paragraph*.34}%
+\contentsline {paragraph}{Decimation at constant interval:}{28}{paragraph*.35}%
+\contentsline {paragraph}{Decimation and multi-frame processing:}{29}{paragraph*.36}%
 \contentsline {section}{\numberline {4.4}Doppler artefacts observed for multiple frame processing}{31}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Radar frame processing}{33}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Radar search and detection}{33}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Constant False Alarm Rate}{33}{subsection.5.1.1}%
-\contentsline {subsubsection}{Estimation of noise power}{35}{subsubsection*.57}%
+\contentsline {subsubsection}{Estimation of noise power}{35}{subsubsection*.45}%
 \contentsline {subsection}{\numberline {5.1.2}Cell-averaging CFAR}{36}{subsection.5.1.2}%
-\contentsline {subsubsection}{Performance of CA-CFAR}{37}{subsubsection*.64}%
-\contentsline {subsubsection}{Robust CA-CFAR}{39}{subsubsection*.67}%
-\contentsline {paragraph}{Greatest-of CA-CFAR:}{39}{paragraph*.68}%
-\contentsline {paragraph}{Censored-statistics CA-CFAR:}{40}{paragraph*.69}%
+\contentsline {subsubsection}{Performance of CA-CFAR}{37}{subsubsection*.52}%
+\contentsline {subsubsection}{Robust CA-CFAR}{39}{subsubsection*.55}%
+\contentsline {paragraph}{Greatest-of CA-CFAR:}{39}{paragraph*.56}%
+\contentsline {paragraph}{Censored-statistics CA-CFAR:}{40}{paragraph*.57}%
 \contentsline {subsection}{\numberline {5.1.3}Range-adjusted exponential threshold}{40}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Clutter removal}{41}{section.5.2}%
-\contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{41}{paragraph*.72}%
-\contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{41}{paragraph*.73}%
+\contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{41}{paragraph*.60}%
+\contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{41}{paragraph*.61}%
 \contentsline {subsection}{\numberline {5.2.1}Clutter presence in NLOS}{42}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Line-of-sight and Non-line-of-sight separation}{43}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Modified periodogram}{44}{subsection.5.2.3}%
@@ -65,15 +65,13 @@
 \contentsline {subsection}{\numberline {6.2.1}Line-of-sight component as ground truth}{49}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Processing of the NLOS region}{49}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Observed detection rate}{50}{subsection.6.2.3}%
-\contentsline {subsubsection}{Moving average of detection rate}{51}{subsubsection*.83}%
+\contentsline {subsubsection}{Moving average of detection rate}{51}{subsubsection*.71}%
 \contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{52}{section.6.3}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{55}{chapter*.88}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{55}{chapter*.76}%
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix A}{59}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Appendix B}{61}{appendix.B}%
-\contentsline {chapter}{Abbreviations}{63}{appendix*.92}%
-\contentsline {chapter}{List of Figures}{65}{appendix*.95}%
-\contentsline {chapter}{List of Tables}{67}{appendix*.97}%
-\contentsline {chapter}{List of Symbols}{69}{appendix*.99}%
-\contentsline {chapter}{Acknowledgements}{71}{appendix*.102}%
+\contentsline {chapter}{Abbreviations}{59}{chapter*.78}%
+\contentsline {chapter}{List of Figures}{61}{chapter*.81}%
+\contentsline {chapter}{List of Tables}{63}{chapter*.83}%
+\contentsline {chapter}{List of Symbols}{65}{chapter*.85}%
+\contentsline {chapter}{Acknowledgements}{67}{chapter*.88}%

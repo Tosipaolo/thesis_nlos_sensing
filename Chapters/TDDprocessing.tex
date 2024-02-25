@@ -11,13 +11,13 @@ Initially, sensing radar processing was performed on a per OFDM frame basis. \pr
     \label{fig:CSIMatrix_DLULpattern}
 \end{figure}
 
-As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols and 36 UL symbols, repeated 8 times in each frame.
+As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols followed by 36 UL symbols, repeated 8 times in each frame.
 
 Received UL symbols do not contain any useful information for radar processing, hence they are discarded (set to zero) before computing the periodogram.
 
 \section{Effect of empty UL symbols}
     
-    The removal of UL symbols acts as windowing on the received frame. This introduces additional spectral replicas in speed as shown in Figure \ref{fig:SpectralReplicasDLULpattern}. Replicas seem to appear at a constant speed displacement from where actual targets lie, behaving similarly to replicas due to the radar's non-ambiguity speed.
+    The removal of UL symbols acts as windowing on the received frame. This introduces additional spectral replicas in the speed domain as shown in Figure \ref{fig:SpectralReplicasDLULpattern}. Replicas seem to appear at a constant speed displacement from where actual targets lie, behaving similarly to replicas introduced by the radar's non-ambiguity in speed.
     
     \begin{figure}[H]
         \centering
@@ -33,9 +33,9 @@ Received UL symbols do not contain any useful information for radar processing, 
         &T_{\text{frame}} = 1120 \cdot T_S.
     \end{align}
 
-    The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine (Dirichlet's delta) function multiplied by a train of Dirac deltas.
+    The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, as shown in Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, in Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine (Dirichlet's delta) function multiplied by a train of Dirac deltas.
 
-    The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency in Figure \ref{fig:TDDproc_rectfunct_transform} appear as replicas in the periodogram. These peaks have sufficient power to be detected as real targets, thus limiting the performance of the system by reducing the effective unambiguous velocity. Even though their power is significantly lower compared to the main lobe, they can cause masking of real targets that would be detected near the replica, especially in NLOS where the return power is low. 
+    The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency appear as replicas in the periodogram. These peaks have sufficient power to be detected as real targets, thus limiting the performance of the system by reducing the effective unambiguous velocity. Even though their power is significantly lower compared to the main lobe, they can cause masking of real targets that would be detected near the replica, especially in NLOS where the return power is low. 
 
 	\begin{figure}[H]
 	    \centering
@@ -53,7 +53,7 @@ Received UL symbols do not contain any useful information for radar processing, 
 
 \section{PoC's fundamental performance limits}
 
-Without modifying the OFDM frame, the system can carry out radar processing with the following performance:
+Without modifying the OFDM frame, the system would be able to carry out radar processing with the following performance:
 
 \begin{itemize}
 	\item \textbf{Unambiguous speed}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,7 +25,7 @@
 
 \bibitem[Braun(2014)]{Braun2014OFDMRA}
 K.~Braun.
-\newblock \emph{OFDM Radar Algorithms in Mobile Communication Networks}.
+\newblock \emph{{OFDM Radar Algorithms in Mobile Communication Networks}}.
 \newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
   2014.
 \newblock URL \url{https://publikationen.bibliothek.kit.edu/1000038892}.
@@ -59,17 +59,29 @@ R.~Hadani, S.~Rakib, A.~F. Molisch, C.~Ibars, A.~Monk, M.~Tsatsanis,
 \newblock \doi{10.1109/MWSYM.2017.8058662}.
 \newblock URL \url{https://ieeexplore.ieee.org/document/8058662}.
 
-\bibitem[Henninger et~al.(2022)Henninger, Abrudan, Mandelli, Arnold, Saur,
-  Kolmonen, Klein, Schlitter, and
+\bibitem[Henninger et~al.(2022{\natexlab{a}})Henninger, Abrudan, Mandelli,
+  Arnold, Saur, Kolmonen, Klein, Schlitter, and
   Brink]{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
 M.~Henninger, T.~E. Abrudan, S.~Mandelli, M.~Arnold, S.~Saur, V.-M. Kolmonen,
   S.~Klein, T.~Schlitter, and S.~T. Brink.
 \newblock {Probabilistic 5G Indoor Positioning Proof of Concept with Outlier
   Rejection}.
 \newblock In \emph{2022 Joint European Conference on Networks and
-  Communications \& 6G Summit (EuCNC/6G Summit)}, page 249–254, June 2022.
+  Communications \& 6G Summit (EuCNC/6G Summit)}, page 249–254, June
+  2022{\natexlab{a}}.
 \newblock \doi{10.1109/EuCNC/6GSummit54941.2022.9815663}.
 \newblock URL \url{https://ieeexplore.ieee.org/document/9815663}.
+
+\bibitem[Henninger et~al.(2022{\natexlab{b}})Henninger, Mandelli, Arnold, and
+  Ten~Brink]{Henninger_Mandelli_Arnold_EfficientMUSIC}
+M.~Henninger, S.~Mandelli, M.~Arnold, and S.~Ten~Brink.
+\newblock {A Computationally Efficient 2D MUSIC Approach for 5G and 6G Sensing
+  Networks}.
+\newblock In \emph{2022 IEEE Wireless Communications and Networking Conference
+  (WCNC)}, page 210–215, Austin, TX, USA, Apr. 2022{\natexlab{b}}. IEEE.
+\newblock ISBN 978-1-66544-266-4.
+\newblock \doi{10.1109/WCNC51071.2022.9771837}.
+\newblock URL \url{https://ieeexplore.ieee.org/document/9771837/}.
 
 \bibitem[Henninger et~al.(2023)Henninger, Mandelli, Grudnitsky, Wild, and ten
   Brink]{Henninger_CRAP_2023}

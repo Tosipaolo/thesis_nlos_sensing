@@ -17,7 +17,7 @@ OFDM modulation efficiently distributes the signal over a discrete-time and disc
     \label{fig:quadtree}
 \end{figure}
 
-\subsubsection{Subcarriers and frequency spacing}
+\subsection{Subcarriers and frequency spacing}
 OFDM systems will use \textit{N} subcarriers, namely with frequencies $f_0$ to $f_{N-1}$, and M time-slots that will limit the temporal length of the OFDM signal.
 Each set of modulated data transmitted in a single time slot will be referred as an OFDM \textit{symbol}, while the entirety NxM symbols is referred to as an OFDM \textit{frame}.
 
@@ -25,9 +25,9 @@ Orthogonality of subcarriers is guaranteed by a frequency spacing $\Delta f$ of 
 
 The time-domain signal can be expressed as
 
-\begin{equation}
+\begin{equation*}
     s(t) = \sum_l\sum_{i=0}^{N-1} a_{i,l}\cdot \sqrt{\frac{1}{T}} rect \left( \frac{t-T/2 - lT}{T} \right)\exp{\left(\frac{j2\pi it}{T}\right)},
-\end{equation}
+\end{equation*}
 
 where $a_{i,l}$ is the complex QAM symbol modulating the \textit{i-th} subcarrier in the \textit{l-th} symbol interval.
 
@@ -35,15 +35,28 @@ where $a_{i,l}$ is the complex QAM symbol modulating the \textit{i-th} subcarrie
 The relation between the discrete samples of OFDM in the time and frequency domain enables a beneficial implementation.
 Sampling the signal at interval $T/N$ we obtain a discrete version
 
-\begin{equation}
+\begin{equation*}
     s_k = s(t)|_{t=k \frac{T}{N}} = \sqrt{\frac{1}{T}}\sum_{k=0}^{N-1} a_k \cdot e^{j2\pi ki/N}
-\end{equation}
+\end{equation*}
 
 which is a discrete Fourier series DFS. When \textit{N} is a power of 2 the DFS can be implemented in an efficient way by the IFFT algorithm.
+Binary data is transmitted by organizing it into N parallel complex modulated symbols. These symbols are then mapped to subcarriers in the frequency domain, and the time domain signal is obtained by adding the cyclic prefix and using the iFFT. Figure \ref{fig:ofdm_transmit} shows the scheme for transmission of an OFDM signal.
 
-At the receiver, the time domain signal is sampled and each complex symbol is recovered by means of the FFT algorithm.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/theoretical/ofdm/ofdm_transmit.png}
+	\caption{OFDM transmitter scheme.}
+	\label{fig:ofdm_transmit}
+\end{figure}
 
-\alert{INSERT OFDM SCHEME}
+At the receiver, the time domain signal is sampled and each complex symbol is recovered by means of the FFT algorithm, as shown in Figure \ref{fig:ofdm_receive}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/theoretical/ofdm/ofdm_receive.png}
+	\caption{OFDM receiver scheme.}
+	\label{fig:ofdm_receive}
+\end{figure}
 
 \subsection{Guard interval and cyclic prefix}
 A frequency selective channel will apply a time-dispersion effect on the OFDM signal. This causes each symbol to "leak" into the adjacent ones, causing inter-symbol interference ISI.
@@ -99,14 +112,14 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     \end{itemize}
     
     Following Braun's notation each transmitted OFDM frame is indicated as
-    \begin{equation}
+    \begin{equation*}
         \mathbf F_{Tx} = \begin{pmatrix}
             c_{0,0} & \cdots & c_{0,M} \\
             c_{1,0} & \cdots & c_{1,M} \\
             \vdots   & \ddots & \vdots \\
             c_{N-1, 0} & \cdots & c_{N-1, M} \\
         \end{pmatrix} \in \mathcal{A}^{N\times M},
-    \end{equation}
+    \end{equation*}
     
     where rows are different subcarriers and columns are different time slots.
     
@@ -116,15 +129,15 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     Each target reflection will influence different elements of the frame in a different way:
     
     \begin{enumerate}
-        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $\bm{F}_{Tx}$ by a factor $e^{j2\pi f_D T_0 l},\quad  l = 0, \cdots, M-1$.
+        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $\mathbf F_{Tx}$ by a factor $e^{j2\pi f_D T_0 l},\quad  l = 0, \cdots, M-1$.
         \item A round trip delay $\tau$ will influence each subcarrier differently, based on its frequency. The corresponding phase shift on the k-th subcarrier is $e^{-j2\pi (k\Delta f + f_0)\tau}$.
     \end{enumerate}
     
     For the single target case, H=1, the received OFDM frame will become
     
-    \begin{equation}
+    \begin{equation*}
         (\mathbf F_{Rx})_{k,l} = b_0(\mathbf F_{Tx})_{k,l} \cdot e^{j2\pi T_0 f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + (\mathbf{\Tilde{Z}})_{k,l}.
-    \end{equation}
+    \end{equation*}
     
     The channel state information matrix (CSI) is obtained from the received frame $\mathbf{F}_{Rx}$ by removing the known transmitted frame $\mathbf{F}_{Tx}$, which serves no purpose for radar estimation. After element-wise division the CSI is
     
@@ -134,11 +147,11 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     An alternative noise matrix $(\mathbf{Z})_{k,l}$ can be defined since, after division by the transmitted frame, the noise process will be white if $(\mathbf{\Tilde{Z}})$ is white.
     
-    Finally, we generalize the result to H targets by reintroducing the sum from \ref{eq:received_signal_mltiple_targets}:
+    Finally, we generalize the result to H targets by reintroducing the sum from Equation~\eqref{eq:received_signal_mltiple_targets}:
     
-    \begin{equation}
+    \begin{equation*}
         (\mathbf F)_{k,l} =  \sum_{h=0}^{H-1} b_h \cdot e^{j2\pi T_O f_{D,h} l}\cdot e^{-j2\pi k \tau_h \Delta f} \cdot e^{j\varphi_h} + (\mathbf{Z})_{k,l}.
-    \end{equation}
+    \end{equation*}
     
     \subsection{Radar problem formulation}
     
@@ -150,16 +163,21 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     Other established methods, which are more computationally expensive in general, are MUSIC and ESPRIT, belonging to the parametric class.
     
+    This work focuses on spectral estimation based on the periodogram, which is a computationally efficient technique compared to MUSIC and ESPRIT.
+    The reduced computational complexity is crucial for the realization of a system that can process radar data in real-time without excessive overhead that may require specialized hardware.
+    Although an efficient method for estimating the 2D MUSIC spectrum in 5G and 6G sensing have been proposed in \cite{Henninger_Mandelli_Arnold_EfficientMUSIC}, identifying eigenvalues corresponding to NLOS components among clutter returns from reflections can be challenging.
+    
+    
     \subsection{Assumptions for OFDM radar systems}
     \label{sub:assumptions_ofdm_radar}
-    The following assumptions simplify the design of the algorithm, as described in section 3.2.1 of \cite{Braun2014OFDMRA}.
+    The following assumptions on the ISAC system simplify the design of the sensing algorithm, as described in section 3.2.1 of \cite{Braun2014OFDMRA}.
     
     \begin{enumerate}
     	\item No other distortion other than AWGN is induced by the transmit and receive front-ends.
     	\item The CP duration is larger than the round-trip propagation time for the furthermost target.
     	\item The sub-carrier distance is at least one order of magnitude larger than the largest occurring Doppler shift.
     	
-		Assumptions 2 and 3 ensure that the received matrix will not undergo de-orthogonalisation, which is necessary for element-wise division in equation \ref{eq:CSI_frame}. These conditions ensure that the OFDM symbols are not delayed more than the CP and are not shifted by a large Doppler shift. If these conditions are met, demodulation can occur correctly.
+		Assumptions 2 and 3 ensure that the received matrix will not undergo de-orthogonalisation, which is necessary for element-wise division in Equation \eqref{eq:CSI_frame}. These conditions ensure that the OFDM symbols are not delayed more than the CP and are not shifted by a large Doppler shift. If these conditions are met, demodulation can occur correctly.
     	
     	\item The Doppler shift is the same on every sub-carrier.
     	\item The target’s distance remains constant during the transmission of one frame.
@@ -171,7 +189,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
         Due to the discrete nature of $\mathbf{F}$ range and speed measurements can be estimated without ambiguity if $|T_O f_D| < 1/2$ and $\tau \Delta f < 1$ are true.
         
-        From this, the unambiguous range and speed values of the system can be derived as
+        From this, the unambiguous range and speed values of the system can be derived as:
         
         \begin{itemize}
             \item Max unambiguous range
@@ -201,16 +219,16 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     Considering a discrete-time signal $s(k)$ of length $N$ samples the periodogram is defined as
     
-    \begin{equation}
+    \begin{equation*}
         \text{Per}_{s(k)}(f) = \frac{1}{N}\left| \sum_{k=0}^{N-1} s(k)e^{-j2\pi fk}\right|^2.
-    \end{equation}
+    \end{equation*}
 
     The optimal way to obtain the periodogram in digital systems is by quantizing the frequency at regular intervals and using the Fast Fourier Transform FFT algorithm.
 
-    \begin{align}
+    \begin{align*}
         \text{Per}_{s(k)}(f) &= \frac{1}{N}\left| \sum_{k=0}^{N-1} s(k)e^{-j2\pi \frac{nk}{N_{Per}}}\right|^2 \\
         &= \frac{1}{N}\left| \text{FFT}_{N_{Per}}[s(k)]\right|^2.
-    \end{align}
+    \end{align*}
     
     
     The transform is indicated as $\text{FFT}_{N_{per}}$ where $N_{Per} \geq N$ is the length of the FFT. When the input signal has $N < N_{Per}$, it is zero padded to the length of the FFT.
@@ -218,10 +236,13 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 
     The input data for the periodogram is the CSI $\bm{F}$, and the periodogram is estimated in two dimensions
 
-    \begin{align}
-        \text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left(  \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \label{eq:periodogram_full}\\
-        &= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2. \label{eq:periodogram_cper}
-    \end{align}
+    \begin{equation}
+    	\label{eq:periodogram_full}
+    	\begin{aligned}
+    		\text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left(  \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \\
+    		&= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2.
+    	\end{aligned}
+    \end{equation}
 
 
     Each target captured in the CSI, \ie a sinusoid in $\bm{F}$, results in a peak in $Per_{\bm{F}}(n,m)$.
@@ -229,16 +250,16 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     These frequencies are converted into distance and relative speed as
 
-    \begin{align}
+    \begin{align*}
         \hat{d} &= \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta_f} = \frac{\hat{n}c_0}{2\Delta_f N_\text{Per}}, \\
         \hat{v} &= \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_0} =  \frac{\hat{m}c_0}{2f_cT_0 M_{\text{Per}}}.
-    \end{align}
+    \end{align*}
     
     % TODO: add from Braun's page 25
     
     
 
-    As demonstrated by Braun, computing the periodogram results in a SNR gain of a factor $NM$. The numerator in \ref{eq:periodogram_full} is an accumulation of all the elements in $\bm{F}$ whereas the denominator is a superposition of complex Gaussian random variables.
+    As demonstrated by Braun, computing the periodogram results in a SNR gain of a factor $NM$. The numerator in Equation~\eqref{eq:periodogram_full} is an accumulation of all the elements in $\bm{F}$ whereas the denominator is a superposition of complex Gaussian random variables.
     
 	\subsection{Window functions}
 	
@@ -249,10 +270,10 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	The two dimensional window matrix to be applied to the periodogram $\bm{W} \in \mathbb{R}^{N\times M}$ is multiplied element-wise with the matrix $\bm{F}$. When computing the periodogram equation \ref{eq:periodogram_full} becomes
 	
 	
-	   \begin{align}
-		\text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left( \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} (\bm{W})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \label{eq:periodogram_full_win}\\
-		&= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2. \label{eq:periodogram_cper_win}
-	\end{align}
+	   \begin{align*}
+		\text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left( \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} (\bm{W})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2\\
+		&= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2.
+		\end{align*}
 	 
 	 If no windowing is considered then $(\bm{W})_{k,l} = 1$, as in a simple boxcar window.
 	 
@@ -269,9 +290,9 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	Since the width of the main lobe and the height of its peak is different from each window the windowing operation results in a SNR loss when computing the periodogram.
 	The overall processing gain can be updated as
 	
-	\begin{align}
+	\begin{align*}
 		PG = 10\log_{10}(NM) + \text{SNR}_{\bm{w}_d} + \text{SNR}_{\bm{w}_v},
-	\end{align}
+	\end{align*}
 	
 	where the SNR for each direction is equal to the DC bin of the periodogram of each window normalized by the width of the rectangular window.
 	
@@ -300,21 +321,21 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
 	
 	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}, the \textit{m}-th windowed and zero padded frame is
 	
-	\begin{align}
+	\begin{align*}
 		x_m(n) = w(n)x(n + mR), \; n=0,1,\ldots, M-1, m=0,1,\ldots, K-1,
-	\end{align}
+	\end{align*}
 	
 	where R is the window's hop size and K the number of available segments. The periodogram of the \textit{m}-th block is obtained as
 	
-	\begin{align}
+	\begin{align*}
 		\text{PER}_{x_m,M}(w_k) = \frac{1}{M} |\text{FFT}_{N,k}(x_m)|^2 = \frac{1}{M}\left|\sum_{n=0}^{N-1}x_m(n)e^{-j2\pi nk/N}\right|^2.
-	\end{align}
+	\end{align*}
 	
 	The Welch estimate of the PSD is then given by
 	
-	\begin{align}
+	\begin{align*}
 		\hat{S}^W_x(w_k) = \frac{1}{K}\sum_{m=0}^{K-1}\text{PER}_{x_m,M}(w_k).
-	\end{align}
+	\end{align*}
 	
 	The overall data can be windowed before computing the periodogram, reducing sidelobe level in the spectral estimate, at the expense of frequency resolution. If $w(n)$ is a rectangular window then the periodograms are formed from non-overlapping successive blocks of data (we can refer to this case as Barlett's method). For different kinds of windows the hop size $R$ shouldn't exceed half of the frame length $M/2$. In general $R$ is chosen so that consecutive windows overlap and add to a constant.
 	
