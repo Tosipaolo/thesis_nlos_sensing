@@ -176,3 +176,38 @@ Without modifying the OFDM frame, the system would be able to carry out radar pr
 
 
 \section{Doppler artefacts observed for multiple frame processing}
+
+When processing several consecutive frames, Doppler artefacts can be observed in the corresponding periodograms.
+They appear as vertical lines of high power, compared to the underlying noise floor.
+For LOS scenarios the artefacts do not limit the performance of the system, while their power is similar to the returns in NLOS.
+Figure \ref{fig:TDD_artefacts} shows that the power of the artefacts increases with the time aperture of the processed frame.
+
+	\begin{figure}[H]
+	\centering
+	
+	\subfloat[\footnotesize~Periodogram generated with 1 OFDM frame, decimated.\label{fig:artefacts1frame}]{%
+		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/1frames_periodogram.png}%
+	}\hfill
+	\subfloat[\footnotesize~Periodogram with\newline 2 OFDM frames, decimated.\label{fig:artefacts2frame}]{%
+		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/2frames_periodogram.png}%
+	}\hfill
+	\subfloat[\footnotesize Periodogram with 3 OFDM frames, decimated.\label{fig:artefacts3frame}]{
+		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/3frames_periodogram.png}
+	}\newline
+	
+	\subfloat[\footnotesize Periodogram with\newline 4 OFDM frames, decimated.\label{fig:artefacts4frame}]{%
+		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/4frames_periodogram.png}%
+	}\hfill
+	\subfloat[\footnotesize Periodogram with 5 OFDM frames, decimated.\label{fig:artefacts5frame}]{%
+		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/5frames_periodogram.png}%
+	}\hfill
+	\subfloat[\footnotesize Periodogram with 6 OFDM frames, decimated. \label{fig:artefacts6frame}]{%
+		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/6frames_periodogram.png}%
+	}
+	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's indutrial test facility.
+		Periodogram are generated from the same measurement data. When using a single OFDM frame the periodogram is sampled selecting one symbol every 47, whilst one every 70 is kept in the other cases using multiple frames.  }
+	\label{fig:TDD_artefacts}
+\end{figure}
+
+The cause of these artefacts was not identified in this work. It is known that the 5G system used in the prototype from Nokia needs requires synchronization of component clock sources.
+It is likely that these artefacts are caused by phase compensations applied to the ODFM signal both on a per-frame basis and within a single frame.
