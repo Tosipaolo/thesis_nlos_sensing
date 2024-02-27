@@ -1,0 +1,336 @@
+            TIME-SMOOTH          FREQUENCY-SMOOTH     ||      DET_RATE       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   0            Chebyshev              CA-CFAR                    1                    1              CA-CFAR                   10   0.6335616438356164 
+                   0            Chebyshev              CA-CFAR                    1                    1              CA-CFAR                    5   0.6335616438356164 
+                   0            Chebyshev              CA-CFAR                    4                    2              CA-CFAR                   10   0.6322869955156951 
+                   0            Chebyshev              CA-CFAR                    4                    2              CA-CFAR                    5   0.5829596412556054 
+                   0            Chebyshev              CA-CFAR                    4                    4              CA-CFAR                   10   0.6294642857142857 
+                   0            Chebyshev              CA-CFAR                    4                    4              CA-CFAR                    5   0.5714285714285714 
+                   0            Chebyshev              CA-CFAR                    6                    2              CA-CFAR                   10   0.6860986547085202 
+                   0            Chebyshev              CA-CFAR                    6                    2              CA-CFAR                    5   0.6300448430493274 
+                   0            Chebyshev              CA-CFAR                    6                    4              CA-CFAR                   10    0.695067264573991 
+                   0            Chebyshev              CA-CFAR                    6                    4              CA-CFAR                    5   0.6143497757847534 
+                   0            Chebyshev              CA-CFAR                    6                    6              CA-CFAR                   10   0.6845637583892618 
+                   0            Chebyshev              CA-CFAR                    6                    6              CA-CFAR                    5   0.6375838926174496 
+                   0            Chebyshev              CA-CFAR                    8                    4              CA-CFAR                   10   0.7085201793721974 
+                   0            Chebyshev              CA-CFAR                    8                    4              CA-CFAR                    5    0.672645739910314 
+                   0            Chebyshev              CA-CFAR                    8                    6              CA-CFAR                   10   0.6510067114093959 
+                   0            Chebyshev              CA-CFAR                    8                    6              CA-CFAR                    5   0.5906040268456376 
+                   0            Chebyshev              CA-CFAR                    8                    8              CA-CFAR                   10                 0.75 
+                   0            Chebyshev              CA-CFAR                    8                    8              CA-CFAR                    5   0.7053571428571429 
+                   0            Chebyshev          exponential                    1                    1          exponential                   10   0.7947976878612717 
+                   0            Chebyshev          exponential                    1                    1          exponential                    5   0.7687861271676301 
+                   0            Chebyshev          exponential                    4                    2          exponential                   10   0.7648725212464589 
+                   0            Chebyshev          exponential                    4                    2          exponential                    5   0.6402266288951841 
+                   0            Chebyshev          exponential                    4                    4          exponential                   10   0.7415730337078652 
+                   0            Chebyshev          exponential                    4                    4          exponential                    5   0.6235955056179775 
+                   0            Chebyshev          exponential                    6                    2          exponential                   10   0.7640449438202247 
+                   0            Chebyshev          exponential                    6                    2          exponential                    5   0.6601123595505618 
+                   0            Chebyshev          exponential                    6                    4          exponential                   10   0.7584269662921348 
+                   0            Chebyshev          exponential                    6                    4          exponential                    5    0.651685393258427 
+                   0            Chebyshev          exponential                    6                    6          exponential                   10   0.7777777777777778 
+                   0            Chebyshev          exponential                    6                    6          exponential                    5   0.6752136752136753 
+                   0            Chebyshev          exponential                    8                    4          exponential                   10   0.8232044198895028 
+                   0            Chebyshev          exponential                    8                    4          exponential                    5   0.6961325966850829 
+                   0            Chebyshev          exponential                    8                    6          exponential                   10   0.7768595041322314 
+                   0            Chebyshev          exponential                    8                    6          exponential                    5   0.6528925619834711 
+                   0            Chebyshev          exponential                    8                    8          exponential                   10   0.8901098901098901 
+                   0            Chebyshev          exponential                    8                    8          exponential                    5   0.7692307692307693 
+                   0                 Hann              CA-CFAR                    1                    1              CA-CFAR                   10   0.6358447488584474 
+                   0                 Hann              CA-CFAR                    1                    1              CA-CFAR                    5   0.6358447488584474 
+                   0                 Hann              CA-CFAR                    4                    2              CA-CFAR                   10    0.647191011235955 
+                   0                 Hann              CA-CFAR                    4                    2              CA-CFAR                    5   0.6112359550561798 
+                   0                 Hann              CA-CFAR                    4                    4              CA-CFAR                   10   0.6367713004484304 
+                   0                 Hann              CA-CFAR                    4                    4              CA-CFAR                    5   0.5919282511210763 
+                   0                 Hann              CA-CFAR                    6                    2              CA-CFAR                   10   0.6928251121076233 
+                   0                 Hann              CA-CFAR                    6                    2              CA-CFAR                    5   0.6412556053811659 
+                   0                 Hann              CA-CFAR                    6                    4              CA-CFAR                   10   0.7085201793721974 
+                   0                 Hann              CA-CFAR                    6                    4              CA-CFAR                    5   0.6367713004484304 
+                   0                 Hann              CA-CFAR                    6                    6              CA-CFAR                   10    0.697986577181208 
+                   0                 Hann              CA-CFAR                    6                    6              CA-CFAR                    5   0.6442953020134228 
+                   0                 Hann              CA-CFAR                    8                    4              CA-CFAR                   10   0.7219730941704036 
+                   0                 Hann              CA-CFAR                    8                    4              CA-CFAR                    5    0.672645739910314 
+                   0                 Hann              CA-CFAR                    8                    6              CA-CFAR                   10   0.6644295302013423 
+                   0                 Hann              CA-CFAR                    8                    6              CA-CFAR                    5   0.6174496644295302 
+                   0                 Hann              CA-CFAR                    8                    8              CA-CFAR                   10   0.7410714285714286 
+                   0                 Hann              CA-CFAR                    8                    8              CA-CFAR                    5               0.6875 
+                   0                 Hann          exponential                    1                    1          exponential                   10   0.8005780346820809 
+                   0                 Hann          exponential                    1                    1          exponential                    5   0.7716763005780347 
+                   0                 Hann          exponential                    4                    2          exponential                   10   0.7847025495750708 
+                   0                 Hann          exponential                    4                    2          exponential                    5   0.6572237960339944 
+                   0                 Hann          exponential                    4                    4          exponential                   10   0.7584269662921348 
+                   0                 Hann          exponential                    4                    4          exponential                    5   0.6292134831460674 
+                   0                 Hann          exponential                    6                    2          exponential                   10   0.7780898876404494 
+                   0                 Hann          exponential                    6                    2          exponential                    5   0.6629213483146067 
+                   0                 Hann          exponential                    6                    4          exponential                   10   0.7752808988764045 
+                   0                 Hann          exponential                    6                    4          exponential                    5   0.6685393258426966 
+                   0                 Hann          exponential                    6                    6          exponential                   10   0.8034188034188035 
+                   0                 Hann          exponential                    6                    6          exponential                    5   0.6752136752136753 
+                   0                 Hann          exponential                    8                    4          exponential                   10   0.8388888888888889 
+                   0                 Hann          exponential                    8                    4          exponential                    5   0.7111111111111111 
+                   0                 Hann          exponential                    8                    6          exponential                   10   0.7833333333333333 
+                   0                 Hann          exponential                    8                    6          exponential                    5   0.6916666666666667 
+                   0                 Hann          exponential                    8                    8          exponential                   10   0.8888888888888888 
+                   0                 Hann          exponential                    8                    8          exponential                    5   0.7777777777777778 
+                   0          Rectangular              CA-CFAR                    1                    1              CA-CFAR                   10   0.6492027334851936 
+                   0          Rectangular              CA-CFAR                    1                    1              CA-CFAR                    5    0.642369020501139 
+                   0          Rectangular              CA-CFAR                    4                    2              CA-CFAR                   10   0.6808988764044944 
+                   0          Rectangular              CA-CFAR                    4                    2              CA-CFAR                    5   0.6022471910112359 
+                   0          Rectangular              CA-CFAR                    4                    4              CA-CFAR                   10   0.6860986547085202 
+                   0          Rectangular              CA-CFAR                    4                    4              CA-CFAR                    5   0.5919282511210763 
+                   0          Rectangular              CA-CFAR                    6                    2              CA-CFAR                   10   0.6704035874439462 
+                   0          Rectangular              CA-CFAR                    6                    2              CA-CFAR                    5   0.5896860986547086 
+                   0          Rectangular              CA-CFAR                    6                    4              CA-CFAR                   10   0.6636771300448431 
+                   0          Rectangular              CA-CFAR                    6                    4              CA-CFAR                    5     0.57847533632287 
+                   0          Rectangular              CA-CFAR                    6                    6              CA-CFAR                   10   0.6577181208053692 
+                   0          Rectangular              CA-CFAR                    6                    6              CA-CFAR                    5   0.5771812080536913 
+                   0          Rectangular              CA-CFAR                    8                    4              CA-CFAR                   10   0.6636771300448431 
+                   0          Rectangular              CA-CFAR                    8                    4              CA-CFAR                    5   0.5829596412556054 
+                   0          Rectangular              CA-CFAR                    8                    6              CA-CFAR                   10   0.6442953020134228 
+                   0          Rectangular              CA-CFAR                    8                    6              CA-CFAR                    5   0.5503355704697986 
+                   0          Rectangular              CA-CFAR                    8                    8              CA-CFAR                   10               0.6875 
+                   0          Rectangular              CA-CFAR                    8                    8              CA-CFAR                    5   0.6160714285714286 
+                   0          Rectangular          exponential                    1                    1          exponential                   10   0.8205499276410999 
+                   0          Rectangular          exponential                    1                    1          exponential                    5   0.7713458755426917 
+                   0          Rectangular          exponential                    4                    2          exponential                   10   0.7711864406779662 
+                   0          Rectangular          exponential                    4                    2          exponential                    5   0.6581920903954802 
+                   0          Rectangular          exponential                    4                    4          exponential                   10   0.7796610169491526 
+                   0          Rectangular          exponential                    4                    4          exponential                    5   0.6497175141242938 
+                   0          Rectangular          exponential                    6                    2          exponential                   10    0.723463687150838 
+                   0          Rectangular          exponential                    6                    2          exponential                    5   0.6368715083798883 
+                   0          Rectangular          exponential                    6                    4          exponential                   10   0.7094972067039106 
+                   0          Rectangular          exponential                    6                    4          exponential                    5   0.6312849162011173 
+                   0          Rectangular          exponential                    6                    6          exponential                   10   0.7226890756302521 
+                   0          Rectangular          exponential                    6                    6          exponential                    5   0.6470588235294118 
+                   0          Rectangular          exponential                    8                    4          exponential                   10   0.7900552486187845 
+                   0          Rectangular          exponential                    8                    4          exponential                    5   0.6464088397790055 
+                   0          Rectangular          exponential                    8                    6          exponential                   10   0.8099173553719008 
+                   0          Rectangular          exponential                    8                    6          exponential                    5   0.6363636363636364 
+                   0          Rectangular          exponential                    8                    8          exponential                   10   0.8131868131868132 
+                   0          Rectangular          exponential                    8                    8          exponential                    5   0.6813186813186813 
+                   1            Chebyshev              CA-CFAR                    4                    4              CA-CFAR                   10   0.5892857142857143 
+                   1            Chebyshev              CA-CFAR                    4                    4              CA-CFAR                    5              0.53125 
+                   1            Chebyshev              CA-CFAR                    6                    2              CA-CFAR                   10    0.625560538116592 
+                   1            Chebyshev              CA-CFAR                    6                    2              CA-CFAR                    5   0.5739910313901345 
+                   1            Chebyshev              CA-CFAR                    6                    4              CA-CFAR                   10   0.6233183856502242 
+                   1            Chebyshev              CA-CFAR                    6                    4              CA-CFAR                    5    0.547085201793722 
+                   1            Chebyshev              CA-CFAR                    6                    6              CA-CFAR                   10   0.6241610738255033 
+                   1            Chebyshev              CA-CFAR                    6                    6              CA-CFAR                    5   0.5838926174496645 
+                   1            Chebyshev              CA-CFAR                    8                    2              CA-CFAR                   10   0.6396396396396397 
+                   1            Chebyshev              CA-CFAR                    8                    2              CA-CFAR                    5   0.5945945945945946 
+                   1            Chebyshev              CA-CFAR                    8                    4              CA-CFAR                   10   0.6666666666666666 
+                   1            Chebyshev              CA-CFAR                    8                    4              CA-CFAR                    5   0.6306306306306306 
+                   1            Chebyshev              CA-CFAR                    8                    6              CA-CFAR                   10   0.6081081081081081 
+                   1            Chebyshev              CA-CFAR                    8                    6              CA-CFAR                    5   0.5472972972972973 
+                   1            Chebyshev              CA-CFAR                    8                    8              CA-CFAR                   10   0.7142857142857143 
+                   1            Chebyshev              CA-CFAR                    8                    8              CA-CFAR                    5   0.6696428571428571 
+                   1            Chebyshev          exponential                    4                    4          exponential                   10   0.5982142857142857 
+                   1            Chebyshev          exponential                    4                    4          exponential                    5   0.5089285714285714 
+                   1            Chebyshev          exponential                    6                    2          exponential                   10   0.6031390134529148 
+                   1            Chebyshev          exponential                    6                    2          exponential                    5   0.5201793721973094 
+                   1            Chebyshev          exponential                    6                    4          exponential                   10   0.5919282511210763 
+                   1            Chebyshev          exponential                    6                    4          exponential                    5   0.5067264573991032 
+                   1            Chebyshev          exponential                    6                    6          exponential                   10   0.6040268456375839 
+                   1            Chebyshev          exponential                    6                    6          exponential                    5   0.5302013422818792 
+                   1            Chebyshev          exponential                    8                    2          exponential                   10   0.6486486486486487 
+                   1            Chebyshev          exponential                    8                    2          exponential                    5   0.5405405405405406 
+                   1            Chebyshev          exponential                    8                    4          exponential                   10   0.6756756756756757 
+                   1            Chebyshev          exponential                    8                    4          exponential                    5   0.5720720720720721 
+                   1            Chebyshev          exponential                    8                    6          exponential                   10   0.6283783783783784 
+                   1            Chebyshev          exponential                    8                    6          exponential                    5    0.527027027027027 
+                   1            Chebyshev          exponential                    8                    8          exponential                   10   0.7232142857142857 
+                   1            Chebyshev          exponential                    8                    8          exponential                    5                0.625 
+                   1                 Hann              CA-CFAR                    4                    2              CA-CFAR                   10    0.600451467268623 
+                   1                 Hann              CA-CFAR                    4                    2              CA-CFAR                    5   0.5643340857787811 
+                   1                 Hann              CA-CFAR                    4                    4              CA-CFAR                   10    0.600896860986547 
+                   1                 Hann              CA-CFAR                    4                    4              CA-CFAR                    5   0.5560538116591929 
+                   1                 Hann              CA-CFAR                    6                    2              CA-CFAR                   10   0.6390134529147982 
+                   1                 Hann              CA-CFAR                    6                    2              CA-CFAR                    5   0.5919282511210763 
+                   1                 Hann              CA-CFAR                    6                    4              CA-CFAR                   10   0.6412556053811659 
+                   1                 Hann              CA-CFAR                    6                    4              CA-CFAR                    5     0.57847533632287 
+                   1                 Hann              CA-CFAR                    6                    6              CA-CFAR                   10   0.6577181208053692 
+                   1                 Hann              CA-CFAR                    6                    6              CA-CFAR                    5    0.610738255033557 
+                   1                 Hann              CA-CFAR                    8                    2              CA-CFAR                   10   0.6463963963963963 
+                   1                 Hann              CA-CFAR                    8                    2              CA-CFAR                    5   0.6013513513513513 
+                   1                 Hann              CA-CFAR                    8                    4              CA-CFAR                   10   0.6801801801801802 
+                   1                 Hann              CA-CFAR                    8                    4              CA-CFAR                    5   0.6306306306306306 
+                   1                 Hann              CA-CFAR                    8                    6              CA-CFAR                   10   0.6148648648648649 
+                   1                 Hann              CA-CFAR                    8                    6              CA-CFAR                    5   0.5675675675675675 
+                   1                 Hann              CA-CFAR                    8                    8              CA-CFAR                   10   0.7117117117117117 
+                   1                 Hann              CA-CFAR                    8                    8              CA-CFAR                    5   0.6576576576576577 
+                   1                 Hann          exponential                    4                    2          exponential                   10   0.6275395033860045 
+                   1                 Hann          exponential                    4                    2          exponential                    5   0.5282167042889391 
+                   1                 Hann          exponential                    4                    4          exponential                   10   0.6143497757847534 
+                   1                 Hann          exponential                    4                    4          exponential                    5    0.515695067264574 
+                   1                 Hann          exponential                    6                    2          exponential                   10   0.6165919282511211 
+                   1                 Hann          exponential                    6                    2          exponential                    5   0.5291479820627802 
+                   1                 Hann          exponential                    6                    4          exponential                   10   0.6098654708520179 
+                   1                 Hann          exponential                    6                    4          exponential                    5   0.5291479820627802 
+                   1                 Hann          exponential                    6                    6          exponential                   10   0.6308724832214765 
+                   1                 Hann          exponential                    6                    6          exponential                    5   0.5369127516778524 
+                   1                 Hann          exponential                    8                    2          exponential                   10   0.6486486486486487 
+                   1                 Hann          exponential                    8                    2          exponential                    5   0.5405405405405406 
+                   1                 Hann          exponential                    8                    4          exponential                   10   0.6801801801801802 
+                   1                 Hann          exponential                    8                    4          exponential                    5   0.5765765765765766 
+                   1                 Hann          exponential                    8                    6          exponential                   10   0.6216216216216216 
+                   1                 Hann          exponential                    8                    6          exponential                    5   0.5472972972972973 
+                   1                 Hann          exponential                    8                    8          exponential                   10   0.7207207207207207 
+                   1                 Hann          exponential                    8                    8          exponential                    5   0.6306306306306306 
+                   1          Rectangular              CA-CFAR                    4                    2              CA-CFAR                   10   0.6152125279642058 
+                   1          Rectangular              CA-CFAR                    4                    2              CA-CFAR                    5   0.5391498881431768 
+                   1          Rectangular              CA-CFAR                    4                    4              CA-CFAR                   10   0.6294642857142857 
+                   1          Rectangular              CA-CFAR                    4                    4              CA-CFAR                    5   0.5401785714285714 
+                   1          Rectangular              CA-CFAR                    6                    2              CA-CFAR                   10   0.6098654708520179 
+                   1          Rectangular              CA-CFAR                    6                    2              CA-CFAR                    5   0.5269058295964125 
+                   1          Rectangular              CA-CFAR                    6                    4              CA-CFAR                   10   0.5964125560538116 
+                   1          Rectangular              CA-CFAR                    6                    4              CA-CFAR                    5   0.5112107623318386 
+                   1          Rectangular              CA-CFAR                    6                    6              CA-CFAR                   10   0.6040268456375839 
+                   1          Rectangular              CA-CFAR                    6                    6              CA-CFAR                    5   0.5167785234899329 
+                   1          Rectangular              CA-CFAR                    8                    2              CA-CFAR                   10   0.6224719101123596 
+                   1          Rectangular              CA-CFAR                    8                    2              CA-CFAR                    5   0.5415730337078651 
+                   1          Rectangular              CA-CFAR                    8                    4              CA-CFAR                   10   0.6322869955156951 
+                   1          Rectangular              CA-CFAR                    8                    4              CA-CFAR                    5    0.547085201793722 
+                   1          Rectangular              CA-CFAR                    8                    6              CA-CFAR                   10    0.610738255033557 
+                   1          Rectangular              CA-CFAR                    8                    6              CA-CFAR                    5   0.5234899328859061 
+                   1          Rectangular              CA-CFAR                    8                    8              CA-CFAR                   10   0.6696428571428571 
+                   1          Rectangular              CA-CFAR                    8                    8              CA-CFAR                    5   0.5892857142857143 
+                   1          Rectangular          exponential                    4                    2          exponential                   10   0.6129753914988815 
+                   1          Rectangular          exponential                    4                    2          exponential                    5   0.5257270693512305 
+                   1          Rectangular          exponential                    4                    4          exponential                   10   0.6160714285714286 
+                   1          Rectangular          exponential                    4                    4          exponential                    5   0.5178571428571429 
+                   1          Rectangular          exponential                    6                    2          exponential                   10   0.5762331838565022 
+                   1          Rectangular          exponential                    6                    2          exponential                    5   0.5089686098654709 
+                   1          Rectangular          exponential                    6                    4          exponential                   10   0.5695067264573991 
+                   1          Rectangular          exponential                    6                    4          exponential                    5   0.5112107623318386 
+                   1          Rectangular          exponential                    6                    6          exponential                   10   0.5771812080536913 
+                   1          Rectangular          exponential                    6                    6          exponential                    5   0.5167785234899329 
+                   1          Rectangular          exponential                    8                    2          exponential                   10   0.6337078651685393 
+                   1          Rectangular          exponential                    8                    2          exponential                    5   0.5303370786516854 
+                   1          Rectangular          exponential                    8                    4          exponential                   10   0.6502242152466368 
+                   1          Rectangular          exponential                    8                    4          exponential                    5    0.547085201793722 
+                   1          Rectangular          exponential                    8                    6          exponential                   10   0.6510067114093959 
+                   1          Rectangular          exponential                    8                    6          exponential                    5   0.5167785234899329 
+                   1          Rectangular          exponential                    8                    8          exponential                   10   0.6785714285714286 
+                   1          Rectangular          exponential                    8                    8          exponential                    5   0.5803571428571429 
