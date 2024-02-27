@@ -65,7 +65,7 @@
 \contentsline {section}{\numberline {6.1}Measurements setup}{47}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Measurement Scope: Detection Rate}{48}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Processing of the NLOS region}{50}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{51}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{52}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Human target detection}{54}{subsection.6.3.1}%
 \contentsline {subsubsection}{Moving average of detection rate}{55}{subsubsection*.77}%
 \contentsline {chapter}{\numberline {7}Outlook and Conclusion}{57}{chapter.7}%

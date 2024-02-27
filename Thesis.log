@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  27 FEB 2024 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.2)  27 FEB 2024 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1865,7 +1865,7 @@ File: Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png Graphic file (type
  png)
 <use Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png>
 Package pdftex.def Info: Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png
-  used on input line 114.
+  used on input line 112.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
 <Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png, id=1145, 4
 62.22687pt x 347.04657pt>
@@ -1873,7 +1873,7 @@ File: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png Graphi
 c file (type png)
 <use Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png>
 Package pdftex.def Info: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelle
-d_text22.png  used on input line 117.
+d_text22.png  used on input line 115.
 (pdftex.def)             Requested size: 208.00017pt x 156.16951pt.
 <Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png, id=1
 146, 462.528pt x 346.896pt>
@@ -1881,17 +1881,19 @@ File: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png
 Graphic file (type png)
 <use Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png>
 Package pdftex.def Info: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_l
-abelled_text22.png  used on input line 120.
+abelled_text22.png  used on input line 118.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
  [51] [52 <./Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png> <./Images/
 Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png> <./Images/Test1/pe
 r_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png>]
-<Images/Test1/detect_hist_strong_ref.png, id=1173, 346.896pt x 222.504pt>
-File: Images/Test1/detect_hist_strong_ref.png Graphic file (type png)
-<use Images/Test1/detect_hist_strong_ref.png>
-Package pdftex.def Info: Images/Test1/detect_hist_strong_ref.png  used on input
- line 134.
-(pdftex.def)             Requested size: 318.66948pt x 204.41078pt.
+<Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png, id=1171, 393.762pt x 
+249.222pt>
+File: Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png Graphic file (typ
+e png)
+<use Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png>
+Package pdftex.def Info: Images/Test1/detect_hist/detect_hist_cabinet_LMsans.pn
+g  used on input line 134.
+(pdftex.def)             Requested size: 273.14923pt x 172.88744pt.
 Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
 (epstopdf)                    date: 2024-01-10 11:26:40
 (epstopdf)                    size: 40661 bytes
@@ -1903,14 +1905,14 @@ Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
 converted-to.pdf Images/Test1/kf_track.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/kf_track-eps-converted-to.pdf, id=1174, 463.7325pt x 347.2975pt>
+<Images/Test1/kf_track-eps-converted-to.pdf, id=1172, 463.7325pt x 347.2975pt>
 File: Images/Test1/kf_track-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Test1/kf_track-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
 put line 143.
-(pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
- [53 <./Images/Test1/detect_hist_strong_ref.png> <./Images/Test1/kf_track-eps-c
-onverted-to.pdf>]
+(pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
+ [53 <./Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png> <./Images/Test
+1/kf_track-eps-converted-to.pdf>]
 <Images/Test1/Human_crap_ecac/crap_labelled.png, id=1220, 462.528pt x 346.896pt
 >
 File: Images/Test1/Human_crap_ecac/crap_labelled.png Graphic file (type png)
@@ -1925,10 +1927,13 @@ File: Images/Test1/Human_crap_ecac/ecac_labelled.png Graphic file (type png)
 Package pdftex.def Info: Images/Test1/Human_crap_ecac/ecac_labelled.png  used o
 n input line 164.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
-<Images/Test1/detect_hist.png, id=1226, 387.63pt x 231.702pt>
-File: Images/Test1/detect_hist.png Graphic file (type png)
-<use Images/Test1/detect_hist.png>
-Package pdftex.def Info: Images/Test1/detect_hist.png  used on input line 178.
+<Images/Test1/detect_hist/detect_hist_human_LMsans.png, id=1226, 387.63pt x 231
+.702pt>
+File: Images/Test1/detect_hist/detect_hist_human_LMsans.png Graphic file (type 
+png)
+<use Images/Test1/detect_hist/detect_hist_human_LMsans.png>
+Package pdftex.def Info: Images/Test1/detect_hist/detect_hist_human_LMsans.png 
+ used on input line 178.
 (pdftex.def)             Requested size: 318.66948pt x 190.48123pt.
  [54 <./Images/Test1/Human_crap_ecac/crap_labelled.png> <./Images/Test1/Human_c
 rap_ecac/ecac_labelled.png>]
@@ -1939,8 +1944,9 @@ File: Images/Test1/moving_avg-transformed_wtext.png Graphic file (type png)
 Package pdftex.def Info: Images/Test1/moving_avg-transformed_wtext.png  used on
  input line 203.
 (pdftex.def)             Requested size: 318.66948pt x 204.01866pt.
- [55 <./Images/Test1/detect_hist.png>]) (./Chapters/Outlook.tex [56 <./Images/T
-est1/moving_avg-transformed_wtext.png>]
+
+[55 <./Images/Test1/detect_hist/detect_hist_human_LMsans.png>])
+(./Chapters/Outlook.tex [56 <./Images/Test1/moving_avg-transformed_wtext.png>]
 Chapter 7.
 ) (./Thesis.bbl [57
 
@@ -2120,7 +2126,7 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  31702 strings out of 474174
- 608877 string characters out of 5749678
+ 609164 string characters out of 5749678
  1946460 words of memory out of 5000000
  53054 multiletter control sequences out of 15000+600000
  586130 words of font info for 103 fonts, out of 8000000 for 9000
@@ -2149,7 +2155,7 @@ dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts
 lic/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
 er/sftt1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfxc120
 0.pfb>
-Output written on Thesis.pdf (82 pages, 9834472 bytes).
+Output written on Thesis.pdf (82 pages, 9857510 bytes).
 PDF statistics:
  1571 PDF objects out of 1728 (max. 8388607)
  1097 compressed objects within 11 object streams

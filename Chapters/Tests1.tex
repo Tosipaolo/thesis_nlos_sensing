@@ -104,8 +104,6 @@ The full process for the experiment is summarized in figure \ref{fig:Test1_NLOS-
 
 \section{Observation on detection rate of a strong reflector}
 
-The first measurement was conducted using the strong reflector, which represented an ideal scenario.
-
 	\begin{figure}[H]
 	\centering
 	
@@ -123,6 +121,8 @@ The first measurement was conducted using the strong reflector, which represente
 		Periodograms \subref{fig:Test1_metal_lin} and \subref{fig:Test1_metal_db} show the returns obtained with the metal cabinet. The NLOS return (purple) is clearly separated from the underlying noise floor, even when processing only 24 symbols. On the contrary the NLOS component generated from the human target in \subref{fig:Test1_metal_human-baseline}, requires for a considerably higher processing gain to be detected reliably.}
 	\label{fig:Test1_metal-human_comparison}
 	\end{figure}
+	
+The first measurement was conducted using the strong reflector, which represented an ideal scenario.
 
 
 The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and is not masked by clutter.
@@ -131,7 +131,7 @@ Passing the NLOS measurements to a Kalman filter it was possible to track the ta
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist_strong_ref.png}
+	\includegraphics[width=0.6\textwidth]{Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png}
 	\caption{Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}
 	\label{fig:Test1_detect_rate_strong_ref}
 \end{figure}
@@ -140,7 +140,7 @@ Passing the NLOS measurements to a Kalman filter it was possible to track the ta
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Images/Test1/kf_track.eps}
+	\includegraphics[width=0.6\textwidth]{Images/Test1/kf_track.eps}
 	\caption{Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.}
 	\label{fig:Test1_kf_track_strong_ref}
 \end{figure}
@@ -175,7 +175,7 @@ Target detection was carried out by considering the 'n'-strongest peaks and comp
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist.png}
+	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist/detect_hist_human_LMsans.png}
 	\caption{Detection rate observed for human target in mixed LOS/NLOS measurement.}
 	\label{fig:Test1_detect_hist}
 \end{figure}
@@ -191,7 +191,7 @@ The detection rate was observed throughout the entire measurement, including fra
 %TODO: change subsection title
 \subsubsection{Moving average of detection rate}
 
-Figure \ref{fig:Test1_moving_avg} shows the average detection rate over 10 consecutive updates. It is evident that the detection rate is above 80% for several consecutive 10-update intervals when the target is in motion and therefore well separated from the clutter region.
+Figure \ref{fig:Test1_moving_avg} shows the average detection rate over 10 consecutive updates. It is evident that the detection rate is above 80\% for several consecutive 10-update intervals when the target is in motion and therefore well separated from the clutter region.
 
 
 Although this measure was obtained in a controlled single-target scenario, it opens the possibility of detecting the presence of non-line-of-sight (NLOS) moving targets without relying on additional ground truth data.
