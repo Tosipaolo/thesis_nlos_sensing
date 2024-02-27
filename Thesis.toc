@@ -66,13 +66,14 @@
 \contentsline {section}{\numberline {6.2}Measurement Scope: Detection Rate}{48}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Processing of the NLOS region}{50}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{51}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Scope of the measurement - Detection rate}{52}{subsection.6.3.1}%
-\contentsline {subsubsection}{Moving average of detection rate}{53}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {6.3.1}Human target detection}{54}{subsection.6.3.1}%
+\contentsline {subsubsection}{Moving average of detection rate}{55}{subsubsection*.77}%
+\contentsline {chapter}{\numberline {7}Outlook and Conclusion}{57}{chapter.7}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{55}{chapter*.78}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{59}{chapter*.81}%
 \vspace {2em}
-\contentsline {chapter}{Abbreviations}{59}{chapter*.80}%
-\contentsline {chapter}{List of Figures}{61}{chapter*.83}%
-\contentsline {chapter}{List of Tables}{63}{chapter*.85}%
-\contentsline {chapter}{List of Symbols}{65}{chapter*.87}%
-\contentsline {chapter}{Acknowledgements}{67}{chapter*.90}%
+\contentsline {chapter}{Abbreviations}{63}{chapter*.83}%
+\contentsline {chapter}{List of Figures}{65}{chapter*.86}%
+\contentsline {chapter}{List of Tables}{67}{chapter*.88}%
+\contentsline {chapter}{List of Symbols}{69}{chapter*.90}%
+\contentsline {chapter}{Acknowledgements}{71}{chapter*.93}%

@@ -65,7 +65,7 @@ Figures \ref{fig:Test1_base-lateral_view} and \ref{fig:Test1_base-top_view} depi
 	$$ \hat{v}_{\text{NLOS}} = -v_{\text{LOS}}$$
 	since the direct and reflected beams will hit the target from the opposite direction.
 	\item Range of the NLOS component was estimated considering the model in Figure \ref{fig:Test1_base-lateral_view} as:
-	$$ \hat{d}_{\text{NLOS}} = 2 d_{\text{wall}} - d_{\text{LOS}}\cdot \cos{(\arctan{\left(\frac{h_{\text{gNB}}}{d_{LOS}}\right)})}$$
+	$$ \hat{d}_{\text{NLOS}} = 2 d_{\text{wall}} - d_{\text{LOS}}\cdot \cos{(\arctan{\left(\frac{h_{\text{gNB}}}{d_{\text{LOS}}}\right)})}$$
 \end{itemize}
 
 
@@ -106,6 +106,28 @@ The full process for the experiment is summarized in figure \ref{fig:Test1_NLOS-
 
 The first measurement was conducted using the strong reflector, which represented an ideal scenario.
 
+	\begin{figure}[H]
+	\centering
+	
+	\subfloat[\footnotesize Metal cabinet moving towards gNB, linear scale.\label{fig:Test1_metal_lin}]{%
+		\includegraphics[scale=0.45]{Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png}%
+	}\hfill
+	\subfloat[\footnotesize Metal cabinet moving towards gNB, power in dB.\label{fig:Test1_metal_db}]{%
+		\includegraphics[scale=0.45]{Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png}%
+	}\hfill
+	\subfloat[\footnotesize Human target walking towards gNB, power in dB.\label{fig:Test1_metal_human-baseline}]{
+		\includegraphics[scale=0.45]{Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png}
+	}
+	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's industrial test facility.
+		All the periodograms are obtained by processing a single decimated CSI frame (24 symbols), after applying clutter removal with CRAP.
+		Periodograms \subref{fig:Test1_metal_lin} and \subref{fig:Test1_metal_db} show the returns obtained with the metal cabinet. The NLOS return (purple) is clearly separated from the underlying noise floor, even when processing only 24 symbols. On the contrary the NLOS component generated from the human target in \subref{fig:Test1_metal_human-baseline}, requires for a considerably higher processing gain to be detected reliably.}
+	\label{fig:Test1_metal-human_comparison}
+	\end{figure}
+
+
+The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and is not masked by clutter.
+
+Passing the NLOS measurements to a Kalman filter it was possible to track the target in the range/Doppler plane, as shown in figure \ref{fig:Test1_kf_track_strong_ref}. This result is to show that one of the main limitation of NLOS signals is the strength of the target return. Objects with large RCS are easier to separate from the noisy background and the effect of fading and obstruction is relatively small.
 
 \begin{figure}[H]
 	\centering
@@ -114,23 +136,42 @@ The first measurement was conducted using the strong reflector, which represente
 	\label{fig:Test1_detect_rate_strong_ref}
 \end{figure}
 
-The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and is not masked by clutter.
 
-Passing the NLOS measurements to a Kalman filter it was possible to track the target in the range/Doppler plane, as shown in figure \ref{fig:Test1_kf_track_strong_ref}. This result is to show that one of the main limitation of NLOS signals is the strength of the target return. Objects with large RCS are easier to separate from the noisy background and the effect of fading and obstruction is relatively small.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Images/Test1/kf_track.eps}
-	\caption{Output of KF tracking the target in the range/speed plane.}
+	\caption{Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.}
 	\label{fig:Test1_kf_track_strong_ref}
 \end{figure}
 
 
-\subsection{Scope of the measurement - Detection rate}
+\subsection{Human target detection}
 
-The results were obtained with the different frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. When combining subsequent frames to increase time-aperture, the window processing stride was set to be lower then the number of frames. This allowed to increase the amount of target updates.
+The detection rate for measurements with a walking actor was obtained using the various frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. To increase time-aperture, subsequent frames were combined, and the window processing stride was set to be lower than the number 
+of frames, allowing for more target updates.
 
-Target detection was carried out considering the \textit{n}-strongest peaks and comparing them against the LOS data. If any of the observed NLOS peaks was deemed to be corresponding to the target then detection was positive.
+Clutter removal was performed using CRAP to ensure precise estimation of the expected target position in NLOS conditions. In contrast, periodograms generated with the ECA-C technique showed the NLOS component to be well separated from the underlying noise floor, but the estimated position did not correspond with the measured one, making the detection test difficult. Comparison of a sample radar update is shown in Figure \ref{fig:Test1_huma_crap-ecac}.
+
+	\begin{figure}[H]
+	\centering
+	
+	\subfloat[Periodogram after applying CRAP.\label{fig:Test1_mhuman_crap}]{%
+		\includegraphics[scale=0.45]{Images/Test1/Human_crap_ecac/crap_labelled.png}%
+	}\hfill
+	\subfloat[Periodogram after applying ECAC.\label{fig:Test1_mhuman_ecac}]{%
+		\includegraphics[scale=0.45]{Images/Test1/Human_crap_ecac/ecac_labelled.png}%
+	}
+	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's industrial test facility.
+		Periodogram obtained by processing 6 consecutive frames.
+		In \subref{fig:Test1_mhuman_crap} the NLOS return presents a single, but its power is comparable with the one of the nearby artefacts. In \subref{fig:Test1_mhuman_ecac} the return is distorted in two peaks, moreover the sidelobes of the LOS component are enhanced and appear as ghost targets.}
+	\label{fig:Test1_huma_crap-ecac}
+\end{figure}
+
+
+
+
+Target detection was carried out by considering the 'n'-strongest peaks and comparing them against the LOS data. If any of the observed non-line-of-sight (NLOS) peaks corresponded to the target, then the detection was positive.
 
 \begin{figure}[H]
 	\centering
@@ -139,20 +180,21 @@ Target detection was carried out considering the \textit{n}-strongest peaks and 
 	\label{fig:Test1_detect_hist}
 \end{figure}
 
-Using a larger time-aperture significantly increased the detection rate due to the improved speed resolution. However, this approach may cause range spreading issues, particularly for fast targets. This phenomenon is not a significant drawback in NLOS sensing since the system's primary objective is target detection rather than precise tracking and positioning.
+Increasing the time-aperture significantly improved the detection rate due to the larger SNR.
 
-It was observed that the NLOS target return was not the strongest return in the majority of cases, with lower peak power with respect to noise and spectral artefacts, also due to channel fading.
+In most cases, the NLOS target return was not the strongest due to lower peak power compared to noise. Additionally, when increasing the time aperture, spectral artefacts were present.
+Target returns occasionally suffered from channel fading, causing their power to change between consecutive updates. In contrast, artefacts' power remained relatively constant and proportional to the number of processed frames.
 
-The detection rate was observed over the whole measurement: frames in which the target changed direction and was therefore static, or presented a low speed component, were included. Processing these time instants meant that the NLOS component was likely to be masked by clutter and give a negative detection. The effective detection rate, measured only when the target is moving, is likely to be higher.
+The detection rate was observed throughout the entire measurement, including frames where the target changed direction and was either static or presented a low-speed component. However, processing these time instants may have masked the NLOS component with clutter and resulted in a negative detection. Therefore, the effective detection rate, which is measured only when the target is in motion, is likely to be higher.
+
 
 %TODO: change subsection title
 \subsubsection{Moving average of detection rate}
 
+Figure \ref{fig:Test1_moving_avg} shows the average detection rate over 10 consecutive updates. It is evident that the detection rate is above 80% for several consecutive 10-update intervals when the target is in motion and therefore well separated from the clutter region.
 
-% TODO: I don't like this phrasing
-The average detection rate over 10 consecutive updates is shown in figure \ref{fig:Test1_moving_avg}. It can be seen that when the target is moving, and therefore  well separated from the clutter region, detection rate appears to be above 80\% for a number of consecutive 10-update intervals.
 
-Although obtained in a controlled single target scenario, this measure opens the door to the possibility of determining the presence of NLOS moving targets without the aid of ground truth data.
+Although this measure was obtained in a controlled single-target scenario, it opens the possibility of detecting the presence of non-line-of-sight (NLOS) moving targets without relying on additional ground truth data.
 
 
 % TODO: change picture with higher resolution one, maybe solved
