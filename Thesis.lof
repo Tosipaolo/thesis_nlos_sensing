@@ -46,10 +46,11 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. }}{44}{figure.caption.65}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Processed periodogram, separated in processing regions.}}{45}{figure.caption.66}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Lateral view of measurement scenario.}}{48}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Top view of measurement scenario.}}{48}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{50}{figure.caption.70}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{51}{figure.caption.71}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{52}{figure.caption.73}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{52}{figure.caption.74}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{53}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.}}{48}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.}}{48}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Top view of measurement scenario.}}{49}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Periodogram processing pipeline used for detection tests.}}{50}{figure.caption.71}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}}{51}{figure.caption.72}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Output of KF tracking the target in the range/speed plane.}}{52}{figure.caption.73}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{53}{figure.caption.74}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.}}{54}{figure.caption.76}%

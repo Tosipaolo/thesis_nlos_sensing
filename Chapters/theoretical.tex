@@ -165,7 +165,7 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
     
     This work focuses on spectral estimation based on the periodogram, which is a computationally efficient technique compared to MUSIC and ESPRIT.
     The reduced computational complexity is crucial for the realization of a system that can process radar data in real-time without excessive overhead that may require specialized hardware.
-    Although an efficient method for estimating the 2D MUSIC spectrum in 5G and 6G sensing have been proposed in \cite{Henninger_Mandelli_Arnold_EfficientMUSIC}, identifying eigenvalues corresponding to NLOS components among clutter returns from reflections can be challenging.
+    Although an efficient method for estimating the 2D MUSIC spectrum in 5G and 6G sensing have been proposed in \cite{Henninger_Mandelli_Arnold_EfficientMUSIC}, identifying eigenvalues corresponding to NLOS components among clutter returns from reflections can be challenging and processing time remains high due to the the large CSI and the number of targets in the scene.
     
     
     \subsection{Assumptions for OFDM radar systems}
@@ -206,9 +206,9 @@ A more thorough theoretical examination of OFDM, multicarrier communications and
         
         \begin{itemize}
             \item Range resolution
-            $$ d_{res} = \frac{c_0}{2 T_S f_C N}, $$
+            $$ d_{res} =  \frac{c_0}{2\Delta f M}. $$
             \item Speed resolution
-            $$ v_{res} = \frac{c_0}{2\Delta_f M}. $$
+            $$ v_{res} = \frac{c_0}{2 T_S f_C N}. $$
         \end{itemize}
         
 

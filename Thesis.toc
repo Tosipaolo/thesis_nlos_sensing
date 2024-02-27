@@ -19,8 +19,10 @@
 \contentsline {section}{\numberline {2.2}Proof of concept architecture}{10}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}System parameters}{11}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Sensing use-cases}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Human activities}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Non-line-of-sight sensing}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.1}Vehicle activities}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Human activities}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Weather sensing}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Non-line-of-sight sensing}{12}{subsection.2.3.4}%
 \contentsline {chapter}{\numberline {3}Signal processing for OFDM radar}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Structure of OFDM signal}{13}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Subcarriers and frequency spacing}{14}{subsection.3.1.1}%
@@ -40,7 +42,7 @@
 \contentsline {section}{\numberline {4.2}PoC's fundamental performance limits}{27}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Frame sampling strategies}{28}{section.4.3}%
 \contentsline {paragraph}{Single DL pattern:}{28}{paragraph*.34}%
-\contentsline {paragraph}{Decimation at constant interval:}{28}{paragraph*.35}%
+\contentsline {paragraph}{Decimation at constant interval:}{29}{paragraph*.35}%
 \contentsline {paragraph}{Decimation and multi-frame processing:}{29}{paragraph*.36}%
 \contentsline {section}{\numberline {4.4}Doppler artefacts observed for multiple frame processing}{31}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Radar frame processing}{33}{chapter.5}%
@@ -61,17 +63,16 @@
 \contentsline {subsection}{\numberline {5.2.3}Modified periodogram}{44}{subsection.5.2.3}%
 \contentsline {chapter}{\numberline {6}Determining the presence of NLOS component}{47}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Measurements setup}{47}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Moving target without obstructions}{48}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Line-of-sight component as ground truth}{49}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Processing of the NLOS region}{49}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Observed detection rate}{50}{subsection.6.2.3}%
-\contentsline {subsubsection}{Moving average of detection rate}{51}{subsubsection*.72}%
-\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{52}{section.6.3}%
+\contentsline {section}{\numberline {6.2}Measurement Scope: Detection Rate}{48}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Processing of the NLOS region}{50}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{51}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Scope of the measurement - Detection rate}{52}{subsection.6.3.1}%
+\contentsline {subsubsection}{Moving average of detection rate}{53}{subsubsection*.75}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{55}{chapter*.77}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{55}{chapter*.78}%
 \vspace {2em}
-\contentsline {chapter}{Abbreviations}{59}{chapter*.79}%
-\contentsline {chapter}{List of Figures}{61}{chapter*.82}%
-\contentsline {chapter}{List of Tables}{63}{chapter*.84}%
-\contentsline {chapter}{List of Symbols}{65}{chapter*.86}%
-\contentsline {chapter}{Acknowledgements}{67}{chapter*.89}%
+\contentsline {chapter}{Abbreviations}{59}{chapter*.80}%
+\contentsline {chapter}{List of Figures}{61}{chapter*.83}%
+\contentsline {chapter}{List of Tables}{63}{chapter*.85}%
+\contentsline {chapter}{List of Symbols}{65}{chapter*.87}%
+\contentsline {chapter}{Acknowledgements}{67}{chapter*.90}%

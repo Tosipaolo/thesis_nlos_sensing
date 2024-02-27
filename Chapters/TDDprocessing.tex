@@ -44,10 +44,11 @@ Received UL symbols do not contain any useful information for radar processing, 
 	        \includegraphics[scale=0.49]{Images/TDDprocessing/TDD_win.eps}%
 	    }\hfill
 	    \subfloat[Periodogram of the windowing function, FFT over 2048 points.\label{fig:TDDproc_rectfunct_transform}]{%
-	        \includegraphics[scale=0.49]{Images/TDDprocessing/periodogram_of_TDD_win.eps}%
+	        %\includegraphics[scale=0.49]{Images/TDDprocessing/periodogram_of_TDD_win.eps}%
+	        \includegraphics[scale=0.483]{Images/TDDprocessing/periodogram_of_TDD_win1.png}
 	    }
 	    
-	    \caption[]{}
+	    \caption[]{Representation of the time-windowing function applied to the CSI matrix. Sidelobe detected as replica is highlighted in red.}
 	    \label{fig:TDDwindowingfunct}
 	\end{figure}
 
@@ -59,7 +60,7 @@ Without modifying the OFDM frame, the system would be able to carry out radar pr
 	\item \textbf{Unambiguous speed}
 	\vspace{-\baselineskip} % Remove extra whitespace
 	\begin{equation}
-		v_{\text{unamb}} = \frac{c_0}{2f_C T_S} = 613,15\text{ m/s}.
+		v_{\text{unamb}} = \frac{c_0}{2f_C T_S} = 613,5\text{ m/s}.
 	\end{equation}
 	
 	\item \textbf{Unambiguous range}
@@ -90,7 +91,7 @@ Without modifying the OFDM frame, the system would be able to carry out radar pr
 
 	Processing the single unmodified OFDM frame results in 
 	
-	...
+	\alert{CONTROLLARE QUI FIUUUUUUU}
 
     \begin{figure}[H]
         \centering
@@ -204,10 +205,10 @@ Figure \ref{fig:TDD_artefacts} shows that the power of the artefacts increases w
 	\subfloat[\footnotesize Periodogram with 6 OFDM frames, decimated. \label{fig:artefacts6frame}]{%
 		\includegraphics[scale=0.4]{Images/TDDprocessing/artefacts/6frames_periodogram.png}%
 	}
-	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's indutrial test facility.
+	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's industrial test facility.
 		Periodogram are generated from the same measurement data. When using a single OFDM frame the periodogram is sampled selecting one symbol every 47, whilst one every 70 is kept in the other cases using multiple frames.  }
 	\label{fig:TDD_artefacts}
 \end{figure}
 
-The cause of these artefacts was not identified in this work. It is known that the 5G system used in the prototype from Nokia needs requires synchronization of component clock sources.
+The cause of these artefacts was not identified in this work and solving their presence is not in the scope of this work. It is known that the 5G system used in the prototype from Nokia requires synchronization of component clock sources.
 It is likely that these artefacts are caused by phase compensations applied to the ODFM signal both on a per-frame basis and within a single frame.
