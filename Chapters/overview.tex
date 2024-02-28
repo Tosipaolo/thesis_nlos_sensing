@@ -36,7 +36,7 @@ Integrated sensing and communications will benefit from the current massive depl
 
 	One of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
 	
-	Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to the one of an ad-hoc radar systems.
+	Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to one of ad-hoc radar systems.
 	
 	Spectrum choice will be the determinant factor for the definition of overall capabilities of the system. The frequency ranges that are being considered for 6G \cite{Hexa} are:
 	
@@ -209,22 +209,52 @@ Integrated sensing and communications will benefit from the current massive depl
 
 \section{Sensing use-cases}
 
-	A number of use-cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and some of the  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
+	Several use-cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
 	
-	Defining probable scenarios and use cases for ISAC 
+	In order to understand system requirements and research approaches, it is essential to define likely scenarios and use cases for an integrated sensing and communication ISAC.
 	
-	% TODO
-	...
-	\alert{FINIREEEE BUONFIORNOOOOO KAFFE?}
-	\subsection{Vehicle activities}
+	\subsection{Positioning and Localization}
+	
+	\subsubsection{Automotive radar}
+	
+	Automotive radar is essential for new generations of cars and future autonomous driving vehicles.
+	Communication capabilities are also necessary to establish vehicle networks for sharing information on the surrounding environment.
+	
+	Modern vehicles have evolved from simple means of transport to smart vehicles equipped with a variety of sensors and communication equipment.
+	The market for vehicle-to-everything (V2X) networks has been growing significantly in recent years \cite{Liu_Masouros_2021}.
+	This network requires high communication performance, throughput, and low latency, as well as precise positional information on surrounding objects.
+	
+	ISAC is an ideal candidate to fulfill these requirements, enabling efficient use of the spectrum and enhancing the physical layer security of the V2X network.
+	
+	ISAC systems must be capable of performing tasks such as vehicle and traffic counting, collision avoidance, and pedestrian and animal detection.
+	
+	\subsubsection{Outside Drone Detection}
+	
+	Detection of Unmanned Aerial Vehicles (UAVs) may be necessary in various deployment scenarios, including rooftops of buildings, airports, and open urban areas.
+	UAVs are typically equipped with sensors, cameras, and radars for surveillance and monitoring. Additionally, UAVs are used to provide connectivity in hazardous or data-intensive environments.
+
+	ISAC systems are suitable for fulfilling communication requirements in UAV networks and detecting unwanted drones in a monitored area. They can also provide additional positional data for tracking and position estimation.
 	
 	\subsection{Human activities}
 	
-	\subsection{Weather sensing}
+	ISAC has great potential for human activity sensing. It allows for real-time monitoring and analysis of human activities with high accuracy and detail. 
+	
+	This can include tracking physical movements for sports training and rehabilitation, as well as monitoring vital signs for healthcare and wellness applications. 
+	
+	The capacity to perceive and interpret human activities can offer valuable insights and enable interventions that enhance quality of life, performance, and safety.
+	
+	Micro Doppler tracking and feature extraction, combined with machine learning, can help distinguish between targets or extract additional information about activity and human presence in the monitored area.
+	
+	One such use case is the monitoring of roadways and industrial floors to enhance safety. By deploying ISAC, potential hazards can be detected in real-time, allowing for prompt intervention and accident prevention. 
+	
+	Another valuable application of ISAC is crowd monitoring. 
+	The system can analyse crowd movements, density and motion patterns. 
+	Crowd flows can be monitored by ISAC systems while respecting the privacy of the individuals, compared to standard camera systems, as the identity of the targets is not disclosed to the system supervisor and cannot be extracted through face recognition algorithms.
+
 	
 	\subsection{Non-line-of-sight sensing}
 	
-	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity.
+	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity. The aforementioned use cases all consider LOS conditions. 
 	
 	This work explores the potential feasibility of non-line-of-sight sensing and its possible use cases in ISAC.
 	

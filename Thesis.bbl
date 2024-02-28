@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -120,6 +120,15 @@ L.~M.~P. Larsen, A.~Checko, and H.~L. Christiansen.
 \newblock \emph{IEEE Communications Magazine}, 52\penalty0 (2):\penalty0
   186--195, 2014.
 \newblock \doi{10.1109/MCOM.2014.6736761}.
+
+\bibitem[Liu and Masouros(2021)]{Liu_Masouros_2021}
+F.~Liu and C.~Masouros.
+\newblock A tutorial on joint radar and communication transmission for
+  vehicular networks—part i: Background and fundamentals.
+\newblock \emph{IEEE Communications Letters}, 25\penalty0 (2):\penalty0
+  322–326, Feb. 2021.
+\newblock ISSN 1089-7798, 1558-2558, 2373-7891.
+\newblock \doi{10.1109/LCOMM.2020.3025310}.
 
 \bibitem[Mandelli et~al.(2023)Mandelli, Henninger, Bauhofer, and
   Wild]{Mandelli_Henninger_Bauhofer_Wild_2023}

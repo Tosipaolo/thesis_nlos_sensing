@@ -32,7 +32,7 @@ Before each test, a short calibration measure is performed, which includes only 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Images/Test1/base-lateral_view_los_geometry}
-	\caption{Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.}
+	\caption{\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.}
 	\label{fig:Test1_base-lateral_view}
 \end{figure}
 
@@ -47,7 +47,7 @@ During the initial measurement, the antenna boresight was directed perpendicular
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Images/Test1/base-top_view}
-	\caption{Top view of measurement scenario.}
+	\caption{\small Top view of measurement scenario.}
 	\label{fig:Test1_base-top_view}
 \end{figure}
 
@@ -90,11 +90,11 @@ After defining the two regions of interest from the periodogram and discarding t
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Images/Test1/NLOS-proc-pipeline_wide_text12.png}
-	\caption{Periodogram processing pipeline used for detection tests.}
+	\caption{\small Periodogram processing pipeline used for detection tests.}
 	\label{fig:Test1_NLOS-proc-pipeline}
 \end{figure}
 
-A standard strongest peak search is performed for the LOS region, while multiple peak detection is conducted in NLOS. Only the five strongest peaks were considered, this assumption was made since the test was conducted in a single target scenario.
+A standard strongest peak search is performed for the LOS region, while multiple peak detection is conducted in NLOS. Only the five strongest peaks were considered. This assumption was made since the test was conducted in a single target scenario and a single NLOS return is expected.
 Accurate range and velocity measurements are obtained after interpolation of each peak with the adjacent bins.
 
 The full process for the experiment is summarized in figure \ref{fig:Test1_NLOS-proc-pipeline}.
@@ -122,17 +122,18 @@ The full process for the experiment is summarized in figure \ref{fig:Test1_NLOS-
 	\label{fig:Test1_metal-human_comparison}
 	\end{figure}
 	
-The first measurement was conducted using the strong reflector, which represented an ideal scenario.
+The first measurement was performed with the strong reflector, which represented an ideal scenario. 
+Figure \ref{fig:Test1_metal-human_comparison} illustrates the comparison between the human and the metal cabinet cases. 
+Even when decimating the single CSI matrix, translating a 15 dB loss in processing gain, the NLOS component of the metal cabinet can be easily identified when moving.
 
-
-The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and is not masked by clutter.
+The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and has stronger power compared to reflected clutter returns.
 
 Passing the NLOS measurements to a Kalman filter it was possible to track the target in the range/Doppler plane, as shown in figure \ref{fig:Test1_kf_track_strong_ref}. This result is to show that one of the main limitation of NLOS signals is the strength of the target return. Objects with large RCS are easier to separate from the noisy background and the effect of fading and obstruction is relatively small.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png}
-	\caption{Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}
+	\includegraphics[width=0.55\textwidth]{Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png}
+	\caption{\small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}
 	\label{fig:Test1_detect_rate_strong_ref}
 \end{figure}
 
@@ -140,8 +141,8 @@ Passing the NLOS measurements to a Kalman filter it was possible to track the ta
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Images/Test1/kf_track.eps}
-	\caption{Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.}
+	\includegraphics[width=0.55\textwidth]{Images/Test1/kf_track.eps}
+	\caption{\small Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.}
 	\label{fig:Test1_kf_track_strong_ref}
 \end{figure}
 
@@ -151,7 +152,7 @@ Passing the NLOS measurements to a Kalman filter it was possible to track the ta
 The detection rate for measurements with a walking actor was obtained using the various frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. To increase time-aperture, subsequent frames were combined, and the window processing stride was set to be lower than the number 
 of frames, allowing for more target updates.
 
-Clutter removal was performed using CRAP to ensure precise estimation of the expected target position in NLOS conditions. In contrast, periodograms generated with the ECA-C technique showed the NLOS component to be well separated from the underlying noise floor, but the estimated position did not correspond with the measured one, making the detection test difficult. Comparison of a sample radar update is shown in Figure \ref{fig:Test1_huma_crap-ecac}.
+Clutter removal was performed using CRAP to ensure precise estimation of the expected target position in NLOS conditions. In contrast, periodograms generated with the ECA-C technique showed the NLOS component to be well separated from the underlying noise floor, but the estimated position did not correspond with the measured one, making the detection test difficult. Comparison of a sample radar update after CRAP and ECA-C is shown in Figure \ref{fig:Test1_huma_crap-ecac}.
 
 	\begin{figure}[H]
 	\centering
@@ -159,7 +160,7 @@ Clutter removal was performed using CRAP to ensure precise estimation of the exp
 	\subfloat[Periodogram after applying CRAP.\label{fig:Test1_mhuman_crap}]{%
 		\includegraphics[scale=0.45]{Images/Test1/Human_crap_ecac/crap_labelled.png}%
 	}\hfill
-	\subfloat[Periodogram after applying ECAC.\label{fig:Test1_mhuman_ecac}]{%
+	\subfloat[Periodogram after applying ECA-C.\label{fig:Test1_mhuman_ecac}]{%
 		\includegraphics[scale=0.45]{Images/Test1/Human_crap_ecac/ecac_labelled.png}%
 	}
 	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's industrial test facility.
@@ -176,7 +177,7 @@ Target detection was carried out by considering the 'n'-strongest peaks and comp
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist/detect_hist_human_LMsans.png}
-	\caption{Detection rate observed for human target in mixed LOS/NLOS measurement.}
+	\caption{Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.}
 	\label{fig:Test1_detect_hist}
 \end{figure}
 
@@ -206,3 +207,29 @@ Although this measure was obtained in a controlled single-target scenario, it op
 \end{figure}
 
 
+\subsubsection{Detection rate with separate clutter removal for NLOS}
+
+Figure \ref{fig:Test1_huma_crap-ecac} illustrates the tradeoffs between using CRAP and ECA-C for clutter removal. It can be seen that CRAP is ideal for line-of-sight (LOS) targets, while the power of the non-line-of-sight (NLOS) return is reduced to a level similar to the Doppler artefacts.
+The detection rate was tested using CRAP and ECA-C for the LOS and NLOS regions respectively.
+This approach improved detection when the target was in motion.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png}
+	\caption{\small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.}
+	\label{fig:Test1_detect_hist_crap-ecac}
+\end{figure}
+
+
+The measurement was not affected by the loss of information due to ECA-C when the target was static, as the bins of the periodogram corresponding to null speed were discarded regardless.
+
+The moving average of the detection probability is shown in Figure \ref{fig:Test1_mov_avg_crap_ecac}.
+It is evident that the detection from seconds 5 to 7 is significantly improved when compared to using only CRAP.
+However, this approach incurs a high computational cost as both clutter removal methods need to be applied to each OFDM frame separately.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/Test1/ECAC_CRAP_mixed/movavg_6frames_mixedecac-crap_stride4_exp_thresh.png}
+	\caption{\small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.}
+	\label{fig:Test1_mov_avg_crap_ecac}
+\end{figure}

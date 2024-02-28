@@ -9,45 +9,45 @@ Warning--empty year in 6G-explained-NOKIA
 Warning--empty year in Hexa
 Warning--empty publisher in OFDMWireless
 Warning--empty booktitle in Schaich_Wild_2014
-You've used 32 entries,
+You've used 33 entries,
             2773 wiz_defined-function locations,
-            861 strings with 13235 characters,
-and the built_in function-call counts, 17151 in all, are:
-= -- 1583
-> -- 979
-< -- 24
-+ -- 336
-- -- 303
-* -- 1405
-:= -- 2564
-add.period$ -- 148
-call.type$ -- 32
-change.case$ -- 192
-chr.to.int$ -- 31
-cite$ -- 72
-duplicate$ -- 798
-empty$ -- 1310
-format.name$ -- 339
-if$ -- 3701
+            870 strings with 13512 characters,
+and the built_in function-call counts, 17641 in all, are:
+= -- 1631
+> -- 1000
+< -- 25
++ -- 343
+- -- 309
+* -- 1448
+:= -- 2639
+add.period$ -- 153
+call.type$ -- 33
+change.case$ -- 197
+chr.to.int$ -- 32
+cite$ -- 74
+duplicate$ -- 818
+empty$ -- 1352
+format.name$ -- 348
+if$ -- 3805
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 33
-newline$ -- 216
-num.names$ -- 120
-pop$ -- 388
+missing$ -- 34
+newline$ -- 223
+num.names$ -- 124
+pop$ -- 394
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 169
 quote$ -- 0
-skip$ -- 659
+skip$ -- 674
 stack$ -- 0
-substring$ -- 587
-swap$ -- 194
+substring$ -- 616
+swap$ -- 196
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 322
+type$ -- 333
 warning$ -- 6
-while$ -- 114
+while$ -- 118
 width$ -- 0
-write$ -- 515
+write$ -- 532
 (There were 6 warnings)
