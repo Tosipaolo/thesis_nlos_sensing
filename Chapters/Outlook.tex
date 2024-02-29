@@ -1,1 +1,24 @@
 \chapter{Outlook and Conclusion}
+
+In summary, this thesis investigated the integration of sensing and communication capabilities in the context of 5G Advanced and 6G wireless systems. 
+The main objective of this work was to explore the potential of non-line-of-sight (NLOS) sensing techniques and their applications in integrated radar systems. 
+
+The results obtained from processing real-word measurements suggest that use cases with NLOS conditions should be considered in future studies in ISAC.
+With a focus on intrusion detection this work suggests that, with further analysis of the NLOS radar returns and the corresponding processing techniques, NLOS sensing at mmWave is possible.
+
+The main contributions of this work can be summarized as:
+
+\begin{itemize}
+	\item Real-word NLOS sensing trials and identification of challenges due to communication requirements.
+	\item Proposal of CSI processing approaches for avoiding unwanted replicas in the periodogram.
+	\item Definition of requirements for NLOS sensing and validation on measurements from the prototype.
+\end{itemize}
+
+Looking forward future developments, several challenges and research directions need to be explored:
+
+\begin{itemize}
+	\item \textbf{Algorithms for NLOS intrusion detection:} The promising detection results presented in this work suggest that true NLOS detection is possible, without the use of additional systems.
+	\item \textbf{Multiple target detection:} The effect of multiple entities moving in an obscured environment still needs to be explored through new measurements and processing techniques.
+	\item \textbf{Target differentiation and classification:} Solving the presence of replicas and spectral artifacts in the periodogram can open up the possibility of new processing methods that can be used for target classification in NLOS. Some promising examples are as micro-Doppler signatures, optical flow of moving peaks in the periodogram and machine vision.
+	\item \textbf{Overcoming limitations due to blanks in the CSI:} More research has to be done for tackling the problem of empty slots within the CSI matrix, caused by communication requirements such as TDD transmission pattern and allocation of unused OFDM symbols. This is especially important considering the energy efficiency requirements for next-gen cellular networks.
+\end{itemize}

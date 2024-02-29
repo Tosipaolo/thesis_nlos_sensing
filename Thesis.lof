@@ -1,23 +1,23 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an ISAC scenario.\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Scheme representing the LTE protocol stack, showing proposed functional splits \cite {Larsen_Checko_Christiansen_2019}. \relax }}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an ISAC scenario.\relax }}{4}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Scheme representing the LTE protocol stack, showing proposed functional splits \cite {Larsen_Checko_Christiansen_2019}. \relax }}{8}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 5.\relax }}{15}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces OFDM transmitter scheme.\relax }}{17}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces OFDM receiver scheme.\relax }}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 5.\relax }}{15}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces OFDM transmitter scheme.\relax }}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces OFDM receiver scheme.\relax }}{17}{figure.caption.26}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Effect of time delay on transmitted OFDM symbols. At the receiver, the first symbol is delayed and leaks into the FFT block of the following symbol.}}}{18}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Effect of time delay on symbols with CP. The delayed symbol is circularly shifted in the same FFT block. Symbol and delay can be resolved.}}}{18}{subfigure.4.2}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {One-dimensional representation of the windows in time or frequency samples. Windows are normalized to unit energy.}}}{25}{subfigure.5.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Window functions in frequency domain, normalized to peak power of rectangular window.}}}{25}{subfigure.5.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively\relax }}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)\relax }}{28}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CSI matrix from NOKIA PoC, rows and columns correspond to OFDM subcarriers and symbols respectively\relax }}{27}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)\relax }}{28}{figure.caption.34}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TDD windowing function.}}}{29}{subfigure.3.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram of the windowing function, FFT over 2048 points.}}}{29}{subfigure.3.2}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames\relax }}{30}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing\relax }}{32}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Decimation and combining of different consecutive frames\relax }}{30}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of possible decimation and combining approaches in periodogram processing\relax }}{32}{figure.caption.45}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Standard processing, no decimation, SNR = 60,91 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 613,15$ m/s }}}{32}{subfigure.5.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Single frame, decimated, \newlineSNR = 45,16 dB, \newline $v_{\text {res}} = 0,603$ m/s, $ v_{\text {unamb}} = 13,05$ m/s}}}{32}{subfigure.5.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {6 processed frames, decimated, combined, SNR = 52,35 dB, \newline $v_{\text {res}} = 0,091$ m/s, $ v_{\text {unamb}} = 8,76$ m/s}}}{32}{subfigure.5.3}%
@@ -31,8 +31,8 @@
 \addvspace {10\p@ }
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins, threshold estimated using CFAR.}}}{38}{subfigure.1.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. }}}{38}{subfigure.1.2}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.\relax }}{39}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}\relax }}{40}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.\relax }}{39}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}\relax }}{40}{figure.caption.54}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins using CA-CFAR.}}}{41}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. LOS target at 6 m and corresponding NLOS path return at 40 m, -1,5 m/s.}}}{41}{subfigure.4.2}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram with target at 9 m, moving at 1 m/s. Sidelobes from the target are present.}}}{43}{subfigure.5.1}%
@@ -45,22 +45,22 @@
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize clutter removal using \newline CRAP, moving target. }}}{44}{subfigure.6.6}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.7.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.7.2}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces \small Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. \relax }}{46}{figure.caption.58}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces \small Sample periodogram, separated in processing regions.\relax }}{46}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \small Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. \relax }}{46}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \small Sample periodogram, separated in processing regions.\relax }}{46}{figure.caption.65}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.\relax }}{50}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.\relax }}{50}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \small Top view of measurement scenario.\relax }}{51}{figure.caption.63}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \small Periodogram processing pipeline used for detection tests.\relax }}{52}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.\relax }}{50}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.\relax }}{50}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \small Top view of measurement scenario.\relax }}{51}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \small Periodogram processing pipeline used for detection tests.\relax }}{52}{figure.caption.70}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, linear scale.}}}{54}{subfigure.5.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{54}{subfigure.5.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize Human target walking towards gNB, power in dB.}}}{54}{subfigure.5.3}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{55}{figure.caption.66}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \small Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{56}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{55}{figure.caption.72}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \small Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{56}{figure.caption.73}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram after applying CRAP.}}}{57}{subfigure.8.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram after applying ECA-C.}}}{57}{subfigure.8.2}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{57}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.\relax }}{58}{figure.caption.71}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{59}{figure.caption.73}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{60}{figure.caption.74}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{57}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.\relax }}{58}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{59}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{60}{figure.caption.80}%
 \addvspace {10\p@ }

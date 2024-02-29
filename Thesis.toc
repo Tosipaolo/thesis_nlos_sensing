@@ -4,15 +4,20 @@
 \contentsline {chapter}{Contents\markboth {\MakeUppercase []{Contents}}{\MakeUppercase []{Contents}}}{v}{chapter*.6}%
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Thesis contribution}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Thesis outline}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.1}Thesis outline}{2}{section.1.1}%
+\contentsline {paragraph}{Chapter 2}{2}{paragraph*.8}%
+\contentsline {paragraph}{Chapter 3}{2}{paragraph*.9}%
+\contentsline {paragraph}{Chapter 4}{2}{paragraph*.10}%
+\contentsline {paragraph}{Chapter 5}{2}{paragraph*.11}%
+\contentsline {paragraph}{Chapter 6}{2}{paragraph*.12}%
+\contentsline {paragraph}{Chapter 7}{2}{paragraph*.13}%
 \contentsline {chapter}{\numberline {2}Technology for Integrated sensing and communications}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Technological enablers}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Spectrum choice for 6G sensing}{4}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Waveform candidates for ISAC}{5}{subsection.2.1.2}%
-\contentsline {subsubsection}{Traditional radar waveforms}{6}{subsubsection*.10}%
-\contentsline {subsubsection}{Communication-centric waveforms}{6}{subsubsection*.11}%
-\contentsline {subsubsection}{Waveforms for next-gen communication networks}{7}{subsubsection*.12}%
+\contentsline {subsubsection}{Traditional radar waveforms}{6}{subsubsection*.16}%
+\contentsline {subsubsection}{Communication-centric waveforms}{6}{subsubsection*.17}%
+\contentsline {subsubsection}{Waveforms for next-gen communication networks}{7}{subsubsection*.18}%
 \contentsline {subsection}{\numberline {2.1.3}5G functional splits}{8}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Massive MIMO and digital beamforming}{9}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Signal processing enhanced by AI/ML}{9}{subsection.2.1.5}%
@@ -20,8 +25,8 @@
 \contentsline {subsection}{\numberline {2.2.1}System parameters}{11}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Sensing use-cases}{11}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Positioning and Localization}{11}{subsection.2.3.1}%
-\contentsline {subsubsection}{Automotive radar}{12}{subsubsection*.15}%
-\contentsline {subsubsection}{Outside Drone Detection}{12}{subsubsection*.16}%
+\contentsline {subsubsection}{Automotive radar}{12}{subsubsection*.21}%
+\contentsline {subsubsection}{Outside Drone Detection}{12}{subsubsection*.22}%
 \contentsline {subsection}{\numberline {2.3.2}Human activities}{12}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Non-line-of-sight sensing}{13}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {3}Signal processing for OFDM radar}{15}{chapter.3}%
@@ -42,23 +47,23 @@
 \contentsline {section}{\numberline {4.1}Effect of empty UL symbols}{28}{section.4.1}%
 \contentsline {section}{\numberline {4.2}PoC's fundamental performance limits}{29}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Frame sampling strategies}{30}{section.4.3}%
-\contentsline {paragraph}{Single DL pattern:}{30}{paragraph*.36}%
-\contentsline {paragraph}{Decimation at constant interval:}{31}{paragraph*.37}%
-\contentsline {paragraph}{Decimation and multi-frame processing:}{31}{paragraph*.38}%
+\contentsline {paragraph}{Single DL pattern:}{30}{paragraph*.42}%
+\contentsline {paragraph}{Decimation at constant interval:}{31}{paragraph*.43}%
+\contentsline {paragraph}{Decimation and multi-frame processing:}{31}{paragraph*.44}%
 \contentsline {section}{\numberline {4.4}Doppler artefacts observed for multiple frame processing}{33}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Radar frame processing}{35}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Radar search and detection}{35}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Constant False Alarm Rate}{35}{subsection.5.1.1}%
-\contentsline {subsubsection}{Estimation of noise power}{37}{subsubsection*.43}%
+\contentsline {subsubsection}{Estimation of noise power}{37}{subsubsection*.49}%
 \contentsline {subsection}{\numberline {5.1.2}Cell-averaging CFAR}{38}{subsection.5.1.2}%
-\contentsline {subsubsection}{Performance of CA-CFAR}{39}{subsubsection*.47}%
-\contentsline {subsubsection}{Robust CA-CFAR}{41}{subsubsection*.50}%
-\contentsline {paragraph}{Greatest-of CA-CFAR:}{41}{paragraph*.51}%
-\contentsline {paragraph}{Censored-statistics CA-CFAR:}{42}{paragraph*.52}%
+\contentsline {subsubsection}{Performance of CA-CFAR}{39}{subsubsection*.53}%
+\contentsline {subsubsection}{Robust CA-CFAR}{41}{subsubsection*.56}%
+\contentsline {paragraph}{Greatest-of CA-CFAR:}{41}{paragraph*.57}%
+\contentsline {paragraph}{Censored-statistics CA-CFAR:}{42}{paragraph*.58}%
 \contentsline {subsection}{\numberline {5.1.3}Range-adjusted exponential threshold}{42}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Clutter removal}{43}{section.5.2}%
-\contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{43}{paragraph*.54}%
-\contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{43}{paragraph*.55}%
+\contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{43}{paragraph*.60}%
+\contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{43}{paragraph*.61}%
 \contentsline {subsection}{\numberline {5.2.1}Clutter presence in NLOS}{44}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Line-of-sight and Non-line-of-sight separation}{45}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Modified periodogram}{46}{subsection.5.2.3}%
@@ -68,14 +73,14 @@
 \contentsline {subsection}{\numberline {6.2.1}Processing of the NLOS region}{52}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Observation on detection rate of a strong reflector}{54}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Human target detection}{56}{subsection.6.3.1}%
-\contentsline {subsubsection}{Moving average of detection rate}{58}{subsubsection*.70}%
-\contentsline {subsubsection}{Detection rate with separate clutter removal for NLOS}{59}{subsubsection*.72}%
+\contentsline {subsubsection}{Moving average of detection rate}{58}{subsubsection*.76}%
+\contentsline {subsubsection}{Detection rate with separate clutter removal for NLOS}{59}{subsubsection*.78}%
 \contentsline {chapter}{\numberline {7}Outlook and Conclusion}{61}{chapter.7}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{63}{chapter*.77}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{63}{chapter*.83}%
 \vspace {2em}
-\contentsline {chapter}{Abbreviations}{67}{chapter*.79}%
-\contentsline {chapter}{List of Figures}{69}{chapter*.82}%
-\contentsline {chapter}{List of Tables}{71}{chapter*.84}%
-\contentsline {chapter}{List of Symbols}{73}{chapter*.86}%
-\contentsline {chapter}{Acknowledgements}{75}{chapter*.89}%
+\contentsline {chapter}{Abbreviations}{67}{chapter*.85}%
+\contentsline {chapter}{List of Figures}{69}{chapter*.88}%
+\contentsline {chapter}{List of Tables}{71}{chapter*.90}%
+\contentsline {chapter}{List of Symbols}{73}{chapter*.92}%
+\contentsline {chapter}{Acknowledgements}{75}{chapter*.95}%
