@@ -1,291 +1,207 @@
-\begin{thebibliography}{33}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{10}
 
-\bibitem[6G-()]{6G-explained-NOKIA}
+\bibitem{6G-explained-NOKIA}
 {NOKIA, 6G explained}.
-\newblock URL
-  \url{https://www.nokia.com/about-us/newsroom/articles/6g-explained/}.
 
-\bibitem[Hex()]{Hexa}
+\bibitem{Keating_Saily_Hulkkonen_Karjalainen_2019}
+Ryan Keating, Mikko Saily, Jari Hulkkonen, and Juha Karjalainen.
+\newblock {Overview of Positioning in 5G New Radio}.
+\newblock In {\em 2019 16th International Symposium on Wireless Communication
+  Systems (ISWCS)}, page 320–324, Oulu, Finland, August 2019. IEEE.
+
+\bibitem{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
+Marcus Henninger, Traian~E. Abrudan, Silvio Mandelli, Maximilian Arnold,
+  Stephan Saur, Veli-Matti Kolmonen, Siegfried Klein, Thomas Schlitter, and
+  Stephan~Ten Brink.
+\newblock {Probabilistic 5G Indoor Positioning Proof of Concept with Outlier
+  Rejection}.
+\newblock In {\em 2022 Joint European Conference on Networks and Communications
+  \& 6G Summit (EuCNC/6G Summit)}, page 249–254, June 2022.
+
+\bibitem{Mandelli_Henninger_Bauhofer_Wild_2023}
+Silvio Mandelli, Marcus Henninger, Maximilian Bauhofer, and Thorsten Wild.
+\newblock {Survey on Integrated Sensing and Communication Performance Modeling
+  and Use Cases Feasibility}.
+\newblock In {\em 2023 2nd International Conference on 6G Networking (6GNet)},
+  page 1–8, October 2023.
+
+\bibitem{Viswanathan_Wild_2021}
+Harish Viswanathan and Thorsten Wild.
+\newblock {Building a network with a sixth sense}, Apr 2021.
+
+\bibitem{Hexa}
 {Hexa Project: An European project aiming at the sustainable, inclusive, and
   trustworthy 6G platform.}
-\newblock URL \url{https://hexa-x-ii.eu/}.
 
-\bibitem[{3GPP Technical Specification Group Radio Access
-  Network}(2019)]{TS138211}
-{3GPP Technical Specification Group Radio Access Network}.
-\newblock {NR; Physical channels and modulation}.
-\newblock Technical Specification TS 138 211, ETSI, 2019.
-\newblock URL
-  \url{https://www.etsi.org/deliver/etsi_ts/138200_138299/138211/15.10.00_60/ts_138211v151000p.pdf}.
+\bibitem{Zhang_Rahman_Wu_Huang_Guo_Chen_Yuan_2022}
+J.~Andrew Zhang, Md.~Lushanur Rahman, Kai Wu, Xiaojing Huang, Y.~Jay Guo,
+  Shanzhi Chen, and Jinhong Yuan.
+\newblock {Enabling Joint Communication and Radar Sensing in Mobile
+  Networks—A Survey}.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 24(1):306–345,
+  2022.
 
-\bibitem[Braun(2014)]{Braun2014OFDMRA}
-K.~Braun.
-\newblock \emph{{OFDM Radar Algorithms in Mobile Communication Networks}}.
-\newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
-  2014.
-\newblock URL \url{https://publikationen.bibliothek.kit.edu/1000038892}.
-
-\bibitem[Colone et~al.(2009)Colone, O’Hagan, Lombardo, and
-  Baker]{Colone_ECA_2009}
-F.~Colone, D.~W. O’Hagan, P.~Lombardo, and C.~J. Baker.
-\newblock A multistage processing algorithm for disturbance removal and target
-  detection in passive bistatic radar.
-\newblock \emph{IEEE Transactions on Aerospace and Electronic Systems},
-  45\penalty0 (2):\penalty0 698–722, Apr. 2009.
-\newblock ISSN 0018-9251.
-\newblock \doi{10.1109/TAES.2009.5089551}.
-
-\bibitem[Friedlander(2007)]{Friedlander_2007}
+\bibitem{Friedlander_2007}
 B.~Friedlander.
 \newblock {Waveform Design for MIMO Radars}.
-\newblock \emph{IEEE Transactions on Aerospace and Electronic Systems},
-  43\penalty0 (3):\penalty0 1227–1238, July 2007.
-\newblock ISSN 0018-9251.
-\newblock \doi{10.1109/TAES.2007.4383615}.
+\newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
+  43(3):1227–1238, July 2007.
 
-\bibitem[Hadani et~al.(2017)Hadani, Rakib, Molisch, Ibars, Monk, Tsatsanis,
-  Delfeld, Goldsmith, and Calderbank]{OTFS_Hadani_2017}
+\bibitem{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}
+Thorsten Wild, Artjom Grudnitsky, Silvio Mandelli, Marcus Henninger, Junqing
+  Guan, and Frank Schaich.
+\newblock {6G Integrated Sensing and Communication: From Vision to
+  Realization}.
+\newblock In {\em 2023 20th European Radar Conference (EuRAD)}, page 355–358,
+  September 2023.
+
+\bibitem{Sturm_Wiesbeck_2011}
+Christian Sturm and Werner Wiesbeck.
+\newblock {Waveform Design and Signal Processing Aspects for Fusion of Wireless
+  Communications and Radar Sensing}.
+\newblock {\em Proceedings of the IEEE}, 99(7):1236–1259, July 2011.
+
+\bibitem{OTFS_Hadani_2017}
 R.~Hadani, S.~Rakib, A.~F. Molisch, C.~Ibars, A.~Monk, M.~Tsatsanis,
   J.~Delfeld, A.~Goldsmith, and R.~Calderbank.
 \newblock {Orthogonal Time Frequency Space (OTFS) modulation for
   millimeter-wave communications systems}.
-\newblock In \emph{2017 IEEE MTT-S International Microwave Symposium (IMS)},
+\newblock In {\em 2017 IEEE MTT-S International Microwave Symposium (IMS)},
   page 681–683, June 2017.
-\newblock \doi{10.1109/MWSYM.2017.8058662}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/8058662}.
 
-\bibitem[Henninger et~al.(2022{\natexlab{a}})Henninger, Abrudan, Mandelli,
-  Arnold, Saur, Kolmonen, Klein, Schlitter, and
-  Brink]{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
-M.~Henninger, T.~E. Abrudan, S.~Mandelli, M.~Arnold, S.~Saur, V.-M. Kolmonen,
-  S.~Klein, T.~Schlitter, and S.~T. Brink.
-\newblock {Probabilistic 5G Indoor Positioning Proof of Concept with Outlier
-  Rejection}.
-\newblock In \emph{2022 Joint European Conference on Networks and
-  Communications \& 6G Summit (EuCNC/6G Summit)}, page 249–254, June
-  2022{\natexlab{a}}.
-\newblock \doi{10.1109/EuCNC/6GSummit54941.2022.9815663}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/9815663}.
+\bibitem{Wei_Yuan_OTFS_whitepaper_2021}
+Zhiqiang Wei, Weijie Yuan, Shuangyang Li, Jinhong Yuan, Ganesh Bharatula, Ronny
+  Hadani, and Lajos Hanzo.
+\newblock {Orthogonal Time-Frequency Space Modulation: A Promising
+  Next-Generation Waveform}.
+\newblock {\em IEEE Wireless Communications}, 28(4):136–144, August 2021.
 
-\bibitem[Henninger et~al.(2022{\natexlab{b}})Henninger, Mandelli, Arnold, and
-  Ten~Brink]{Henninger_Mandelli_Arnold_EfficientMUSIC}
-M.~Henninger, S.~Mandelli, M.~Arnold, and S.~Ten~Brink.
-\newblock {A Computationally Efficient 2D MUSIC Approach for 5G and 6G Sensing
-  Networks}.
-\newblock In \emph{2022 IEEE Wireless Communications and Networking Conference
-  (WCNC)}, page 210–215, Austin, TX, USA, Apr. 2022{\natexlab{b}}. IEEE.
-\newblock ISBN 978-1-66544-266-4.
-\newblock \doi{10.1109/WCNC51071.2022.9771837}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/9771837/}.
-
-\bibitem[Henninger et~al.(2023)Henninger, Mandelli, Grudnitsky, Wild, and ten
-  Brink]{Henninger_CRAP_2023}
-M.~Henninger, S.~Mandelli, A.~Grudnitsky, T.~Wild, and S.~ten Brink.
-\newblock {CRAP: Clutter Removal with Acquisitions Under Phase Noise}.
-\newblock In \emph{2023 2nd International Conference on 6G Networking (6GNet)},
-  pages 1--8, October 2023.
-\newblock \doi{10.1109/6GNet58894.2023.10317664}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/10317664}.
-
-\bibitem[Keating et~al.(2019)Keating, Saily, Hulkkonen, and
-  Karjalainen]{Keating_Saily_Hulkkonen_Karjalainen_2019}
-R.~Keating, M.~Saily, J.~Hulkkonen, and J.~Karjalainen.
-\newblock {Overview of Positioning in 5G New Radio}.
-\newblock In \emph{2019 16th International Symposium on Wireless Communication
-  Systems (ISWCS)}, page 320–324, Oulu, Finland, Aug. 2019. IEEE.
-\newblock ISBN 978-1-72812-527-5.
-\newblock \doi{10.1109/ISWCS.2019.8877160}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/8877160/}.
-
-\bibitem[Larsen et~al.(2019)Larsen, Checko, and
-  Christiansen]{Larsen_Checko_Christiansen_2019}
-L.~M.~P. Larsen, A.~Checko, and H.~L. Christiansen.
+\bibitem{Larsen_Checko_Christiansen_2019}
+Line M.~P. Larsen, Aleksandra Checko, and Henrik~L. Christiansen.
 \newblock {A Survey of the Functional Splits Proposed for 5G Mobile Crosshaul
   Networks}.
-\newblock \emph{IEEE Communications Surveys \& Tutorials}, 21\penalty0
-  (1):\penalty0 146–172, 2019.
-\newblock ISSN 1553-877X.
-\newblock \doi{10.1109/COMST.2018.2868805}.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 21(1):146–172,
+  2019.
 
-\bibitem[{Larsson, Erik G. and Edfors, Ove and Tufvesson, Fredrik and Marzetta,
-  Thomas L.}(2014)]{MIMO-next-gen}
+\bibitem{MIMO-next-gen}
 {Larsson, Erik G. and Edfors, Ove and Tufvesson, Fredrik and Marzetta, Thomas
   L.}
 \newblock {Massive MIMO for next generation wireless systems}.
-\newblock \emph{IEEE Communications Magazine}, 52\penalty0 (2):\penalty0
-  186--195, 2014.
-\newblock \doi{10.1109/MCOM.2014.6736761}.
+\newblock {\em IEEE Communications Magazine}, 52(2):186--195, 2014.
 
-\bibitem[Liu and Masouros(2021)]{Liu_Masouros_2021}
-F.~Liu and C.~Masouros.
+\bibitem{Wild_Braun_Viswanathan_2021}
+Thorsten Wild, Volker Braun, and Harish Viswanathan.
+\newblock {Joint Design of Communication and Sensing for Beyond 5G and 6G
+  Systems}.
+\newblock {\em IEEE Access}, 9:30845–30857, 2021.
+
+\bibitem{Braun2014OFDMRA}
+K.~Braun.
+\newblock {\em {OFDM Radar Algorithms in Mobile Communication Networks}}.
+\newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
+  2014.
+
+\bibitem{TS138211}
+{3GPP Technical Specification Group Radio Access Network}.
+\newblock {NR; Physical channels and modulation}.
+\newblock Technical Specification TS 138 211, ETSI, 2019.
+
+\bibitem{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022}
+Jian Wang, Neeraj Varshney, Camillo Gentile, Steve Blandino, Jack Chuang, and
+  Nada Golmie.
+\newblock {Integrated Sensing and Communication: Enabling Techniques,
+  Applications, Tools and Data Sets, Standardization, and Future Directions}.
+\newblock {\em IEEE Internet of Things Journal}, 9(23):23416–23440, December
+  2022.
+
+\bibitem{Liu_Masouros_2021}
+Fan Liu and Christos Masouros.
 \newblock A tutorial on joint radar and communication transmission for
   vehicular networks—part i: Background and fundamentals.
-\newblock \emph{IEEE Communications Letters}, 25\penalty0 (2):\penalty0
-  322–326, Feb. 2021.
-\newblock ISSN 1089-7798, 1558-2558, 2373-7891.
-\newblock \doi{10.1109/LCOMM.2020.3025310}.
+\newblock {\em IEEE Communications Letters}, 25(2):322–326, February 2021.
 
-\bibitem[Mandelli et~al.(2023)Mandelli, Henninger, Bauhofer, and
-  Wild]{Mandelli_Henninger_Bauhofer_Wild_2023}
-S.~Mandelli, M.~Henninger, M.~Bauhofer, and T.~Wild.
-\newblock {Survey on Integrated Sensing and Communication Performance Modeling
-  and Use Cases Feasibility}.
-\newblock In \emph{2023 2nd International Conference on 6G Networking (6GNet)},
-  page 1–8, Oct. 2023.
-\newblock \doi{10.1109/6GNet58894.2023.10317691}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/10317691}.
-
-\bibitem[Prasad(2004)]{OFDMWireless}
-R.~Prasad.
-\newblock \emph{{OFDM for Wireless Communications Systems}}.
-\newblock 2004.
-
-\bibitem[Proakis(2001)]{Proakis_2001}
-J.~Proakis.
-\newblock \emph{Digital Communications}.
-\newblock Electrical engineering series. McGraw-Hill, 2001.
-\newblock ISBN 978-0-07-232111-1.
-
-\bibitem[Richards et~al.(2010)Richards, Scheer, and
-  Holm]{Richards_Scheer_Holm_2010}
-M.~Richards, J.~Scheer, and W.~Holm.
-\newblock \emph{{Principles of Modern Radar}}.
-\newblock Principles of Modern Radar. SciTech Pub., 2010.
-\newblock ISBN 978-1-891121-52-4.
-\newblock URL \url{https://books.google.it/books?id=w-MPDQAAQBAJ}.
-
-\bibitem[Richards(2014)]{Richards_2014}
-M.~A. Richards.
-\newblock \emph{{Fundamentals of radar signal processing}}.
-\newblock McGraw-Hill Education, New York, second edition edition, 2014.
-\newblock ISBN 978-0-07-179833-4.
-
-\bibitem[Schaich and Wild(2014)]{Schaich_Wild_2014}
-F.~Schaich and T.~Wild.
+\bibitem{Schaich_Wild_2014}
+Frank Schaich and Thorsten Wild.
 \newblock {Waveform contenders for 5G — OFDM vs. FBMC vs. UFMC},
   isbn={978-1-4799-2890-}3.
 \newblock page 457–460, May 2014.
-\newblock \doi{10.1109/ISCCSP.2014.6877912}.
 
-\bibitem[Smith(accessed 2024)]{SASPWEB2011}
-J.~O. Smith.
-\newblock \emph{{Spectral Audio Signal Processing}}.
-\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed 2024.
-\newblock online book, 2011 edition.
+\bibitem{OFDMWireless}
+Ramjee Prasad.
+\newblock {\em {OFDM for Wireless Communications Systems}}.
+\newblock 2004.
 
-\bibitem[Spagnolini(2018)]{Spagnolini_ch14}
-U.~Spagnolini.
-\newblock \emph{Statistical Signal Processing in Engineering}, chapter~14,
-  pages 267--309.
-\newblock John Wiley \& Sons, Ltd, 2018.
-\newblock ISBN 9781119294016.
-\newblock \doi{https://doi.org/10.1002/9781119294016.ch14}.
-\newblock URL
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119294016.ch14}.
+\bibitem{Proakis_2001}
+J.G. Proakis.
+\newblock {\em Digital Communications}.
+\newblock Electrical engineering series. McGraw-Hill, 2001.
 
-\bibitem[Stoica et~al.(2011)Stoica, Babu, and
-  Li]{Stoica_New_Method_Parameter_Estimation}
-P.~Stoica, P.~Babu, and J.~Li.
+\bibitem{Stoica_New_Method_Parameter_Estimation}
+Petre Stoica, Prabhu Babu, and Jian Li.
 \newblock {New Method of Sparse Parameter Estimation in Separable Models and
   Its Use for Spectral Analysis of Irregularly Sampled Data}.
-\newblock \emph{IEEE Transactions on Signal Processing}, 59\penalty0
-  (1):\penalty0 35--47, 2011.
-\newblock \doi{10.1109/TSP.2010.2086452}.
+\newblock {\em IEEE Transactions on Signal Processing}, 59(1):35--47, 2011.
 
-\bibitem[Sturm and Wiesbeck(2011)]{Sturm_Wiesbeck_2011}
-C.~Sturm and W.~Wiesbeck.
-\newblock {Waveform Design and Signal Processing Aspects for Fusion of Wireless
-  Communications and Radar Sensing}.
-\newblock \emph{Proceedings of the IEEE}, 99\penalty0 (7):\penalty0
-  1236–1259, July 2011.
-\newblock ISSN 0018-9219, 1558-2256.
-\newblock \doi{10.1109/JPROC.2011.2131110}.
+\bibitem{Henninger_Mandelli_Arnold_EfficientMUSIC}
+Marcus Henninger, Silvio Mandelli, Maximilian Arnold, and Stephan Ten~Brink.
+\newblock {A Computationally Efficient 2D MUSIC Approach for 5G and 6G Sensing
+  Networks}.
+\newblock In {\em 2022 IEEE Wireless Communications and Networking Conference
+  (WCNC)}, page 210–215, Austin, TX, USA, April 2022. IEEE.
 
-\bibitem[Viswanathan and Wild(2021)]{Viswanathan_Wild_2021}
-H.~Viswanathan and T.~Wild.
-\newblock {Building a network with a sixth sense}, Apr 2021.
-\newblock URL
-  \url{https://www.bell-labs.com/institute/blog/building-network-sixth-sense/}.
-
-\bibitem[Wagner et~al.(2017)Wagner, Feger, and
-  Stelzer]{Wagner_Feger_Stelzer_2017}
-T.~Wagner, R.~Feger, and A.~Stelzer.
-\newblock {Radar Signal Processing for Jointly Estimating Tracks and
-  Micro-Doppler Signatures}.
-\newblock \emph{IEEE Access}, 5:\penalty0 1220–1238, 2017.
-\newblock ISSN 2169-3536.
-\newblock \doi{10.1109/ACCESS.2017.2667720}.
-
-\bibitem[Wan et~al.(2012)Wan, Cheng, Gong, Zhao, and
-  Shao]{Wan_Cheng_Gong_Zhao_Shao_2012}
-X.~Wan, F.~Cheng, Z.~Gong, Z.~Zhao, and Q.~Shao.
-\newblock Multipath clutter rejection for digital radio mondiale-based hf
-  passive bistatic radar with ofdm waveform.
-\newblock \emph{IET Radar, Sonar \& Navigation}, 6\penalty0 (9):\penalty0
-  867–872, Dec. 2012.
-\newblock ISSN 1751-8784, 1751-8792.
-\newblock \doi{10.1049/iet-rsn.2012.0011}.
-
-\bibitem[Wang et~al.(2022)Wang, Varshney, Gentile, Blandino, Chuang, and
-  Golmie]{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022}
-J.~Wang, N.~Varshney, C.~Gentile, S.~Blandino, J.~Chuang, and N.~Golmie.
-\newblock {Integrated Sensing and Communication: Enabling Techniques,
-  Applications, Tools and Data Sets, Standardization, and Future Directions}.
-\newblock \emph{IEEE Internet of Things Journal}, 9\penalty0 (23):\penalty0
-  23416–23440, Dec. 2022.
-\newblock ISSN 2327-4662, 2372-2541.
-\newblock \doi{10.1109/JIOT.2022.3190845}.
-
-\bibitem[Wei et~al.(2021)Wei, Yuan, Li, Yuan, Bharatula, Hadani, and
-  Hanzo]{Wei_Yuan_OTFS_whitepaper_2021}
-Z.~Wei, W.~Yuan, S.~Li, J.~Yuan, G.~Bharatula, R.~Hadani, and L.~Hanzo.
-\newblock {Orthogonal Time-Frequency Space Modulation: A Promising
-  Next-Generation Waveform}.
-\newblock \emph{IEEE Wireless Communications}, 28\penalty0 (4):\penalty0
-  136–144, Aug. 2021.
-\newblock ISSN 1558-0687.
-\newblock \doi{10.1109/MWC.001.2000408}.
-
-\bibitem[Welch(1967)]{Welch_period}
+\bibitem{Welch_period}
 P.~Welch.
 \newblock {The use of fast Fourier transform for the estimation of power
   spectra: A method based on time averaging over short, modified periodograms}.
-\newblock \emph{IEEE Transactions on Audio and Electroacoustics}, 15\penalty0
-  (2):\penalty0 70--73, 1967.
-\newblock \doi{10.1109/TAU.1967.1161901}.
+\newblock {\em IEEE Transactions on Audio and Electroacoustics}, 15(2):70--73,
+  1967.
 
-\bibitem[Wild et~al.(2021)Wild, Braun, and
-  Viswanathan]{Wild_Braun_Viswanathan_2021}
-T.~Wild, V.~Braun, and H.~Viswanathan.
-\newblock {Joint Design of Communication and Sensing for Beyond 5G and 6G
-  Systems}.
-\newblock \emph{IEEE Access}, 9:\penalty0 30845–30857, 2021.
-\newblock ISSN 2169-3536.
-\newblock \doi{10.1109/ACCESS.2021.3059488}.
+\bibitem{Spagnolini_ch14}
+U.~Spagnolini.
+\newblock {\em Statistical Signal Processing in Engineering}, chapter~14, pages
+  267--309.
+\newblock John Wiley \& Sons, Ltd, 2018.
 
-\bibitem[Wild et~al.(2023)Wild, Grudnitsky, Mandelli, Henninger, Guan, and
-  Schaich]{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}
-T.~Wild, A.~Grudnitsky, S.~Mandelli, M.~Henninger, J.~Guan, and F.~Schaich.
-\newblock {6G Integrated Sensing and Communication: From Vision to
-  Realization}.
-\newblock In \emph{2023 20th European Radar Conference (EuRAD)}, page
-  355–358, Sept. 2023.
-\newblock \doi{10.23919/EuRAD58043.2023.10289474}.
-\newblock URL \url{https://ieeexplore.ieee.org/document/10289474}.
+\bibitem{SASPWEB2011}
+Julius~O. Smith.
+\newblock {\em {Spectral Audio Signal Processing}}.
+\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed 2024.
+\newblock online book, 2011 edition.
 
-\bibitem[Zhang et~al.(2022)Zhang, Rahman, Wu, Huang, Guo, Chen, and
-  Yuan]{Zhang_Rahman_Wu_Huang_Guo_Chen_Yuan_2022}
-J.~A. Zhang, M.~L. Rahman, K.~Wu, X.~Huang, Y.~J. Guo, S.~Chen, and J.~Yuan.
-\newblock {Enabling Joint Communication and Radar Sensing in Mobile
-  Networks—A Survey}.
-\newblock \emph{IEEE Communications Surveys \& Tutorials}, 24\penalty0
-  (1):\penalty0 306–345, 2022.
-\newblock ISSN 1553-877X.
-\newblock \doi{10.1109/COMST.2021.3122519}.
+\bibitem{Richards_Scheer_Holm_2010}
+M.A. Richards, J.~Scheer, and W.A. Holm.
+\newblock {\em {Principles of Modern Radar}}.
+\newblock Principles of Modern Radar. SciTech Pub., 2010.
+
+\bibitem{Richards_2014}
+M.~A. Richards.
+\newblock {\em {Fundamentals of radar signal processing}}.
+\newblock McGraw-Hill Education, New York, second edition edition, 2014.
+
+\bibitem{Wagner_Feger_Stelzer_2017}
+Thomas Wagner, Reinhard Feger, and Andreas Stelzer.
+\newblock {Radar Signal Processing for Jointly Estimating Tracks and
+  Micro-Doppler Signatures}.
+\newblock {\em IEEE Access}, 5:1220–1238, 2017.
+
+\bibitem{Wan_Cheng_Gong_Zhao_Shao_2012}
+X.~Wan, F.~Cheng, Z.~Gong, Z.~Zhao, and Q.~Shao.
+\newblock Multipath clutter rejection for digital radio mondiale-based hf
+  passive bistatic radar with ofdm waveform.
+\newblock {\em IET Radar, Sonar \& Navigation}, 6(9):867–872, December 2012.
+
+\bibitem{Colone_ECA_2009}
+F.~Colone, D.~W. O’Hagan, P.~Lombardo, and C.~J. Baker.
+\newblock A multistage processing algorithm for disturbance removal and target
+  detection in passive bistatic radar.
+\newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
+  45(2):698–722, April 2009.
+
+\bibitem{Henninger_CRAP_2023}
+Marcus Henninger, Silvio Mandelli, Artjom Grudnitsky, Thorsten Wild, and
+  Stephan ten Brink.
+\newblock {CRAP: Clutter Removal with Acquisitions Under Phase Noise}.
+\newblock In {\em 2023 2nd International Conference on 6G Networking (6GNet)},
+  pages 1--8, October 2023.
 
 \end{thebibliography}

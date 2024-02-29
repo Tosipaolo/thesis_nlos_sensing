@@ -1,53 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis.aux
-The style file: abbrvnat.bst
+The style file: unsrt.bst
 Database file #1: Thesis_bibliography.bib
-Warning--to sort, need author or key in 6G-explained-NOKIA
-Warning--to sort, need author or key in Hexa
-Warning--empty year in 6G-explained-NOKIA
-Warning--empty year in Hexa
-Warning--empty publisher in OFDMWireless
 Warning--empty booktitle in Schaich_Wild_2014
+Warning--empty publisher in OFDMWireless
 You've used 33 entries,
-            2773 wiz_defined-function locations,
-            870 strings with 13512 characters,
-and the built_in function-call counts, 17641 in all, are:
-= -- 1631
-> -- 1000
-< -- 25
-+ -- 343
-- -- 309
-* -- 1448
-:= -- 2639
-add.period$ -- 153
+            1791 wiz_defined-function locations,
+            671 strings with 10881 characters,
+and the built_in function-call counts, 8686 in all, are:
+= -- 763
+> -- 363
+< -- 11
++ -- 136
+- -- 103
+* -- 555
+:= -- 1251
+add.period$ -- 99
 call.type$ -- 33
-change.case$ -- 197
-chr.to.int$ -- 32
-cite$ -- 74
-duplicate$ -- 818
-empty$ -- 1352
-format.name$ -- 348
-if$ -- 3805
-int.to.chr$ -- 2
-int.to.str$ -- 1
+change.case$ -- 28
+chr.to.int$ -- 0
+cite$ -- 35
+duplicate$ -- 451
+empty$ -- 843
+format.name$ -- 103
+if$ -- 2042
+int.to.chr$ -- 0
+int.to.str$ -- 33
 missing$ -- 34
-newline$ -- 223
-num.names$ -- 124
-pop$ -- 394
+newline$ -- 164
+num.names$ -- 31
+pop$ -- 128
 preamble$ -- 1
-purify$ -- 169
+purify$ -- 0
 quote$ -- 0
-skip$ -- 674
+skip$ -- 296
 stack$ -- 0
-substring$ -- 616
-swap$ -- 196
+substring$ -- 548
+swap$ -- 178
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 333
-warning$ -- 6
-while$ -- 118
-width$ -- 0
-write$ -- 532
-(There were 6 warnings)
+type$ -- 0
+warning$ -- 2
+while$ -- 56
+width$ -- 35
+write$ -- 353
+(There were 2 warnings)
