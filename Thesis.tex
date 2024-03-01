@@ -145,18 +145,44 @@
 % ABSTRACT IN ENGLISH
 \chapter*{Abstract} 
 
-The key driver for development of the sixth-generation (6G) of mobile networks is its ability to gather information about the surrounding environment. The combination of this functions and the underlying cellular capabilities is referred as Integrated Sensing And Communications (ISAC).
-Thanks to the large available bandwidth of 
+The primary motivation behind the development of sixth-generation (6G) mobile networks is their ability to gather information about the surrounding environment. 
+Orthogonal frequency division multiplexing (OFDM) radio signals, which are transmitted by base stations to users, not only carry data but
+are also affected by the movement of the transmitter, obstacles, and illuminated targets.
+The concept of OFDM radar aims to extract information about the distance and relative speeds of targets that reflect the signal.
+With the high bandwidth available in next-generation mobile networks, OFDM radar can be used to gather target information with high accuracy. 
+The combination of these functions and the underlying cellular capabilities is referred to as Integrated Sensing and Communications (ISAC).
+Applications typically considered for ISAC include vehicle detection (cars or drones), human activity detection and industrial safety. 
+Typical assumptions are that the target will directly illuminated, which is referred to as line-of-sight (LOS). 
+However, an area that has not been extensively explored is non-line-of-sight (NLOS) sensing, where the radio signal reaches the target after multiple reflections.
+The aim of the dissertation is to investigate the feasibility of ISAC in NLOS environments, addressing performance constraints imposed by communication requirements, algorithmic development and identification of novel application scenarios for the system.
+The proposed approaches are validated using real-world measurements obtained from Nokia's ISAC mmWave prototype, which was deployed in an industrial test facility in ARENA 2036, Stuttgart, Germany.
+The prototype is based on a commercial system that operates at 27.4 GHz and complies with the 3rd Generation Partnership Project (3GPP) standards for fifth-generation (5G) waveforms in the mmWave frequency bands. 
+% The system is extended by an additional radio unit called the 'Sniffer' for receiving signals reflected by the target, and a 'Sensing Processing Unit (SPU)' which is responsible for performing the radar processing algorithms.
+Validation measurements were performed focusing on human intrusion detection scenarios in an industrial environment.
+The aim of this thesis is to define an initial approach for NLOS radar sensing based on periodogram spectral analysis, in order to exploit it during the development of more advanced sensing functionalities.
 \\
 \\
-\textbf{Keywords:} here, the keywords, of your thesis % Keywords
+\textbf{Keywords:} ISAC, 6G, OFDM radar, monostatic sensing, non-line-of-sight sensing % Keywords
 
 % ABSTRACT IN ITALIAN
 \chapter*{Abstract in lingua italiana}
-Qui va l'Abstract in lingua italiana della tesi seguito dalla lista di parole chiave.
+Lo sviluppo delle reti mobili di sesta generazione (6G) è incentrato sulla capacità di raccogliere informazioni sull'ambiente circostante.
+I segnali radio a divisione di frequenza ortogonale (OFDM), che vengono trasmessi dalle stazioni base agli utenti, non solo trasportano dati ma sono anche influenzati dal movimento del trasmettitore, dagli ostacoli e dai soggetti illuminati dal segnale.
+Il concetto di radar OFDM mira a estrarre informazioni sulla distanza e sulla velocità relativa dei bersagli analizzando il segnale riflesso.
+Grazie all'elevata banda di segnale disponibile nelle reti mobili di prossima generazione, il radar OFDM può essere implementato per ottenere informazioni con elevata precisione.
+La combinazione di queste funzioni e delle capacità cellulari sottostanti
+è denominata Integrated Sensing and Communications (ISAC). Le applicazioni tipicamente considerate per ISAC sono il rilevamento di veicoli (automobili o droni), il rilevamento di attività umane e la sicurezza industriale.
+in questi casi d'uso si suppone che il bersaglio venga illuminato in linea diretta segnale radio, condizione denominata di \textit{line-of-sight} (LOS). Tuttavia, un ambito non ancora esplorato in modo esaustivo è quello in cui il bersaglio non si trova in linea diretta, ma viene raggiunto dal segnale solo dopo riflessioni su altri ostacoli, condizione indicata come \textit{non-line-of-sight} (NLOS).
+L'obiettivo di questo lavoro di tesi è studiare la fattibilità di sistemi ISAC in condizioni di NLOS, affrontando i vincoli sulle prestazioni imposti dai requisiti di comunicazione, dallo sviluppo di algoritmi e dall'identificazione di nuovi scenari applicativi per il sistema.
+Gli approcci proposti sono stati convalidati utilizzando misure reali
+ottenute dal prototipo ISAC mmWave di Nokia, installato in
+una struttura di ricerca industriale ad ARENA 2036, Stoccarda, Germania. 
+Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme alle specifiche del 3rd Generation Partnership Project (3GPP) per le forme d'onda di quinta generazione (5G).
+Le misurazioni sono state eseguite su scenari di rilevamento delle intrusioni umane in un ambiente industriale. 
+L'obiettivo di questa tesi è quello di definire un primo approccio per il rilevamento radar in NLOS basato sull'analisi spettrale del periodogramma.
 \\
 \\
-\textbf{Parole chiave:} qui, vanno, le parole chiave, della tesi % Keywords (italian)
+\textbf{Parole chiave:} ISAC, 6G, radar OFDM, radar monostatico, rilevamento NLOS % Keywords (italian)
 
 %----------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES/SYMBOLS
