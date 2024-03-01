@@ -26,9 +26,6 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 
 
 \section{Technological enablers}
-	
-	\remove{In recent years Radar and communication front-ends have become very similar, facilitating the integration of sensing and communication technology.
-	Traditional radar systems were heavily reliant on hardware components to perform their core functions. However, with the advent of advanced digital technologies, a substantial number of these functions are now being realized through virtualization and digital signal processing. }
 
 	This section will present some of the main technological aspects and digital technologies enabling joint functionality and the current research on radar in communication systems.	
 	
@@ -147,17 +144,16 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 \section{Proof of concept architecture}
 	\label{sec:intro-PoCarchitecture}
 	
-	The architecture considered in this work is based on a FR2 5G commercial communication hardware.
+	The architecture considered in this work is based on FR2 5G commercial communication hardware.
+	The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU). 
+	The sniffer is synchronized with the gNB by the same synchronization source. 
+	The SPU receives the complex IQ signal (on a per-radio frame basis),  after removal of the cyclic prefix (CP), as input for further sensing processing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.
 	
 	Using option 7-2 of the proposed 5G splits, shown in Figure \ref{fig:Overview-LTE_stack_splits}, it is possible to use the same type of Radio Unit (RU) for both communication and sensing.
 	Option 7-2 splits the network at the physical layer (PHY) level, which handles the conversion of digital data to the analogue radio signal in the downlink (DL) direction, while doing the opposite in the uplink (UL) direction.
 	This split defines the FFT/iFFT performed in the RU, while the frequency domain IQ is transported on the fronthaul.
 	The gNB RU operates in time-division duplexing (TDD) mode, where uplink is separated from downlink by the allocation of different time slots in the same frequency band. 	
 	The sniffer operates always in uplink (UL) mode, receiving both the signal transmitted by UEs and the reflected signals. 
-	
-	The system is extended by an additional RU called \textit{Sniffer} and a server called \textit{Sensing Processing Unit} (SPU). 
-	The sniffer is synchronized with the gNB by the same synchronization source. 
-	The SPU receives the complex IQ signal (on a per-radio frame basis),  after removal of the cyclic prefix (CP), as input for further sensing processing \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.
 	
 	This work considers a PoC deployment where the primary gNB RU and the sniffer are mounted in proximity and are co-located, allowing the system to behave as a monostatic radar. 
 	The scope of this work does not cover the case of bistatic radar.
@@ -175,9 +171,8 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 	A more detailed description on how the processing chain is structured,  based on \cite{Braun2014OFDMRA}, will be presented in Chapter \ref{chap:theoretical_OFDM}.
 	
 	
-	\subsection{System parameters}
-	
-	The system specifications are indicated in table \ref{table:PoCparams}.They correspond to parameters for 5G NR systems with the numerology $\mu=3$. \cite{TS138211}. 
+	The system specifications are indicated in table \ref{table:PoCparams}.
+	They correspond to parameters for 5G NR systems with the numerology $\mu=3$ specified in \cite{TS138211}. 
 	
 	\begin{table}[H]
 		%\caption*{\textbf{Title of Table (optional)}}
@@ -203,14 +198,14 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 		\label{table:PoCparams}
 	\end{table}
 	
-	The system is equipped with analog beamforming and measurements can be obtained using a fixed beam chosen by an antenna codebook.
+	The system is equipped with analog beamforming and measurements can be obtained using a fixed beam chosen from an antenna codebook.
 
 
 \section{Sensing use-cases}
 
 	Several use-cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
 	
-	In order to understand system requirements and research approaches, it is essential to define likely scenarios and use cases for an integrated sensing and communication ISAC.
+	In order to understand system requirements and research approaches, it is essential to define likely scenarios in which ISAC systems will be deployed.
 	
 	\subsection{Positioning and Localization}
 	
@@ -230,21 +225,19 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 	\subsubsection{Outside Drone Detection}
 	
 	Detection of Unmanned Aerial Vehicles (UAVs) may be necessary in various deployment scenarios, including rooftops of buildings, airports, and open urban areas.
+	
 	UAVs are typically equipped with sensors, cameras, and radars for surveillance and monitoring. Additionally, UAVs are used to provide connectivity in hazardous or data-intensive environments.
-
-	ISAC systems are suitable for fulfilling communication requirements in UAV networks and detecting unwanted drones in a monitored area. They can also provide additional positional data for tracking and position estimation.
+	ISAC systems are suitable for fulfilling communication requirements in UAV networks while being able to detect unwanted drones in a monitored area.
 	
 	\subsection{Human activities}
 	
-	ISAC has great potential for human activity sensing. It allows for real-time monitoring and analysis of human activities with high accuracy and detail. 
-	
-	This can include tracking physical movements for sports training and rehabilitation, as well as monitoring vital signs for healthcare and wellness applications. 
+	ISAC for human activities detection could be applied for tracking a subject's physical movements, as well as monitoring vital signs for healthcare and wellness applications. 
 	
 	The capacity to perceive and interpret human activities can offer valuable insights and enable interventions that enhance quality of life, performance, and safety.
 	
 	Micro Doppler tracking and feature extraction, combined with machine learning, can help distinguish between targets or extract additional information about activity and human presence in the monitored area.
 	
-	One such use case is the monitoring of roadways and industrial floors to enhance safety. By deploying ISAC, potential hazards can be detected in real-time, allowing for prompt intervention and accident prevention. 
+	One such use case is the monitoring of roadways and industrial floors to enhance safety. ISAC can exploit the deployed network equipment of smart factory floors. Potential hazards can be detected in real-time, allowing for accident prevention. 
 	
 	Another valuable application of ISAC is crowd monitoring. 
 	The system can analyse crowd movements, density and motion patterns. 
@@ -253,17 +246,20 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 	
 	\subsection{Non-line-of-sight sensing}
 	
-	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity. The aforementioned use cases all consider LOS conditions. 
+	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity. 
+	Feasibility of monostatic ISAC in NLOS environments is still a rather unexplored area of research, as commonly studied use cases assume the target to be in LOS.
 	
-	This work explores the potential feasibility of non-line-of-sight sensing and its possible use cases in ISAC.
+	The main advantage of NLOS sensing is the possibility of performing 'around the corner' detection, which is not feasible with traditional fixed camera or LIDAR systems. 
+	Sensing targets moving behind an obstacle is a powerful feature in use cases such as automotive radar and surveillance systems.
 	
-	Non-line-of-sight sensing has a significant advantage in achieving 'around the corner' detection, which is not feasible with traditional fixed camera or LIDAR systems. Advanced sensing techniques and algorithms can enable non-line-of-sight systems to detect and track objects or individuals even when direct line-of-sight visibility is obstructed.
+	As we can expect cellular networks operating in FR2 to be deployed in indoor areas and factory floors this work will focus on intrusion detection in industrial scenarios.
+	Intrusion detection in NLOS on factory floors could represent a valuable addition in market for private cellular networks in smart industries.
 	
-	In addition, non-line-of-sight sensing has the potential to enhance cellular sensing systems in a cost-effective manner, making them a viable alternative to expensive ad hoc systems. This approach does not require the deployment of infrastructure or specialized equipment. Early explorations of non-line-of-sight sensing suggest that it is possible to leverage existing network hardware and extend its capabilities. Non-line-of-sight sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
 	
-	Furthermore, it could unlock new use cases that have yet to be fully explored. In industrial environments, non-line-of-sight sensing technology has the potential to enhance safety protocols and improve accident prevention measures by detecting humans within obscured or complex settings. Additionally, intrusion detection systems could benefit from this technology as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points.
 	
-	This work focuses on intrusion detection in industrial scenarios as the primary working scenario of the system. 
+\remove{	In addition, it has the potential to enhance cellular sensing systems in a cost-effective manner, making them a viable alternative to expensive ad hoc systems. This approach does not require the deployment of infrastructure or specialized equipment. Early explorations of non-line-of-sight sensing suggest that it is possible to leverage existing network hardware and extend its capabilities. Non-line-of-sight sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.}
+	
+	\remove{Furthermore, it could unlock new use cases that have yet to be fully explored. In industrial environments, non-line-of-sight sensing technology has the potential to enhance safety protocols and improve accident prevention measures by detecting humans within obscured or complex settings. Additionally, intrusion detection systems could benefit from this technology as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points.}
 	
 	
 

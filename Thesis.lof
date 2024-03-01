@@ -56,7 +56,7 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{54}{subfigure.5.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize Human target walking towards gNB, power in dB.}}}{54}{subfigure.5.3}%
 \contentsline {figure}{\numberline {6.6}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{55}{figure.caption.72}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \small Output of KF tracking the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{56}{figure.caption.73}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \small KF track of the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{56}{figure.caption.73}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram after applying CRAP.}}}{57}{subfigure.8.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram after applying ECA-C.}}}{57}{subfigure.8.2}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{57}{figure.caption.75}%
