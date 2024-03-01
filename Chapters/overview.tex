@@ -1,17 +1,17 @@
-\chapter{Technology for Integrated sensing and communications}
+\chapter{Fundamentals on Integrated sensing and communication}
 
-The fifth generation of wireless communication systems, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the NR carrier. 
-This enables the system to estimate the positions of active user equipment (UE) by measuring time difference of arrival information \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.
+\alert{The fifth generation of cellular networks, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the NR carrier. 
+This enables the system to estimate the positions of active user equipment (UE) by measuring time difference of arrival information \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.}
 
 The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 
-With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (ISAC, also known as JCAS or ICAS) has been a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
+With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (ISAC, also known as JCAS or ICAS) is currently a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 
-It is said that 6G will function as a network with a sixth sense \cite{Viswanathan_Wild_2021}. Radio signals transmitted by base stations, or users do not only carry data. They are effected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
-Channel information can be obtained by comparing the reflected signal with the known transmitted one. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
+According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}" . Radio signals transmitted by base stations, or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
+Channel information can be obtained by removing the influence of the known, transmitted signal from the received one after target reflection. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
-For 6G, the radio sensing capabilities should be integrated in-band, using the same spectrum for both communication and radar sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an ISAC scenario. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
+For 6G, the radio sensing capabilities should be integrated in-band, using the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an ISAC scenario as proposed in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
 
 \begin{figure}[H]
 	\centering
@@ -21,14 +21,14 @@ For 6G, the radio sensing capabilities should be integrated in-band, using the s
 \end{figure}
 
 
-Integrated sensing and communications will benefit from the current massive deployment of cellular systems and their increasing density: making use of existing hardware and extending its capabilities with sensing could enable multi-user communication and multi-target detection with extended coverage.
+ISAC will benefit from the massive deployment of cellular network and their coverage: making use of existing hardware and extending its capabilities with sensing the network will be able to adapt and use information about the surrounding environment as a source of situational knowledge.
 
 
 
 \section{Technological enablers}
 	
-	In recent years Radar and communication front-ends have become very similar, facilitating the integration of sensing and communication technology.
-	Traditional radar systems were heavily reliant on hardware components to perform their core functions. However, with the advent of advanced digital technologies, a substantial number of these functions are now being realized through virtualization and digital signal processing. 
+	\remove{In recent years Radar and communication front-ends have become very similar, facilitating the integration of sensing and communication technology.
+	Traditional radar systems were heavily reliant on hardware components to perform their core functions. However, with the advent of advanced digital technologies, a substantial number of these functions are now being realized through virtualization and digital signal processing. }
 
 	This section will present some of the main technological aspects and digital technologies enabling joint functionality and the current research on radar in communication systems.	
 	
@@ -147,7 +147,6 @@ Integrated sensing and communications will benefit from the current massive depl
 \section{Proof of concept architecture}
 	\label{sec:intro-PoCarchitecture}
 	
-	One of the objectives of ISAC is to make the best use of the deployed communication hardware to perform sensing. 
 	The architecture considered in this work is based on a FR2 5G commercial communication hardware.
 	
 	Using option 7-2 of the proposed 5G splits, shown in Figure \ref{fig:Overview-LTE_stack_splits}, it is possible to use the same type of Radio Unit (RU) for both communication and sensing.
