@@ -79,7 +79,7 @@
 \vspace {2em}
 \contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{63}{chapter*.83}%
 \vspace {2em}
-\contentsline {chapter}{Abbreviations}{67}{chapter*.85}%
+\contentsline {chapter}{Abbreviations and Symbols}{68}{chapter*.85}%
 \contentsline {chapter}{List of Figures}{69}{chapter*.88}%
 \contentsline {chapter}{List of Tables}{71}{chapter*.90}%
 \contentsline {chapter}{List of Symbols}{73}{chapter*.92}%
