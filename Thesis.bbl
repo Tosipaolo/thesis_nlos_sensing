@@ -10,6 +10,12 @@ Ryan Keating, Mikko Saily, Jari Hulkkonen, and Juha Karjalainen.
 \newblock In {\em 2019 16th International Symposium on Wireless Communication
   Systems (ISWCS)}, page 320–324, Oulu, Finland, August 2019. IEEE.
 
+\bibitem{Razavi_Gunnarsson_2018}
+Sara~Modarres Razavi, Fredrik Gunnarsson, Henrik Rydén, Åke Busin, Xingqin
+  Lin, Xin Zhang, Satyam Dwivedi, Iana Siomina, and Ritesh Shreevastav.
+\newblock Positioning in cellular networks: Past, present, future.
+\newblock page 1–6, April 2018.
+
 \bibitem{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
 Marcus Henninger, Traian~E. Abrudan, Silvio Mandelli, Maximilian Arnold,
   Stephan Saur, Veli-Matti Kolmonen, Siegfried Klein, Thomas Schlitter, and
@@ -33,6 +39,14 @@ Harish Viswanathan and Thorsten Wild.
   \url{https://www.bell-labs.com/institute/blog/building-network-sixth-sense/},
   Apr 2021.
 
+\bibitem{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}
+Thorsten Wild, Artjom Grudnitsky, Silvio Mandelli, Marcus Henninger, Junqing
+  Guan, and Frank Schaich.
+\newblock {6G Integrated Sensing and Communication: From Vision to
+  Realization}.
+\newblock In {\em 2023 20th European Radar Conference (EuRAD)}, page 355–358,
+  September 2023.
+
 \bibitem{Hexa}
 {Hexa Project: An European project aiming at the sustainable, inclusive, and
   trustworthy 6G platform.}
@@ -51,14 +65,6 @@ B.~Friedlander.
 \newblock {Waveform Design for MIMO Radars}.
 \newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
   43(3):1227–1238, July 2007.
-
-\bibitem{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}
-Thorsten Wild, Artjom Grudnitsky, Silvio Mandelli, Marcus Henninger, Junqing
-  Guan, and Frank Schaich.
-\newblock {6G Integrated Sensing and Communication: From Vision to
-  Realization}.
-\newblock In {\em 2023 20th European Radar Conference (EuRAD)}, page 355–358,
-  September 2023.
 
 \bibitem{Sturm_Wiesbeck_2011}
 Christian Sturm and Werner Wiesbeck.

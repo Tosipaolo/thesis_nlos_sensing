@@ -1,14 +1,20 @@
 \chapter{Fundamentals on Integrated sensing and communication}
-
-\alert{The fifth generation of cellular networks, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the NR carrier. 
-This enables the system to estimate the positions of active user equipment (UE) by measuring time difference of arrival information \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.}
-
-The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}.
+		
+		% OLD PART
+		%The fifth generation of cellular networks, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the NR carrier. 		This enables the system to estimate the positions of active user equipment (UE) by measuring time difference of arrival information \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.  The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
+		
+		
+Positioning of active user equipments (UE) was first deployed with the 3GPP Long Term Evolution (LTE) standard. LTE introduced support for positioning based on a wide range on methods. 
+These methods mostly rely on Cell Identity (CID), time of arrival (TOA) and Global Navigation Satellite System (GNSS). Due to the accuracy requirements in different deployment conditions (\ie indoor or outdoor, urban or rural areas), LTE positioning normally employed two or more methods at the same time \cite{Razavi_Gunnarsson_2018}. 
+The fifth generation of cellular networks, with 5G New Radio (NR), expanded this capabilities. The introduction of beam-based operation and massive antenna systems, especially at mmWave, will enable higher positioning accuracy by exploiting more precise angular information in combination with time measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}. 
+The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with high accuracy indoor active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. 
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
+
+
 
 With the objective of expanding the capabilities of the mobile network, Integrated Sensing and Communication (ISAC, also known as JCAS or ICAS) is currently a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 
-According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}" . Radio signals transmitted by base stations, or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
+According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations, or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
 Channel information can be obtained by removing the influence of the known, transmitted signal from the received one after target reflection. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
 For 6G, the radio sensing capabilities should be integrated in-band, using the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an ISAC scenario as proposed in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction, a cellular system is shown with the presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
@@ -21,7 +27,7 @@ For 6G, the radio sensing capabilities should be integrated in-band, using the s
 \end{figure}
 
 
-ISAC will benefit from the massive deployment of cellular network and their coverage: making use of existing hardware and extending its capabilities with sensing the network will be able to adapt and use information about the surrounding environment as a source of situational knowledge.
+ISAC will benefit from the massive deployment of cellular network and their coverage: making use of existing hardware and extending its capabilities with sensing, the network will be able to adapt and use information about the surrounding environment as a source of situational knowledge.
 
 
 
@@ -69,11 +75,13 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 	\subsubsection{Communication-centric waveforms}
 	
 	Current mobile communications are dominated by single-carrier and multi-carrier waveforms (OFDM).
-	OFDM has become the current waveform reference in ISAC. Fully established in 4G and 5G communications systems, in the last decade it has also attracted the attention of the radar world.
+	OFDM has become the current waveform reference in ISAC. Fully established as the standard in 4G and 5G communications systems, in the last decade it has also attracted the attention of the radar world.
 	
 	OFDM offers great multiplexing capabilities, both in time and in frequency, through the definition \textit{OFDM resource elements} that can be dynamically allocated to users. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by PAPR constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
 	
-	Multicarrier waveforms offer the possibility of obtaining sensor information by using signal processing techniques that reduce the autocorrelation requirements required to radar waveforms \cite{Sturm_Wiesbeck_2011}.The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP required for the joint communication and sensing data processing.
+	Multicarrier waveforms offer the possibility of obtaining sensing information by using signal processing techniques. Spectral estimation for sensing applied to OFDM is commonly reffered to as \textit{OFDM Radar}.
+	OFDM radar does not require the high autocorrelation characteristics that are normally expected from traditional radar waveforms \cite{Sturm_Wiesbeck_2011}.
+	The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP necessary for performing ISAC data processing.
 	
 	\subsubsection{Waveforms for next-gen communication networks}
 	
@@ -249,17 +257,16 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity. 
 	Feasibility of monostatic ISAC in NLOS environments is still a rather unexplored area of research, as commonly studied use cases assume the target to be in LOS.
 	
-	The main advantage of NLOS sensing is the possibility of performing 'around the corner' detection, which is not feasible with traditional fixed camera or LIDAR systems. 
+	The main advantage of NLOS sensing is the possibility of performing "around the corner" detection, which is not feasible with traditional fixed camera or LIDAR systems. 
 	Sensing targets moving behind an obstacle is a powerful feature in use cases such as automotive radar and surveillance systems.
 	
-	As we can expect cellular networks operating in FR2 to be deployed in indoor areas and factory floors this work will focus on intrusion detection in industrial scenarios.
-	Intrusion detection in NLOS on factory floors could represent a valuable addition in market for private cellular networks in smart industries.
+	As we can expect cellular networks operating in FR2 to be deployed in indoor areas and factory floors, this work will focus on intrusion detection in industrial scenarios.
+	Intrusion detection in NLOS on factory floors could represent a valuable addition, from a commercial point of view, for private cellular networks in smart industries.
 	
+	In addition, it has the potential to enhance cellular sensing systems in a cost-effective manner, making them a viable alternative to expensive ad hoc systems. This approach does not require the deployment of infrastructure or specialized equipment. 
+	Non-line-of-sight sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
 	
-	
-\remove{	In addition, it has the potential to enhance cellular sensing systems in a cost-effective manner, making them a viable alternative to expensive ad hoc systems. This approach does not require the deployment of infrastructure or specialized equipment. Early explorations of non-line-of-sight sensing suggest that it is possible to leverage existing network hardware and extend its capabilities. Non-line-of-sight sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.}
-	
-	\remove{Furthermore, it could unlock new use cases that have yet to be fully explored. In industrial environments, non-line-of-sight sensing technology has the potential to enhance safety protocols and improve accident prevention measures by detecting humans within obscured or complex settings. Additionally, intrusion detection systems could benefit from this technology as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points.}
+	%\remove{Furthermore, it could unlock new use cases that have yet to be fully explored. In industrial environments, non-line-of-sight sensing technology has the potential to enhance safety protocols and improve accident prevention measures by detecting humans within obscured or complex settings. Additionally, intrusion detection systems could benefit from this technology as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points.}
 	
 	
 

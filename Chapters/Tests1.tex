@@ -210,7 +210,10 @@ Although this measure was obtained in a controlled single-target scenario, it op
 \subsubsection{Detection rate with separate clutter removal for NLOS}
 
 Figure \ref{fig:Test1_huma_crap-ecac} illustrates the tradeoffs between using CRAP and ECA-C for clutter removal. It can be seen that CRAP is ideal for line-of-sight (LOS) targets, while the power of the non-line-of-sight (NLOS) return is reduced to a level similar to the Doppler artefacts.
-The detection rate was tested using CRAP and ECA-C for the LOS and NLOS regions respectively.
+
+On the other hand, ECA-C introduces distortion and loss of information at zero speed, which is not suitable for any use case requiring LOS. In NLOS the static bin of the periodogram is discarded anyway, while the target return can be easily distinguished from the underlying noise floor.
+
+The detection rate was tested using CRAP and ECA-C for the LOS and NLOS regions respectively, and the results are shown in Figure \ref{fig:Test1_moving_avg}.
 This approach improved detection when the target was in motion.
 
 \begin{figure}[H]
