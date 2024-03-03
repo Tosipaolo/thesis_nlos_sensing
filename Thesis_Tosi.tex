@@ -1,0 +1,293 @@
+% A LaTeX template for MSc Thesis submissions to 
+% Politecnico di Milano (PoliMi) - School of Industrial and Information Engineering
+%
+% S. Bonetti, A. Gruttadauria, G. Mescolini, A. Zingaro
+% e-mail: template-tesi-ingind@polimi.it
+%
+% Last Revision: October 2021
+%
+% Copyright 2021 Politecnico di Milano, Italy. NC-BY
+
+\documentclass{Configuration_Files/PoliMi3i_thesis}
+
+%------------------------------------------------------------------------------
+%	REQUIRED PACKAGES AND  CONFIGURATIONS
+%------------------------------------------------------------------------------
+
+% CONFIGURATIONS
+\usepackage{parskip} % For paragraph layout
+\usepackage{setspace} % For using single or double spacing
+\usepackage{emptypage} % To insert empty pages
+\usepackage{multicol} % To write in multiple columns (executive summary)
+\setlength\columnsep{15pt} % Column separation in executive summary
+\setlength\parindent{0pt} % Indentation
+\raggedbottom  
+
+% PACKAGES FOR TITLES
+\usepackage{titlesec}
+% \titlespacing{\section}{left spacing}{before spacing}{after spacing}
+\titlespacing{\section}{0pt}{3.3ex}{2ex}
+\titlespacing{\subsection}{0pt}{3.3ex}{1.65ex}
+\titlespacing{\subsubsection}{0pt}{3.3ex}{1ex}
+\usepackage{color}
+
+% PACKAGES FOR LANGUAGE AND FONT
+\usepackage[english]{babel} % The document is in English  
+\usepackage[utf8]{inputenc} % UTF8 encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage[11pt]{moresize} % Big fonts
+
+% PACKAGES FOR IMAGES
+\usepackage{graphicx}
+\usepackage{transparent} % Enables transparent images
+\usepackage{eso-pic} % For the background picture on the title page
+\usepackage{subfig} % Numbered and caption subfigures using \subfloat.
+\usepackage{tikz} % A package for high-quality hand-made figures.
+\usetikzlibrary{}
+\graphicspath{{./Images/}} % Directory of the images
+\usepackage{caption} % Coloured captions
+\usepackage{xcolor} % Coloured captions
+\usepackage{amsthm,thmtools,xcolor} % Coloured "Theorem"
+\usepackage{float}
+
+% STANDARD MATH PACKAGES
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage[overload]{empheq} % For braced-style systems of equations.
+\usepackage{fix-cm} % To override original LaTeX restrictions on sizes
+
+% PACKAGES FOR TABLES
+\usepackage{tabularx}
+\usepackage{longtable} % Tables that can span several pages
+\usepackage{colortbl}
+
+% PACKAGES FOR ALGORITHMS (PSEUDO-CODE)
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% PACKAGES FOR REFERENCES & BIBLIOGRAPHY
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref} % Adds clickable links at references
+\usepackage{cleveref}
+\usepackage[square, numbers, sort&compress]{natbib} % Square brackets, citing references with numbers, citations sorted by appearance in the text and compressed
+\bibliographystyle{unsrt} % You may use a different style adapted to your field
+% \bibliographystyle{ieeert}
+
+% OTHER PACKAGES
+\usepackage{pdfpages} % To include a pdf file
+\usepackage{afterpage}
+\usepackage{lipsum} % DUMMY PACKAGE
+\usepackage{fancyhdr} % For the headers
+\fancyhf{}
+
+% Input of configuration file. Do not change config.tex file unless you really know what you are doing. 
+\input{Configuration_Files/config}
+
+%----------------------------------------------------------------------------
+%	NEW COMMANDS DEFINED
+%----------------------------------------------------------------------------
+
+% EXAMPLES OF NEW COMMANDS
+\newcommand{\bea}{\begin{eqnarray}} % Shortcut for equation arrays
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\e}[1]{\times 10^{#1}}  % Powers of 10 notation
+
+\newcommand{\etal}{\textit{et al}., }
+\newcommand{\ie}{\textit{i}.\textit{e}., }
+\newcommand{\eg}{\textit{e}.\textit{g}.\ }
+
+%----------------------------------------------------------------------------
+%	ADD YOUR PACKAGES (be careful of package interaction)
+%----------------------------------------------------------------------------
+\usepackage{easyReview}
+%----------------------------------------------------------------------------
+%	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
+%----------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------
+%	BEGIN OF YOUR DOCUMENT
+%----------------------------------------------------------------------------
+
+\begin{document}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[RO,RE]{\thepage} %RO=right odd, RE=right even
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+
+%----------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------
+
+\pagestyle{empty} % No page numbers
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the preamble pages
+
+\puttitle{
+	title=Feasibility of Non-Line of Sight \newline Integrated Sensing and \newline Communication at mmWave, % Title of the thesis
+	name=Paolo Tosi, % Author Name and Surname
+	course=Telecommunications Engineering - Ingegneria delle Telecomunicazioni, % Study Programme (in Italian)
+	ID  = 997038,  % Student ID number (numero di matricola)
+	advisor= Prof. Maurizio Magarini, % Supervisor name
+	coadvisor={Marcus Henninger, Dr. Silvio Mandelli}, % Co-Supervisor name, remove this line if there is none
+	academicyear={2023-24},  % Academic Year
+} % These info will be put into your Title page 
+
+%----------------------------------------------------------------------------
+%	PREAMBLE PAGES: ABSTRACT (inglese e italiano), EXECUTIVE SUMMARY
+%----------------------------------------------------------------------------
+\startpreamble
+\setcounter{page}{1} % Set page counter to 1
+
+% ABSTRACT IN ENGLISH
+\chapter*{Abstract} 
+
+The primary motivation behind the development of sixth-generation (6G) mobile networks is their ability to gather information about the surrounding environment. 
+Orthogonal frequency division multiplexing (OFDM) radio signals, which are transmitted by base stations to users, not only carry data but
+are also affected by the movement of the transmitter, obstacles, and illuminated targets.
+The concept of OFDM radar aims to extract information about the distance and relative speeds of targets that reflect the signal.
+With the high bandwidth available in next-generation mobile networks, OFDM radar can be used to gather sensing information with high accuracy. 
+The combination of these functions and the underlying cellular capabilities is referred to as Integrated Sensing and Communication (ISAC).
+Applications typically considered for ISAC include vehicle detection (cars or drones), human activity detection and industrial safety. 
+The typical assumptions is that the targets will lie in line-of-sight (LOS) from the antenna. 
+However, an area that has not been extensively explored is non-line-of-sight (NLOS) sensing, where the radio signal reaches the target after multiple reflections.
+
+The aim of this thesis work is to investigate the feasibility of ISAC in NLOS environments, addressing performance constraints imposed by communication requirements, algorithmic development and identification of novel application scenarios for the system.
+The proposed approaches are validated using real-world measurements obtained from Nokia's ISAC mmWave prototype, which was deployed in an industrial test facility in ARENA 2036 in Stuttgart, Germany.
+The prototype is based on a commercial system that operates at 27.4 GHz and complies with the 3rd Generation Partnership Project (3GPP) standards for fifth-generation (5G) waveforms in the mmWave frequency bands. 
+% The system is extended by an additional radio unit called the 'Sniffer' for receiving signals reflected by the target, and a 'Sensing Processing Unit (SPU)' which is responsible for performing the radar processing algorithms.
+Validation measurements were performed focusing on human intrusion detection scenarios in an industrial environment.
+The aim of this thesis is to define an initial approach for NLOS radar sensing based on periodogram spectral analysis, in order to exploit it during the development of more advanced sensing functionalities.
+\\
+\\
+\textbf{Keywords:} ISAC, 6G, OFDM radar, monostatic sensing, non-line-of-sight sensing % Keywords
+
+% ABSTRACT IN ITALIAN
+\chapter*{Abstract in lingua italiana}
+Lo sviluppo delle reti mobili di sesta generazione (6G) è incentrato sulla capacità di raccogliere informazioni sull'ambiente circostante.
+I segnali radio a divisione di frequenza ortogonale (OFDM), che vengono trasmessi dalle stazioni base agli utenti, non solo trasportano dati ma sono anche influenzati dal movimento del trasmettitore, dagli ostacoli e dai soggetti illuminati dal segnale.
+Il concetto di radar OFDM mira a estrarre informazioni sulla distanza e sulla velocità relativa dei bersagli analizzando il segnale riflesso.
+Grazie all'elevata banda di segnale disponibile nelle reti mobili di prossima generazione, il radar OFDM può essere implementato per ottenere informazioni con elevata precisione.
+La combinazione di queste funzioni e delle capacità cellulari sottostanti
+è denominata Integrated Sensing and Communications (ISAC). Le applicazioni tipicamente considerate per ISAC sono il rilevamento di veicoli (automobili o droni), il rilevamento di attività umane e la sicurezza industriale.
+in questi casi d'uso si suppone che il bersaglio venga illuminato in linea diretta segnale radio, condizione denominata di \textit{line-of-sight} (LOS). Tuttavia, un ambito non ancora esplorato in modo esaustivo è quello in cui il bersaglio non si trova in linea diretta, ma viene raggiunto dal segnale solo dopo riflessioni su altri ostacoli, condizione indicata come \textit{non-line-of-sight} (NLOS).
+L'obiettivo di questo lavoro di tesi è studiare la fattibilità di sistemi ISAC in condizioni di NLOS, affrontando i vincoli sulle prestazioni imposti dai requisiti di comunicazione, dallo sviluppo di algoritmi e dall'identificazione di nuovi scenari applicativi per il sistema.
+Gli approcci proposti sono stati convalidati utilizzando misure reali
+ottenute dal prototipo ISAC mmWave di Nokia, installato in
+una struttura di ricerca industriale ad ARENA 2036, Stoccarda, Germania. 
+Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme alle specifiche del 3rd Generation Partnership Project (3GPP) per le forme d'onda di quinta generazione (5G).
+Le misurazioni sono state eseguite su scenari di rilevamento delle intrusioni umane in un ambiente industriale. 
+L'obiettivo di questa tesi è quello di definire un primo approccio per il rilevamento radar in NLOS basato sull'analisi spettrale del periodogramma.
+\\
+\\
+\textbf{Parole chiave:} ISAC, 6G, radar OFDM, radar monostatico, rilevamento NLOS % Keywords (italian)
+
+%----------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES/SYMBOLS
+%----------------------------------------------------------------------------
+
+% TABLE OF CONTENTS
+\thispagestyle{empty}
+\tableofcontents % Table of contents 
+\thispagestyle{empty}
+\cleardoublepage
+
+%-------------------------------------------------------------------------
+%	THESIS MAIN TEXT
+%-------------------------------------------------------------------------
+% In the main text of your thesis you can write the chapters in two different ways:
+%
+%(1) As presented in this template you can write:
+%    \chapter{Title of the chapter}
+%    *body of the chapter*
+%
+%(2) You can write your chapter in a separated .tex file and then include it in the main file with the following command:
+%    \chapter{Title of the chapter}
+%    \input{chapter_file.tex}
+%
+% Especially for long thesis, we recommend you the second option.
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+% --------------------------------------------------------------------------
+% NUMBERED CHAPTERS % Regular chapters following
+% --------------------------------------------------------------------------
+
+% Template text from model, remove after starting to write
+% \include{Template}
+
+% Introduction
+\input{Chapters/Introduction}
+
+% Overview of 6G sensing
+\input{Chapters/overview}
+
+% Joint comm. and sensing/ theoretical
+\input{Chapters/theoretical}
+
+% Processing with TDD frame structure
+\input{Chapters/TDDprocessing}
+
+% Radar detection and thresholding techniques
+\input{Chapters/radar_detect_threshold}
+
+% First Measurements
+\input{Chapters/Tests1}
+
+\input{Chapters/Outlook}
+
+%-------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+% \bibliographystyle{IEEEtran}
+\bibliography{Thesis_bibliography} % The references information are stored in the file named "Thesis_bibliography.bib"
+
+%-------------------------------------------------------------------------
+%	APPENDICES
+%-------------------------------------------------------------------------
+
+\cleardoublepage
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\appendix
+% \chapter{Appendix A}
+%If you need to include an appendix to support the research in your thesis, you can place it at the end of the manuscript.
+%An appendix contains supplementary material (figures, tables, data, codes, mathematical proofs, surveys, \dots)
+% which supplement the main results contained in the previous chapters.
+
+
+% ABBREVIATIONS
+\input{Chapters/Abbreviations}
+
+% LIST OF FIGURES
+\listoffigures
+
+% LIST OF TABLES
+\listoftables
+
+% LIST OF SYMBOLS
+% Write out the List of Symbols in this page
+\chapter*{List of Symbols} % You have to include a chapter for your list of symbols (
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lll}
+        \textbf{Variable} & \textbf{Description} & \textbf{SI unit} \\\hline\\[-9px]
+        $\bm{u}$ & solid displacement & m \\[2px]
+        $\bm{u}_f$ & fluid displacement & m \\[2px]
+        $\bm{c}_0$ & speed of light & m/s \\[2px]
+        $\bm{f}_C$ & carrier frequency & Hz \\[2px]
+    \end{tabular}
+\end{table}
+
+% ACKNOWLEDGEMENTS
+\chapter*{Acknowledgements}
+Here you might want to acknowledge someone.
+
+\cleardoublepage
+
+
+\end{document}

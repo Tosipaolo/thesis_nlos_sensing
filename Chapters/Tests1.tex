@@ -32,7 +32,8 @@ Before each test, a short calibration measure is performed, which includes only 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Images/Test1/base-lateral_view_los_geometry}
-	\caption{\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.}
+	\caption{\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.
+	\alert{FIX ANTENNA HEIGHT WITH DOT}}
 	\label{fig:Test1_base-lateral_view}
 \end{figure}
 
@@ -109,7 +110,7 @@ Detection rate was hence evaluated comparing the five strongest returns in NLOS 
 	
 The first measurement was performed with the strong reflector, which represented an ideal scenario. 
 Figure \ref{fig:Test1_metal-human_comparison} illustrates the comparison between the human and the metal cabinet cases. 
-Even when decimating the single CSI matrix, translating a 15 dB loss in processing gain, the NLOS component of the metal cabinet can be easily identified when moving.
+Even when decimating the single CSI matrix, with a 15 dB loss in processing gain, the NLOS component of the metal cabinet can be easily identified when moving.
 
 The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_ref} shows that the passive reflector, thanks to its significantly larger radar cross section, is clearly identified while it is moving and has stronger power compared to reflected clutter returns.
 
@@ -157,7 +158,7 @@ Clutter removal was performed using CRAP to ensure precise estimation of the exp
 
 
 
-Target detection was carried out by considering the 'n'-strongest peaks and comparing them against the LOS data. If any of the observed non-line-of-sight (NLOS) peaks corresponded to the target, then the detection was positive.
+Target detection was carried out by considering the \textit{n}-strongest peaks and comparing them against the LOS data. If any of the observed non-line-of-sight (NLOS) peaks corresponded to the target, then the detection was positive.
 
 \begin{figure}[H]
 	\centering

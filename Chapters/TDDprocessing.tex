@@ -21,7 +21,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.55\textwidth]{Images/TDDprocessing/SpectralReplicasDLULpattern.png}
-        \caption{Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0,94 m/s); NLOS target (range = 37,2 m, speed = -1 m/s)}
+        \caption{Periodogram of a radar measurement with: static target at 23 m; moving target (range = 9,5 m, speed = 0.94 m/s); NLOS target (range = 37.2 m, speed = -1 m/s)}
         \label{fig:SpectralReplicasDLULpattern}
     \end{figure}
     
@@ -59,20 +59,20 @@
 			\item \textbf{Unambiguous speed}
 			\vspace{-\baselineskip} % Remove extra whitespace
 			\begin{equation}
-				v_{\text{unamb}} = \frac{c_0}{2f_C T_S} = 613,5\text{ m/s}.
+				v_{\text{unamb}} = \frac{c_0}{2f_C T_S} = 613.5\text{ m/s}.
 			\end{equation}
 			
 			\item \textbf{Unambiguous range}
 			\begin{equation}
-				d_{\text{unamb}} = \frac{c_0}{2\Delta_f} = 1250,0\text{ m}.
+				d_{\text{unamb}} = \frac{c_0}{2\Delta_f} = 1250.0\text{ m}.
 			\end{equation}
 			\item \textbf{Speed resolution}
 			\begin{equation}
-				v_{\text{res}} = \frac{c_0}{2T_Sf_CM} = 0,547 \text{ m/s}.
+				v_{\text{res}} = \frac{c_0}{2T_Sf_CM} = 0.547 \text{ m/s}.
 			\end{equation} 
 			\item \textbf{Range resolution}
 			\begin{equation}
-				d_{\text{res}} = \frac{c_0}{2\Delta_fN} = 0,789 \text{ m}.
+				d_{\text{res}} = \frac{c_0}{2\Delta_fN} = 0.789 \text{ m}.
 			\end{equation}  
 		\end{itemize}
 			
@@ -107,7 +107,7 @@
 		     Replicas are not detected, but the lower number of processed symbols translates into a considerable loss of SNR in the periodogram. 
 		     This affects NLOS sensing in particular, since targets observed from a reflection present a considerably lower peak power compared with the LOS components.
 		
-		     Reducing the number of available symbols with a fixed time-aperture translates in lower granularity of measurements and in a decrease in unambiguous speed. \protect\newline In the case of Figure \ref{fig:TDDperiodogram1FYesDec}, processing one symbol every 47, the obtained unambiguous speed is $13,05$ m/s. \protect\newline Speed resolution remains unchanged.
+		     Reducing the number of available symbols with a fixed time-aperture translates in lower granularity of measurements and in a decrease in unambiguous speed. \protect\newline In the case of Figure \ref{fig:TDDperiodogram1FYesDec}, processing one symbol every 47, the obtained unambiguous speed is $13.05$ m/s. \protect\newline Speed resolution remains unchanged.
 		    
 		     \paragraph{Decimation and multi-frame processing:}
 		     by combining consecutive frames, it is possible to process an higher number of symbols, regaining a part of the SNR thanks to processing gain, all without observing replicas. 
@@ -116,6 +116,7 @@
 			 To combine several consecutive CSI measurements, the decimation rate is further reduced compared to the previous approach, from one sample in 47 to one sample every 70. 
 			 Two symbols are chosen from each DL pattern, and UL symbols can be skipped across multiple consecutive frames.
 			 The number of time samples obtained from a single CSI is reduced from 1120 to 16.
+			 Unambiguous speed is also reduced further to $8.76$ m/s.
 			 
 			 To generate a radar update it is necessary to wait for multiple frames to be received.
 			 This approach introduces a trade-off between SNR (processing gain) and update rate, with the update rate being reduced proportionally to the chosen time aperture.
@@ -132,22 +133,22 @@
 		    \begin{figure}[H]
 		        \centering
 		        
-		        \subfloat[Standard processing, no decimation, SNR = 60,91 dB, \protect\newline $v_{\text{res}} = 0,603$ m/s, $ v_{\text{unamb}} = 613,15$ m/s
+		        \subfloat[Standard processing, no decimation, SNR = 60.91 dB, \protect\newline $v_{\text{res}} = 0.603$ m/s, $ v_{\text{unamb}} = 613.15$ m/s
 		\label{fig:TDDperiodogram1FNoDec}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram1FNoDec.png}
 		        }
 		        \hfill
-		        \subfloat[Single frame, decimated, \protect\newline SNR = 45,16 dB, \protect\newline $v_{\text{res}} = 0,603$ m/s, $ v_{\text{unamb}} = 13,05$ m/s\label{fig:TDDperiodogram1FYesDec}]{
+		        \subfloat[Single frame, decimated, \protect\newline SNR = 45.16 dB, \protect\newline $v_{\text{res}} = 0.603$ m/s, $ v_{\text{unamb}} = 13.05$ m/s\label{fig:TDDperiodogram1FYesDec}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram1FYesDec.png}
 		        }
 		        
 		        \vspace{0.5cm}
 		        
-		        \subfloat[6 processed frames, decimated, combined, SNR = 52,35 dB, \protect\newline $v_{\text{res}} = 0,091$ m/s, $ v_{\text{unamb}} = 8,76$ m/s\label{fig:TDDperiodogram6frames}]{
+		        \subfloat[6 processed frames, decimated, combined, SNR = 52.35 dB, \protect\newline $v_{\text{res}} = 0.091$ m/s, $ v_{\text{unamb}} = 8.76$ m/s\label{fig:TDDperiodogram6frames}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram6frames.png}
 		        }
 		        \hfill
-		        \subfloat[10 processed frames, decimated, combined, SNR = 54.66 dB, \protect\newline $v_{\text{res}} = 0,054$ m/s, $ v_{\text{unamb}} = 8,76$ m/s\label{fig:TDDperiodogram10frames}]{
+		        \subfloat[10 processed frames, decimated, combined, SNR = 54.66 dB, \protect\newline $v_{\text{res}} = 0.054$ m/s, $ v_{\text{unamb}} = 8.76$ m/s\label{fig:TDDperiodogram10frames}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram10frames.png}
 		        }
 		        
@@ -167,10 +168,10 @@
 		    \rowcolor{bluepoli!40} % comment this line to remove the color
 		     \textbf{Strategy} & \textbf{SNR [dB]} & \textbf{N} & \textbf{Time aperture [ms]} \T\B \\
 		    \hline \hline
-		    $\textbf{Standard frame}$ & 60,91 & 1120 & 10 \T\B \\
-		    $\textbf{Decimated frame}$ & 45,16 & 24 & 10 \T\B\\
-		    $\textbf{6 frames}$ & 52,35 & 96 & 60  \T\B\\
-		    $\textbf{10 frames}$ & 54,66 & 160 & 100  \T\B\\
+		    $\textbf{Standard frame}$ & 60.91 & 1120 & 10 \T\B \\
+		    $\textbf{Decimated frame}$ & 45.16 & 24 & 10 \T\B\\
+		    $\textbf{6 frames}$ & 52.35 & 96 & 60  \T\B\\
+		    $\textbf{10 frames}$ & 54.66 & 160 & 100  \T\B\\
 		
 		    \hline
 		    \end{tabular}
