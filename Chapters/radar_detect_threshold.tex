@@ -355,6 +355,8 @@ The main limitation posed by this algorithm is the increased computational cost 
 		
 			After defining the two regions of interest from the periodogram and discarding the static components, as described in Section \ref{sec:los_nlos_separation}, peak detection and any additional processing can be conducted separately for each region. 
 			
+			Figure \ref{fig:Test1_NLOS-proc-pipeline} summarizes the proposed processing steps for NLOS sensing.
+			
 			%The chosen detection strategy was CA-CFAR, which utilized a square contribution window and a probability of false alarm $p_{\text{FA}} = 10^{-6}$. The size of the CA-CFAR window was set depending on the width of the target in speed bins, which depended on number of processed frames and OFDM sampled symbols.
 			
 			\begin{figure}[H]
@@ -365,7 +367,7 @@ The main limitation posed by this algorithm is the increased computational cost 
 			\end{figure}
 			
 			
-			The full process for the experiment is summarized in figure \ref{fig:Test1_NLOS-proc-pipeline}.
+		 
 			
 			% TODO: add info on target dimensions for CA-CFAR, human case since guard cells were set in meters
 			

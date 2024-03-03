@@ -4,17 +4,17 @@
 {NOKIA, 6G explained}.
 \newblock \url{https://www.nokia.com/about-us/newsroom/articles/6g-explained/}.
 
-\bibitem{Keating_Saily_Hulkkonen_Karjalainen_2019}
-Ryan Keating, Mikko Saily, Jari Hulkkonen, and Juha Karjalainen.
-\newblock {Overview of Positioning in 5G New Radio}.
-\newblock In {\em 2019 16th International Symposium on Wireless Communication
-  Systems (ISWCS)}, page 320–324, Oulu, Finland, August 2019. IEEE.
-
 \bibitem{Razavi_Gunnarsson_2018}
 Sara~Modarres Razavi, Fredrik Gunnarsson, Henrik Rydén, Åke Busin, Xingqin
   Lin, Xin Zhang, Satyam Dwivedi, Iana Siomina, and Ritesh Shreevastav.
 \newblock Positioning in cellular networks: Past, present, future.
 \newblock page 1–6, April 2018.
+
+\bibitem{Keating_Saily_Hulkkonen_Karjalainen_2019}
+Ryan Keating, Mikko Saily, Jari Hulkkonen, and Juha Karjalainen.
+\newblock {Overview of Positioning in 5G New Radio}.
+\newblock In {\em 2019 16th International Symposium on Wireless Communication
+  Systems (ISWCS)}, page 320–324, Oulu, Finland, August 2019. IEEE.
 
 \bibitem{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}
 Marcus Henninger, Traian~E. Abrudan, Silvio Mandelli, Maximilian Arnold,
