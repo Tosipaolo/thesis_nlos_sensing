@@ -28,39 +28,38 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\footnotesize Periodogram with\newline 4 OFDM frames, decimated.}}}{34}{subfigure.6.4}%
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\footnotesize Periodogram with 5 OFDM frames, decimated.}}}{34}{subfigure.6.5}%
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize Periodogram with 6 OFDM frames, decimated. }}}{34}{subfigure.6.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins, threshold estimated using CFAR.}}}{37}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. }}}{37}{subfigure.7.2}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.\relax }}{38}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}\relax }}{40}{figure.caption.53}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins using CA-CFAR.}}}{40}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. LOS target at 6 m and corresponding NLOS path return at 40 m, -1,5 m/s.}}}{40}{subfigure.10.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram with target at 9 m, moving at 1 m/s. Sidelobes from the target are present.}}}{42}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Above-threshold periodogram, after applying exponential threshold.}}}{42}{subfigure.11.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize no clutter removal, static metal target at range of ca. 10 m. Clutter at ca. 23 m.}}}{44}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C.}}}{44}{subfigure.12.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize clutter removal using CRAP.}}}{44}{subfigure.12.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\footnotesize no clutter removal, metal target at range of ca. 10 m moving at ca. 1 m/s.\newline Static clutter at ca. 23 m.}}}{44}{subfigure.12.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C, moving target.}}}{44}{subfigure.12.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize clutter removal using \newline CRAP, moving target. }}}{44}{subfigure.12.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.13.2}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \small Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. \relax }}{46}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \small Sample periodogram, separated in processing regions.\relax }}{46}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces \small Periodogram processing pipeline used for detection tests.\relax }}{47}{figure.caption.66}%
 \addvspace {10\p@ }
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins, threshold estimated using CFAR.}}}{38}{subfigure.1.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. }}}{38}{subfigure.1.2}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces CA-CFAR detection processor, guard cells are indicated in red, while reference cells are highlighted in green.\relax }}{39}{figure.caption.52}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of self masking in a 1D radar signal \cite {Richards_Scheer_Holm_2010}\relax }}{40}{figure.caption.54}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Above-threshold bins using CA-CFAR.}}}{41}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reference periodogram. LOS target at 6 m and corresponding NLOS path return at 40 m, -1,5 m/s.}}}{41}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram with target at 9 m, moving at 1 m/s. Sidelobes from the target are present.}}}{43}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Above-threshold periodogram, after applying exponential threshold.}}}{43}{subfigure.5.2}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize no clutter removal, static metal target at range of ca. 10 m. Clutter at ca. 23 m.}}}{44}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C.}}}{44}{subfigure.6.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize clutter removal using CRAP.}}}{44}{subfigure.6.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\footnotesize no clutter removal, metal target at range of ca. 10 m moving at ca. 1 m/s.\newline Static clutter at ca. 23 m.}}}{44}{subfigure.6.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\footnotesize clutter removal with \newline ECA-C, moving target.}}}{44}{subfigure.6.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\footnotesize clutter removal using \newline CRAP, moving target. }}}{44}{subfigure.6.6}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.7.2}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces \small Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25m from the system are generated from multiple reflections and should be considered as NLOS components. \relax }}{46}{figure.caption.64}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces \small Sample periodogram, separated in processing regions.\relax }}{46}{figure.caption.65}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.\relax }}{50}{figure.caption.67}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.\relax }}{50}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \small Top view of measurement scenario.\relax }}{51}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \small Periodogram processing pipeline used for detection tests.\relax }}{52}{figure.caption.70}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, linear scale.}}}{54}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{54}{subfigure.5.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize Human target walking towards gNB, power in dB.}}}{54}{subfigure.5.3}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{55}{figure.caption.72}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \small KF track of the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{56}{figure.caption.73}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram after applying CRAP.}}}{57}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram after applying ECA-C.}}}{57}{subfigure.8.2}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{57}{figure.caption.75}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.\relax }}{58}{figure.caption.77}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{59}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{60}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.\relax }}{50}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.\relax }}{50}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \small Top view of measurement scenario.\relax }}{51}{figure.caption.70}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, linear scale.}}}{53}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{53}{subfigure.4.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize Human target walking towards gNB, power in dB.}}}{53}{subfigure.4.3}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{54}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \small KF track of the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{55}{figure.caption.73}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram after applying CRAP.}}}{56}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram after applying ECA-C.}}}{56}{subfigure.7.2}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{56}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.\relax }}{57}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{58}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{59}{figure.caption.80}%
 \addvspace {10\p@ }

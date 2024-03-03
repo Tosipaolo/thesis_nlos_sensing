@@ -60,10 +60,14 @@ During the measurement, the direct component was always visible as no other obst
 The direct target return provided additional information, which was then used as ground truth to determine the correct position of the person within the test area.
 Figures \ref{fig:Test1_base-lateral_view} and \ref{fig:Test1_base-top_view} depict a scheme of the measurement.
 
+Considering the processing scheme proposed in Section \ref{sec:nlos_proc_pipeline}, the periodogram was processed differently after separation in the regions corresponding to LOS and NLOS conditions.
+A standard strongest peak search is performed for the LOS region, while multiple peak detection is conducted in NLOS, where only the five strongest peaks were considered. This assumption was made since the test was conducted in a single target scenario and a single NLOS return is expected.
+Accurate range and velocity measurements are obtained after interpolation of each peak with the adjacent bins.
+
 \begin{itemize}
 	\item Speed of the NLOS component was estimated as:
 	$$ \hat{v}_{\text{NLOS}} = -v_{\text{LOS}}$$
-	since the direct and reflected beams will hit the target from the opposite direction.
+	since the direct and reflected beams will hit the target from the opposite direction, hence measuring the target's speed with opposing sign.
 	\item Range of the NLOS component was estimated considering the model in Figure \ref{fig:Test1_base-lateral_view} as:
 	$$ \hat{d}_{\text{NLOS}} = 2 d_{\text{wall}} - d_{\text{LOS}}\cdot \cos{(\arctan{\left(\frac{h_{\text{gNB}}}{d_{\text{LOS}}}\right)})}$$
 \end{itemize}
@@ -80,26 +84,6 @@ The detection rate was then obtained as the ratio between the number of frames i
 Due to the multiple reflections, the NLOS return presented considerably smaller power compared to LOS.
 This meant that due to the presence of large clutter returns and their sidelobes, this return is not necessarily the strongest one in the NLOS region of the periodogram.
 Detection rate was hence evaluated comparing the five strongest returns in NLOS with the estimated position of the target.
-
-\subsection{Processing of the NLOS region}
-
-After defining the two regions of interest from the periodogram and discarding the static components, as described in Section \ref{sec:los_nlos_separation}, peak detection is conducted separately for each region. 
-
-%The chosen detection strategy was CA-CFAR, which utilized a square contribution window and a probability of false alarm $p_{\text{FA}} = 10^{-6}$. The size of the CA-CFAR window was set depending on the width of the target in speed bins, which depended on number of processed frames and OFDM sampled symbols.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Images/Test1/NLOS-proc-pipeline_wide_text12.png}
-	\caption{\small Periodogram processing pipeline used for detection tests.}
-	\label{fig:Test1_NLOS-proc-pipeline}
-\end{figure}
-
-A standard strongest peak search is performed for the LOS region, while multiple peak detection is conducted in NLOS. Only the five strongest peaks were considered. This assumption was made since the test was conducted in a single target scenario and a single NLOS return is expected.
-Accurate range and velocity measurements are obtained after interpolation of each peak with the adjacent bins.
-
-The full process for the experiment is summarized in figure \ref{fig:Test1_NLOS-proc-pipeline}.
-
-% TODO: add info on target dimensions for CA-CFAR, human case since guard cells were set in meters
 
 
 \section{Observation on detection rate of a strong reflector}
