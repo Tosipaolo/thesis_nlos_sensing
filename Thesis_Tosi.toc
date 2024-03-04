@@ -10,7 +10,7 @@
 \contentsline {paragraph}{Chapter 4}{2}{paragraph*.11}%
 \contentsline {paragraph}{Chapter 5}{2}{paragraph*.12}%
 \contentsline {paragraph}{Chapter 6}{2}{paragraph*.13}%
-\contentsline {chapter}{\numberline {2}Fundamentals on Integrated sensing and communication}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Fundamentals on Integrated Sensing and Communication}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Technological enablers}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Spectrum choice for 6G sensing}{4}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Waveform candidates for ISAC}{5}{subsection.2.1.2}%
@@ -22,8 +22,8 @@
 \contentsline {subsection}{\numberline {2.1.5}Signal processing enhanced by AI/ML}{9}{subsection.2.1.5}%
 \contentsline {section}{\numberline {2.2}Proof of concept architecture}{10}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Sensing use-cases}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Positioning and Localization}{11}{subsection.2.3.1}%
-\contentsline {subsubsection}{Automotive radar}{11}{subsubsection*.21}%
+\contentsline {subsection}{\numberline {2.3.1}Positioning and localization}{11}{subsection.2.3.1}%
+\contentsline {subsubsection}{Automotive radar}{12}{subsubsection*.21}%
 \contentsline {subsubsection}{Outside Drone Detection}{12}{subsubsection*.22}%
 \contentsline {subsection}{\numberline {2.3.2}Human activities}{12}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Non-line-of-sight sensing}{13}{subsection.2.3.3}%
