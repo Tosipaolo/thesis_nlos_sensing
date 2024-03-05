@@ -54,7 +54,7 @@
 \contentsline {subsubsection}{Estimation of noise power}{36}{subsubsection*.48}%
 \contentsline {subsection}{\numberline {4.2.2}Cell-averaging CFAR}{38}{subsection.4.2.2}%
 \contentsline {subsubsection}{Performance of CA-CFAR}{39}{subsubsection*.52}%
-\contentsline {subsubsection}{Robust CA-CFAR}{41}{subsubsection*.55}%
+\contentsline {subsubsection}{Robust CA-CFAR}{40}{subsubsection*.55}%
 \contentsline {paragraph}{Greatest-of CA-CFAR:}{41}{paragraph*.56}%
 \contentsline {paragraph}{Censored-statistics CA-CFAR:}{41}{paragraph*.57}%
 \contentsline {subsection}{\numberline {4.2.3}Range-adjusted exponential threshold}{41}{subsection.4.2.3}%

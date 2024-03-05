@@ -114,7 +114,7 @@
 
 The generic CFAR detector described in the previous section defines a threshold, based on noise power, to be applied to the whole periodogram. More advanced algorithms for CFAR detection belong to the family of cell-averaging CFAR (CA-CFAR) \cite{Richards_2014}.
 
-In a noisy environment, very weak echo signals may be lost in the case of a fixed threshold across the periodogram. CA-CFAR estimates the threshold level for each cell of the 2D periodogram based on the statistics of neighbouring cells belonging inside a set reference window. In this way noise levels are estimated for smaller sections of the periodogram, adapting to the level of the noise floor and defining a variable treshold across the periodogram.
+In a noisy environment, very weak echo signals may be lost in the case of a fixed threshold across the periodogram. CA-CFAR estimates the threshold level for each cell of the 2D periodogram based on the statistics of neighbouring cells belonging inside a set reference window. In this way noise levels are estimated for smaller sections of the periodogram, adapting to the local level of the interference and defining a variable threshold across the periodogram.
 
 The CFAR window resides inside the data window and is composed of leading and lagging reference windows, guard cells and cell-under-test (CUT). Guard cells are discarded for noise computation since they may contain returns associated with the target in the CUT.
 
@@ -174,12 +174,12 @@ Performance is also strongly influenced by the design of the reference window. T
 			\includegraphics[scale=0.45]{Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png}%
 		}
 		
-		\caption[]{Clutter-like return observed in NLOS (top-left area denoted by the blue box): CA-CFAR uses part of the point cloud to estimate noise levels and the target is not detected.}
+		\caption[]{\small Clutter-like return observed in NLOS (top-left area denoted by the blue box): CA-CFAR uses part of the point cloud to estimate noise levels and the target is not detected.}
 		\label{fig:RadThesh_CA_CFAR_missed_detect_doubl}
 	\end{figure}
 
-	In a NLOS sensing scenario, CA-CFAR suffers from these drawbacks due to the lower SNR of target returns caused by multiple reflections and the presence of strong clutter components close to the zero-doppler bin. 
-	Additionally, as NLOS returns propagate over a larger distance their PSF in the periodogram can assume a form similar to clutter. 
+	In a NLOS sensing scenario, CA-CFAR suffers from these drawbacks due to the lower SNR of target returns caused by multiple reflections and the presence of strong static clutter components.
+	Additionally, target returns can occupy multiple bins in the periodogram, leading to self masking. 
 	As a result, they do not appear as distinct peaks, but rather are spread across neighbouring bins, which raises the CA-CFAR threshold and leads to missed detections, as shown in Figure \ref{fig:RadThesh_CA_CFAR_missed_detect_doubl}.
 
 \subsubsection{Robust CA-CFAR}
@@ -190,8 +190,7 @@ Some of the more common variations of the algorithm are the greatest-of CA-CFAR 
 \paragraph{Greatest-of CA-CFAR:}
 the interference power is calculated in the lagging and leading reference windows separately and the largest of the two is selected as the reference statistics. In the OFDM radar signal the leading/lagging definition can be applied only in the doppler dimension, since interference statistics is assumed homogeneous in range.
 
-For the purpose of moving target detection in NLOS clutter-edge false alarms are not a real issue, since bins at zero-doppler are not processed.
- The main problem is given by masking due to the presence of spectral artifacts or clutter.
+GOCA-CFAR can, in general, avoid false alarm caused by clutter returns and clutter-edge conditions. However, in NLOS sensing, where the power of the target returns is comparable to the one of spectral artifacts and clutter sidelobes, GOCA-CFAR increases the possibility of masking, especially for slow-moving targets.
  
  
 \paragraph{Censored-statistics CA-CFAR:}
@@ -204,11 +203,13 @@ The main limitation posed by this algorithm is the increased computational cost 
 \subsection{Range-adjusted exponential threshold}
 
 	
-	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the OFDM radar case, due to the relatively high speed resolution, returns occupy multiple cells in the periodogram and are not correctly detected by CA-CFAR.
+	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the OFDM radar case in this work, due to the relatively high speed resolution, returns occupy multiple cells in the periodogram and are not correctly detected by CA-CFAR.
 	
 	The idea is to adjust the threshold level accounting for the propagation loss of the target reflection, which is proportional to the square of the distance from the transmitter. 
 	
 	This solution was implemented combining the CFAR threshold, set as a lower bound, and the range-dependent exponential adjustement.
+	
+	The threshold for a range-bin corresponding to returns at distance $d$ is
 	
 	\begin{align*}
 		\eta_{\text{exp}} = \eta_{\text{CFAR}} + \frac{\alpha}{d^2},
@@ -220,8 +221,8 @@ The main limitation posed by this algorithm is the increased computational cost 
 		\alpha = \sqrt{\max{ \left\{\text{Per}_{\bm{F}}(n,m)\right\} }}.
 	\end{align*}
 	
-	Unlike CA-CFAR where, in general, local peaks are deected, this approach will select large point clouds whithin the periodogram, as highlited in Figure \ref{fig:RadThesh_exp_thresh}.
-	Target can then be detected by searching for local peaks in the areas above threshold. A more refined result can be obtained by applying clustering algorithms such as DBSCAN.
+	Unlike CA-CFAR where, in general, local peaks are dected, this approach will select large point clouds whithin the periodogram, as highlited in Figure \ref{fig:RadThesh_exp_thresh}.
+	Targets can then be detected by searching for local peaks in the areas above threshold. A more refined result can be obtained by applying clustering algorithms, such as DBSCAN.
 	
 		\begin{figure}[H]
 		\centering
@@ -233,7 +234,7 @@ The main limitation posed by this algorithm is the increased computational cost 
 			\includegraphics[scale=0.45]{Images/radar_detect_threshold/exp_thresh/per_exp_thresh.png}%
 		}
 		
-		\caption[]{}
+		\caption[]{Example of detection using the proposed range-adjusted threshold.}
 		\label{fig:RadThesh_exp_thresh}
 	\end{figure}
 	
@@ -242,9 +243,9 @@ The main limitation posed by this algorithm is the increased computational cost 
 \label{sec:clutter_removal}
 
 	Clutter removal in radar systems refers to the process of mitigating or eliminating unwanted signals or interference that arise from various sources (such as terrain, sea, or atmospheric conditions) and can obscure the detection of true radar targets.
-	In general it is possible to refer clutter as any unwanted reflection from targets that are not of interest for the radar scope.
+	In general it is possible to refer clutter as any unwanted reflection from targets that are not of interest for the radar scope \cite{Richards_Scheer_Holm_2010}.
 	
-	In this work two implementations of clutter removal algorithms were applied to the CSI matrix.
+	In this work two existing implementations of clutter removal algorithms were applied to the CSI matrix.
 	Both of them work by projecting the signal into a subspace orthogonal to the clutter.
 	
 	Both algoritms make use of an offline clutter acquisition step, performed before the sensing task. This step is used to gather information about clutter to be removed at runtime.
