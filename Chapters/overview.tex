@@ -4,8 +4,8 @@
 		%The fifth generation of cellular networks, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the NR carrier. 		This enables the system to estimate the positions of active user equipment (UE) by measuring time difference of arrival information \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.  The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 		
 		
-Positioning of active user equipments (UE) was first deployed with the 3GPP Long Term Evolution (LTE) standard. LTE introduced support for positioning based on a wide range on methods. 
-These methods mostly rely on Cell Identity (CID), time of arrival (TOA), Angle of Arrival (AoA) and Global Navigation Satellite System (GNSS). Due to the accuracy requirements in different deployment conditions (\ie indoor or outdoor, urban or rural areas), LTE positioning normally employed two or more methods at the same time \cite{Razavi_Gunnarsson_2018}.
+\alert{Positioning of active user equipments (UE) was first deployed with the 3GPP Long Term Evolution (LTE) standard.} LTE introduced support for positioning based on a wide range on methods. 
+These methods mostly rely on Cell ID (CID), time of arrival (TOA), Angle of Arrival (AoA) and Global Navigation Satellite System (GNSS). Due to the accuracy requirements in different deployment conditions (\ie indoor or outdoor, urban or rural areas), LTE positioning normally employed two or more methods at the same time \cite{Razavi_Gunnarsson_2018}.
 The fifth generation of cellular networks, with 5G New Radio (NR), expanded this capabilities. The introduction of beam-based operation and massive antenna systems, especially at mmWave, will enable higher positioning accuracy by exploiting more precise angular information in combination with time measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}. 
 The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with high accuracy indoor active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. 
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
@@ -15,7 +15,7 @@ With the objective of expanding the capabilities of the mobile network, Integrat
 According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations, or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles and illuminated objects' movement or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
 Channel information can be obtained by removing the influence of the known, transmitted signal from the received one after target reflection. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
-For 6G, the radio sensing capabilities should be integrated in-band, using the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an ISAC scenario as proposed in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction, a cellular system is shown with in presence of multi-cell interference. The system is equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
+For 6G, the radio sensing capabilities should be integrated sharing the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an ISAC scenario as described in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction a cellular system is shown equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
 
 \begin{figure}[H]
 	\centering
@@ -25,34 +25,34 @@ For 6G, the radio sensing capabilities should be integrated in-band, using the s
 \end{figure}
 
 
-ISAC will benefit from the massive deployment of cellular network and their coverage: making use of existing hardware and extending its capabilities with sensing, the network will be able to adapt and use information about the surrounding environment as a source of situational knowledge.
+ISAC will benefit from the massive deployment of cellular networks and their coverage: making use of existing hardware and extending its capabilities with sensing, the network will be able to adapt and use information about the surrounding environment as a source of situational knowledge.
 
 
 
 \section{Technological enablers}
 
-	This section will present some of the main technological aspects and digital technologies enabling joint functionality and the current research on radar in communication systems.	
+	This section will present some of the main technological aspects and digital technologies enabling joint sensing and communication and the current research on radar in communication systems.	
 	
 	\subsection{Spectrum choice for 6G sensing}
 
-	One of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is the scarcest resource in communications.
+	One of the goals set for the sixth generation of wireless networks is to make efficient usage of the available spectrum which is one of the scarcest resource in communications.
 	
-	Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, 100 MHz and 400 MHz in respectively 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth allows for increased sensing resolution, comparable to one of ad-hoc radar systems.
+	Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, to 100 MHz to 400 MHz in 5G NR and mmWave NR, it can be expected that 5G evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth will allow for increased range resolution for sensing.
 	
-	Spectrum choice will be the determinant factor for the definition of overall capabilities of the system. The frequency ranges that are being considered for 6G \cite{Hexa} are:
+	Spectrum choice will be the determining factor for the definition of overall capabilities of the system. The frequency ranges that are being considered for 6G \cite{Hexa} are:
 	
 	\begin{itemize}
 		\item Frequency Range 1 (FR1): from 600 MHz to 6 GHz;
 		\item Frequency Range 2 (FR2): mmWave, from 24 GHz to 71 GHz;
-		\item the new Frequency Range 3 (FR3), not yet specified: from 7 to 20 GHz
+		\item the new Frequency Range 3 (FR3), not yet specified: likely from 7 to 20 GHz
 	\end{itemize}
 	
-	Frequency range 1 is currently used for 5G capacity layers, providing bandwidth up to 100 MHz. For 6G, the main capacity layer will be placed in the "Golden Band" in 6-14 GHz, offering up to 400 MHz of bandwidth. FR2 in the millimetre frequency bands will start at 24 GHz and offer significantly more bandwidth, up to 800 MHz.
+	FR1 is currently used for 5G capacity layers, providing a bandwidth of up to 100 MHz. For 6G, the main capacity layer will be placed in the "Golden Band" in 6-14 GHz, offering up to 400 MHz of bandwidth. FR2 in the millimetre frequency bands will start at 24 GHz and offer significantly more bandwidth, up to 1 GHz.
 	
-	Golden Band and FR2 are the most relevant candidates for defining the sensing spectrum in 6G. Their selection would make sense for wide area sensing and high resolution sensing respectively.
+	FR3 and FR2 are the most relevant candidates for defining the sensing spectrum in 6G. Their selection would make sense for wide area sensing and high resolution sensing, respectively.
 	
-	Feasible use cases and possible scenarios will be driven by the characteristics and specifications offered by the frequency band of choice. It can be expected that FR2 will be used in micro-cellular deployments. They will be deployed in indoor environments, such as factory floors. Sensing targets in such environment will likely be pedestrians, passive factory objects and vehicles.
-	Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will e vehicles for traffic monitoring, roadside safety and even detection of unmanned aerial vehicles (UAV) or drones \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
+	Feasible use cases and possible scenarios will be driven by the characteristics and specifications offered by the frequency band of choice. It can be expected that FR2 will be used in micro-cellular deployments. They will, \eg, be deployed in indoor environments, such as factory floors. Sensing targets in such environment will likely be pedestrians, passive factory objects and vehicles.
+	Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will be vehicles for traffic monitoring, roadside safety and even detection of unmanned aerial vehicles (UAV), such as drones \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 	
 	\subsection{Waveform candidates for ISAC}
 	
@@ -64,43 +64,42 @@ ISAC will benefit from the massive deployment of cellular network and their cove
 	\subsubsection{Traditional radar waveforms}
 	
 	Conventional radar systems mainly consist of pulsed and continuous wave radar. Both types can be further categorised according to whether the wave is modulated in frequency or phase \cite{Friedlander_2007}.
-	Pulsed radar transmits short, typically unmodulated, pulses or bursts of pulses of large bandwidth, followed by a silent period, waiting for the reception of the echoed signal. Continuos wave radar are currently largely used in the automotive systems and the main example is the frequency modulated continuous wave (FMCW) radar. This systems transmit chirp signals with fixed or variable frequencies, which get shifted by the so called beat frequency when they get reflected by objects.
+	Pulsed radar transmits short, typically unmodulated, pulses or bursts of pulses of large bandwidth, followed by a silent period, waiting for the reception of the echoed signal. Continuous wave radars are currently largely used in automotive systems and the main example are frequency modulated continuous wave (FMCW) radars. Such systems transmit chirp signals with fixed or variable frequencies, which get shifted by the so called beat frequency when they get reflected by objects.
 	
 	Radar systems are typically designed to enable high power transmission with a relatively simple receiver structure. Two of the main design objectives are amplifier efficiency and ideal autocorrelation properties of the radar wave. Waveforms with low peak-to-average power ratio (PAPR) enable high efficiency and long range transmission.
 	
-	Due to their specialized signal shape and relatively simple hardware, this systems cannot support high data-rates for communication purposes, especially the ones that will be required by 6G.
+	Due to their specialized signal shape and relatively simple hardware, these systems cannot support high data-rates for communication purposes, especially the ones that will be required by 6G.
 	
 	\subsubsection{Communication-centric waveforms}
 	
-	Current mobile communications are dominated by single-carrier and multi-carrier waveforms (OFDM).
+	Current mobile communications are dominated by multi-carrier waveforms (OFDM).
 	OFDM has become the current waveform reference in ISAC. Fully established as the standard in 4G and 5G communications systems, in the last decade it has also attracted the attention of the radar world.
 	
 	OFDM offers great multiplexing capabilities, both in time and in frequency, through the definition \textit{OFDM resource elements} that can be dynamically allocated to users. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by PAPR constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
 	
-	Multicarrier waveforms offer the possibility of obtaining sensing information by using signal processing techniques. Spectral estimation for sensing applied to OFDM is commonly reffered to as \textit{OFDM Radar}.
+	\alert{Multicarrier waveforms offer the possibility of obtaining sensing information by using signal processing techniques. Spectral estimation for sensing applied to OFDM is commonly reffered to as \textit{OFDM Radar}.}
 	OFDM radar does not require the high autocorrelation characteristics that are normally expected from traditional radar waveforms \cite{Sturm_Wiesbeck_2011}.
-	The main disadvantage of OFDM is the high peak to average power ratio (PAPR) and the additional DSP necessary for performing ISAC data processing.
+	The main disadvantage of OFDM is the high PAPR and the additional \alert{DSP} necessary for performing ISAC data processing.
 	
 	\subsubsection{Waveforms for next-gen communication networks}
 	
-	A major challenge for OFDM and multi-carrier signals is their performance in highly frequency-dispersive channels. 
+	\replace{A major challenge for OFDM and multi-carrier signals is their performance in highly frequency-dispersive channels.}{One of the major challenges for OFDM, and multi-carrier waveforms in general, is the performance loss observed in particular environments characterized by highly frequency-dispersive channels (\eg high mobility scenarios, dynamic wireless networks).}
 	The effect of phase noise and movement (Doppler spread) is enhanced at high carrier frequencies. 
 	Due to the expansion of 5G and 6G systems towards mmWave, tackling this challenge is fundamental for ensuring high performance under these circumstances.
 	
-	Orthogonal time frequency space (OTFS) has been proposed as a modulation effective in tackling this problems \cite{OTFS_Hadani_2017}. OTFS operates in the delay-Doppler domain. 
-	The fading, time-variant channel seen by an OFDM signal is transformed into a non-fading, time-independent channel through a 2D Fourier transform. 
+	Orthogonal Time Frequency Space (OTFS) has been proposed as a modulation effective in tackling these problems. OTFS operates in the delay-Doppler domain. 
+	The fading, time-variant channel seen by an OFDM signal is transformed into a non-fading, time-independent channel through a 2D Fourier transform \cite{OTFS_Hadani_2017}. 
 	Applying this transformation and equalization within this domain each symbol will experience similar gain during transmission.
 	
-	The Orthogonal Time Frequency Space (OTFS) modulation scheme can be interpreted as the sequence of two transformations. 
-	Firstly, the transmitter maps the complex symbols into discrete slots of the NxM delay-Doppler domain.
-	Secondly, these symbols are transformed in the time-frequency domain through a 2D inverse symplectic finite Fourier transform (iSFFT). The the time-domain signal is obtained by an M-point inverse Fourier transform (iFFT). 
-	The receiver will perform the inverse operation using FFT and SFFT respectively.
-	OTFS is an ideal waveform for integrating sensing and communication due to its inherent property of exploiting the delay-Doppler domain.
-	This is because information about the surrounding environment is necessary for improving communication performance.
+	OTFS can be interpreted as the sequence of two transformations. 
+	Firstly, the transmitter maps the complex symbols into discrete slots in the delay-Doppler domain.
+	Secondly, these symbols are transformed in the time-frequency domain through a 2D inverse symplectic finite Fourier transform (iSFFT). The the time-domain signal is obtained by using the inverse Fourier transform (iFFT). 
+	The receiver will perform the inverse operation using FFT and SFFT, respectively.
+	OTFS is an suitable waveform for integrating sensing and communication due to its inherent property of operating in the delay-Doppler domain.
 	
 	Although OTFS has proved to achieve a 3-7 dB advantage compared to OFDM in highly fading and mobility scenarios, however its implementation in real systems is hindered by some open research problems \cite{Wei_Yuan_OTFS_whitepaper_2021}. 
 	The primary challenge is to develop an efficient decoding method for OTFS symbols.
-	The output signal in the delay-Doppler domain is 2D circular convolution of the transmitted data symbols and the channel response. Although optimal detectors, such as maximum a posteriori (MAP) detectors, can mitigate channel interference and perfectly retrieve the original symbols, but they are too complex and costly.
+	The output signal in the delay-Doppler domain is a 2D circular convolution of the transmitted data symbols and the channel response. Although optimal detectors, such as maximum a posteriori (MAP) detectors, can mitigate channel interference and perfectly retrieve the original symbols, but they are too complex and costly.
 	
 	This work will focus on Orthogonal Frequency Division Multiplexing (OFDM), as it is the waveform currently used in 5G systems and in the proof of concept by Nokia. 
 	

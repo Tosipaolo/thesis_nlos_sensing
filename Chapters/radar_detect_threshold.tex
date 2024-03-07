@@ -289,8 +289,7 @@ The main limitation posed by this algorithm is the increased computational cost 
 	
 	\subsubsection{Clutter presence in NLOS}
 	
-	Even after applying clutter removal, static targets in the environment can still generate unwanted radar returns.
-	In a NLOS sensing setup it is fairly easy to distinguish moving targets from the underlying noise floor.
+	In a NLOS sensing setup, it is fairly easy to distinguish moving targets from the underlying noise floor.
 	However, NLOS returns from static objects of interest will appear in the periodogram area where static clutter is more prevalent, as shown in Figure \ref{fig:Rad_clutter_comparison}.
 	This makes the effective separation through radar thresholding and identification of the target difficult.
 
@@ -310,7 +309,7 @@ The main limitation posed by this algorithm is the increased computational cost 
 	\end{figure}
 
 	For intrusion detection purposes, it is sufficient to focus the radar search on moving targets. 
-	Therefore, the static bins of the periodograms can be discarded for NLOS processing.
+	Therefore, the static bins of the periodogram are discarded for NLOS processing.
 	
 	
 	\section{NLOS-focused processing}

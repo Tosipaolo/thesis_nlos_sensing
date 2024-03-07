@@ -14,11 +14,12 @@ The main contributions of this work can be summarized as:
 	\item Definition of requirements for NLOS sensing and validation on measurements from the prototype.
 \end{itemize}
 
-Looking forward future developments, several challenges and research directions need to be explored:
+In the future the following challenges and research directions could be explored:
 
 \begin{itemize}
-	\item \textbf{Algorithms for NLOS intrusion detection:} The promising detection results presented in this work suggest that true NLOS detection is possible, without the use of additional systems.
+	\item \textbf{Algorithms for NLOS intrusion detection:} \alert{The promising detection results presented in this work suggest that true NLOS detection is possible, without the use of additional systems.}
 	\item \textbf{Multiple target detection:} The effect of multiple entities moving in an obscured environment still needs to be explored through new measurements and processing techniques.
-	\item \textbf{Target differentiation and classification:} Solving the presence of replicas and spectral artifacts in the periodogram can open up the possibility of new processing methods that can be used for target classification in NLOS. Some promising examples are analysis of micro-Doppler signatures, optical flow of moving peaks in the periodogram and machine vision.
-	\item \textbf{Overcoming limitations due to blanks in the CSI:} More research has to be done for tackling the problem of empty slots within the CSI matrix, caused by communication requirements such as TDD transmission pattern and allocation of unused OFDM symbols. This is especially important considering the energy efficiency requirements for next-gen cellular networks.
+	\item \textbf{Target differentiation and classification:} Solving the presence of replicas and spectral artifacts in the periodogram can open up the possibility of new processing methods that can be used for target classification in NLOS. Some promising examples are analysis of micro-Doppler signatures, optical flow of moving peaks in the periodogram and computer vision techniques.
+	\item \textbf{Overcoming limitations due to spectral holes in the CSI:} \alert{More research has to be done for tackling the problem of empty slots within the CSI matrix, caused by communication requirements such as TDD transmission pattern and allocation of unused OFDM symbols. This is especially important considering the energy efficiency requirements for next-gen cellular networks.
+	Modern approaches for energy efficiency tend, in general, to minimize transmission time, hence it is likely that not every slot of the CSI matrix will be available for the sensing operation.}
 \end{itemize}

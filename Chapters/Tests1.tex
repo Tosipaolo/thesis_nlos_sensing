@@ -104,7 +104,7 @@ Detection rate was hence evaluated comparing the five strongest returns in NLOS 
 	}
 	\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's industrial test facility.
 		All the periodograms are obtained by processing a single decimated CSI frame (24 symbols), after applying clutter removal with CRAP.
-		Periodograms \subref{fig:Test1_metal_lin} and \subref{fig:Test1_metal_db} show the returns obtained with the metal cabinet. The NLOS return (purple) is clearly separated from the underlying noise floor, even when processing only 24 symbols. On the contrary the NLOS component generated from the human target in \subref{fig:Test1_metal_human-baseline}, requires for a considerably higher processing gain to be detected reliably.}
+		Periodograms \subref{fig:Test1_metal_lin} and \subref{fig:Test1_metal_db} show the returns obtained with the metal cabinet. All the periodograms contain three returns: one from the wall at 23 m (black) and two from the moving targets, one from LOS (blue) and the other from NLOS (purple). The NLOS return is clearly separated from the underlying noise floor, even when processing only 24 symbols. On the contrary the NLOS component generated from the human target in \subref{fig:Test1_metal_human-baseline}, requires for a considerably higher processing gain to be detected reliably.}
 	\label{fig:Test1_metal-human_comparison}
 	\end{figure}
 	
@@ -135,7 +135,7 @@ Passing the NLOS measurements to a Kalman filter it was possible to track the ta
 
 \subsection{Human target detection}
 
-The detection rate for measurements with a walking actor was obtained using the various frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. To increase time-aperture, subsequent frames were combined, and the window processing stride was set to be lower than the number 
+The detection rate for measurements with a walking actor was compared for the various frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. To increase time-aperture, subsequent frames were combined, and the window processing stride was set to be lower than the number 
 of frames, allowing for more target updates.
 
 Clutter removal was performed using CRAP to ensure precise estimation of the expected target position in NLOS conditions. In contrast, periodograms generated with the ECA-C technique showed the NLOS component to be well separated from the underlying noise floor, but the estimated position did not correspond with the measured one, making the detection test difficult. Comparison of a sample radar update after CRAP and ECA-C is shown in Figure \ref{fig:Test1_huma_crap-ecac}.
@@ -181,7 +181,7 @@ The detection rate was observed throughout the entire measurement, including fra
 Figure \ref{fig:Test1_moving_avg} shows the average detection rate over 10 consecutive updates. It is evident that the detection rate is above 80\% for several consecutive 10-update intervals when the target is in motion and therefore well separated from the clutter region.
 
 
-Although this measure was obtained in a controlled single-target scenario, it opens the possibility of detecting the presence of non-line-of-sight (NLOS) moving targets without relying on additional ground truth data.
+Although this measure was obtained in a controlled single-target scenario, it opens the possibility of detecting the presence of NLOS moving targets without relying on additional ground truth data.
 
 
 % TODO: change picture with higher resolution one, maybe solved
