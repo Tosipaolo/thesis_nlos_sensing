@@ -85,6 +85,7 @@
 % Input of configuration file. Do not change config.tex file unless you really know what you are doing. 
 \input{Configuration_Files/config}
 
+
 %----------------------------------------------------------------------------
 %	NEW COMMANDS DEFINED
 %----------------------------------------------------------------------------
@@ -102,6 +103,9 @@
 %	ADD YOUR PACKAGES (be careful of package interaction)
 %----------------------------------------------------------------------------
 \usepackage{easyReview}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym]{glossaries}
+
 %----------------------------------------------------------------------------
 %	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
 %----------------------------------------------------------------------------
@@ -117,7 +121,7 @@
 \fancyhead[RO,RE]{\thepage} %RO=right odd, RE=right even
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}}
-
+\input{acronyms}
 %----------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------
@@ -145,7 +149,7 @@
 \chapter*{Abstract} 
 
 One of the new key features behind the development of sixth-generation (6G) mobile networks is their ability to gather information about the surrounding environment. 
-Orthogonal frequency division multiplexing (OFDM) radio signals, which are transmitted by base stations to users and vice versa, not only carry data, but are also affected by the movement of the transmitter, obstacles, and illuminated targets.
+Orthogonal Frequency Division Multiplexing (OFDM) radio signals, which are transmitted by base stations to users and vice versa, not only carry data, but are also affected by the movement of the transmitter, obstacles, and illuminated targets.
 The concept of OFDM radar aims to extract information about the distance and relative speeds of targets that reflect the signal.
 The high bandwidths and large antenna apertures available in next-generation mobile networks will facilitate the usage of OFDM radar for gathering sensing information. 
 The combination of these functions and the underlying existing communication capabilities is referred to as Integrated Sensing and Communication (ISAC).

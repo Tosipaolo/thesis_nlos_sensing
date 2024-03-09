@@ -1,0 +1,1064 @@
+\glsdefs@newdocentry{3GPP}%
+{%
+name={\acronymfont {\glsentryshort {3GPP}}},%
+sort={3GPP},%
+type={acronym},%
+first={3GPP},%
+firstplural={3GPPs},%
+text={3GPP},%
+plural={3GPPs},%
+description={3rd Generation Partnership Project},%
+descriptionplural={3rd Generation Partnership Project},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={3rd Generation Partnership Project},%
+longplural={3rd Generation Partnership Projects},%
+short={3GPP},%
+shortplural={3GPPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{5G}%
+{%
+name={\acronymfont {\glsentryshort {5G}}},%
+sort={5G},%
+type={acronym},%
+first={5G},%
+firstplural={5Gs},%
+text={5G},%
+plural={5Gs},%
+description={fifth generation},%
+descriptionplural={fifth generation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={fifth generation},%
+longplural={fifth generations},%
+short={5G},%
+shortplural={5Gs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{6G}%
+{%
+name={\acronymfont {\glsentryshort {6G}}},%
+sort={6G},%
+type={acronym},%
+first={6G},%
+firstplural={6Gs},%
+text={6G},%
+plural={6Gs},%
+description={sixth generation},%
+descriptionplural={sixth generation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={sixth generation},%
+longplural={sixth generations},%
+short={6G},%
+shortplural={6Gs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ai}%
+{%
+name={\acronymfont {\glsentryshort {ai}}},%
+sort={AI},%
+type={acronym},%
+first={AI},%
+firstplural={AIs},%
+text={AI},%
+plural={AIs},%
+description={artificial intelligence},%
+descriptionplural={artificial intelligence},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={artificial intelligence},%
+longplural={artificial intelligences},%
+short={AI},%
+shortplural={AIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{aoa}%
+{%
+name={\acronymfont {\glsentryshort {aoa}}},%
+sort={AOA},%
+type={acronym},%
+first={AOA},%
+firstplural={AOAs},%
+text={AOA},%
+plural={AOAs},%
+description={angle of arrival},%
+descriptionplural={angle of arrival},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={angle of arrival},%
+longplural={angle of arrivals},%
+short={AOA},%
+shortplural={AOAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{awgn}%
+{%
+name={\acronymfont {\glsentryshort {awgn}}},%
+sort={AWGN},%
+type={acronym},%
+first={AWGN},%
+firstplural={AWGNs},%
+text={AWGN},%
+plural={AWGNs},%
+description={additive white Gaussian noise},%
+descriptionplural={additive white Gaussian noise},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={additive white Gaussian noise},%
+longplural={additive white Gaussian noises},%
+short={AWGN},%
+shortplural={AWGNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{bts}%
+{%
+name={\acronymfont {\glsentryshort {bts}}},%
+sort={BTS},%
+type={acronym},%
+first={BTS},%
+firstplural={BTSs},%
+text={BTS},%
+plural={BTSs},%
+description={base transceiver station},%
+descriptionplural={base transceiver station},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={base transceiver station},%
+longplural={base transceiver stations},%
+short={BTS},%
+shortplural={BTSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cid}%
+{%
+name={\acronymfont {\glsentryshort {cid}}},%
+sort={CID},%
+type={acronym},%
+first={CID},%
+firstplural={CIDs},%
+text={CID},%
+plural={CIDs},%
+description={cell ID},%
+descriptionplural={cell ID},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cell ID},%
+longplural={cell IDs},%
+short={CID},%
+shortplural={CIDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cfar}%
+{%
+name={\acronymfont {\glsentryshort {cfar}}},%
+sort={CFAR},%
+type={acronym},%
+first={CFAR},%
+firstplural={CFARs},%
+text={CFAR},%
+plural={CFARs},%
+description={constant false alarm rate},%
+descriptionplural={constant false alarm rate},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={constant false alarm rate},%
+longplural={constant false alarm rates},%
+short={CFAR},%
+shortplural={CFARs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cp}%
+{%
+name={\acronymfont {\glsentryshort {cp}}},%
+sort={CP},%
+type={acronym},%
+first={CP},%
+firstplural={CPs},%
+text={CP},%
+plural={CPs},%
+description={cyclic prefix},%
+descriptionplural={cyclic prefix},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cyclic prefix},%
+longplural={cyclic prefixs},%
+short={CP},%
+shortplural={CPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{csi}%
+{%
+name={\acronymfont {\glsentryshort {csi}}},%
+sort={CSI},%
+type={acronym},%
+first={CSI},%
+firstplural={CSIs},%
+text={CSI},%
+plural={CSIs},%
+description={channel state information},%
+descriptionplural={channel state information},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={channel state information},%
+longplural={channel state informations},%
+short={CSI},%
+shortplural={CSIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dl}%
+{%
+name={\acronymfont {\glsentryshort {dl}}},%
+sort={DL},%
+type={acronym},%
+first={DL},%
+firstplural={DLs},%
+text={DL},%
+plural={DLs},%
+description={downlink},%
+descriptionplural={downlink},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={downlink},%
+longplural={downlinks},%
+short={DL},%
+shortplural={DLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dft}%
+{%
+name={\acronymfont {\glsentryshort {dft}}},%
+sort={DFT},%
+type={acronym},%
+first={DFT},%
+firstplural={DFTs},%
+text={DFT},%
+plural={DFTs},%
+description={Discrete Fourier Transform},%
+descriptionplural={Discrete Fourier Transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Discrete Fourier Transform},%
+longplural={Discrete Fourier Transforms},%
+short={DFT},%
+shortplural={DFTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fmcw}%
+{%
+name={\acronymfont {\glsentryshort {fmcw}}},%
+sort={FMCW},%
+type={acronym},%
+first={FMCW},%
+firstplural={FMCWs},%
+text={FMCW},%
+plural={FMCWs},%
+description={frequency modulated continous wave},%
+descriptionplural={frequency modulated continous wave},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={frequency modulated continous wave},%
+longplural={frequency modulated continous waves},%
+short={FMCW},%
+shortplural={FMCWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fr1}%
+{%
+name={\acronymfont {\glsentryshort {fr1}}},%
+sort={FR1},%
+type={acronym},%
+first={FR1},%
+firstplural={FR1s},%
+text={FR1},%
+plural={FR1s},%
+description={frequency range 1},%
+descriptionplural={frequency range 1},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={frequency range 1},%
+longplural={frequency range 1s},%
+short={FR1},%
+shortplural={FR1s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fr2}%
+{%
+name={\acronymfont {\glsentryshort {fr2}}},%
+sort={FR2},%
+type={acronym},%
+first={FR2},%
+firstplural={FR2s},%
+text={FR2},%
+plural={FR2s},%
+description={frequency range 2},%
+descriptionplural={frequency range 2},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={frequency range 2},%
+longplural={frequency range 2s},%
+short={FR2},%
+shortplural={FR2s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fr3}%
+{%
+name={\acronymfont {\glsentryshort {fr3}}},%
+sort={FR3},%
+type={acronym},%
+first={FR3},%
+firstplural={FR3s},%
+text={FR3},%
+plural={FR3s},%
+description={frequency range 3},%
+descriptionplural={frequency range 3},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={frequency range 3},%
+longplural={frequency range 3s},%
+short={FR3},%
+shortplural={FR3s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{GNSS}%
+{%
+name={\acronymfont {\glsentryshort {GNSS}}},%
+sort={GNSS},%
+type={acronym},%
+first={GNSS},%
+firstplural={GNSSs},%
+text={GNSS},%
+plural={GNSSs},%
+description={Global Navigation Satellite System},%
+descriptionplural={Global Navigation Satellite System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Navigation Satellite System},%
+longplural={Global Navigation Satellite Systems},%
+short={GNSS},%
+shortplural={GNSSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gnb}%
+{%
+name={\acronymfont {\glsentryshort {gnb}}},%
+sort={gNB},%
+type={acronym},%
+first={gNB},%
+firstplural={gNBs},%
+text={gNB},%
+plural={gNBs},%
+description={gNodeB},%
+descriptionplural={gNodeB},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={gNodeB},%
+longplural={gNodeBs},%
+short={gNB},%
+shortplural={gNBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{idft}%
+{%
+name={\acronymfont {\glsentryshort {idft}}},%
+sort={IDFT},%
+type={acronym},%
+first={IDFT},%
+firstplural={IDFTs},%
+text={IDFT},%
+plural={IDFTs},%
+description={inverse discrete Fourier transform},%
+descriptionplural={inverse discrete Fourier transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={inverse discrete Fourier transform},%
+longplural={inverse discrete Fourier transforms},%
+short={IDFT},%
+shortplural={IDFTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{isac}%
+{%
+name={\acronymfont {\glsentryshort {isac}}},%
+sort={ISAC},%
+type={acronym},%
+first={ISAC},%
+firstplural={ISACs},%
+text={ISAC},%
+plural={ISACs},%
+description={Integrated Sensing and Communication},%
+descriptionplural={Integrated Sensing and Communication},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Integrated Sensing and Communication},%
+longplural={Integrated Sensing and Communications},%
+short={ISAC},%
+shortplural={ISACs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{kf}%
+{%
+name={\acronymfont {\glsentryshort {kf}}},%
+sort={KF},%
+type={acronym},%
+first={KF},%
+firstplural={KFs},%
+text={KF},%
+plural={KFs},%
+description={Kalman filter},%
+descriptionplural={Kalman filter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Kalman filter},%
+longplural={Kalman filters},%
+short={KF},%
+shortplural={KFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{los}%
+{%
+name={\acronymfont {\glsentryshort {los}}},%
+sort={LOS},%
+type={acronym},%
+first={LOS},%
+firstplural={LOSs},%
+text={LOS},%
+plural={LOSs},%
+description={line of sight},%
+descriptionplural={line of sight},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={line of sight},%
+longplural={line of sights},%
+short={LOS},%
+shortplural={LOSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lte}%
+{%
+name={\acronymfont {\glsentryshort {lte}}},%
+sort={LTE},%
+type={acronym},%
+first={LTE},%
+firstplural={LTEs},%
+text={LTE},%
+plural={LTEs},%
+description={long-term evolution},%
+descriptionplural={long-term evolution},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={long-term evolution},%
+longplural={long-term evolutions},%
+short={LTE},%
+shortplural={LTEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ml}%
+{%
+name={\acronymfont {\glsentryshort {ml}}},%
+sort={ML},%
+type={acronym},%
+first={ML},%
+firstplural={MLs},%
+text={ML},%
+plural={MLs},%
+description={machine learning},%
+descriptionplural={machine learning},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={machine learning},%
+longplural={machine learnings},%
+short={ML},%
+shortplural={MLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{nlos}%
+{%
+name={\acronymfont {\glsentryshort {nlos}}},%
+sort={NLOS},%
+type={acronym},%
+first={NLOS},%
+firstplural={NLOSs},%
+text={NLOS},%
+plural={NLOSs},%
+description={non-line of sight},%
+descriptionplural={non-line of sight},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={non-line of sight},%
+longplural={non-line of sights},%
+short={NLOS},%
+shortplural={NLOSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{NR}%
+{%
+name={\acronymfont {\glsentryshort {NR}}},%
+sort={NR},%
+type={acronym},%
+first={NR},%
+firstplural={NRs},%
+text={NR},%
+plural={NRs},%
+description={New Radio},%
+descriptionplural={New Radio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={New Radio},%
+longplural={New Radios},%
+short={NR},%
+shortplural={NRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ofdm}%
+{%
+name={\acronymfont {\glsentryshort {ofdm}}},%
+sort={OFDM},%
+type={acronym},%
+first={OFDM},%
+firstplural={OFDMs},%
+text={OFDM},%
+plural={OFDMs},%
+description={Orthogonal Frequency Division Multiplexing},%
+descriptionplural={Orthogonal Frequency Division Multiplexing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Orthogonal Frequency Division Multiplexing},%
+longplural={Orthogonal Frequency Division Multiplexings},%
+short={OFDM},%
+shortplural={OFDMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{papr}%
+{%
+name={\acronymfont {\glsentryshort {papr}}},%
+sort={PAPR},%
+type={acronym},%
+first={PAPR},%
+firstplural={PAPRs},%
+text={PAPR},%
+plural={PAPRs},%
+description={peak-to-average power ratio},%
+descriptionplural={peak-to-average power ratio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={peak-to-average power ratio},%
+longplural={peak-to-average power ratios},%
+short={PAPR},%
+shortplural={PAPRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{poc}%
+{%
+name={\acronymfont {\glsentryshort {poc}}},%
+sort={PoC},%
+type={acronym},%
+first={PoC},%
+firstplural={PoCs},%
+text={PoC},%
+plural={PoCs},%
+description={proof of concept},%
+descriptionplural={proof of concept},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={proof of concept},%
+longplural={proof of concepts},%
+short={PoC},%
+shortplural={PoCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ru}%
+{%
+name={\acronymfont {\glsentryshort {ru}}},%
+sort={RU},%
+type={acronym},%
+first={RU},%
+firstplural={RUs},%
+text={RU},%
+plural={RUs},%
+description={radio unit},%
+descriptionplural={radio unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={radio unit},%
+longplural={radio units},%
+short={RU},%
+shortplural={RUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{snr}%
+{%
+name={\acronymfont {\glsentryshort {snr}}},%
+sort={SNR},%
+type={acronym},%
+first={SNR},%
+firstplural={SNRs},%
+text={SNR},%
+plural={SNRs},%
+description={signal-to-noise ratio},%
+descriptionplural={signal-to-noise ratio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={signal-to-noise ratio},%
+longplural={signal-to-noise ratios},%
+short={SNR},%
+shortplural={SNRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{spu}%
+{%
+name={\acronymfont {\glsentryshort {spu}}},%
+sort={SPU},%
+type={acronym},%
+first={SPU},%
+firstplural={SPUs},%
+text={SPU},%
+plural={SPUs},%
+description={sensing processing unit},%
+descriptionplural={sensing processing unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={sensing processing unit},%
+longplural={sensing processing units},%
+short={SPU},%
+shortplural={SPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tdd}%
+{%
+name={\acronymfont {\glsentryshort {tdd}}},%
+sort={TDD},%
+type={acronym},%
+first={TDD},%
+firstplural={TDDs},%
+text={TDD},%
+plural={TDDs},%
+description={time division duplexing},%
+descriptionplural={time division duplexing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={time division duplexing},%
+longplural={time division duplexings},%
+short={TDD},%
+shortplural={TDDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{toa}%
+{%
+name={\acronymfont {\glsentryshort {toa}}},%
+sort={TOA},%
+type={acronym},%
+first={TOA},%
+firstplural={TOAs},%
+text={TOA},%
+plural={TOAs},%
+description={time of arrival},%
+descriptionplural={time of arrival},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={time of arrival},%
+longplural={time of arrivals},%
+short={TOA},%
+shortplural={TOAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{uav}%
+{%
+name={\acronymfont {\glsentryshort {uav}}},%
+sort={UAV},%
+type={acronym},%
+first={UAV},%
+firstplural={UAVs},%
+text={UAV},%
+plural={UAVs},%
+description={unmanned aerial vehicles},%
+descriptionplural={unmanned aerial vehicles},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={unmanned aerial vehicles},%
+longplural={unmanned aerial vehicless},%
+short={UAV},%
+shortplural={UAVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ue}%
+{%
+name={\acronymfont {\glsentryshort {ue}}},%
+sort={UE},%
+type={acronym},%
+first={UE},%
+firstplural={UEs},%
+text={UE},%
+plural={UEs},%
+description={User Equipment},%
+descriptionplural={User Equipment},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={User Equipment},%
+longplural={User Equipments},%
+short={UE},%
+shortplural={UEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ul}%
+{%
+name={\acronymfont {\glsentryshort {ul}}},%
+sort={UL},%
+type={acronym},%
+first={UL},%
+firstplural={ULs},%
+text={UL},%
+plural={ULs},%
+description={uplink},%
+descriptionplural={uplink},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={uplink},%
+longplural={uplinks},%
+short={UL},%
+shortplural={ULs},%
+counter={page},%
+parent={},%
+%
+}%
+
