@@ -67,7 +67,7 @@
 				Solving this for $p_{\text{FA},bin}$ we obtain the value of the threshold as 
 				
 				\begin{align*}
-					\eta = \sigma_N^2 \ln{(1 - (1 - p_{\text{FA},bin})^{NM})}.
+					\eta = \sigma_N^2 \ln{(1 - (1 - p_{\text{FA},bin})^{\frac{1}{NM}})}.
 				\end{align*}
 				
 				Zero padding the periodogram does not add information useful for the target estimation problem, but it only reduces quantization noise. The contribution of a single bin is spread out between multiple contiguous bins when zero padding.

@@ -32,7 +32,7 @@
         &T_{\text{frame}} = 1120 \cdot T_S.
     \end{align}
 
-    The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, as shown in Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, in Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine (Dirichlet's delta) function multiplied by a train of Dirac deltas.
+    The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, as shown in Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, in Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine (Dirichlet's kernel) function multiplied by a train of Dirac deltas.
 
     The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency appear as replicas in the periodogram. These peaks have sufficient power to be detected as real targets, thus limiting the performance of the system by reducing the effective unambiguous velocity. Even though their power is significantly lower compared to the main lobe, they can cause masking of real targets that would be detected near the replica, especially in NLOS where the return power is low. 
 
@@ -64,7 +64,7 @@
 			
 			\item \textbf{Unambiguous range}
 			\begin{equation}
-				d_{\text{unamb}} = \frac{c_0}{2\Delta_f} = 1250.0\text{ m}.
+				d_{\text{unamb}} = \frac{c_0}{2\Delta f} = 1250.0\text{ m}.
 			\end{equation}
 			\item \textbf{Speed resolution}
 			\begin{equation}
@@ -72,7 +72,7 @@
 			\end{equation} 
 			\item \textbf{Range resolution}
 			\begin{equation}
-				d_{\text{res}} = \frac{c_0}{2\Delta_fN} = 0.789 \text{ m}.
+				d_{\text{res}} = \frac{c_0}{2\Delta fN} = 0.789 \text{ m}.
 			\end{equation}  
 		\end{itemize}
 			
