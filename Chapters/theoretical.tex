@@ -17,7 +17,7 @@ OFDM modulation efficiently distributes the signal over a discrete-time and disc
 
 \subsection{Subcarriers and frequency spacing}
 OFDM systems will use \textit{N} subcarriers, namely with frequencies $f_0$ to $f_{N-1}$, and M time-slots that will limit the temporal length of the OFDM signal.
-Each set of modulated data transmitted in a single time slot will be referred as an OFDM \textit{symbol}, while the entirety NxM symbols is referred to as an OFDM \textit{frame}.
+Each set of modulated data transmitted in a single time slot will be referred as an OFDM \textit{symbol}, while the entirety $N\times M$ symbols is referred to as an OFDM \textit{frame}.
 
 Orthogonality of subcarriers is guaranteed by a frequency spacing $\Delta f$ of $1/T$, where $T$ is the duration of a single rectangular baseband pulse.
 
@@ -38,7 +38,7 @@ Sampling the signal at interval $T/N$ we obtain a discrete version
 \end{equation*}
 
 which is a discrete Fourier series DFS. When \textit{N} is a power of 2 the DFS can be implemented in an efficient way by the IFFT algorithm.
-Binary data is transmitted by organizing it into N parallel complex modulated symbols. These symbols are then mapped to subcarriers in the frequency domain, and the time domain signal is obtained by adding the cyclic prefix and using the iFFT. Figure \ref{fig:ofdm_transmit} shows the scheme for transmission of an OFDM signal.
+Binary data is transmitted by organizing it into $N$ parallel complex modulated symbols. These symbols are then mapped to subcarriers in the frequency domain, and the time domain signal is obtained by adding the cyclic prefix and using the iFFT. Figure \ref{fig:ofdm_transmit} shows the scheme for transmission of an OFDM signal.
 
 \begin{figure}[H]
 	\centering
@@ -116,7 +116,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
             c_{1,0} & \cdots & c_{1,M} \\
             \vdots   & \ddots & \vdots \\
             c_{N-1, 0} & \cdots & c_{N-1, M} \\
-        \end{pmatrix} \in \mathcal{A}^{N\times M},
+        \end{pmatrix} \in \mathbbm{C}^{N\times M},
     \end{equation*}
     
     where rows are different subcarriers and columns are different time slots.

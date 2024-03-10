@@ -51,33 +51,33 @@
 \contentsline {section}{\numberline {4.2}Radar search and detection}{32}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Constant False Alarm Rate}{33}{subsection.4.2.1}%
 \contentsline {subsubsection}{Estimation of noise power}{34}{subsubsection*.47}%
-\contentsline {subsection}{\numberline {4.2.2}Cell-averaging CFAR}{36}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Cell-averaging CFAR}{35}{subsection.4.2.2}%
 \contentsline {subsubsection}{Performance of CA-CFAR}{37}{subsubsection*.51}%
 \contentsline {subsubsection}{Robust CA-CFAR}{38}{subsubsection*.54}%
 \contentsline {paragraph}{Greatest-of CA-CFAR:}{39}{paragraph*.55}%
 \contentsline {paragraph}{Censored-statistics CA-CFAR:}{39}{paragraph*.56}%
 \contentsline {subsection}{\numberline {4.2.3}Range-adjusted exponential threshold}{39}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Clutter removal}{40}{section.4.3}%
-\contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{41}{paragraph*.58}%
-\contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{41}{paragraph*.59}%
+\contentsline {paragraph}{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}{41}{paragraph*.59}%
+\contentsline {paragraph}{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}{41}{paragraph*.60}%
 \contentsline {subsubsection}{Clutter presence in NLOS}{42}{subsubsection*.61}%
-\contentsline {section}{\numberline {4.4}NLOS-focused processing}{43}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Line-of-sight and Non-line-of-sight separation}{43}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Modified periodogram}{44}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Processing of the NLOS region}{45}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}NLOS measurements results}{47}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Measurements setup}{47}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Measurement Scope: Detection Rate}{48}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Evaluation on detection rate of a strong reflector}{51}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Human target detection}{53}{subsection.5.3.1}%
-\contentsline {subsubsection}{Moving average of detection rate}{54}{subsubsection*.74}%
-\contentsline {subsubsection}{Detection rate with separate clutter removal for NLOS}{55}{subsubsection*.76}%
-\contentsline {chapter}{\numberline {6}Outlook and Conclusion}{59}{chapter.6}%
+\contentsline {section}{\numberline {4.4}NLOS-focused processing}{42}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Line-of-sight and Non-line-of-sight separation}{42}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Modified periodogram}{43}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Processing of the NLOS region}{44}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}NLOS measurements results}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Measurements setup}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Measurement Scope: Detection Rate}{46}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Evaluation on detection rate of a strong reflector}{49}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Human target detection}{51}{subsection.5.3.1}%
+\contentsline {subsubsection}{Detection rate with separate clutter removal for NLOS}{53}{subsubsection*.74}%
+\contentsline {subsection}{\numberline {5.3.2}Moving average of detection rate}{54}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Outlook and Conclusion}{57}{chapter.6}%
 \vspace {2em}
-\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{61}{chapter*.81}%
+\contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{59}{chapter*.79}%
 \vspace {2em}
-\contentsline {chapter}{Abbreviations and Symbols}{66}{chapter*.83}%
-\contentsline {chapter}{List of Figures}{67}{chapter*.86}%
-\contentsline {chapter}{List of Tables}{69}{chapter*.88}%
-\contentsline {chapter}{List of Symbols}{71}{chapter*.90}%
-\contentsline {chapter}{Acknowledgements}{73}{chapter*.93}%
+\contentsline {chapter}{Abbreviations and Symbols}{64}{chapter*.81}%
+\contentsline {chapter}{List of Figures}{65}{chapter*.84}%
+\contentsline {chapter}{List of Tables}{67}{chapter*.86}%
+\contentsline {chapter}{List of Symbols}{69}{chapter*.88}%
+\contentsline {chapter}{Acknowledgements}{71}{chapter*.91}%

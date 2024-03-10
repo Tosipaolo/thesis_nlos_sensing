@@ -158,7 +158,6 @@ Furthermore, spread targets generate bigger responses than a point scatterer, im
 In a heterogeneous radar frame multiple targets and changes in the interference power degrade CFAR performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are zones inspread targets generate
 bigger responses than a point scatterer, impacting
 neighbouring periodogram bins which there is a sudden change in the statistics of the interfering power, which leads to higher threshold and missed detection.
-
 Performance is also strongly influenced by the design of the reference window. The window should be designed to be as small as possible, in order to reduce the computational load due to the convolution operation and not to include interfering statistics far away from the CUT. The guard interval should be dimensioned according to the point spread function of the target return. An extended target could be counted in the reference window and lead to \textit{self masking}.
 
 	\begin{figure}[H]
@@ -251,20 +250,8 @@ The main limitation posed by this algorithm is the increased computational cost 
 	
 	In this work two existing implementations of clutter removal algorithms were applied to the CSI matrix.
 	Both of them work by projecting the signal into a subspace orthogonal to the clutter.
-	
 	Both algoritms make use of an offline clutter acquisition step, performed before the sensing task. This step is used to gather information about clutter to be removed at runtime.
-	
-	\paragraph{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}
-	This algorithm, described in \cite{Wan_Cheng_Gong_Zhao_Shao_2012}, applies ECA \cite{Colone_ECA_2009} on each subcarrier of the CSI matrix.
-	This approach is successful in removing the static clutter from the periodogram, at the cost of losing information on static targets and applying some distortion to targets moving at low speed.
-	
-	
-	\paragraph{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}
-	CRAP introduces a novel approach by vectorizing the \gls{csi} matrices and preserving all information in both domains, unlike ECA-C which only works on each subcarrier separately and focuses solely on the time domain of the signal \cite{Henninger_CRAP_2023}.
-	
-	A detailed comparison between the two approaches can be seen in Figure \ref{fig:Rad_clutter_crap-ecac}. CRAP is able to remove static clutter without distorting the position of the target.
-
-	\begin{figure}[H]
+	\begin{figure}[!t]
 		\centering
 		
 		\subfloat[\footnotesize no clutter removal, static metal target at range of ca. 10 m. Clutter at ca. 23 m.\label{fig:Rad_crap_ecac_base_static}]{%
@@ -287,9 +274,16 @@ The main limitation posed by this algorithm is the increased computational cost 
 			\includegraphics[scale=0.4]{Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_crap_mov1.png}%
 		}
 		\caption[]{\small Comparison of periodograms from sensing acquisitions obtained in NOKIA's indutrial test facility.
-		Periodograms without clutter removal (left) are compared with those obtained after applying ECA-C (middle) and CRAP (right). It can be observed how ECA-C is able to clean the image from static clutter, albeit at the cost of losing information on static targets, as shown in \subref{fig:Rad_crap_ecac_ECAC_static}, whilst CRAP is able to retain the information.  }
+			Periodograms without clutter removal (left) are compared with those obtained after applying ECA-C (middle) and CRAP (right). It can be observed how ECA-C is able to clean the image from static clutter, albeit at the cost of losing information on static targets, as shown in \subref{fig:Rad_crap_ecac_ECAC_static}, whilst CRAP is able to retain the information.  }
 		\label{fig:Rad_clutter_crap-ecac}
-	\end{figure}
+	\end{figure}	
+	\paragraph{Extensive Cancellation Algorithm by Subcarrier (ECA-C):}
+	This algorithm, described in \cite{Wan_Cheng_Gong_Zhao_Shao_2012}, applies ECA \cite{Colone_ECA_2009} on each subcarrier of the CSI matrix.
+	This approach is successful in removing the static clutter from the periodogram, at the cost of losing information on static targets and applying some distortion to targets moving at low speed.
+	\paragraph{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}
+	CRAP introduces a novel approach by vectorizing the \gls{csi} matrices and preserving all information in both domains, unlike ECA-C which only works on each subcarrier separately and focuses solely on the time domain of the signal \cite{Henninger_CRAP_2023}.
+	A detailed comparison between the two approaches can be seen in Figure \ref{fig:Rad_clutter_crap-ecac}. CRAP is able to remove static clutter without distorting the position of the target.
+	
 	
 	\subsubsection{Clutter presence in NLOS}
 	
@@ -358,7 +352,6 @@ The main limitation posed by this algorithm is the increased computational cost 
 		\subsection{Processing of the NLOS region}
 		
 			After defining the two regions of interest from the periodogram and discarding the static components, as described in Section \ref{sec:los_nlos_separation}, peak detection and any additional processing can be conducted separately for each region. 
-			
 			Figure \ref{fig:Test1_NLOS-proc-pipeline} summarizes the proposed processing steps for NLOS sensing.
 			
 			%The chosen detection strategy was CA-CFAR, which utilized a square contribution window and a probability of false alarm $p_{\text{FA}} = 10^{-6}$. The size of the CA-CFAR window was set depending on the width of the target in speed bins, which depended on number of processed frames and OFDM sampled symbols.

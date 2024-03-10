@@ -139,17 +139,17 @@
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram1FNoDec.png}
 		        }
 		        \hfill
-		        \subfloat[Single frame, decimated, \protect\newline SNR = 45.16 dB, \protect\newline $v_{\text{res}} = 0.603$ m/s, $ v_{\text{unamb}} = 13.05$ m/s\label{fig:TDDperiodogram1FYesDec}]{
+		        \subfloat[CSI of single frame, decimated, \protect\newline SNR = 45.16 dB, \protect\newline $v_{\text{res}} = 0.603$ m/s, $ v_{\text{unamb}} = 13.05$ m/s\label{fig:TDDperiodogram1FYesDec}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram1FYesDec.png}
 		        }
 		        
 		        \vspace{0.5cm}
 		        
-		        \subfloat[6 processed frames, decimated, combined, SNR = 52.35 dB, \protect\newline $v_{\text{res}} = 0.091$ m/s, $ v_{\text{unamb}} = 8.76$ m/s\label{fig:TDDperiodogram6frames}]{
+		        \subfloat[CSI of 6 processed frames, decimated, combined, SNR = 52.35 dB, \protect\newline $v_{\text{res}} = 0.091$ m/s, $ v_{\text{unamb}} = 8.76$ m/s\label{fig:TDDperiodogram6frames}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram6frames.png}
 		        }
 		        \hfill
-		        \subfloat[10 processed frames, decimated, combined, SNR = 54.66 dB, \protect\newline $v_{\text{res}} = 0.054$ m/s, $ v_{\text{unamb}} = 8.76$ m/s\label{fig:TDDperiodogram10frames}]{
+		        \subfloat[CSI of 10 processed frames, decimated, combined, SNR = 54.66 dB, \protect\newline $v_{\text{res}} = 0.054$ m/s, $ v_{\text{unamb}} = 8.76$ m/s\label{fig:TDDperiodogram10frames}]{
 		            \includegraphics[width=0.4\textwidth]{Images/TDDprocessing/periodogram10frames.png}
 		        }
 		        
@@ -167,7 +167,7 @@
 		    \begin{tabular}{|p{9em} c c c |}
 		    \hline
 		    \rowcolor{bluepoli!40} % comment this line to remove the color
-		     \textbf{Strategy} & \textbf{SNR [dB]} & \textbf{N} & \textbf{Time aperture [ms]} \T\B \\
+		    \textbf{Strategy} & \textbf{SNR [dB]} & \textbf{N} & \textbf{Time aperture [ms]} \T\B \\
 		    \hline \hline
 		    $\textbf{Standard frame}$ & 60.91 & 1120 & 10 \T\B \\
 		    $\textbf{Decimated frame}$ & 45.16 & 24 & 10 \T\B\\
@@ -188,7 +188,8 @@
 		They appear as vertical lines of high power, compared to the underlying noise floor.
 		For \gls{los} scenarios the artefacts do not limit the performance of the system, while their power is similar to the returns in \gls{nlos}.
 		Figure \ref{fig:TDD_artefacts} shows that the power of the artefacts increases with the time aperture of the processed frame.
-		
+		The cause of these artefacts was not identified in this work and solving their presence is not in the scope of this work. It is known that the 5G system used in the prototype from Nokia requires synchronization of component clock sources.
+		It is likely that these artefacts are caused by phase compensations applied to the ODFM signal both on a per-frame basis and within a single frame.
 			\begin{figure}[H]
 			\centering
 			
@@ -216,5 +217,4 @@
 			\label{fig:TDD_artefacts}
 		\end{figure}
 		
-		The cause of these artefacts was not identified in this work and solving their presence is not in the scope of this work. It is known that the 5G system used in the prototype from Nokia requires synchronization of component clock sources.
-		It is likely that these artefacts are caused by phase compensations applied to the ODFM signal both on a per-frame basis and within a single frame.
+		
