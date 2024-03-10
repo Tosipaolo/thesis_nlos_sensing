@@ -838,6 +838,62 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{psd}%
+{%
+name={\acronymfont {\glsentryshort {psd}}},%
+sort={PSD},%
+type={acronym},%
+first={PSD},%
+firstplural={PSDs},%
+text={PSD},%
+plural={PSDs},%
+description={power spectral density},%
+descriptionplural={power spectral density},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={power spectral density},%
+longplural={power spectral densitys},%
+short={PSD},%
+shortplural={PSDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{psf}%
+{%
+name={\acronymfont {\glsentryshort {psf}}},%
+sort={PSF},%
+type={acronym},%
+first={PSF},%
+firstplural={PSFs},%
+text={PSF},%
+plural={PSFs},%
+description={point-spread function},%
+descriptionplural={point-spread function},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={point-spread function},%
+longplural={point-spread functions},%
+short={PSF},%
+shortplural={PSFs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{ru}%
 {%
 name={\acronymfont {\glsentryshort {ru}}},%
@@ -861,6 +917,34 @@ long={radio unit},%
 longplural={radio units},%
 short={RU},%
 shortplural={RUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rcs}%
+{%
+name={\acronymfont {\glsentryshort {rcs}}},%
+sort={RCS},%
+type={acronym},%
+first={RCS},%
+firstplural={RCSs},%
+text={RCS},%
+plural={RCSs},%
+description={radar cross section},%
+descriptionplural={radar cross section},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={radar cross section},%
+longplural={radar cross sections},%
+short={RCS},%
+shortplural={RCSs},%
 counter={page},%
 parent={},%
 %

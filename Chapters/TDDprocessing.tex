@@ -3,7 +3,7 @@
 
 \section{Effect of TDD transmission on sensing performance}
 
-	Initially, sensing radar processing was performed on a per OFDM frame basis. \protect\newline Every $10$ ms the system would output a received OFDM frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant SNR gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the empty uplink (UL) symbols in the frame.
+	Initially, sensing radar processing was performed on a per \gls{ofdm} frame basis. \protect\newline Every $10$ ms the system would output a received \gls{ofdm} frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant \gls{snr} gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the empty \gls{ul} symbols in the frame.
 	
 	\begin{figure}[H]
 	    \centering
@@ -12,11 +12,11 @@
 	    \label{fig:CSIMatrix_DLULpattern}
 	\end{figure}
 	
-	As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 DL symbols followed by 36 UL symbols, repeated 8 times in each frame.
+	As shown in section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 \gls{dl} symbols followed by 36 \gls{ul} symbols, repeated 8 times in each frame. A sample \gls{csi} frame highlighting such patterns is shown in Figure \ref{fig:CSIMatrix_DLULpattern}.
 	
-	Received UL symbols do not contain any useful information for radar processing, hence they are discarded (set to zero) before computing the periodogram.
+	Received \gls{ul} symbols do not contain any useful information for radar processing, hence they are discarded (set to zero) before computing the periodogram.
 	    
-    The removal of UL symbols acts as windowing on the received frame. This introduces additional spectral replicas in the speed domain as shown in Figure \ref{fig:SpectralReplicasDLULpattern}. Replicas seem to appear at a constant speed displacement from where actual targets lie, behaving similarly to replicas introduced by the radar's non-ambiguity in speed.
+    The removal of \gls{ul} symbols acts as windowing on the received frame. This introduces additional spectral replicas in the speed domain as shown in Figure \ref{fig:SpectralReplicasDLULpattern}. Replicas seem to appear at a constant speed displacement from where actual targets lie, behaving similarly to replicas introduced by the radar's non-ambiguity in speed.
     
     \begin{figure}[H]
         \centering
@@ -25,7 +25,7 @@
         \label{fig:SpectralReplicasDLULpattern}
     \end{figure}
     
-    In order to characterize the additional spectral replicas, the windowing function used to set all UL symbols to zero is analyzed. The windowing pattern can be expressed in the form
+    In order to characterize the additional spectral replicas, the windowing function used to set all \gls{ul} symbols to zero is analyzed. The windowing pattern can be expressed in the form
     
     \begin{align}
         &\text{rect}\left( \frac{t + \tau}{104 \cdot T_S}\right) \ast \sum_{i=0}^7 \delta\left( t - i\cdot \frac{140}{1120}\cdot T_{\text{frame}} \right),  \\
@@ -34,7 +34,7 @@
 
     The windowing function, apart from a time-shift factor, is a rectangle function (Dirichlet window) convoluted with a train of Dirac deltas with spacing of 140 samples, as shown in Figure \ref{fig:TDDproc_rectfunct}. Its transform in frequency, in Figure \ref{fig:TDDproc_rectfunct_transform}, is a cardinal sine (Dirichlet's kernel) function multiplied by a train of Dirac deltas.
 
-    The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency appear as replicas in the periodogram. These peaks have sufficient power to be detected as real targets, thus limiting the performance of the system by reducing the effective unambiguous velocity. Even though their power is significantly lower compared to the main lobe, they can cause masking of real targets that would be detected near the replica, especially in NLOS where the return power is low. 
+    The transform is then convoluted with the signal in the frequency domain. The impulses adjacent to the one at zero-frequency appear as replicas in the periodogram. These peaks have sufficient power to be detected as real targets, thus limiting the performance of the system by reducing the effective unambiguous velocity. Even though their power is significantly lower compared to the main lobe, they can cause masking of real targets that would be detected near the replica, especially in \gls{nlos} where the return power is low. 
 
 	\begin{figure}[H]
 	    \centering
@@ -47,13 +47,18 @@
 	        \includegraphics[scale=0.483]{Images/TDDprocessing/periodogram_of_TDD_win1.png}
 	    }
 	    
-	    \caption[]{Representation of the time-windowing function applied to the CSI matrix. Sidelobe detected as replica is highlighted in red.}
+	    \caption[]{Representation of the time-windowing function applied to the \gls{csi} matrix. Sidelobe detected as replica is highlighted in red.}
 	    \label{fig:TDDwindowingfunct}
 	\end{figure}
 
 	\subsection{PoC's fundamental performance limits}
-
-		Without modifying the OFDM frame, the system would be able to carry out radar processing with the following performance:
+		
+		System performance can be evaluated in terms of resolution and unambiguous aperture, for both range and speed.
+		Unambiguous range $d_{\text{unamb}}$ and speed $v_{\text{unamb}}$ are the maximum values that can be measured for a target without any ambiguity or ambiguity-related errors, and depend on the sampling rate in the respective domain, defined by subcarrier spacing and \gls{ofdm} symbol time, respectively.
+		Range and speed resolution, $d_{\text{res}}$ and $v_{\text{res}}$, refer to the system's ability to resolve targets in terms of their range and speed and depend on the aperture in frequency and time domain, given by the overall bandwidth $\Delta f N$ and the frame duration $T_S M$, respectively. 
+	
+		When generating the periodogram by processing the \gls{csi} of a single frame, with the parameters indicated in Table \ref{table:PoCparams},
+		the \gls{poc} operates with the following performance:
 		
 		\begin{itemize}
 			\item \textbf{Unambiguous speed}
@@ -75,14 +80,10 @@
 				d_{\text{res}} = \frac{c_0}{2\Delta fN} = 0.789 \text{ m}.
 			\end{equation}  
 		\end{itemize}
-			
 			This performance, especially the unambiguous speed, is more than sufficient for most indoor use cases. 
 			This offers the possibility of applying different pre-processing strategies to the OFDM frame to avoid the presence of replicas. 
-			As the TDD pattern acts on the time axis of the CSI, changing the time aperture or pulse repetition interval (PRI) will result in a change in speed resolution or unambiguous speed.
-			
-			Higher speed resolution can be obtained by increasing time aperture (higher speed resolution corresponds with a lower value in meters).
-			
-			Unambiguous speed is related with the time between two consecutive OFDM symbols. The distance between two consecutive processed symbols cannot be reduced without modifying the system parameters, but it can be increased by discarding some symbols, which worsens the unambiguity performance of the system (reduces the speed at which replicas indistinguishable from the real target return appear in the periodogram).
+			As the TDD pattern acts on the time axis of the \gls{csi}, changing the time aperture or the \gls{ofdm} symbol rate will result in a change in speed resolution and unambiguous speed, respectively.
+			Unambiguous speed is related with the time between two consecutive OFDM symbols. The distance between two consecutive processed symbols cannot be reduced without modifying the system parameters, but it can be increased by discarding some symbols, which worsens the unambiguity performance of the system.
 			
 			The next section analyses a number of possible strategies and their impact on system performance and their tradeoffs.    
 
@@ -96,21 +97,21 @@
 		    \end{figure}
 		
 		    \paragraph{Single DL pattern:}
-		    to avoid processing empty UL symbols, the simplest approach would be to process only the first 104 DL symbols. The replicas would be avoided, but the time aperture of the measurement would be reduced by a factor of more than eight, reducing the speed resolution from $0.603$ m/s to approximately $5.88$ m/s, which is unusable for most indoor sensing use cases.
+		    to avoid processing empty \gls{ul} symbols, the simplest approach would be to process only the first 104 \gls{dl} symbols. The replicas would be avoided, but the time aperture of the measurement would be reduced by a factor of more than eight, reducing the speed resolution from $0.603$ m/s to approximately $5.88$ m/s, which is unusable for most indoor sensing use cases.
 		    
 		    \paragraph{Decimation at constant interval:}
-		     a possible strategy is decimating the OFDM frame in time at a fixed pace, while avoiding blank UL symbols. 
-		     By discarding symbols performance in unambiguous speed is reduced. However by selecting symbols with a constant stride, and avoiding UL blanks, the windowing effect experienced by the standard frame is removed.
-		     The minimum stride allowed for the single frame is one symbol every 47, which will select 3 symbols from every DL section.
+		     a possible strategy is decimating the OFDM frame in time at a fixed pace, while avoiding blank \gls{ul} symbols. 
+		     By discarding symbols, performance in unambiguous speed is reduced. However by selecting symbols with a constant stride, and avoiding \gls{ul} blanks, the windowing effect experienced by the standard frame is removed.
+		     The minimum stride allowed for the single frame is one symbol every 47, which will select 3 symbols from every \gls{dl} section.
 		     
-		     The overall amount of symbols in a processed CSI is reduced from 1120 to 24.
-		     Replicas are not detected, but the lower number of processed symbols translates into a considerable loss of SNR in the periodogram. 
-		     This affects NLOS sensing in particular, since targets observed from a reflection present a considerably lower peak power compared with the LOS components.
+		     The overall amount of symbols in a processed \gls{csi} is reduced from 1120 to 24.
+		     Replicas are not detected, but the lower number of processed symbols results into a considerable loss of \gls{snr} in the periodogram, corresponding to a ca. 15 dB loss from the obtained measurements, as shown in Figure \ref{fig:TDDperiodogram1FYesDec}. 
+		     This affects \gls{nlos} sensing in particular, since targets observed from a reflection present a considerably lower peak power compared with the \gls{los} components.
 		
-		     Reducing the number of available symbols with a fixed time-aperture translates in lower granularity of measurements and in a decrease in unambiguous speed. \protect\newline In the case of Figure \ref{fig:TDDperiodogram1FYesDec}, processing one symbol every 47, the obtained unambiguous speed is $13.05$ m/s. \protect\newline Speed resolution remains unchanged.
+		     Reducing the number of symbols available for sensing with a fixed time-aperture results in lower granularity of measurements and in a decrease in unambiguous speed. \protect\newline In the case of Figure \ref{fig:TDDperiodogram1FYesDec}, processing one symbol every 47, the obtained unambiguous speed is $13.05$ m/s. \protect\newline Speed resolution remains unchanged.
 		    
 		     \paragraph{Decimation and multi-frame processing:}
-		     by combining consecutive frames, it is possible to process an higher number of symbols, regaining a part of the SNR thanks to processing gain, all without observing replicas. 
+		     by combining consecutive frames, it is possible to process an higher number of symbols, regaining a part of the \gls{snr} thanks to processing gain, all without observing replicas. 
 		     This also increases the time aperture of the measurement, resulting in better speed resolution.
 		     
 			 To combine several consecutive CSI measurements, the decimation rate is further reduced compared to the previous approach, from one sample in 47 to one sample every 70. 
@@ -119,14 +120,14 @@
 			 Unambiguous speed is also reduced further to $8.76$ m/s.
 			 
 			 To generate a radar update it is necessary to wait for multiple frames to be received.
-			 This approach introduces a trade-off between SNR (processing gain) and update rate, with the update rate being reduced proportionally to the chosen time aperture.
-		     For use cases such as intrusion detection, an update every 10 ms is not strictly necessary, and the higher detection probability due to the higher SNR is considered acceptable.
+			 This approach introduces a trade-off between \gls{snr} (processing gain) and update rate, with the update rate being reduced proportionally to the chosen time aperture.
+		     For use cases such as intrusion detection, an update every 10 ms is not strictly necessary, and the higher detection probability due to the higher \gls{snr} is considered acceptable.
 		          
 		     To increase the number of updates, the observation time-window stride can be configured to be lower than its length, allowing for overlapping between processed time windows.
 		      
 		     Increasing the time aperture has two effects: it increases the speed resolution of the system and can result in migration effects, particularly for fast-moving targets. 
-		     Range and speed migration occur when the target moves and/or changes velocity during the observation windows, resulting in a return "spread" in the obtained periodogram.
-		     In the context of NLOS sensing, the impact of range migration on system performance is relatively minor compared to the benefits of increased speed resolution and higher signal-to-noise ratio. The primary objective is not to provide precise tracking or positioning data.
+		     Range and speed migration occur when the target moves and changes velocity during the observation windows, resulting in a return "spread" in the obtained periodogram.
+		     In the context of NLOS sensing, the impact of range migration on system performance is relatively minor compared to the benefits of increased speed resolution and higher signal-to-noise ratio, as The primary objective is not to provide precise tracking or positioning data.
 			
 			
 		% 2x2 figure scheme
@@ -156,7 +157,7 @@
 		        \label{fig:allperiodogram-decimation}
 		    \end{figure}
 		
-		    In Figures \ref{fig:TDDperiodogram1FNoDec}-\ref{fig:TDDperiodogram10frames} it is possible to observe the effects of the various strategies when applied to a OFDM radar measurement where both the NLOS and LOS components are present for a single target.
+		    In Figures \ref{fig:TDDperiodogram1FNoDec}-\ref{fig:TDDperiodogram10frames} it is possible to observe the effects of the various strategies when applied to a OFDM radar measurement where both the \gls{nlos} and \gls{los} components are present for a single target.
 		
 		
 		    
@@ -185,7 +186,7 @@
 
 		When processing several consecutive frames, Doppler artefacts can be observed in the corresponding periodograms.
 		They appear as vertical lines of high power, compared to the underlying noise floor.
-		For LOS scenarios the artefacts do not limit the performance of the system, while their power is similar to the returns in NLOS.
+		For \gls{los} scenarios the artefacts do not limit the performance of the system, while their power is similar to the returns in \gls{nlos}.
 		Figure \ref{fig:TDD_artefacts} shows that the power of the artefacts increases with the time aperture of the processed frame.
 		
 			\begin{figure}[H]

@@ -155,9 +155,9 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	The architecture considered in this work is based on \gls{fr2} 5G commercially available communication hardware.
 	The system consists in a mmWave \gls{gnb} \gls{ru}, extended by a dedicated \gls{ru} called \textit{Sniffer} and a server called \gls{spu}. 
 	The sniffer is synchronized with the \gls{gnb} by the same synchronization source. 
-	The \gls{spu} receives the complex IQ signal,  after FFT and removal of the cyclic prefix (CP), as input for further sensing processing on a per-radio frame basis \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.
+	The \gls{spu} receives the complex IQ signal,  after FFT and removal of the \gls{cp}, as input for further sensing processing on a per-radio frame basis \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.
 	
-	Using option 7-2 of the proposed 5G splits, it is possible to use the same type of Radio Unit (RU) for both communication and sensing.
+	Using option 7-2 of the proposed 5G splits, it is possible to use the same type of \gls{ru} for both communication and sensing.
 	Option 7-2 splits the network at the physical layer (PHY) level, which handles the conversion of digital data to the analogue radio signal in \gls{dl}, while doing the opposite in \gls{ul}.
 	This split defines the FFT/iFFT performed in the RU, while the frequency domain IQ is transported on the fronthaul.
 	The \gls{gnb} \gls{ru} operates in \gls{tdd} mode, where \gls{ul} is separated from \gls{dl} by the allocation of different time slots in the same frequency band. 	
@@ -243,24 +243,26 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	
 	One such use case is the monitoring of roadways and industrial floors to enhance safety. ISAC can exploit the deployed network equipment of smart factory floors. Potential hazards can be detected in real-time, allowing for accident prevention. 
 	
-	Another valuable application of ISAC is crowd monitoring. 
+	Another valuable application of \gls{isac} is crowd monitoring. 
 	The system can analyse crowd movements, density and motion patterns. 
-	Crowd flows can be monitored by ISAC systems while respecting the privacy of the individuals, compared to standard camera systems, as the identity of the targets is not disclosed to the system supervisor and cannot be extracted through face recognition algorithms.
+	Crowd flows can be monitored by \gls{isac} systems while respecting the privacy of the individuals, compared to standard camera systems, as the identity of the targets is not disclosed to the system supervisor and cannot be extracted through face recognition algorithms.
 
 	
 	\subsection{Non-line-of-sight sensing}
 	
-	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal by reflection on another entity. 
-	Feasibility of monostatic ISAC in NLOS environments is still a rather unexplored area of research, as commonly studied use cases assume the target to be in LOS.
 	
-	The main advantage of NLOS sensing is the possibility of performing "around the corner" detection, which is not feasible with traditional fixed camera or LIDAR systems. 
-	Sensing targets moving behind an obstacle is a powerful feature in use cases such as automotive radar and surveillance systems.
 	
-	As we can expect cellular networks operating in FR2 to be deployed in indoor areas and factory floors, this work will focus on intrusion detection in industrial scenarios.
-	Intrusion detection in NLOS on factory floors could represent a valuable addition, from a commercial point of view, for private cellular networks in smart industries.
+	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal via one or multiple reflections on another entity. 
+	Feasibility of monostatic \gls{isac} in \gls{nlos} environments is still a rather unexplored area of research \textit{\alert{missing ref}}, as commonly studied use cases assume the target to be in LOS.
+	
+	The main advantage of \gls{nlos} sensing is the possibility of performing "around the corner" detection, which is not feasible with traditional fixed camera or LIDAR systems. 
+	Sensing targets moving behind an obstacle would be a powerful feature in use cases such as automotive radar and surveillance systems.
+	
+	As we can expect cellular networks operating in \gls{fr2} also to be deployed in indoor areas and factory floors, this work will focus on intrusion detection in industrial scenarios.
+	Intrusion detection in \gls{nlos} on factory floors could represent a valuable addition, from a commercial point of view, for private cellular networks in smart industries.
 	
 	In addition, it has the potential to enhance cellular sensing systems in a cost-effective manner, making them a viable alternative to expensive ad hoc systems. This approach does not require the deployment of infrastructure or specialized equipment. 
-	Non-line-of-sight sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
+	\gls{nlos} sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
 	
 	%\remove{Furthermore, it could unlock new use cases that have yet to be fully explored. In industrial environments, non-line-of-sight sensing technology has the potential to enhance safety protocols and improve accident prevention measures by detecting humans within obscured or complex settings. Additionally, intrusion detection systems could benefit from this technology as it may enable the identification of unauthorized access attempts even in hidden or non-obvious entry points.}
 	

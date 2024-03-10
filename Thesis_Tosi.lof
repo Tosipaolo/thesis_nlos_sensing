@@ -48,17 +48,18 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces \small Periodogram processing pipeline used for detection tests.\relax }}{45}{figure.caption.65}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.\relax }}{48}{figure.caption.67}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe. \textcolor {red}{FIX ANTENNA HEIGHT WITH DOT}\relax }}{48}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \small Top view of measurement scenario.\relax }}{49}{figure.caption.69}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, linear scale.}}}{51}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{51}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize Human target walking towards gNB, power in dB.}}}{51}{subfigure.4.3}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{52}{figure.caption.71}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \small KF track of the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{52}{figure.caption.72}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram after applying CRAP.}}}{53}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram after applying ECA-C.}}}{53}{subfigure.7.2}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{54}{figure.caption.74}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.\relax }}{55}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{56}{figure.caption.78}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{57}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Scheme of the measurement scenario\relax }}{49}{figure.caption.68}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe. \textcolor {red}{FIX ANTENNA HEIGHT WITH DOT}}}}{49}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\small Top view of measurement scenario. }}}{49}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, linear scale.}}}{51}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{51}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\footnotesize Human target walking towards gNB, power in dB.}}}{51}{subfigure.3.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.\relax }}{52}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \small KF track of the target in the range/speed plane. Track is interrupted when the target stops and changes direction.\relax }}{52}{figure.caption.71}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Periodogram after applying CRAP.}}}{53}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Periodogram after applying ECA-C.}}}{53}{subfigure.6.2}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP.\relax }}{54}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Detection rate observed for human target in mixed LOS/NLOS measurement.\relax }}{55}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{56}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces \small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region and CRAP for the LOS.\relax }}{57}{figure.caption.78}%
 \addvspace {10\p@ }
