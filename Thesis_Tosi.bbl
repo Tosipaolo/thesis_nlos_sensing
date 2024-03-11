@@ -66,6 +66,12 @@ B.~Friedlander.
 \newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
   43(3):1227–1238, July 2007.
 
+\bibitem{Levanon_ofdm}
+N.~Levanon.
+\newblock Multifrequency radar signals.
+\newblock In {\em Record of the IEEE 2000 International Radar Conference [Cat.
+  No. 00CH37037]}, pages 683--688, 2000.
+
 \bibitem{Sturm_Wiesbeck_2011}
 Christian Sturm and Werner Wiesbeck.
 \newblock {Waveform Design and Signal Processing Aspects for Fusion of Wireless
@@ -105,6 +111,14 @@ Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li~Liu, and Mohammed Bennamoun.
 \newblock Deep learning for 3d point clouds: A survey.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   43(12):4338--4364, 2021.
+
+\bibitem{30_years_ai_survey}
+Jingjing Wang, Chunxiao Jiang, Haijun Zhang, Yong Ren, Kwang-Cheng Chen, and
+  Lajos Hanzo.
+\newblock Thirty years of machine learning: The road to pareto-optimal wireless
+  networks.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 22(3):1472--1514,
+  2020.
 
 \bibitem{Braun2014OFDMRA}
 K.~Braun.

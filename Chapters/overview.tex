@@ -3,30 +3,28 @@
 		% OLD PART
 		%The fifth generation of cellular networks, with 5G New Radio (NR), introduced support for radio access technology-based localisation, an accurate positioning protocol and the ability to measure gaps on the NR carrier. 		This enables the system to estimate the positions of active user equipment (UE) by measuring time difference of arrival information \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.  The NR positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 		
-		
-\alert{Positioning of active \glspl{ue} was first deployed with the \gls{3GPP} \Gls{lte} standard.} \gls{lte} introduced support for positioning based on a wide range on methods. 
+In recent years, research into cellular networks has focused on extending their capabilities, allowing them to do more than just transmit data.
+Positioning of active \glspl{ue} was one of the first examples of these capabilities, defined in the \gls{3GPP} \Gls{lte} standard (Release 9).
+\gls{lte} introduced support for positioning based on a wide range on methods.
 These methods mostly rely on \gls{cid}, \gls{toa}, \gls{aoa}. Due to the accuracy requirements in different deployment conditions (\ie indoor or outdoor, urban or rural areas), \gls{lte} positioning normally employed two or more methods at the same time \cite{Razavi_Gunnarsson_2018}.
 The fifth generation of cellular networks, with 5G \gls{NR}, expanded this capabilities. The introduction of beam-based operation and large antenna arrays, especially at mmWave, will enable higher positioning accuracy by exploiting more precise angular information in combination with time measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.
 Furthermore, the high available bandwidths will help in resolving multipath, thus facilitating correcting \gls{toa} estimation.
 The \gls{NR} positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with high accuracy indoor active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. 
+
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
-
 With the objective of expanding the capabilities of the mobile network, \gls{isac}, also known as JCAS or ICAS, is currently a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
-
 According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations, or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles, movements of illuminated objects or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
 Channel information can, \eg, be obtained by removing the influence of the known, transmitted signal from the received one after target reflection. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
 For 6G, the radio sensing capabilities should be integrated sharing the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an \gls{isac} scenario as described in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction a cellular system is shown equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Images/introduction/isac-scheme-1.png}
-	\caption{\alert{Illustration of an ISAC scenario.}}
+	\includegraphics[width=0.8\textwidth]{Images/introduction/isac-scheme-1.png}
+	\caption{Illustration of an \gls{isac} scenario.}
 	\label{fig:isac-scheme-1}
 \end{figure}
-
-
-\gls{isac} will benefit from the massive deployment of cellular networks and their coverage: making use of existing hardware and extending its capabilities with sensing, the network will be able to adapt and use information about the surrounding environment as a source of situational knowledge.
+\Gls{isac} essentially aims at operating the network as a radar, while benefiting from the massive deployment of cellular networks and their coverage, making use of existing hardware and extending its capabilities with sensing.
+The network will be able to adapt and use information about the surrounding environment, combined with active positioning of \glspl{ue}, as a source of situational knowledge.
 
 
 
@@ -76,11 +74,10 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	Current mobile communications are dominated by multi-carrier waveforms (\gls{ofdm}).
 	\GLS{ofdm} has become the current waveform reference in \gls{isac}. Fully established as the standard in 4G and 5G communications systems, in the last decade it has also attracted the attention of the radar world.
 	
-	\gls{ofdm} offers great multiplexing capabilities, both in time and in frequency, through the definition \textit{OFDM resource elements} that can be dynamically allocated to users. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by \gls{papr} constraints, such as uplink transmission, DFT spreading can  be applied on top of OFDM to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
+	\gls{ofdm} offers great multiplexing capabilities, both in time and in frequency, through the definition \textit{OFDM resource elements} that can be dynamically allocated to users. The use of cyclic prefix transforms the linear convolution of the signal with the channel response into a circular convolution, allowing convenient equalisation of the channel in the frequency domain \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In scenarios limited by \gls{papr} constraints, such as uplink transmission, DFT spreading can  be applied on top of \gls{ofdm} to achieve a single-carrier frequency division multiple access (SC-FDMA) scheme.
 	
-	\alert{Multicarrier waveforms offer the possibility of obtaining sensing information by using signal processing techniques. Spectral estimation for sensing applied to OFDM is commonly reffered to as \textit{OFDM Radar}.}
-	OFDM radar does not require the high autocorrelation characteristics that are normally expected from traditional radar waveforms \cite{Sturm_Wiesbeck_2011}.
-	The main disadvantage of OFDM is the high \gls{papr} and the additional \alert{DSP} necessary for performing \gls{isac} data processing.
+	The idea of using OFDM for sensing purposed was first proposed in \cite{Levanon_ofdm} in 2000. One of the first proposal for signal processing for OFDM radar was developed by Strum and Wiesbeck in \cite{Sturm_Wiesbeck_2011}.
+	\gls{ofdm} waveforms do not require the high autocorrelation characteristics that are normally expected from traditional radar waveforms, while being able to fulfil requirements for both communications and sensing performance.
 	
 	\subsubsection{Waveforms for next-gen communication networks}
 	
@@ -114,7 +111,7 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
  	This solution was developed to define a flexible approach to the \gls{cran} concept, that could work with the high data rates expected in 5G. 
 	In \gls{NR}, the radio processing stack defined by \gls{3GPP} is split between a \gls{du} and a \gls{cu}. 
 	The general idea is to keep functions close to the user in the \gls{du}, while placing more complex and computationally intensive functions in the \gls{cu}. The \gls{cu} is usually represented by powerful datacenters.
-	Allocating more functions in the DU means less traffic on the fronthaul network, but requires more powerful and expensive hardware at the antenna site.
+	Allocating more functions in the \gls{du} means less traffic on the fronthaul network, but requires more powerful and expensive hardware at the antenna site.
 	Functional splits allow for a fairly flexible architecture of the system. Additional functionality, such as network sensing, can be implemented at the \gls{ru} by adding dedicated processing hardware.
 
 	%\begin{figure}[H]
@@ -127,12 +124,12 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	
 	\subsection{Massive MIMO and beamforming}
 	
-	Massive MIMO and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}.
+	Massive \gls{mimo} and digital beamforming can set the basis for performing high-resolution three-dimensional scans of the surrounding environment \cite{MIMO-next-gen}.
 	The general idea is to intelligently combine the signals received from multiple antennas to achieve high signal-to-noise ratios and data rates.
 	
 	In \gls{5G}, beamforming commonly employs an all-digital approach at lower frequencies. However, for mmWave frequencies and above, analogue or hybrid beamforming is typically used. 
 	
-	Hybrid beamforming allows to scan multiple beams at the same time, controlled by $P >1$ RF chains, where $P < Q$ where Q is the number of antennas. 
+	Hybrid beamforming allows to scan multiple beams at the same time, controlled by $P >1$ RF chains, where $P < Q$ where $Q$ is the number of antennas. 
 	The transmitting cells can perform a beam sweep, where the signal is steered over different angles. 
 	Using beam sweeps for \gls{isac} allows to collect complete spatial information about the environment surrounding the cell.
 	
@@ -147,7 +144,7 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	\gls{ai}-powered radar systems can adapt and learn from new data, continuously improving their capabilities over time. 
 	This technology could assist the development of autonomous radar systems capable of making independent decisions based on the classification results. 
 	
-	 \alert{Furthermore, artificial intelligence and machine learning have already been introduced in communication systems to optimize network resources, improve overall quality of service, solve optimization problems, and predict system load and traffic.} 
+	 Furthermore, artificial intelligence and machine learning have already been introduced in communication systems to optimize network resources, improve overall quality of service, solve optimization problems, and predict system load and traffic \cite{30_years_ai_survey}. 
 	 By combining sensing capabilities with \gls{ai}, nodes could effortlessly integrate the physical and digital domains, giving the network situational capabilities.
 	
 
@@ -162,7 +159,7 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	
 	Using option 7-2 of the proposed 5G splits, it is possible to use the same type of \gls{ru} for both communication and sensing.
 	Option 7-2 splits the network at the \gls{phy} level, which handles the conversion of digital data to the analogue radio signal in \gls{dl}, while doing the opposite in \gls{ul}.
-	This split defines the FFT/iFFT performed in the \gls{ru}, while the frequency domain IQ is transported on the fronthaul.
+	This split defines the \gls{fft}/\gls{ifft} performed in the \gls{ru}, while the frequency domain IQ is transported on the fronthaul.
 	The \gls{gnb} \gls{ru} operates in \gls{tdd} mode, where \gls{ul} is separated from \gls{dl} by the allocation of different time slots in the same frequency band. 	
 	The sniffer operates always in \gls{ul} mode, receiving both the signal transmitted by \glspl{ue} and the reflected signals. 
 	
@@ -172,10 +169,10 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	The SPU processing chain for sensing is structured as follows:
 	
 	\begin{itemize}
-		\item \textit{Reference and reflected signal reception}. Receive and process packets from gNB and Sniffer. Each radio frame has dimension $N\times M$, where $N$ is the number of subcarriers and $M$ the number of \gls{ofdm} symbols.
+		\item \textit{Reference and reflected signal reception}. Receive and process packets from \gls{gnb} and Sniffer. Each radio frame has dimension $N\times M$, where $N$ is the number of subcarriers and $M$ the number of \gls{ofdm} symbols.
 		\item \textit{Channel computation}. Channel information is obtained by division of the received by the transmitted frames.
 		\item \textit{Clutter removal}. Before every measurement, the channel of the corresponding scenario without targets is saved during a calibration step and, based on that, the clutter components are removed from the reflected signal at runtime.
-		\item \textit{Periodogram computation}. The spectral response of the channel information is obtained by computing $N$ FFTs followed by $M$ iFFTs on the result. The response is then converted in a 2D Range-Doppler map of the observed targets. 
+		\item \textit{Periodogram computation}. The spectral response of the channel information is obtained by computing $N$ \glspl{fft} followed by $M$ \glspl{ifft} on the result. The response is then converted in a 2D range-Doppler map of the observed targets. 
 		\item \textit{Peak extraction}. Identifying the peaks in the periodogram allows to retrieve the range-speed information of targets present on the scene.
 		\item \textit{Target tracking}. A \gls{kf} can be used to track the detected targets. 
 	\end{itemize} 
@@ -183,7 +180,7 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 	
 	
 	The system specifications are indicated in table \ref{table:PoCparams}.
-	They correspond to parameters for 5G NR systems with the numerology $\mu=3$ specified in \cite{TS138211}. 
+	They correspond to parameters for 5G \gls{NR} systems with the numerology $\mu=3$ specified in \cite{TS138211}. 
 	
 	\begin{table}[H]
 		%\caption*{\textbf{Title of Table (optional)}}
@@ -205,7 +202,7 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 			\hline
 		\end{tabular}
 		\\[10pt]
-		\caption{List of system parameters from NOKIA proof of concept installation.}
+		\caption{List of system parameters from Nokia proof of concept installation.}
 		\label{table:PoCparams}
 	\end{table}
 	
@@ -215,36 +212,36 @@ For 6G, the radio sensing capabilities should be integrated sharing the same spe
 \section{Sensing use-cases}
 
 	Several use cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
-	In order to understand system requirements and research approaches, it is essential to define likely scenarios in which ISAC systems will be deployed.
+	In order to understand system requirements and research approaches, it is essential to define likely scenarios in which \gls{isac} systems will be deployed.
 	
 	\subsubsection{Automotive radar}
 	
 	Automotive radar is essential for new generations of cars and future autonomous driving vehicles.
 	Communication capabilities are also necessary to establish vehicle networks for sharing information on the surrounding environment.
-HY	Modern vehicles have evolved from simple means of transport to smart vehicles equipped with a variety of sensors and communication equipment.
-	The market for vehicle-to-everything (V2X) networks has been growing significantly in recent years \cite{Liu_Masouros_2021}.
+	Modern vehicles have evolved from simple means of transport to smart vehicles equipped with a variety of sensors and communication equipment.
+	The market for \gls{v2x} networks has been growing significantly in recent years \cite{Liu_Masouros_2021}.
 	This network requires high communication performance, throughput, and low latency, as well as precise positional information on surrounding objects.
 	
-	ISAC is an ideal candidate to fulfill these requirements, enabling efficient use of the spectrum and enhancing the physical layer security of the V2X network.
+	\gls{isac} is an ideal candidate to fulfil these requirements, enabling efficient use of the spectrum and enhancing the physical layer security of the \gls{v2x} network.
 	
-	ISAC systems must be capable of performing tasks such as vehicle and traffic counting, collision avoidance, and pedestrian and animal detection.
+	\gls{isac} systems must be capable of performing tasks such as vehicle and traffic counting, collision avoidance, and pedestrian and animal detection.
 	
 	\subsubsection{Outside Drone Detection}
 	
-	Detection of Unmanned Aerial Vehicles (UAVs) may be necessary in various deployment scenarios, including rooftops of buildings, airports, and open urban areas.
+	Detection of \gls{uav} may be necessary in various deployment scenarios, including rooftops of buildings, airports, and open urban areas.
 	
-	UAVs are typically equipped with sensors, cameras, and radars for surveillance and monitoring. Additionally, UAVs are used to provide connectivity in hazardous or data-intensive environments.
-	ISAC systems are suitable for fulfilling communication requirements in UAV networks while being able to detect unwanted drones in a monitored area.
+	\glspl{uav} are typically equipped with sensors, cameras, and radars for surveillance and monitoring. Additionally, \glspl{uav} are used to provide connectivity in hazardous or data-intensive environments.
+	\gls{isac} systems are suitable for fulfilling communication requirements in \gls{uav} networks while being able to detect unwanted drones in a monitored area.
 	
 	\subsection{Human activities}
 	
-	ISAC for human activities detection could be applied for tracking a subject's physical movements, as well as monitoring vital signs for healthcare applications. 
+	\Gls{isac} for human activities detection could be applied for tracking a subject's physical movements, as well as monitoring vital signs for healthcare applications. 
 	
 	The capacity to perceive and interpret human activities can offer valuable insights and enable interventions that enhance quality of life, performance, and safety.
 	
 	Micro Doppler tracking and feature extraction, combined with machine learning, can help distinguish between targets or extract additional information about activity and human presence in the monitored area.
 	
-	One such use case is the monitoring of roadways and industrial floors to enhance safety. ISAC can exploit the deployed network equipment of smart factory floors. Potential hazards can be detected in real-time, allowing for accident prevention. 
+	One such use case is the monitoring of roadways and industrial floors to enhance safety. \Gls{isac} can exploit the deployed network equipment of smart factory floors. Potential hazards can be detected in real-time, allowing for accident prevention. 
 	
 	Another valuable application of \gls{isac} is crowd monitoring. 
 	The system can analyse crowd movements, density and motion patterns. 
@@ -256,7 +253,7 @@ HY	Modern vehicles have evolved from simple means of transport to smart vehicles
 	
 	
 	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal via one or multiple reflections on another entity. 
-	Feasibility of monostatic \gls{isac} in \gls{nlos} environments is still a rather unexplored area of research, as commonly studied use cases assume the target to be in LOS \cite{Gustaffson_NLOS_radar}.
+	Feasibility of monostatic \gls{isac} in \gls{nlos} environments is still a rather unexplored area of research, as commonly studied use cases assume the target to be in \gls{los} \cite{Gustaffson_NLOS_radar}.
 	
 	The main advantage of \gls{nlos} sensing is the possibility of performing "around the corner" detection, which is not feasible with traditional fixed camera or LIDAR systems. 
 	Sensing targets moving behind an obstacle would be a powerful feature in use cases such as automotive radar and surveillance systems.

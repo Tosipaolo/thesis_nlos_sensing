@@ -224,27 +224,27 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     \end{align*}
     
     
-    The transform is indicated as $\text{FFT}_{N_{per}}$ where $N_{Per} \geq N$ is the length of the FFT. When the input signal has $N < N_{Per}$, it is zero padded to the length of the FFT.
+    The transform is indicated as $\text{FFT}_{N_{per}}$ where $N_{Per} \geq N$ is the length of the \gls{fft}. When the input signal has $N < N_{Per}$, it is zero padded to the length of the \gls{fft}.
     The transform can be calculated in the most efficient way when $N_{Per}$ is a power of 2, hence it is recommended to zero pad the input signal to the closest one.
 
-    The input data for the periodogram is the \gls{csi} $\bm{F}$, and the periodogram is estimated in two dimensions
+    The input data for the periodogram is the \gls{csi} $\mathbf F$, and the periodogram is estimated in two dimensions
 
     \begin{equation}
     	\label{eq:periodogram_full}
     	\begin{aligned}
-    		\text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left(  \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \\
-    		&= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2.
+    		\text{Per}_{\mathbf F}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left(  \sum_{l=0}^{M_{Per}-1} (\mathbf F)_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2 \\
+    		&= \frac{1}{NM} \left| \text{CPer}_{\mathbf F}(n,m) \right| ^ 2.
     	\end{aligned}
     \end{equation}
 
 
-    Each target captured in the CSI, \ie a sinusoid in $\bm{F}$, results in a peak in $Per_{\bm{F}}(n,m)$.
-    For each target, the frequencies of its sinusoids $\hat{\Omega}_d$ (column-wise) and $\hat{\Omega}_v$ (row-wise) in $\bm{F}$ will correspond to peaks at position $(\hat{n}, \hat{m})$ in the periodogram. Inversely, if $\text{Per}_{\bm{F}}(\hat{n},\hat{m})$ is a peak value, then the corresponding oscillation frequencies in $\bm{F}$ are $\hat{\Omega}_d = 2\pi\hat{n}/N_{\text{Per}}$ column-wise and $\hat{\Omega}_v = 2\pi\hat{m}/M_{\text{Per}}$ row-wise.
+    Each target captured in the CSI, \ie a sinusoid in $\mathbf F$, results in a peak in $Per_{\mathbf F}(n,m)$.
+    For each target, the frequencies of its sinusoids $\hat{\Omega}_d$ (column-wise) and $\hat{\Omega}_v$ (row-wise) in $\mathbf F$ will correspond to peaks at position $(\hat{n}, \hat{m})$ in the periodogram. Inversely, if $\text{Per}_{\bm{F}}(\hat{n},\hat{m})$ is a peak value, then the corresponding oscillation frequencies in $\mathbf F$ are $\hat{\Omega}_d = 2\pi\hat{n}/N_{\text{Per}}$ column-wise and $\hat{\Omega}_v = 2\pi\hat{m}/M_{\text{Per}}$ row-wise.
     
     These frequencies are converted into distance and relative speed as
 
     \begin{align*}
-        \hat{d} &= \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta_f} = \frac{\hat{n}c_0}{2\Delta_f N_\text{Per}}, \\
+        \hat{d} &= \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta f} = \frac{\hat{n}c_0}{2\Delta f N_\text{Per}}, \\
         \hat{v} &= \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_0} =  \frac{\hat{m}c_0}{2f_cT_0 M_{\text{Per}}}.
     \end{align*}
     
@@ -252,7 +252,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     
     
 
-    As demonstrated by Braun, computing the periodogram results in a \gls{snr} gain of a factor $NM$. The numerator in Equation~\eqref{eq:periodogram_full} is an accumulation of all the elements in $\bm{F}$ whereas the denominator is a superposition of complex Gaussian random variables.
+    As demonstrated by Braun, computing the periodogram results in a \gls{snr} gain of a factor $NM$. The numerator in Equation~\eqref{eq:periodogram_full} is an accumulation of all the elements in $\mathbf F$ whereas the denominator is a superposition of complex Gaussian random variables.
     
 	\subsection{Window functions}
 	
@@ -260,15 +260,15 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 	
 		%TODO generate image w/ and w/o windowing 
 	
-	The two dimensional window matrix to be applied to the periodogram $\bm{W} \in \mathbb{R}^{N\times M}$ is multiplied element-wise with the matrix $\bm{F}$. When computing the periodogram equation \ref{eq:periodogram_full} becomes
+	The two dimensional window matrix to be applied to the periodogram $\mathbf W \in \mathbb{R}^{N\times M}$ is multiplied element-wise with the matrix $\mathbf F$. When computing the periodogram equation \ref{eq:periodogram_full} becomes
 	
 	
 	   \begin{align*}
-		\text{Per}_{\bm{F}}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left( \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} (\bm{W})_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2\\
+		\text{Per}_{\mathbf F}(n,m) &= \frac{1}{NM} \left| \underbrace{ \sum_{k=0}^{N_{Per}-1}  \overbrace{\left( \sum_{l=0}^{M_{Per}-1} (\bm{F})_{k,l} (\mathbf W)_{k,l} e^{-j2\pi \frac{lm}{M_{Per}}} \right)}^{\text{N FFTs of length $M_{Per}$}}  e^{j2\pi\frac{kn}{N_{Per}}}}_{ \text{$M_{Per}$ iFFTs of length $N_{Per}$ }} \right| ^ 2\\
 		&= \frac{1}{NM} \left| \text{CPer}_{\bm{F}}(n,m) \right| ^ 2.
 		\end{align*}
 	 
-	 If no windowing is considered then $(\bm{W})_{k,l} = 1$, as in a simple boxcar window.
+	 If no windowing is considered then $(\mathbf W)_{k,l} = 1$, as in a simple boxcar window.
 	 
 	 In the proposed OFDM radar system, the following window types are of interest (Figure \ref{fig:OFDMwin_functions}):
 	 
@@ -309,7 +309,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 	
 	\subsection{Welch's method}
 	
-	This method, also known as window-overlap spectral analysis (WOSA), is a method of reducing the noise of the spectra estimated by calculating the periodogram, in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
+	This method, also known as \gls{wosa}, is a method of reducing the noise of the spectra estimated by calculating the periodogram, in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
 	The signal is divided into $M$ data segments of $N$ samples, the periodogram is then computed separately for each segment and then averaged.
 	
 	For a one-dimensional time signal \textit{x} \cite{SASPWEB2011}, the \textit{m}-th windowed and zero padded frame is

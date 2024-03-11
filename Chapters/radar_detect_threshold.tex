@@ -28,8 +28,8 @@
 				
 				%TODO generate image showing fixed vs adaptive threshold
 				
-				In OFDM radar, a \textit{false alarm} occurs when the target detector determines the presence of a target at a range and relative speed that does not contribute to the received matrix $\bm{F}_{Rx}$ \cite{Braun2014OFDMRA}. 
-				Consequently, the probability of false alarm is the probability of observing a positive detection when the received frame consists only of noise $(\bm{F}_{Rx} = \bm{Z})$. 
+				In OFDM radar, a \textit{false alarm} occurs when the target detector determines the presence of a target at a range and relative speed that does not contribute to the received matrix $\mathbf F_{Rx}$ \cite{Braun2014OFDMRA}. 
+				Consequently, the probability of false alarm is the probability of observing a positive detection when the received frame consists only of noise $(\mathbf F_{Rx} = \mathbf Z)$. 
 				This definition considers processing on a per-frame basis and can also be applied to the multi-frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. 
 				
 				The presence of clutter is not yet taken into account as the threshold is estimated by determining an estimator for the noise power of the processed data. 
@@ -39,7 +39,7 @@
 				In order to discriminate noise from signal power, the periodogram is subjected to an hypothesis test with an appropriate threshold
 				
 				\begin{align*}
-					\text{Per}_{\bm{F}}(n,m) \quad\mathop{\gtrless}_{H_1}^{H_0}  \quad \eta,
+					\text{Per}_{\mathbf F}(n,m) \quad\mathop{\gtrless}_{H_1}^{H_0}  \quad \eta,
 				\end{align*}
 				
 				where $H_0$ is the null hypothesis, target not present, and $H_1$ is the hypothesis where the reflection from a target contributes to the received power in the bin under test.\\
@@ -49,8 +49,8 @@
 					p_{\text{FA},bin} = \text{Per}(Z > \eta) = \int_\eta^{\infty} f_z(z|H_0)dz = 1 - F_z(\eta | H_0) = e^{-\dfrac{\eta}{\sigma_n^2}},
 				\end{align*}
 				 
-				where $f_z(z|H_0)$ and $F_z(\eta | H_0)$ are the PDF and CDF of the random variable $Z$. 
-				The observed noise contribution is given by the magnitude squared of the AWGN with power $\sigma_n^2$.
+				where $f_z(z|H_0)$ and $F_z(\eta | H_0)$ are the \gls{pdf} and \gls{cdf} of the random variable $Z$. 
+				The observed noise contribution is given by the magnitude squared of the \gls{awgn} with power $\sigma_n^2$.
 				 
 				The threshold for a given false alarm rate per bin is obtained as
 				
@@ -90,7 +90,7 @@
 						\hat{\sigma_N}^2 = \frac{1}{M_{\text{Per}}K} \sum_{k=1}^K \sum_{m=1}^{M_{\text{Per}}} \text{Per}_{\bm{F}}(N_{\text{max}}+k, m).
 					\end{align}
 			
-			Standard CFAR is an established method, howeverit was observed that estimating a fixed threshold across the periodogram based only on the level of the noise floor leads numerous above-threshold cells due to the sidelobes of the target returns, as shown in Figure \ref{fig:RadThesh_CFAR_abv_thresh_doubl}.
+			Standard \gls{cfar} is an established method, howeverit was observed that estimating a fixed threshold across the periodogram based only on the level of the noise floor leads numerous above-threshold cells due to the sidelobes of the target returns, as shown in Figure \ref{fig:RadThesh_CFAR_abv_thresh_doubl}.
 			
 				\begin{figure}[H]
 				\centering
@@ -102,7 +102,7 @@
 					\includegraphics[scale=0.45]{Images/radar_detect_threshold/cfar_abv_thresh_PER.eps}%
 				}
 				
-				\caption[]{Example of CFAR thresholding, it can be observed that the largest target positioned at 23 m (a wall) presents strong sidelobes that are detected as target returns.}
+				\caption[]{Example of \gls{cfar} thresholding, it can be observed that the largest target positioned at 23 m (a wall) presents strong sidelobes that are detected as target returns.}
 				\label{fig:RadThesh_CFAR_abv_thresh_doubl}
 			\end{figure}
 			
@@ -113,13 +113,13 @@
 		\subsection{Cell-averaging CFAR}
 		\label{sec:cell averaging CFAR}
 
-The generic CFAR detector described in the previous section defines a threshold, based on noise power, to be applied to the whole periodogram. More advanced algorithms for CFAR detection belong to the family of cell-averaging CFAR (CA-CFAR) \cite{Richards_2014}.
+The generic CFAR detector described in the previous section defines a threshold, based on noise power, to be applied to the whole periodogram. More advanced algorithms for CFAR detection belong to the family of \gls{cacfar} \cite{Richards_2014}.
 
-In a noisy environment, very weak echo signals may be lost in the case of a fixed threshold across the periodogram. CA-CFAR estimates the threshold level for each cell of the 2D periodogram based on the statistics of neighbouring cells belonging inside a set reference window. In this way noise levels are estimated for smaller sections of the periodogram, adapting to the local level of the interference and defining a variable threshold across the periodogram.
+In a noisy environment, very weak echo signals may be lost in the case of a fixed threshold across the periodogram. \gls{cacfar} estimates the threshold level for each cell of the 2D periodogram based on the statistics of neighbouring cells belonging inside a set reference window. In this way noise levels are estimated for smaller sections of the periodogram, adapting to the local level of the interference and defining a variable threshold across the periodogram.
 
-The CFAR window resides inside the data window and is composed of leading and lagging reference windows, guard cells and cell-under-test (CUT). Guard cells are discarded for noise computation since they may contain returns associated with the target in the CUT.
+The \gls{cfar} window resides inside the data window and is composed of leading and lagging reference windows, guard cells and \gls{cut}. Guard cells are discarded for noise computation since they may contain returns associated with the target in the \gls{cut}.
 
-In the OFDM range-doppler radar problem a two-dimensional CFAR window is considered, where the CUT is located at the center.
+In the \gls{ofdm} range-doppler radar problem a two-dimensional CFAR window is considered, where the \gls{cut} is located at the center.
 
 \begin{figure}[H]
 	\centering
@@ -132,13 +132,13 @@ In the OFDM range-doppler radar problem a two-dimensional CFAR window is conside
 % TODO: insert CACFAR scheme from presentation (add guard cells)
 % TODO: insert sliding windows
 
-The CA-CFAR threshold is defined by the product of the noise power estimate and a CFAR constant
+The \gls{cacfar} threshold is defined by the product of the noise power estimate and a \gls{cfar} constant
 
 \begin{align*}
 	T = \alpha_{\text{CA}} \hat{\sigma_N}^2.
 \end{align*}
 
-The CFAR constant $\alpha_{\text{CA}}$ is a function of the probability of false alarm $p_{\text{FA}}$ and of the number of contribution cells $N$ and is derived as in chapter 16.5 of \cite{Richards_Scheer_Holm_2010}. The estimated noise power is calculated as in \ref{align: threshold_noise_power} by averaging over the contributing cells
+The \gls{cfar} constant $\alpha_{\text{CA}}$ is a function of the probability of false alarm $p_{\text{FA}}$ and of the number of contribution cells $N$ and is derived as in chapter 16.5 of \cite{Richards_Scheer_Holm_2010}. The estimated noise power is calculated as in \ref{align: threshold_noise_power} by averaging over the contributing cells
 
 \begin{align*}
 	\alpha_{\text{CA}} =& N[p_{\text{FA}}^{-1/N} - 1] \\
@@ -147,18 +147,18 @@ The CFAR constant $\alpha_{\text{CA}}$ is a function of the probability of false
 
 The number of operations can be reduced by simplifying the normalization by $\frac{1}{N}$ by defining a noise statistics $\hat{g}_{\text{CA}}' = \sum_{n=1}^N z_n$ and by incorporating it in the CFAR constant $\alpha_{\text{CA}}' = p_{\text{FA}}^{-1/N} - 1$.
 
-Computationally CA-CFAR is more demanding than other thresholding techniques, as in its fastest implementation it still requires a 2D convolution to be applied to the periodogram before computing the threshold at each bin.
+Computationally \gls{cacfar} is more demanding than other thresholding techniques, as in its fastest implementation it still requires a 2D convolution to be applied to the periodogram before computing the threshold at each bin.
 
 \subsubsection{Performance of CA-CFAR}
 
-The general assumption that each radar return occupies one single bin in the range-Doppler plane is not valid for OFDM radar systems, as the \gls{psf} is influenced by a number of factors.
+The general assumption that each radar return occupies one single bin in the range-Doppler plane is not valid for \gls{ofdm} radar systems, as the \gls{psf} is influenced by a number of factors.
 Zero padding and windowing in the periodogram define the width of the main lobe of the sinusoids in the 2D plane, while a large time aperture of the acquisition generally leads to a larger return due to range and Doppler spreading.
 Furthermore, spread targets generate bigger responses than a point scatterer, impacting neighbouring periodogram bins.
 
-In a heterogeneous radar frame multiple targets and changes in the interference power degrade CFAR performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are zones inspread targets generate
+In a heterogeneous radar frame multiple targets and changes in the interference power degrade \gls{cfar} performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are zones inspread targets generate
 bigger responses than a point scatterer, impacting
 neighbouring periodogram bins which there is a sudden change in the statistics of the interfering power, which leads to higher threshold and missed detection.
-Performance is also strongly influenced by the design of the reference window. The window should be designed to be as small as possible, in order to reduce the computational load due to the convolution operation and not to include interfering statistics far away from the CUT. The guard interval should be dimensioned according to the point spread function of the target return. An extended target could be counted in the reference window and lead to \textit{self masking}.
+Performance is also strongly influenced by the design of the reference window. The window should be designed to be as small as possible, in order to reduce the computational load due to the convolution operation and not to include interfering statistics far away from the \gls{cut}. The guard interval should be dimensioned according to the point spread function of the target return. An extended target could be counted in the reference window and lead to \textit{self masking}.
 
 	\begin{figure}[H]
 		\centering
@@ -181,17 +181,17 @@ Performance is also strongly influenced by the design of the reference window. T
 		\label{fig:RadThesh_CA_CFAR_missed_detect_doubl}
 	\end{figure}
 
-	In a NLOS sensing scenario, CA-CFAR suffers from these drawbacks due to the lower \gls{snr} of target returns caused by multiple reflections and the presence of strong static clutter components.
+	In a \gls{nlos} sensing scenario, \gls{cacfar} suffers from these drawbacks due to the lower \gls{snr} of target returns caused by multiple reflections and the presence of strong static clutter components.
 	Additionally, target returns can occupy multiple bins in the periodogram, leading to self masking. 
-	As a result, they do not appear as distinct peaks, but rather are spread across neighbouring bins, which raises the CA-CFAR threshold and leads to missed detections, as shown in Figure \ref{fig:RadThesh_CA_CFAR_missed_detect_doubl}.
+	As a result, they do not appear as distinct peaks, but rather are spread across neighbouring bins, which raises the \gls{cacfar} threshold and leads to missed detections, as shown in Figure \ref{fig:RadThesh_CA_CFAR_missed_detect_doubl}.
 
 \subsubsection{Robust CA-CFAR}
-More complex CA-CFAR algorithms may provide better results under certain heterogeneous conditions, but at the expense of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
+More complex \gls{cacfar} algorithms may provide better results under certain heterogeneous conditions, but at the expense of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
 
 Some of the more common variations of the algorithm are the greatest-of CA-CFAR (GOCA-CFAR) and the censored statistics CA-CFAR (CSCA-CFAR), which are designed to suppress clutter-edge false alarms and mutual target masking, respectively.
 
 \paragraph{Greatest-of CA-CFAR:}
-the interference power is calculated in the lagging and leading reference windows separately and the largest of the two is selected as the reference statistics. In the OFDM radar signal the leading/lagging definition can be applied only in the doppler dimension, since interference statistics is assumed homogeneous in range.
+the interference power is calculated in the lagging and leading reference windows separately and the largest of the two is selected as the reference statistics. In the \gls{ofdm} radar signal the leading/lagging definition can be applied only in the doppler dimension, since interference statistics is assumed homogeneous in range.
 
 GOCA-CFAR can, in general, avoid false alarm caused by clutter returns and clutter-edge conditions. However, in NLOS sensing, where the power of the target returns is comparable to the one of spectral artifacts and clutter sidelobes, GOCA-CFAR increases the possibility of masking, especially for slow-moving targets.
  
@@ -206,11 +206,11 @@ The main limitation posed by this algorithm is the increased computational cost 
 \subsection{Range-adjusted exponential threshold}
 
 	
-	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the OFDM radar case in this work, due to the relatively high speed resolution, returns occupy multiple cells in the periodogram and are not correctly detected by CA-CFAR.
+	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the \gls{ofdm} radar case in this work, due to the relatively high speed resolution, returns occupy multiple cells in the periodogram and are not correctly detected by \gls{cacfar}.
 	
 	The idea is to adjust the threshold level accounting for the propagation loss of the target reflection, which is proportional to the square of the distance from the transmitter. 
 	
-	This solution was implemented combining the CFAR threshold, set as a lower bound, and the range-dependent exponential adjustement.
+	This solution was implemented combining the \gls{cfar} threshold, set as a lower bound, and the range-dependent exponential adjustement.
 	
 	The threshold for a range-bin corresponding to returns at range $d$ is
 	
@@ -221,10 +221,10 @@ The main limitation posed by this algorithm is the increased computational cost 
 	where $\alpha$ is an adjustment factor for the exponential term. For this particular implementation it was defined as the square root of the maximum return in the periodogram
 	
 	\begin{align*}
-		\alpha = \sqrt{\max{ \left\{\text{Per}_{\bm{F}}(n,m)\right\} }}.
+		\alpha = \sqrt{\max{ \left\{\text{Per}_{\mathbf F}(n,m)\right\} }}.
 	\end{align*}
 	
-	Unlike CA-CFAR where, in general, local peaks are dected, this approach will select large point clouds whithin the periodogram, as highlited in Figure \ref{fig:RadThesh_exp_thresh}.
+	Unlike \gls{cacfar} where, in general, local peaks are dected, this approach will select large point clouds whithin the periodogram, as highlited in Figure \ref{fig:RadThesh_exp_thresh}.
 	Targets can then be detected by searching for local peaks in the areas above threshold. A more refined result can be obtained by applying clustering algorithms, such as DBSCAN.
 	
 		\begin{figure}[H]
@@ -248,7 +248,7 @@ The main limitation posed by this algorithm is the increased computational cost 
 	Clutter removal in radar systems refers to the process of mitigating or eliminating unwanted signals or interference that arise from various sources (such as terrain, sea, or atmospheric conditions) and can obscure the detection of true radar targets.
 	In general it is possible to refer clutter as any unwanted reflection from targets that are not of interest for the radar scope \cite{Richards_Scheer_Holm_2010}.
 	
-	In this work two existing implementations of clutter removal algorithms were applied to the CSI matrix.
+	In this work two existing implementations of clutter removal algorithms were applied to the \gls{csi} matrix.
 	Both of them work by projecting the signal into a subspace orthogonal to the clutter.
 	Both algoritms make use of an offline clutter acquisition step, performed before the sensing task. This step is used to gather information about clutter to be removed at runtime.
 	\begin{figure}[!t]
@@ -287,8 +287,8 @@ The main limitation posed by this algorithm is the increased computational cost 
 	
 	\subsubsection{Clutter presence in NLOS}
 	
-	In a NLOS sensing setup, it is fairly easy to distinguish moving targets from the underlying noise floor.
-	However, NLOS returns from static objects of interest will appear in the periodogram area where static clutter is more prevalent, as shown in Figure \ref{fig:Rad_clutter_comparison}.
+	In a \gls{nlos} sensing setup, it is fairly easy to distinguish moving targets from the underlying noise floor.
+	However, \gls{nlos} returns from static objects of interest will appear in the periodogram area where static clutter is more prevalent, as shown in Figure \ref{fig:Rad_clutter_comparison}.
 	This makes the effective separation through radar thresholding and identification of the target difficult.
 
 	\begin{figure}[H]
@@ -307,7 +307,7 @@ The main limitation posed by this algorithm is the increased computational cost 
 	\end{figure}
 
 	For intrusion detection purposes, it is sufficient to focus the radar search on moving targets. 
-	Therefore, the static bins of the periodogram are discarded for NLOS processing.
+	Therefore, the static bins of the periodogram are discarded for \gls{nlos} processing.
 	
 	
 	\section{NLOS-focused processing}
@@ -318,18 +318,18 @@ The main limitation posed by this algorithm is the increased computational cost 
 		
 		
 		
-			In addition to clutter removal, calibration measurements provide valuable information for determining the distance threshold at which targets can be assumed to be in NLOS. 
+			In addition to clutter removal, calibration measurements provide valuable information for determining the distance threshold at which targets can be assumed to be in \gls{nlos}. 
 			A portion of the calibration frames can be processed as radar frames, with a focus on the analysis of the zero-Doppler component.
 			
 			Shown in Figure \ref{fig:Test1_cali_static_per}, a target with large \gls{rcs} is present approximately $25$ m from the system. It was assumed that any return associated with a range greater than $25$ m was generated by a signal reflected from the largest static target. The figure also indicates that static clutter has a larger amplitude for ranges greater than $25$ m compared to lower ranges. This is due to the part of the beam that is reflected from the wall towards the environment and the associated returns.
 			
-			The distance between the gNB and the reflector of the NLOS components was estimated during the calibration step by averaging over the available measures.
+			The distance between the gNB and the reflector of the \gls{nlos} components was estimated during the calibration step by averaging over the available measures.
 			
 			
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.6\textwidth]{Images/Test1/cali_static_per_t1.eps}
-				\caption{\small Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25 m from the system are generated from multiple reflections and should be considered as NLOS components. }
+				\caption{\small Zero Doppler component of a periodogram generated from calibration measurements. It can be assumed that any returns detected beyond 25 m from the system are generated from multiple reflections and should be considered as \gls{nlos} components. }
 				\label{fig:Test1_cali_static_per}
 			\end{figure}
 		

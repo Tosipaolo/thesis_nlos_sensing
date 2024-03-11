@@ -194,17 +194,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{cran}%
+\glsdefs@newdocentry{cacfar}%
 {%
-name={\acronymfont {\glsentryshort {cran}}},%
-sort={C-RAN},%
+name={\acronymfont {\glsentryshort {cacfar}}},%
+sort={CA-CFAR},%
 type={acronym},%
-first={C-RAN},%
-firstplural={C-RANs},%
-text={C-RAN},%
-plural={C-RANs},%
-description={centralised radio access network},%
-descriptionplural={centralised radio access network},%
+first={CA-CFAR},%
+firstplural={CA-CFARs},%
+text={CA-CFAR},%
+plural={CA-CFARs},%
+description={cell-averaging CFAR},%
+descriptionplural={cell-averaging CFAR},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -213,10 +213,38 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={centralised radio access network},%
-longplural={centralised radio access networks},%
-short={C-RAN},%
-shortplural={C-RANs},%
+long={cell-averaging CFAR},%
+longplural={cell-averaging CFARs},%
+short={CA-CFAR},%
+shortplural={CA-CFARs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cdf}%
+{%
+name={\acronymfont {\glsentryshort {cdf}}},%
+sort={CDF},%
+type={acronym},%
+first={CDF},%
+firstplural={CDFs},%
+text={CDF},%
+plural={CDFs},%
+description={cumulative distribution function},%
+descriptionplural={cumulative distribution function},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cumulative distribution function},%
+longplural={cumulative distribution functions},%
+short={CDF},%
+shortplural={CDFs},%
 counter={page},%
 parent={},%
 %
@@ -306,6 +334,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{cran}%
+{%
+name={\acronymfont {\glsentryshort {cran}}},%
+sort={C-RAN},%
+type={acronym},%
+first={C-RAN},%
+firstplural={C-RANs},%
+text={C-RAN},%
+plural={C-RANs},%
+description={centralised radio access network},%
+descriptionplural={centralised radio access network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={centralised radio access network},%
+longplural={centralised radio access networks},%
+short={C-RAN},%
+shortplural={C-RANs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{csi}%
 {%
 name={\acronymfont {\glsentryshort {csi}}},%
@@ -357,6 +413,34 @@ long={centalised unit},%
 longplural={centalised units},%
 short={CU},%
 shortplural={CUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cut}%
+{%
+name={\acronymfont {\glsentryshort {cut}}},%
+sort={CUT},%
+type={acronym},%
+first={CUT},%
+firstplural={CUTs},%
+text={CUT},%
+plural={CUTs},%
+description={cell under test},%
+descriptionplural={cell under test},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cell under test},%
+longplural={cell under tests},%
+short={CUT},%
+shortplural={CUTs},%
 counter={page},%
 parent={},%
 %
@@ -838,6 +922,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{mimo}%
+{%
+name={\acronymfont {\glsentryshort {mimo}}},%
+sort={MIMO},%
+type={acronym},%
+first={MIMO},%
+firstplural={MIMOs},%
+text={MIMO},%
+plural={MIMOs},%
+description={multiple input multiple output},%
+descriptionplural={multiple input multiple output},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={multiple input multiple output},%
+longplural={multiple input multiple outputs},%
+short={MIMO},%
+shortplural={MIMOs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{ml}%
 {%
 name={\acronymfont {\glsentryshort {ml}}},%
@@ -1001,6 +1113,34 @@ long={peak-to-average power ratio},%
 longplural={peak-to-average power ratios},%
 short={PAPR},%
 shortplural={PAPRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pdf}%
+{%
+name={\acronymfont {\glsentryshort {pdf}}},%
+sort={PDF},%
+type={acronym},%
+first={PDF},%
+firstplural={PDFs},%
+text={PDF},%
+plural={PDFs},%
+description={probability density function},%
+descriptionplural={probability density function},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={probability density function},%
+longplural={probability density functions},%
+short={PDF},%
+shortplural={PDFs},%
 counter={page},%
 parent={},%
 %
@@ -1365,6 +1505,62 @@ long={uplink},%
 longplural={uplinks},%
 short={UL},%
 shortplural={ULs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{v2x}%
+{%
+name={\acronymfont {\glsentryshort {v2x}}},%
+sort={V2X},%
+type={acronym},%
+first={V2X},%
+firstplural={V2Xs},%
+text={V2X},%
+plural={V2Xs},%
+description={vehicle-to-everything},%
+descriptionplural={vehicle-to-everything},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={vehicle-to-everything},%
+longplural={vehicle-to-everythings},%
+short={V2X},%
+shortplural={V2Xs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wosa}%
+{%
+name={\acronymfont {\glsentryshort {wosa}}},%
+sort={WOSA},%
+type={acronym},%
+first={WOSA},%
+firstplural={WOSAs},%
+text={WOSA},%
+plural={WOSAs},%
+description={window-overlap spectral analysis},%
+descriptionplural={window-overlap spectral analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={window-overlap spectral analysis},%
+longplural={window-overlap spectral analysiss},%
+short={WOSA},%
+shortplural={WOSAs},%
 counter={page},%
 parent={},%
 %
