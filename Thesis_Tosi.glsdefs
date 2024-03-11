@@ -194,6 +194,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{cran}%
+{%
+name={\acronymfont {\glsentryshort {cran}}},%
+sort={C-RAN},%
+type={acronym},%
+first={C-RAN},%
+firstplural={C-RANs},%
+text={C-RAN},%
+plural={C-RANs},%
+description={centralised radio access network},%
+descriptionplural={centralised radio access network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={centralised radio access network},%
+longplural={centralised radio access networks},%
+short={C-RAN},%
+shortplural={C-RANs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{cid}%
 {%
 name={\acronymfont {\glsentryshort {cid}}},%
@@ -306,6 +334,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{cu}%
+{%
+name={\acronymfont {\glsentryshort {cu}}},%
+sort={CU},%
+type={acronym},%
+first={CU},%
+firstplural={CUs},%
+text={CU},%
+plural={CUs},%
+description={centalised unit},%
+descriptionplural={centalised unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={centalised unit},%
+longplural={centalised units},%
+short={CU},%
+shortplural={CUs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{dl}%
 {%
 name={\acronymfont {\glsentryshort {dl}}},%
@@ -357,6 +413,62 @@ long={Discrete Fourier Transform},%
 longplural={Discrete Fourier Transforms},%
 short={DFT},%
 shortplural={DFTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{du}%
+{%
+name={\acronymfont {\glsentryshort {du}}},%
+sort={DU},%
+type={acronym},%
+first={DU},%
+firstplural={DUs},%
+text={DU},%
+plural={DUs},%
+description={distributed unit},%
+descriptionplural={distributed unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={distributed unit},%
+longplural={distributed units},%
+short={DU},%
+shortplural={DUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fft}%
+{%
+name={\acronymfont {\glsentryshort {fft}}},%
+sort={FFT},%
+type={acronym},%
+first={FFT},%
+firstplural={FFTs},%
+text={FFT},%
+plural={FFTs},%
+description={Fast Fourier Transform},%
+descriptionplural={Fast Fourier Transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fast Fourier Transform},%
+longplural={Fast Fourier Transforms},%
+short={FFT},%
+shortplural={FFTs},%
 counter={page},%
 parent={},%
 %
@@ -558,6 +670,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{ifft}%
+{%
+name={\acronymfont {\glsentryshort {ifft}}},%
+sort={iFFT},%
+type={acronym},%
+first={iFFT},%
+firstplural={iFFTs},%
+text={iFFT},%
+plural={iFFTs},%
+description={inverse Fast Fourier Transform},%
+descriptionplural={inverse Fast Fourier Transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={inverse Fast Fourier Transform},%
+longplural={inverse Fast Fourier Transforms},%
+short={iFFT},%
+shortplural={iFFTs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{isac}%
 {%
 name={\acronymfont {\glsentryshort {isac}}},%
@@ -665,6 +805,34 @@ long={long-term evolution},%
 longplural={long-term evolutions},%
 short={LTE},%
 shortplural={LTEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{map}%
+{%
+name={\acronymfont {\glsentryshort {map}}},%
+sort={MAP},%
+type={acronym},%
+first={MAP},%
+firstplural={MAPs},%
+text={MAP},%
+plural={MAPs},%
+description={maximum a posteriori},%
+descriptionplural={maximum a posteriori},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={maximum a posteriori},%
+longplural={maximum a posterioris},%
+short={MAP},%
+shortplural={MAPs},%
 counter={page},%
 parent={},%
 %
@@ -782,6 +950,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{otfs}%
+{%
+name={\acronymfont {\glsentryshort {otfs}}},%
+sort={OTFS},%
+type={acronym},%
+first={OTFS},%
+firstplural={OTFSs},%
+text={OTFS},%
+plural={OTFSs},%
+description={Orthogonal Time Frequency Space},%
+descriptionplural={Orthogonal Time Frequency Space},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Orthogonal Time Frequency Space},%
+longplural={Orthogonal Time Frequency Spaces},%
+short={OTFS},%
+shortplural={OTFSs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{papr}%
 {%
 name={\acronymfont {\glsentryshort {papr}}},%
@@ -805,6 +1001,34 @@ long={peak-to-average power ratio},%
 longplural={peak-to-average power ratios},%
 short={PAPR},%
 shortplural={PAPRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{phy}%
+{%
+name={\acronymfont {\glsentryshort {phy}}},%
+sort={PHY},%
+type={acronym},%
+first={PHY},%
+firstplural={PHYs},%
+text={PHY},%
+plural={PHYs},%
+description={physical layer},%
+descriptionplural={physical layer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={physical layer},%
+longplural={physical layers},%
+short={PHY},%
+shortplural={PHYs},%
 counter={page},%
 parent={},%
 %

@@ -37,7 +37,7 @@ Sampling the signal at interval $T/N$ we obtain a discrete version
     s_k = s(t)|_{t=k \frac{T}{N}} = \sqrt{\frac{1}{T}}\sum_{k=0}^{N-1} a_k \cdot e^{j2\pi ki/N}
 \end{equation*}
 
-which is a discrete Fourier series DFS. When \textit{N} is a power of 2 the DFS can be implemented in an efficient way by the IFFT algorithm.
+which is a discrete Fourier series DFS. When \textit{N} is a power of 2 the DFS can be implemented in an efficient way by the \gls{ifft} algorithm.
 Binary data is transmitted by organizing it into $N$ parallel complex modulated symbols. These symbols are then mapped to subcarriers in the frequency domain, and the time domain signal is obtained by adding the cyclic prefix and using the iFFT. Figure \ref{fig:ofdm_transmit} shows the scheme for transmission of an OFDM signal.
 
 \begin{figure}[H]
@@ -47,7 +47,7 @@ Binary data is transmitted by organizing it into $N$ parallel complex modulated 
 	\label{fig:ofdm_transmit}
 \end{figure}
 
-At the receiver, the time domain signal is sampled and each complex symbol is recovered by means of the FFT algorithm, as shown in Figure \ref{fig:ofdm_receive}.
+At the receiver, the time domain signal is sampled and each complex symbol is recovered by means of the \gls{fft} algorithm, as shown in Figure \ref{fig:ofdm_receive}.
 
 \begin{figure}[H]
 	\centering
@@ -121,7 +121,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     
     where rows are different subcarriers and columns are different time slots.
     
-    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of \gls{cp} from each OFDM symbol, and computing the FFT of length $N_{\text{subcarriers}}$ for every column of the matrix.
+    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of \gls{cp} from each OFDM symbol, and computing the \gls{fft} of length $N_{\text{subcarriers}}$ for every column of the matrix.
     
     \subsection{Effect of targets on OFDM frames}
     Each target reflection will influence different elements of the frame in a different way:
@@ -196,7 +196,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
         
     \subsection{Range and speed resolution}
     
-        Range and speed resolution depend respectively on bandwidth and time aperture. These depend on the number of subcarriers and symbols in the OFDM frame.
+        Range and speed resolution depend respectively on bandwidth and time aperture. These depend on the number of subcarriers and symbols in the \gls{ofdm} frame.
         
         \begin{itemize}
             \item Range resolution
@@ -216,7 +216,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
         \text{Per}_{s(k)}(f) = \frac{1}{N}\left| \sum_{k=0}^{N-1} s(k)e^{-j2\pi fk}\right|^2.
     \end{equation*}
 
-    The optimal way to obtain the periodogram in digital systems is by quantizing the frequency at regular intervals and using the Fast Fourier Transform FFT algorithm.
+    The optimal way to obtain the periodogram in digital systems is by quantizing the frequency at regular intervals and using the \gls{fft} algorithm.
 
     \begin{align*}
         \text{Per}_{s(k)}(f) &= \frac{1}{N}\left| \sum_{k=0}^{N-1} s(k)e^{-j2\pi \frac{nk}{N_{Per}}}\right|^2 \\

@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an ISAC scenario.\relax }}{4}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \textcolor {red}{Illustration of an ISAC scenario.}\relax }}{4}{figure.caption.15}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 5.\relax }}{13}{figure.caption.23}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces OFDM transmitter scheme.\relax }}{15}{figure.caption.24}%
@@ -49,7 +49,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.\relax }}{46}{figure.caption.67}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Scheme of the measurement scenario\relax }}{47}{figure.caption.68}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe. \textcolor {red}{FIX ANTENNA HEIGHT WITH DOT}}}}{47}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe. }}}{47}{subfigure.2.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\small Top view of measurement scenario. }}}{47}{subfigure.2.2}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, linear scale.}}}{49}{subfigure.3.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\footnotesize Metal cabinet moving towards gNB, power in dB.}}}{49}{subfigure.3.2}%

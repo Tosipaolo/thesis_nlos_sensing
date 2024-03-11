@@ -80,12 +80,12 @@ R.~Hadani, S.~Rakib, A.~F. Molisch, C.~Ibars, A.~Monk, M.~Tsatsanis,
 \newblock In {\em 2017 IEEE MTT-S International Microwave Symposium (IMS)},
   page 681–683, June 2017.
 
-\bibitem{Wei_Yuan_OTFS_whitepaper_2021}
-Zhiqiang Wei, Weijie Yuan, Shuangyang Li, Jinhong Yuan, Ganesh Bharatula, Ronny
-  Hadani, and Lajos Hanzo.
-\newblock {Orthogonal Time-Frequency Space Modulation: A Promising
-  Next-Generation Waveform}.
-\newblock {\em IEEE Wireless Communications}, 28(4):136–144, August 2021.
+\bibitem{Raviteja_Viterbo_OTFS_decoding}
+P.~Raviteja, Khoa~T. Phan, Yi~Hong, and Emanuele Viterbo.
+\newblock Interference cancellation and iterative detection for orthogonal time
+  frequency space modulation.
+\newblock {\em IEEE Transactions on Wireless Communications},
+  17(10):6501--6515, 2018.
 
 \bibitem{Larsen_Checko_Christiansen_2019}
 Line M.~P. Larsen, Aleksandra Checko, and Henrik~L. Christiansen.
@@ -100,11 +100,11 @@ Line M.~P. Larsen, Aleksandra Checko, and Henrik~L. Christiansen.
 \newblock {Massive MIMO for next generation wireless systems}.
 \newblock {\em IEEE Communications Magazine}, 52(2):186--195, 2014.
 
-\bibitem{Wild_Braun_Viswanathan_2021}
-Thorsten Wild, Volker Braun, and Harish Viswanathan.
-\newblock {Joint Design of Communication and Sensing for Beyond 5G and 6G
-  Systems}.
-\newblock {\em IEEE Access}, 9:30845–30857, 2021.
+\bibitem{survey_radar_AIML}
+Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li~Liu, and Mohammed Bennamoun.
+\newblock Deep learning for 3d point clouds: A survey.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  43(12):4338--4364, 2021.
 
 \bibitem{Braun2014OFDMRA}
 K.~Braun.
@@ -125,11 +125,25 @@ Jian Wang, Neeraj Varshney, Camillo Gentile, Steve Blandino, Jack Chuang, and
 \newblock {\em IEEE Internet of Things Journal}, 9(23):23416–23440, December
   2022.
 
+\bibitem{Wild_Braun_Viswanathan_2021}
+Thorsten Wild, Volker Braun, and Harish Viswanathan.
+\newblock {Joint Design of Communication and Sensing for Beyond 5G and 6G
+  Systems}.
+\newblock {\em IEEE Access}, 9:30845–30857, 2021.
+
 \bibitem{Liu_Masouros_2021}
 Fan Liu and Christos Masouros.
 \newblock A tutorial on joint radar and communication transmission for
   vehicular networks—part i: Background and fundamentals.
 \newblock {\em IEEE Communications Letters}, 25(2):322–326, February 2021.
+
+\bibitem{Gustaffson_NLOS_radar}
+Magnus Gustafsson, Åsa Andersson, Tommy Johansson, Stefan Nilsson, Ain Sume,
+  and Anders Örbom.
+\newblock Extraction of human micro-doppler signature in an urban environment
+  using a “sensing-behind-the-corner” radar.
+\newblock {\em IEEE Geoscience and Remote Sensing Letters}, 13(2):187--191,
+  2016.
 
 \bibitem{Schaich_Wild_2014}
 Frank Schaich and Thorsten Wild.

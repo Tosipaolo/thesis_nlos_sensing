@@ -106,7 +106,8 @@
 %----------------------------------------------------------------------------
 \usepackage{easyReview}
 \usepackage[utf8]{inputenc}
-\usepackage[acronym]{glossaries}
+\usepackage[acronym, nomain]{glossaries}
+\makeglossaries
 \usepackage{mathtools}
 
 %----------------------------------------------------------------------------
@@ -266,7 +267,8 @@ L'obiettivo di questa tesi è quello di definire un primo approccio per il rilev
 
 
 % ABBREVIATIONS
-\input{Chapters/Abbreviations}
+\glsaddall
+\printglossaries[type=\acronymtype,title=Acronyms]
 
 % LIST OF FIGURES
 \listoffigures
