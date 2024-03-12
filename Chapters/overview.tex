@@ -13,7 +13,7 @@ The \gls{NR} positioning protocol can also integrate satellite positioning syste
 
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 With the objective of expanding the capabilities of the mobile network, \gls{isac}, also known as JCAS or ICAS, is currently a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
-According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations, or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles, movements of illuminated objects or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
+According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations or users do not only carry data. They are affected by the movement of the transmitter or receiver, obstacles, movements of illuminated objects or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
 Channel information can, \eg, be obtained by removing the influence of the known, transmitted signal from the received one after target reflection. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
 For 6G, the radio sensing capabilities should be integrated sharing the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an \gls{isac} scenario as described in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction a cellular system is shown equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
@@ -87,27 +87,27 @@ The network will be able to adapt and use information about the surrounding envi
 	
 	\Gls{otfs} has been proposed as a modulation effective in tackling these problems. \Gls{otfs} operates in the delay-Doppler domain. 
 	The fading, time-variant channel seen by an \gls{otfs} signal is transformed into a non-fading, time-independent channel through a 2D Fourier transform \cite{OTFS_Hadani_2017}. 
-	Applying this transformation and equalization within this domain each symbol will experience similar gain during transmission.
+	Applying this transformation and equalization within this domain, each symbol will experience similar gain during transmission.
 	
 	\gls{otfs} can be interpreted as the sequence of two transformations. 
 	Firstly, the transmitter maps the complex symbols into discrete slots in the delay-Doppler domain.
-	Secondly, these symbols are transformed in the time-frequency domain through a 2D inverse symplectic finite Fourier transform (iSFFT). The the time-domain signal is obtained by using the \gls{ifft}. 
+	Secondly, these symbols are transformed in the time-frequency domain through a 2D inverse symplectic finite Fourier transform (iSFFT). The time-domain signal is obtained by using the \gls{ifft}. 
 	The receiver will perform the inverse operation using \gls{fft} and SFFT, respectively.
-	\gls{otfs} is an suitable waveform for integrating sensing and communication due to its inherent property of operating in the delay-Doppler domain.
+	\gls{otfs} is a suitable waveform for integrating sensing and communication due to its inherent property of operating in the delay-Doppler domain.
 	
 	Although \gls{otfs} has proved to achieve some advantage compared to \gls{ofdm} in highly fading and mobility scenarios \cite{OTFS_Hadani_2017}, its implementation in real systems is hindered by some open research problems. 
 	The primary challenge is to develop an efficient decoding method for \gls{otfs} symbols.
-	The output signal in the delay-Doppler domain is a 2D circular convolution of the transmitted data symbols and the channel response. Although optimal detectors, such as \gls{map} detectors, can mitigate channel interference and perfectly retrieve the original symbols, they are too complex and costly \cite{Raviteja_Viterbo_OTFS_decoding}.
+	The output signal in the delay-Doppler domain is a 2D circular convolution of the transmitted data symbols and the channel response. Although optimal detectors, such as \gls{map} detectors, can mitigate channel interference and perfectly retrieve the original symbols, they are too complex and costly~\cite{Raviteja_Viterbo_OTFS_decoding}.
 	
 	This work will focus on \gls{ofdm}, as it is the waveform currently used in 5G systems and in the proof of concept by Nokia. 
 	As the current standard \gls{ofdm} is well established with widely available hardware support, and has been able to provide high speed communications with high spectral efficiency and robustness to multipath and frequency-selective fading.
-	Furthermore, \gls{ofdm} systems are able to perform simple channel equalization, by using the single-tap technique.
+	Furthermore, \gls{ofdm} systems are able to perform simple channel equalization by using the single-tap equalizer technique.
 	
 	 
 	
 	\subsection{5G functional splits}
 	
-	A functional split determines the number of functions implemented locally at the \gls{ru} and, consequently, the functions to be implemented in a centralised datacenter \cite{Larsen_Checko_Christiansen_2019}. 
+	A functional split determines the number of functions implemented locally at the \gls{ru} and, consequently, the functions to be implemented in a centralised datacenter~\cite{Larsen_Checko_Christiansen_2019}. 
  	This solution was developed to define a flexible approach to the \gls{cran} concept, that could work with the high data rates expected in 5G. 
 	In \gls{NR}, the radio processing stack defined by \gls{3GPP} is split between a \gls{du} and a \gls{cu}. 
 	The general idea is to keep functions close to the user in the \gls{du}, while placing more complex and computationally intensive functions in the \gls{cu}. The \gls{cu} is usually represented by powerful datacenters.
@@ -129,7 +129,7 @@ The network will be able to adapt and use information about the surrounding envi
 	
 	In \gls{5G}, beamforming commonly employs an all-digital approach at lower frequencies. However, for mmWave frequencies and above, analogue or hybrid beamforming is typically used. 
 	
-	Hybrid beamforming allows to scan multiple beams at the same time, controlled by $P >1$ RF chains, where $P < Q$ where $Q$ is the number of antennas. 
+	Hybrid beamforming allows to scan multiple beams at the same time, controlled by $P >1$ RF chains, where $P < Q$, where $Q$ is the number of antennas. 
 	The transmitting cells can perform a beam sweep, where the signal is steered over different angles. 
 	Using beam sweeps for \gls{isac} allows to collect complete spatial information about the environment surrounding the cell.
 	
@@ -144,7 +144,7 @@ The network will be able to adapt and use information about the surrounding envi
 	\gls{ai}-powered radar systems can adapt and learn from new data, continuously improving their capabilities over time. 
 	This technology could assist the development of autonomous radar systems capable of making independent decisions based on the classification results. 
 	
-	 Furthermore, artificial intelligence and machine learning have already been introduced in communication systems to optimize network resources, improve overall quality of service, solve optimization problems, and predict system load and traffic \cite{30_years_ai_survey}. 
+	 Furthermore, \gls{ai} and \gls{ml} have already been introduced in communication systems to optimize network resources, improve overall quality of service, solve optimization problems, and predict system load and traffic \cite{30_years_ai_survey}. 
 	 By combining sensing capabilities with \gls{ai}, nodes could effortlessly integrate the physical and digital domains, giving the network situational capabilities.
 	
 
@@ -182,6 +182,8 @@ The network will be able to adapt and use information about the surrounding envi
 	The system specifications are indicated in table \ref{table:PoCparams}.
 	They correspond to parameters for 5G \gls{NR} systems with the numerology $\mu=3$ specified in \cite{TS138211}. 
 	
+	The system is equipped with analog beamforming and measurements can be obtained using a fixed beam for both \gls{gnb} \gls{ru} and sniffer, chosen from a beam codebook.
+	
 	\begin{table}[H]
 		%\caption*{\textbf{Title of Table (optional)}}
 		\centering 
@@ -206,12 +208,12 @@ The network will be able to adapt and use information about the surrounding envi
 		\label{table:PoCparams}
 	\end{table}
 	
-	The system is equipped with analog beamforming and measurements can be obtained using a fixed beam for both \gls{gnb} \gls{ru} and sniffer, chosen from a beam codebook.
+	
 
 
 \section{Sensing use-cases}
 
-	Several use cases has been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
+	Several use cases have been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
 	In order to understand system requirements and research approaches, it is essential to define likely scenarios in which \gls{isac} systems will be deployed.
 	
 	\subsubsection{Automotive radar}
@@ -220,13 +222,12 @@ The network will be able to adapt and use information about the surrounding envi
 	Communication capabilities are also necessary to establish vehicle networks for sharing information on the surrounding environment.
 	Modern vehicles have evolved from simple means of transport to smart vehicles equipped with a variety of sensors and communication equipment.
 	The market for \gls{v2x} networks has been growing significantly in recent years \cite{Liu_Masouros_2021}.
-	This network requires high communication performance, throughput, and low latency, as well as precise positional information on surrounding objects.
+	This network requires high communication performance, throughput and low latency, as well as precise positional information on surrounding objects.
 	
 	\gls{isac} is an ideal candidate to fulfil these requirements, enabling efficient use of the spectrum and enhancing the physical layer security of the \gls{v2x} network.
-	
 	\gls{isac} systems must be capable of performing tasks such as vehicle and traffic counting, collision avoidance, and pedestrian and animal detection.
 	
-	\subsubsection{Outside Drone Detection}
+	\subsubsection{Outdoor Drone Detection}
 	
 	Detection of \gls{uav} may be necessary in various deployment scenarios, including rooftops of buildings, airports, and open urban areas.
 	
@@ -236,8 +237,7 @@ The network will be able to adapt and use information about the surrounding envi
 	\subsection{Human activities}
 	
 	\Gls{isac} for human activities detection could be applied for tracking a subject's physical movements, as well as monitoring vital signs for healthcare applications. 
-	
-	The capacity to perceive and interpret human activities can offer valuable insights and enable interventions that enhance quality of life, performance, and safety.
+	The capacity to perceive and interpret human activities can offer valuable insights and enable actions that enhance quality of life, performance, and safety.
 	
 	Micro Doppler tracking and feature extraction, combined with machine learning, can help distinguish between targets or extract additional information about activity and human presence in the monitored area.
 	
@@ -260,7 +260,6 @@ The network will be able to adapt and use information about the surrounding envi
 	
 	As we can expect cellular networks operating in \gls{fr2} also to be deployed in indoor areas and factory floors, this work will focus on intrusion detection in industrial scenarios.
 	Intrusion detection in \gls{nlos} on factory floors could represent a valuable addition, from a commercial point of view, for private cellular networks in smart industries.
-	
 	In addition, it has the potential to enhance cellular sensing systems in a cost-effective manner, making them a viable alternative to expensive ad hoc systems. This approach does not require the deployment of infrastructure or specialized equipment. 
 	\gls{nlos} sensing could be an attractive option for industries seeking to enhance their surveillance or monitoring systems while optimizing resources.
 	
