@@ -116,7 +116,7 @@ The detection rate test displayed in figure \ref{fig:Test1_detect_rate_strong_re
 	\caption{\small Detection rate observed for passive metal reflector target in mixed LOS/NLOS measurement.}
 	\label{fig:Test1_detect_rate_strong_ref}
 \end{figure}
-Passing the NLOS measurements to a Kalman filter it was possible to track the target in the range/Doppler plane, as shown in figure \ref{fig:Test1_kf_track_strong_ref}. This result is to show that one of the main limitation of NLOS signals is the strength of the target return. Objects with large \gls{rcs} are easier to separate from the noisy background and the effect of fading and obstruction is relatively small.
+By passing the NLOS measurements to a Kalman filter it was possible to track the target in the range/Doppler plane, as shown in figure \ref{fig:Test1_kf_track_strong_ref}. This result is to show that one of the main limitation of NLOS signals is the strength of the target return. Objects with large \gls{rcs} are easier to separate from the noisy background and the effect of fading and obstruction is relatively small.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Images/Test1/kf_track.eps}
@@ -165,11 +165,9 @@ The measured detection rate for various \gls{csi} decimation strategies are show
 \end{figure}
 
 Increasing the time-aperture significantly improved the detection rate due to the larger \gls{snr}.
-
-In most cases, the NLOS target return was not the strongest due to lower peak power compared to noise. Additionally, when increasing the time aperture, spectral artefacts were present.
+In most cases, the \gls{nlos} target return was not the strongest due to lower peak power compared to noise. Additionally, when increasing the time aperture, spectral artefacts were present.
 Target returns occasionally suffered from channel fading, causing their power to change between consecutive updates. In contrast, artefacts' power remained relatively constant and proportional to the number of processed frames.
-
-The detection rate was observed throughout the entire measurement, including frames where the target changed direction and was either static or presented a low-speed component. However, processing these time instants may have masked the NLOS component with clutter and resulted in a negative detection. Therefore, the effective detection rate, which is measured only when the target is in motion, is likely to be higher.
+The detection rate was observed throughout the entire measurement, including frames where the target changed direction and was either static or presented a low-speed component. However, processing these time instants may have masked the \gls{nlos} component with clutter and resulted in a negative detection. Therefore, the effective detection rate, which is measured only when the target is in motion, is likely to be higher.
 
 
 %TODO: change subsection title

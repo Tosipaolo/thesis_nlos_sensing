@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.7)  12 MAR 2024 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.7)  12 MAR 2024 00:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1429,7 +1429,7 @@ Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 175--191
+Underfull \hbox (badness 10000) in paragraph at lines 175--190
 
  []
 
@@ -1445,12 +1445,12 @@ to.pdf>
 (epstopdf)                    size: 40456 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
 i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 198.
+(epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Images//./raggiera_polimi-eps-converted-to.pdf>
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 198.
+ on input line 197.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [4
 
@@ -1470,12 +1470,12 @@ to.pdf>
 (epstopdf)                    size: 40456 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
 i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 200.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Images//./raggiera_polimi-eps-converted-to.pdf>
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 200.
+ on input line 199.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [8
 
@@ -1713,7 +1713,7 @@ input line 154.
  [32 <./Images/TDDprocessing/periodogram1FNoDec.png> <./Images/TDDprocessing/pe
 riodogram1FYesDec.png> <./Images/TDDprocessing/periodogram6frames.png> <./Image
 s/TDDprocessing/periodogram10frames.png>]
-<Images/TDDprocessing/artefacts/1frames_periodogram.png, id=1100, 332.442pt x 3
+<Images/TDDprocessing/artefacts/1frames_periodogram.png, id=1101, 332.442pt x 3
 25.215pt>
 File: Images/TDDprocessing/artefacts/1frames_periodogram.png Graphic file (type
  png)
@@ -1731,7 +1731,7 @@ Underfull \hbox (badness 1158) in paragraph at lines 198--198
 \T1/cmr/m/n/10 with 1 OFDM frame, dec-i-
  []
 
-<Images/TDDprocessing/artefacts/2frames_periodogram.png, id=1101, 332.442pt x 3
+<Images/TDDprocessing/artefacts/2frames_periodogram.png, id=1102, 332.442pt x 3
 25.215pt>
 File: Images/TDDprocessing/artefacts/2frames_periodogram.png Graphic file (type
  png)
@@ -1739,7 +1739,7 @@ File: Images/TDDprocessing/artefacts/2frames_periodogram.png Graphic file (type
 Package pdftex.def Info: Images/TDDprocessing/artefacts/2frames_periodogram.png
   used on input line 201.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
-<Images/TDDprocessing/artefacts/3frames_periodogram.png, id=1102, 332.442pt x 3
+<Images/TDDprocessing/artefacts/3frames_periodogram.png, id=1103, 332.442pt x 3
 25.215pt>
 File: Images/TDDprocessing/artefacts/3frames_periodogram.png Graphic file (type
  png)
@@ -1747,7 +1747,7 @@ File: Images/TDDprocessing/artefacts/3frames_periodogram.png Graphic file (type
 Package pdftex.def Info: Images/TDDprocessing/artefacts/3frames_periodogram.png
   used on input line 204.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
-<Images/TDDprocessing/artefacts/4frames_periodogram.png, id=1103, 332.442pt x 3
+<Images/TDDprocessing/artefacts/4frames_periodogram.png, id=1104, 332.442pt x 3
 25.215pt>
 File: Images/TDDprocessing/artefacts/4frames_periodogram.png Graphic file (type
  png)
@@ -1755,7 +1755,7 @@ File: Images/TDDprocessing/artefacts/4frames_periodogram.png Graphic file (type
 Package pdftex.def Info: Images/TDDprocessing/artefacts/4frames_periodogram.png
   used on input line 208.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
-<Images/TDDprocessing/artefacts/5frames_periodogram.png, id=1104, 332.442pt x 3
+<Images/TDDprocessing/artefacts/5frames_periodogram.png, id=1105, 332.442pt x 3
 25.215pt>
 File: Images/TDDprocessing/artefacts/5frames_periodogram.png Graphic file (type
  png)
@@ -1763,7 +1763,7 @@ File: Images/TDDprocessing/artefacts/5frames_periodogram.png Graphic file (type
 Package pdftex.def Info: Images/TDDprocessing/artefacts/5frames_periodogram.png
   used on input line 211.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
-<Images/TDDprocessing/artefacts/6frames_periodogram.png, id=1105, 332.442pt x 3
+<Images/TDDprocessing/artefacts/6frames_periodogram.png, id=1106, 332.442pt x 3
 25.215pt>
 File: Images/TDDprocessing/artefacts/6frames_periodogram.png Graphic file (type
  png)
@@ -1777,7 +1777,7 @@ ram.png> <./Images/TDDprocessing/artefacts/3frames_periodogram.png> <./Images/T
 DDprocessing/artefacts/4frames_periodogram.png> <./Images/TDDprocessing/artefac
 ts/5frames_periodogram.png> <./Images/TDDprocessing/artefacts/6frames_periodogr
 am.png>] [35] [36]
-<Images/radar_detect_threshold/cfar_abv_thresh.png, id=1155, 462.528pt x 346.89
+<Images/radar_detect_threshold/cfar_abv_thresh.png, id=1156, 462.528pt x 346.89
 6pt>
 File: Images/radar_detect_threshold/cfar_abv_thresh.png Graphic file (type png)
 
@@ -1799,7 +1799,7 @@ _abv_thresh_PER.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 <Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf, id=115
-6, 463.7325pt x 347.2975pt>
+7, 463.7325pt x 347.2975pt>
 File: Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf Gr
 aphic file (type pdf)
 <use Images/radar_detect_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf>
@@ -1808,7 +1808,7 @@ converted-to.pdf  used on input line 103.
 (pdftex.def)             Requested size: 208.67769pt x 156.28242pt.
  [37 <./Images/radar_detect_threshold/cfar_abv_thresh.png> <./Images/radar_dete
 ct_threshold/cfar_abv_thresh_PER-eps-converted-to.pdf>]
-<Images/radar_detect_threshold/cacfar_pipeline.png, id=1216, 560.8152pt x 123.5
+<Images/radar_detect_threshold/cacfar_pipeline.png, id=1217, 560.8152pt x 123.5
 817pt>
 File: Images/radar_detect_threshold/cacfar_pipeline.png Graphic file (type png)
 
@@ -1818,7 +1818,7 @@ d on input line 126.
 (pdftex.def)             Requested size: 409.71692pt x 90.28552pt.
 
 [38 <./Images/radar_detect_threshold/cacfar_pipeline.png>]
-<Images/radar_detect_threshold/self_masking_Richards2010.png, id=1234, 1196.971
+<Images/radar_detect_threshold/self_masking_Richards2010.png, id=1235, 1196.971
 88pt x 566.86781pt>
 File: Images/radar_detect_threshold/self_masking_Richards2010.png Graphic file 
 (type png)
@@ -1827,7 +1827,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/self_masking_Richards201
 0.png  used on input line 165.
 (pdftex.def)             Requested size: 318.66948pt x 150.91122pt.
  [39]
-<Images/radar_detect_threshold/ca_cfar_no_nlos_1.png, id=1244, 462.22687pt x 34
+<Images/radar_detect_threshold/ca_cfar_no_nlos_1.png, id=1245, 462.22687pt x 34
 7.04657pt>
 File: Images/radar_detect_threshold/ca_cfar_no_nlos_1.png Graphic file (type pn
 g)
@@ -1835,7 +1835,7 @@ g)
 Package pdftex.def Info: Images/radar_detect_threshold/ca_cfar_no_nlos_1.png  u
 sed on input line 175.
 (pdftex.def)             Requested size: 208.00017pt x 156.16951pt.
-<Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png, id=1245, 462.22687pt 
+<Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png, id=1246, 462.22687pt 
 x 347.04657pt>
 File: Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png Graphic file (typ
 e png)
@@ -1846,7 +1846,7 @@ g  used on input line 178.
  [40 <./Images/radar_detect_threshold/self_masking_Richards2010.png (PNG copy)>
  <./Images/radar_detect_threshold/ca_cfar_no_nlos_1.png> <./Images/radar_detect
 _threshold/ca_cfar_no_nlos_PER_1.png>] [41]
-<Images/radar_detect_threshold/exp_thresh/per_NO_thresh.png, id=1278, 462.528pt
+<Images/radar_detect_threshold/exp_thresh/per_NO_thresh.png, id=1279, 462.528pt
  x 346.896pt>
 File: Images/radar_detect_threshold/exp_thresh/per_NO_thresh.png Graphic file (
 type png)
@@ -1854,7 +1854,7 @@ type png)
 Package pdftex.def Info: Images/radar_detect_threshold/exp_thresh/per_NO_thresh
 .png  used on input line 235.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
-<Images/radar_detect_threshold/exp_thresh/per_exp_thresh.png, id=1279, 462.528p
+<Images/radar_detect_threshold/exp_thresh/per_exp_thresh.png, id=1280, 462.528p
 t x 346.896pt>
 File: Images/radar_detect_threshold/exp_thresh/per_exp_thresh.png Graphic file 
 (type png)
@@ -1863,7 +1863,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/exp_thresh/per_exp_thres
 h.png  used on input line 238.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
 <Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_baseline1.png, 
-id=1282, 332.442pt x 325.215pt>
+id=1283, 332.442pt x 325.215pt>
 File: Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_baseline1.
 png Graphic file (type png)
 <use Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_baseline1.p
@@ -1872,7 +1872,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/clutter/crap_ecac_static
 /clutter_baseline1.png  used on input line 259.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
 <Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_ecac1.png, id=1
-283, 325.215pt x 325.215pt>
+284, 325.215pt x 325.215pt>
 File: Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_ecac1.png 
 Graphic file (type png)
 <use Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_ecac1.png>
@@ -1880,7 +1880,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/clutter/crap_ecac_static
 /clutter_ecac1.png  used on input line 262.
 (pdftex.def)             Requested size: 130.0837pt x 130.0837pt.
 <Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_crap1.png, id=1
-284, 332.442pt x 325.215pt>
+285, 332.442pt x 325.215pt>
 File: Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_crap1.png 
 Graphic file (type png)
 <use Images/radar_detect_threshold/clutter/crap_ecac_static/clutter_crap1.png>
@@ -1888,7 +1888,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/clutter/crap_ecac_static
 /clutter_crap1.png  used on input line 265.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
 <Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_baseline_mov1.png,
- id=1285, 332.442pt x 325.215pt>
+ id=1286, 332.442pt x 325.215pt>
 File: Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_baseline_mov1
 .png Graphic file (type png)
 <use Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_baseline_mov1.
@@ -1897,7 +1897,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/clutter/crap_ecac_mov/cl
 utter_baseline_mov1.png  used on input line 269.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
 <Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_ecac_mov1.png, id=
-1286, 332.442pt x 325.215pt>
+1287, 332.442pt x 325.215pt>
 File: Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_ecac_mov1.png
  Graphic file (type png)
 <use Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_ecac_mov1.png>
@@ -1906,7 +1906,7 @@ Package pdftex.def Info: Images/radar_detect_threshold/clutter/crap_ecac_mov/cl
 utter_ecac_mov1.png  used on input line 272.
 (pdftex.def)             Requested size: 132.97444pt x 130.0837pt.
 <Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_crap_mov1.png, id=
-1287, 332.442pt x 325.215pt>
+1288, 332.442pt x 325.215pt>
 File: Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_crap_mov1.png
  Graphic file (type png)
 <use Images/radar_detect_threshold/clutter/crap_ecac_mov/clutter_crap_mov1.png>
@@ -1922,7 +1922,7 @@ t_threshold/clutter/crap_ecac_static/clutter_crap1.png> <./Images/radar_detect_
 threshold/clutter/crap_ecac_mov/clutter_baseline_mov1.png> <./Images/radar_dete
 ct_threshold/clutter/crap_ecac_mov/clutter_ecac_mov1.png> <./Images/radar_detec
 t_threshold/clutter/crap_ecac_mov/clutter_crap_mov1.png>]
-<Images/radar_detect_threshold/clutter/clutter_mov_target1.png, id=1329, 462.52
+<Images/radar_detect_threshold/clutter/clutter_mov_target1.png, id=1330, 462.52
 8pt x 346.896pt>
 File: Images/radar_detect_threshold/clutter/clutter_mov_target1.png Graphic fil
 e (type png)
@@ -1930,7 +1930,7 @@ e (type png)
 Package pdftex.def Info: Images/radar_detect_threshold/clutter/clutter_mov_targ
 et1.png  used on input line 299.
 (pdftex.def)             Requested size: 226.64069pt x 169.98051pt.
-<Images/radar_detect_threshold/clutter/clutter_stat_target1.png, id=1330, 462.5
+<Images/radar_detect_threshold/clutter/clutter_stat_target1.png, id=1331, 462.5
 28pt x 346.896pt>
 File: Images/radar_detect_threshold/clutter/clutter_stat_target1.png Graphic fi
 le (type png)
@@ -1951,7 +1951,7 @@ ted-to.pdf>
 er_t1-eps-converted-to.pdf Images/Test1/cali_static_per_t1.eps>
 (epstopdf)             \includegraphics on input line 331.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=1351, 463.7325pt x 34
+<Images/Test1/cali_static_per_t1-eps-converted-to.pdf, id=1352, 463.7325pt x 34
 7.2975pt>
 File: Images/Test1/cali_static_per_t1-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1959,7 +1959,7 @@ df)
 Package pdftex.def Info: Images/Test1/cali_static_per_t1-eps-converted-to.pdf  
 used on input line 331.
 (pdftex.def)             Requested size: 273.14923pt x 204.56989pt.
-<Images/Test1/nlos-los-separation.png, id=1356, 760.34062pt x 344.78813pt>
+<Images/Test1/nlos-los-separation.png, id=1357, 760.34062pt x 344.78813pt>
 File: Images/Test1/nlos-los-separation.png Graphic file (type png)
 <use Images/Test1/nlos-los-separation.png>
 Package pdftex.def Info: Images/Test1/nlos-los-separation.png  used on input li
@@ -1971,7 +1971,7 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 344--345
  []
 
 [45 <./Images/Test1/cali_static_per_t1-eps-converted-to.pdf>]
-<Images/Test1/NLOS-proc-pipeline_wide_text12.png, id=1401, 442.599pt x 210.021p
+<Images/Test1/NLOS-proc-pipeline_wide_text12.png, id=1402, 442.599pt x 210.021p
 t>
 File: Images/Test1/NLOS-proc-pipeline_wide_text12.png Graphic file (type png)
 <use Images/Test1/NLOS-proc-pipeline_wide_text12.png>
@@ -1982,7 +1982,7 @@ on input line 361.
 (./Chapters/Tests1.tex [46 <./Images/Test1/nlos-los-separation.PNG> <./Images/T
 est1/NLOS-proc-pipeline_wide_text12.png>]
 Chapter 5.
-<Images/Test1/arena_plan.png, id=1418, 439.6425pt x 410.4936pt>
+<Images/Test1/arena_plan.png, id=1419, 439.6425pt x 410.4936pt>
 File: Images/Test1/arena_plan.png Graphic file (type png)
 <use Images/Test1/arena_plan.png>
 Package pdftex.def Info: Images/Test1/arena_plan.png  used on input line 27.
@@ -1991,7 +1991,7 @@ Package pdftex.def Info: Images/Test1/arena_plan.png  used on input line 27.
 
 
 ] [48 <./Images/Test1/arena_plan.png>]
-<Images/Test1/base-lateral_view_los_geometry.png, id=1442, 2140.99875pt x 1056.
+<Images/Test1/base-lateral_view_los_geometry.png, id=1443, 2140.99875pt x 1056.
 94875pt>
 File: Images/Test1/base-lateral_view_los_geometry.png Graphic file (type png)
 <use Images/Test1/base-lateral_view_los_geometry.png>
@@ -2003,7 +2003,7 @@ Overfull \hbox (3.91571pt too wide) in paragraph at lines 53--54
  [][] 
  []
 
-<Images/Test1/base-top_view.png, id=1443, 509.5035pt x 116.3547pt>
+<Images/Test1/base-top_view.png, id=1444, 509.5035pt x 116.3547pt>
 File: Images/Test1/base-top_view.png Graphic file (type png)
 <use Images/Test1/base-top_view.png>
 Package pdftex.def Info: Images/Test1/base-top_view.png  used on input line 57.
@@ -2016,7 +2016,7 @@ Overfull \hbox (7.83142pt too wide) in paragraph at lines 57--58
 
 [49 <./Images/Test1/base-lateral_view_los_geometry.png> <./Images/Test1/base-to
 p_view.png>]
-<Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png, id=1473, 462.528pt x 3
+<Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png, id=1474, 462.528pt x 3
 46.896pt>
 File: Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png Graphic file (type
  png)
@@ -2024,7 +2024,7 @@ File: Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png Graphic file (type
 Package pdftex.def Info: Images/Test1/per_strong_ref/linear_1frame_dec_CRAP.png
   used on input line 97.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
-<Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png, id=1474, 4
+<Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png, id=1475, 4
 62.22687pt x 347.04657pt>
 File: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelled_text22.png Graphi
 c file (type png)
@@ -2033,7 +2033,7 @@ Package pdftex.def Info: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_labelle
 d_text22.png  used on input line 100.
 (pdftex.def)             Requested size: 208.00017pt x 156.16951pt.
 <Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png, id=1
-475, 462.528pt x 346.896pt>
+476, 462.528pt x 346.896pt>
 File: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png 
 Graphic file (type png)
 <use Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_labelled_text22.png>
@@ -2041,7 +2041,7 @@ Package pdftex.def Info: Images/Test1/per_strong_ref/db_1frame_dec_CRAP_HUMAN_l
 abelled_text22.png  used on input line 103.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
  [50]
-<Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png, id=1500, 393.762pt x 
+<Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png, id=1501, 393.762pt x 
 249.222pt>
 File: Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png Graphic file (typ
 e png)
@@ -2063,7 +2063,7 @@ Package epstopdf Info: Source file: <Images/Test1/kf_track.eps>
 converted-to.pdf Images/Test1/kf_track.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<Images/Test1/kf_track-eps-converted-to.pdf, id=1515, 463.7325pt x 347.2975pt>
+<Images/Test1/kf_track-eps-converted-to.pdf, id=1516, 463.7325pt x 347.2975pt>
 File: Images/Test1/kf_track-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Test1/kf_track-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Test1/kf_track-eps-converted-to.pdf  used on in
@@ -2071,14 +2071,14 @@ put line 122.
 (pdftex.def)             Requested size: 318.66948pt x 238.66045pt.
 
 [52 <./Images/Test1/detect_hist/detect_hist_cabinet_LMsans.png>]
-<Images/Test1/Human_crap_ecac/crap_labelled.png, id=1529, 462.528pt x 346.896pt
+<Images/Test1/Human_crap_ecac/crap_labelled.png, id=1530, 462.528pt x 346.896pt
 >
 File: Images/Test1/Human_crap_ecac/crap_labelled.png Graphic file (type png)
 <use Images/Test1/Human_crap_ecac/crap_labelled.png>
 Package pdftex.def Info: Images/Test1/Human_crap_ecac/crap_labelled.png  used o
 n input line 144.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
-<Images/Test1/Human_crap_ecac/ecac_labelled.png, id=1530, 462.528pt x 346.896pt
+<Images/Test1/Human_crap_ecac/ecac_labelled.png, id=1531, 462.528pt x 346.896pt
 >
 File: Images/Test1/Human_crap_ecac/ecac_labelled.png Graphic file (type png)
 <use Images/Test1/Human_crap_ecac/ecac_labelled.png>
@@ -2086,7 +2086,7 @@ Package pdftex.def Info: Images/Test1/Human_crap_ecac/ecac_labelled.png  used o
 n input line 147.
 (pdftex.def)             Requested size: 208.13567pt x 156.10175pt.
  [53 <./Images/Test1/kf_track-eps-converted-to.pdf>]
-<Images/Test1/detect_hist/detect_hist_human_LMsans.png, id=1582, 387.63pt x 231
+<Images/Test1/detect_hist/detect_hist_human_LMsans.png, id=1583, 387.63pt x 231
 .702pt>
 File: Images/Test1/detect_hist/detect_hist_human_LMsans.png Graphic file (type 
 png)
@@ -2097,26 +2097,30 @@ Package pdftex.def Info: Images/Test1/detect_hist/detect_hist_human_LMsans.png
  [54 <./Images/Test1/Human_crap_ecac/crap_labelled.png> <./Images/Test1/Human_c
 rap_ecac/ecac_labelled.png> <./Images/Test1/detect_hist/detect_hist_human_LMsan
 s.png>]
-<Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png, id=1599, 397.266pt
+<Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png, id=1602, 397.266pt
  x 266.085pt>
 File: Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png Graphic file (
 type png)
 <use Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png>
 Package pdftex.def Info: Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans
-.png  used on input line 195.
+.png  used on input line 193.
 (pdftex.def)             Requested size: 318.66948pt x 213.44888pt.
- [55]
-<Images/exec_specific/detect_mov_avg_bluepoli_highlighted.png, id=1612, 392.426
+ [55 <./Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png>]
+<Images/exec_specific/detect_mov_avg_bluepoli_highlighted.png, id=1617, 392.426
 1pt x 302.0886pt>
 File: Images/exec_specific/detect_mov_avg_bluepoli_highlighted.png Graphic file
  (type png)
 <use Images/exec_specific/detect_mov_avg_bluepoli_highlighted.png>
 Package pdftex.def Info: Images/exec_specific/detect_mov_avg_bluepoli_highlight
-ed.png  used on input line 215.
+ed.png  used on input line 213.
 (pdftex.def)             Requested size: 318.66948pt x 245.32191pt.
-) [56 <./Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png>] (./Chapte
-rs/Outlook.tex [57 <./Images/exec_specific/detect_mov_avg_bluepoli_highlighted.
-png>]
+) (./Chapters/Outlook.tex [56 <./Images/exec_specific/detect_mov_avg_bluepoli_h
+ighlighted.png>]
+Chapter 6.
+) (./Thesis_Tosi.bbl [57
+
+
+]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
 (epstopdf)                    date: 2023-12-27 18:35:38
 (epstopdf)                    size: 1813066 bytes
@@ -2136,29 +2140,6 @@ Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  [58
 
 ]
-Chapter 6.
-) (./Thesis_Tosi.bbl [59
-
-]
-Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
-(epstopdf)                    date: 2023-12-27 18:35:38
-(epstopdf)                    size: 1813066 bytes
-(epstopdf)             Output file: <./Images//./raggiera_polimi-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2023-12-27 18:35:38
-(epstopdf)                    size: 40456 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
-i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 1.
-Package epstopdf Info: Output file is already uptodate.
-File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
-<use ./Images//./raggiera_polimi-eps-converted-to.pdf>
-Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 1.
-(pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [60
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 36--41
 []\T1/cmr/m/n/12 Harish Viswanathan and Thorsten Wild.  Build-ing a net-work
  []
@@ -2169,15 +2150,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
 -[]labs . com / institute / blog /
  []
 
-[61
+[59
 
-] [62] [63]
+] [60] [61]
 Underfull \hbox (badness 10000) in paragraph at lines 205--209
 []\T1/cmr/m/n/12 Julius O. Smith.  \T1/cmr/m/it/12 Spec-tral Au-dio Sig-nal Pro
 -cess-ing\T1/cmr/m/n/12 .
  []
 
-) [64] (./Thesis_Tosi.acr [65
+) [62] (./Thesis_Tosi.acr [63
 
 ]
 Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
@@ -2196,12 +2177,12 @@ File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
  on input line 1.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [66
+ [64
 
-] [67
+] [65
 
 
-]) [68] (./Thesis_Tosi.lof [69
+]) [66] (./Thesis_Tosi.lof [67
 
 
 ])
@@ -2209,11 +2190,11 @@ Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
 \openout9 = `Thesis_Tosi.lof'.
 
 
-[70] (./Thesis_Tosi.lot)
+[68] (./Thesis_Tosi.lot)
 \tf@lot=\write10
 \openout10 = `Thesis_Tosi.lot'.
 
- [71
+ [69
 
 
 ]
@@ -2226,12 +2207,33 @@ to.pdf>
 (epstopdf)                    size: 40456 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
 i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Images//./raggiera_polimi-eps-converted-to.pdf>
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 282.
+ on input line 281.
+(pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
+ [70
+
+] [71
+
+]
+Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
+(epstopdf)                    date: 2023-12-27 18:35:38
+(epstopdf)                    size: 1813066 bytes
+(epstopdf)             Output file: <./Images//./raggiera_polimi-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2023-12-27 18:35:38
+(epstopdf)                    size: 40456 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
+i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
+(epstopdf)             \includegraphics on input line 294.
+Package epstopdf Info: Output file is already uptodate.
+File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Images//./raggiera_polimi-eps-converted-to.pdf>
+Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
+ on input line 294.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [72
 
@@ -2247,35 +2249,14 @@ to.pdf>
 (epstopdf)                    size: 40456 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
 i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 295.
+(epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Images//./raggiera_polimi-eps-converted-to.pdf>
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 295.
+ on input line 297.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [74
-
-] [75
-
-]
-Package epstopdf Info: Source file: <./Images//./raggiera_polimi.eps>
-(epstopdf)                    date: 2023-12-27 18:35:38
-(epstopdf)                    size: 1813066 bytes
-(epstopdf)             Output file: <./Images//./raggiera_polimi-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2023-12-27 18:35:38
-(epstopdf)                    size: 40456 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
-i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 298.
-Package epstopdf Info: Output file is already uptodate.
-File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
-<use ./Images//./raggiera_polimi-eps-converted-to.pdf>
-Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 298.
-(pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
- [76
 
 ]
 
@@ -2287,8 +2268,8 @@ Package rerunfilecheck Info: File `Thesis_Tosi.out' has not changed.
 (rerunfilecheck)             Checksum: D4C042C22E451DF0D019D0A6DFF95BDD;10816.
  ) 
 Here is how much of TeX's memory you used:
- 39429 strings out of 477985
- 756664 string characters out of 5840059
+ 39427 strings out of 477985
+ 756650 string characters out of 5840059
  1870388 words of memory out of 5000000
  58440 multiletter control sequences out of 15000+600000
  540743 words of font info for 102 fonts, out of 8000000 for 9000
@@ -2317,10 +2298,10 @@ usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
 -dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
 per/sfxc1200.pfb>
-Output written on Thesis_Tosi.pdf (86 pages, 9034373 bytes).
+Output written on Thesis_Tosi.pdf (84 pages, 9033741 bytes).
 PDF statistics:
- 1968 PDF objects out of 2073 (max. 8388607)
- 1470 compressed objects within 15 object streams
- 373 named destinations out of 1000 (max. 500000)
+ 1961 PDF objects out of 2073 (max. 8388607)
+ 1465 compressed objects within 15 object streams
+ 371 named destinations out of 1000 (max. 500000)
  752 words of extra memory for PDF output out of 10000 (max. 10000000)
 
