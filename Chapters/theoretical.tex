@@ -11,7 +11,7 @@ OFDM modulation efficiently distributes the signal over a discrete-time and disc
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{Images/theoretical/ofdm/ofdm_psd_mod.png}
-    \caption{Example of power spectral density of an OFDM signal with N = 5.}
+    \caption{Example of power spectral density of an OFDM signal with $N$ = 5.}
     \label{fig:quadtree}
 \end{figure}
 
@@ -104,7 +104,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     
         \item Time delay $\tau_h = \frac{2d_h}{c_0},$ which is the round trip time of the reflected signal.
     
-        \item A Doppler shift term introduced by the relative speed of the target $f_{d,h} = \frac{2v_{rel,h}}{c_0}f_C$.
+        \item A Doppler shift term introduced by the relative speed of the target $f_{D,h} = \frac{2v_{rel,h}}{c_0}f_C$.
         \item A random phase rotation $\varphi_h$.
         \item \gls{awgn} $\hat{z}(t)$.
     \end{itemize}
@@ -121,26 +121,26 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     
     where rows are different subcarriers and columns are different time slots.
     
-    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of \gls{cp} from each OFDM symbol, and computing the \gls{fft} of length $N_{\text{subcarriers}}$ for every column of the matrix.
+    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of \gls{cp} from each OFDM symbol, and computing the \gls{fft} of length $N$ for every column of the matrix.
     
     \subsection{Effect of targets on OFDM frames}
     Each target reflection will influence different elements of the frame in a different way:
     
     \begin{enumerate}
-        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $\mathbf F_{Tx}$ by a factor $e^{j2\pi f_D T_0 l},\quad  l = 0, \cdots, M-1$.
+        \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $\mathbf F_{Tx}$ by a factor $e^{j2\pi f_D T_S l},\quad  l = 0, \cdots, M-1$.
         \item A round trip delay $\tau$ will influence each subcarrier differently, based on its frequency. The corresponding phase shift on the k-th subcarrier is $e^{-j2\pi (k\Delta f + f_0)\tau}$.
     \end{enumerate}
     
     For the single target case, $H=1$, the received OFDM frame will become
     
     \begin{equation*}
-        (\mathbf F_{Rx})_{k,l} = b_0(\mathbf F_{Tx})_{k,l} \cdot e^{j2\pi T_0 f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + (\mathbf{\Tilde{Z}})_{k,l}.
+        (\mathbf F_{Rx})_{k,l} = b_0(\mathbf F_{Tx})_{k,l} \cdot e^{j2\pi T_S f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + (\mathbf{\Tilde{Z}})_{k,l}.
     \end{equation*}
     
     The \gls{csi} is obtained from the received frame $\mathbf{F}_{Rx}$ by removing the known transmitted frame $\mathbf{F}_{Tx}$, which serves no purpose for radar estimation. After element-wise division the \gls{csi} is
     
     \begin{equation}
-        (\mathbf F)_{k,l} = \frac{(\mathbf F_{Rx})_{k,l}}{(\mathbf F_{Tx})_{k,l}} = b_0 \cdot e^{j2\pi T_0 f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + \frac{(\mathbf{\Tilde{Z}})_{k,l}}{(\mathbf F_{Tx})_{k,l}}\label{eq:CSI_frame}.    
+        (\mathbf F)_{k,l} = \frac{(\mathbf F_{Rx})_{k,l}}{(\mathbf F_{Tx})_{k,l}} = b_0 \cdot e^{j2\pi T_S f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + \frac{(\mathbf{\Tilde{Z}})_{k,l}}{(\mathbf F_{Tx})_{k,l}}\label{eq:CSI_frame}.    
     \end{equation}
     
     An alternative noise matrix $(\mathbf{Z})_{k,l}$ can be defined since, after division by the transmitted frame, the noise process will be white if $(\mathbf{\Tilde{Z}})$ is white.
@@ -148,7 +148,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     Finally, we generalize the result to H targets by reintroducing the sum from Equation~\eqref{eq:received_signal_mltiple_targets}:
     
     \begin{equation*}
-        (\mathbf F)_{k,l} =  \sum_{h=0}^{H-1} b_h \cdot e^{j2\pi T_O f_{D,h} l}\cdot e^{-j2\pi k \tau_h \Delta f} \cdot e^{j\varphi_h} + (\mathbf{Z})_{k,l}.
+        (\mathbf F)_{k,l} =  \sum_{h=0}^{H-1} b_h \cdot e^{j2\pi T_S f_{D,h} l}\cdot e^{-j2\pi k \tau_h \Delta f} \cdot e^{j\varphi_h} + (\mathbf{Z})_{k,l}.
     \end{equation*}
     
     \subsection{Radar problem formulation}
@@ -182,14 +182,14 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     
     \subsection{Non ambiguous range and speed}
     
-        Due to the discrete nature of $\mathbf{F}$ range and speed measurements can be estimated without ambiguity if $|T_O f_D| < 1/2$ and $\tau \Delta f < 1$ are true.
+        Due to the discrete nature of $\mathbf{F}$ range and speed measurements can be estimated without ambiguity if $|T_S f_D| < 1/2$ and $\tau \Delta f < 1$ are true.
         From this, the unambiguous range and speed values of the system can be derived as:
         
         \begin{itemize}
             \item Max unambiguous range
             $$ d_{unamb} = \frac{c_0 \tau_{unamb}}{2} = \frac{c_0}{2\Delta f}.$$
             \item Max unambiguous speed
-            $$ v_{unamb} = \frac{f_{D,unamb} c_0}{2f_C} = \frac{c_0}{2f_C T_O}.$$
+            $$ v_{unamb} = \frac{f_{D,unamb} c_0}{2f_C} = \frac{c_0}{2f_C T_S}.$$
         \end{itemize}
         
         As long as the target range and speed fall under $d < d_{unamb}$ and $|v| < v_{unamb}$ there will be no errors due to aliasing.
@@ -245,7 +245,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 
     \begin{align*}
         \hat{d} &= \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta f} = \frac{\hat{n}c_0}{2\Delta f N_\text{Per}}, \\
-        \hat{v} &= \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_0} =  \frac{\hat{m}c_0}{2f_cT_0 M_{\text{Per}}}.
+        \hat{v} &= \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_S} =  \frac{\hat{m}c_0}{2f_cT_S M_{\text{Per}}}.
     \end{align*}
     
     % TODO: add from Braun's page 25

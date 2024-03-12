@@ -3,7 +3,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of an \gls {isac} scenario.\relax }}{4}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with N = 5.\relax }}{15}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of power spectral density of an OFDM signal with $N$ = 5.\relax }}{15}{figure.caption.23}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces OFDM transmitter scheme.\relax }}{17}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces OFDM receiver scheme.\relax }}{17}{figure.caption.25}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Effect of time delay on transmitted OFDM symbols. At the receiver, the first symbol is delayed and leaks into the FFT block of the following symbol.}}}{18}{subfigure.4.1}%

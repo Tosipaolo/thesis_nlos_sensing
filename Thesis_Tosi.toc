@@ -77,7 +77,7 @@
 \contentsline {chapter}{Bibliography\markboth {\MakeUppercase []{Bibliography}}{\MakeUppercase []{Bibliography}}}{59}{chapter*.79}%
 \vspace {2em}
 \contentsline {chapter}{Acronyms}{65}{chapter*.82}%
-\contentsline {chapter}{List of Figures}{67}{chapter*.84}%
-\contentsline {chapter}{List of Tables}{69}{chapter*.86}%
-\contentsline {chapter}{List of Symbols}{71}{chapter*.88}%
-\contentsline {chapter}{Acknowledgements}{73}{chapter*.91}%
+\contentsline {chapter}{List of Symbols}{67}{chapter*.84}%
+\contentsline {chapter}{List of Figures}{69}{chapter*.86}%
+\contentsline {chapter}{List of Tables}{71}{chapter*.88}%
+\contentsline {chapter}{Acknowledgements}{73}{chapter*.90}%

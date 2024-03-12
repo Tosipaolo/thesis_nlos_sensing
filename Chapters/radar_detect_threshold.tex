@@ -87,7 +87,7 @@
 			
 					\begin{align}
 					\label{align: threshold_noise_power}
-						\hat{\sigma_N}^2 = \frac{1}{M_{\text{Per}}K} \sum_{k=1}^K \sum_{m=1}^{M_{\text{Per}}} \text{Per}_{\bm{F}}(N_{\text{max}}+k, m).
+						\hat{\sigma_n}^2 = \frac{1}{M_{\text{Per}}K} \sum_{k=1}^K \sum_{m=1}^{M_{\text{Per}}} \text{Per}_{\bm{F}}(N_{\text{max}}+k, m).
 					\end{align}
 			
 			Standard \gls{cfar} is an established method, howeverit was observed that estimating a fixed threshold across the periodogram based only on the level of the noise floor leads numerous above-threshold cells due to the sidelobes of the target returns, as shown in Figure \ref{fig:RadThesh_CFAR_abv_thresh_doubl}.
@@ -135,14 +135,14 @@ In the \gls{ofdm} range-doppler radar problem a two-dimensional CFAR window is c
 The \gls{cacfar} threshold is defined by the product of the noise power estimate and a \gls{cfar} constant
 
 \begin{align*}
-	T = \alpha_{\text{CA}} \hat{\sigma_N}^2.
+	\eta_{\text{CA-CFAR},CUT} = \alpha_{\text{CA}} \hat{\sigma_n}^2.
 \end{align*}
 
 The \gls{cfar} constant $\alpha_{\text{CA}}$ is a function of the probability of false alarm $p_{\text{FA}}$ and of the number of contribution cells $N$ and is derived as in chapter 16.5 of \cite{Richards_Scheer_Holm_2010}. The estimated noise power is calculated as in \ref{align: threshold_noise_power} by averaging over the contributing cells
 
 \begin{align*}
 	\alpha_{\text{CA}} =& N[p_{\text{FA}}^{-1/N} - 1] \\
-	\hat{\sigma_N}^2 =& \frac{1}{N}\sum_{n=1}^N z_n.
+	\hat{\sigma_n}^2 =& \frac{1}{N}\sum_{n=1}^N z_n.
 \end{align*}
 
 The number of operations can be reduced by simplifying the normalization by $\frac{1}{N}$ by defining a noise statistics $\hat{g}_{\text{CA}}' = \sum_{n=1}^N z_n$ and by incorporating it in the CFAR constant $\alpha_{\text{CA}}' = p_{\text{FA}}^{-1/N} - 1$.

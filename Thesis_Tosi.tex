@@ -257,12 +257,6 @@ Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme 
 
 \cleardoublepage
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-%\appendix
-% \chapter{Appendix A}
-%If you need to include an appendix to support the research in your thesis, you can place it at the end of the manuscript.
-%An appendix contains supplementary material (figures, tables, data, codes, mathematical proofs, surveys, \dots)
-% which supplement the main results contained in the previous chapters.
-
 
 % ABBREVIATIONS
 \singlespacing
@@ -270,25 +264,58 @@ Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme 
 \printglossaries
 \doublespacing
 
+
+% LIST OF SYMBOLS
+% Write out the List of Symbols in this page
+\chapter*{List of Symbols} % You have to include a chapter for your list of symbols (
+
+
+\begin{longtable}[c]{lll}
+		\textbf{Variable} & \textbf{Description} & \textbf{SI unit} \\\hline\\[-9px]
+		$a$ & complex QAM symbol &  \\[1px]
+		$\alpha$ & CFAR constant & \\[1px]
+		$b_h$ & magnitude attenuation factor due to target $h$ &  \\[2px]
+		$B$ & Bandwidth & Hz \\[1px]
+		$c_0$ & speed of light & m/s \\[1px]
+		$d$ & distance/range & m \\[2px]
+		$d_{res}$ & range resolution & m \\[2px]
+		$d_unamb$ & unambiguous range & m \\[2px]
+		$\eta$ & radar threshold &  \\[2px]
+		$\Delta f$ & subcarrier spacing  & Hz \\[2px]	
+		$f_C$ & carrier frequency & Hz \\[2px]
+		$f_D$ & Doppler shift & Hz \\[2px]
+		$\mathbf F$ & CSI matrix &  \\[2px]
+		$\mathbf F_{Tx}$ or $\mathbf F_{Rx}$ & transmitted/received OFDM frame &  \\[2px]
+		$H$ & number of targets illuminated by the signal &  \\[2px]
+		$\mu$ & 5G system numerology &  \\[2px]
+		$M$ & number of symbols in a OFDM frame &  \\[2px]
+		$N$ & number of subcarriers &  \\[2px]
+		$\varphi$ & phase term & \\[2px]
+		$p_{\text{FA}}$ & probability of false alarm &  \\[2px]
+		$p_{\text{FA},bin}$ & probability of false alarm per bin &  \\[2px]
+		$Per_{\mathbf F}$ & 2D periodogram &  \\[2px]
+		$\sigma_n^2$ & estimate of AWGN power &  \\[2px]
+		$\tau$ & time delay & s \\[2px]
+		$\tau_{max}$ & maximum time delay observable from a target & s \\[2px]
+		$\theta$ & azimuth in respect to TX or RX & rad \\[2px]
+		$T_{CP}$ & cyclic prefix time & s \\[2px]
+		$T_S$ & OFDM symbol time &  s \\[2px]
+		$v$ & velocity/speed & m/s \\[2px]
+		$v_{res}$ & speed resolution & m/s \\[2px]
+		$v_{unamb}$ & unambiguous speed & m/s \\[2px]
+		$z$ & time-domain AWGN &  \\[2px]
+		$\mathbf W$ & 2D window matrix &  \\[2px]
+		$\mathbf Z$ & AWGN matrix &  \\[2px]
+\end{longtable}
+
+
 % LIST OF FIGURES
 \listoffigures
 
 % LIST OF TABLES
 \listoftables
 
-% LIST OF SYMBOLS
-% Write out the List of Symbols in this page
-\chapter*{List of Symbols} % You have to include a chapter for your list of symbols (
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lll}
-        \textbf{Variable} & \textbf{Description} & \textbf{SI unit} \\\hline\\[-9px]
-        $\bm{u}$ & solid displacement & m \\[2px]
-        $\bm{u}_f$ & fluid displacement & m \\[2px]
-        $\bm{c}_0$ & speed of light & m/s \\[2px]
-        $\bm{f}_C$ & carrier frequency & Hz \\[2px]
-    \end{tabular}
-\end{table}
+
 
 % ACKNOWLEDGEMENTS
 \chapter*{Acknowledgements}
