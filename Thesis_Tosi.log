@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.7)  12 MAR 2024 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.3.7)  12 MAR 2024 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2231,12 +2231,12 @@ to.pdf>
 (epstopdf)                    size: 40456 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Images//./raggiera_polim
 i-eps-converted-to.pdf ./Images//./raggiera_polimi.eps>
-(epstopdf)             \includegraphics on input line 324.
+(epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Images//./raggiera_polimi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Images//./raggiera_polimi-eps-converted-to.pdf>
 Package pdftex.def Info: ./Images//./raggiera_polimi-eps-converted-to.pdf  used
- on input line 324.
+ on input line 345.
 (pdftex.def)             Requested size: 507.88533pt x 507.88051pt.
  [74
 
@@ -2246,62 +2246,44 @@ Package caption Warning: Unused \captionsetup[algorithm] on input line 13.
 See the caption package documentation for explanation.
 
 (./Thesis_Tosi.aux)
-
-Package rerunfilecheck Warning: File `Thesis_Tosi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis_Tosi.out':
-(rerunfilecheck)             Before: 253D01E5FA8EAE08896EFD1861DFB3FF;10816
-(rerunfilecheck)             After:  8627F8F6C25FC50E869E509599B07127;10816.
+Package rerunfilecheck Info: File `Thesis_Tosi.out' has not changed.
+(rerunfilecheck)             Checksum: 8627F8F6C25FC50E869E509599B07127;10816.
  ) 
 Here is how much of TeX's memory you used:
- 39431 strings out of 477985
- 756680 string characters out of 5840059
+ 39428 strings out of 477985
+ 756647 string characters out of 5840059
  1870388 words of memory out of 5000000
  58441 multiletter control sequences out of 15000+600000
  540743 words of font info for 102 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,34n,90p,2255b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{chapter*.91} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.89} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.87} has been referenced but does not exist
-, replaced by a fixed one
-
- </home/paolo/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfxc1200.pfb>
-Output written on Thesis_Tosi.pdf (84 pages, 9035144 bytes).
+ </home/paolo/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfxc1200.pfb>
+Output written on Thesis_Tosi.pdf (84 pages, 9036629 bytes).
 PDF statistics:
- 1965 PDF objects out of 2073 (max. 8388607)
- 1469 compressed objects within 15 object streams
- 374 named destinations out of 1000 (max. 500000)
+ 1963 PDF objects out of 2073 (max. 8388607)
+ 1467 compressed objects within 15 object streams
+ 371 named destinations out of 1000 (max. 500000)
  752 words of extra memory for PDF output out of 10000 (max. 10000000)
 
