@@ -2,7 +2,7 @@
 \label{chap:TDD pattern of the OFDM frame}
 
 \section{Effect of TDD transmission on sensing performance}
-
+\label{sec:frame_sampling_strategies}
 	Initially, radar processing  of the \gls{csi} for sensing was performed on a per \gls{ofdm} frame basis. Every $10$ ms the system would output a received \gls{ofdm} frame for radar processing, generating a target state update. When the entire frame is processed, the number of subcarriers and symbols is quite large, resulting in good radar performance and significant \gls{snr} gain after computing the periodogram. However, this approach suffers from the presence of unwanted spectral replicas caused by the empty \gls{ul} symbols in the frame.
 	
 	As shown in Section \ref{sec:intro-PoCarchitecture}, the gNB transmits in a TDD pattern. Each pattern consists of 104 \gls{dl} symbols followed by 36 \gls{ul} symbols, repeated 8 times in each frame. A sample \gls{csi} frame highlighting such patterns is shown in Figure \ref{fig:CSIMatrix_DLULpattern}.

@@ -306,14 +306,18 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 	
 	This method, also known as \gls{wosa}, is a method for reducing the noise of the spectra estimated by calculating the periodogram, in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
 	The signal is divided into $K$ data segments of $J$ samples, the periodogram is then computed separately for each segment and then averaged.
-	
-	For a one-dimensional time signal $x(t)$ \cite{SASPWEB2011}, the $m$th windowed and zero padded frame is
+	For a one-dimensional time signal $x(t)$ \cite{SASPWEB2011}, the $k$th windowed frame is
 	
 	\begin{align}
 		x_k(j) = w(j)x(j + kR), \; k=0,1,\ldots, K-1, j=0,1,\ldots, J-1,
 	\end{align}
 	
-	where $R$ is the window's hop size. The periodogram of the \textit{k}-th block is obtained as
+	where $R$ is the window's hop size.
+	After zero padding each frame to length $J'$, where $J' > J$, the $k$th windowed and zero padded frame becomes
+		\begin{align}
+		x_k(j) = w(j)x'(j + kR), \; k=0,1,\ldots, K-1, j=0,1,\ldots, J'-1.
+	\end{align}
+	The periodogram of the \textit{k}-th block is obtained as
 	
 	\begin{align}
 		\text{PER}_{x_k,K}(w_k) = \frac{1}{K} |\text{FFT}_{J,k}(x_k)|^2 = \frac{1}{K}\left|\sum_{j=0}^{J-1}x_k(j)e^{-j2\pi jk/J}\right|^2.
