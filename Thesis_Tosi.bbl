@@ -151,6 +151,28 @@ Fan Liu and Christos Masouros.
   vehicular networks—part i: Background and fundamentals.
 \newblock {\em IEEE Communications Letters}, 25(2):322–326, February 2021.
 
+\bibitem{wifi_human_detection}
+Wei Wang, Alex~X. Liu, Muhammad Shahzad, Kang Ling, and Sanglu Lu.
+\newblock Understanding and modeling of wifi signal based human activity
+  recognition.
+\newblock In {\em Proceedings of the 21st Annual International Conference on
+  Mobile Computing and Networking}, MobiCom '15, page 65–76, New York, NY,
+  USA, 2015. Association for Computing Machinery.
+
+\bibitem{vital_signs_monitoring}
+Fadel Adib, Hongzi Mao, Zachary Kabelac, Dina Katabi, and Robert~C. Miller.
+\newblock Smart homes that monitor breathing and heart rate.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, CHI '15, page 837–846, New York, NY, USA,
+  2015. Association for Computing Machinery.
+
+\bibitem{Zhao_tracking_identifying_people_mmWave}
+Peijun Zhao, Chris~Xiaoxuan Lu, Jianan Wang, Changhao Chen, Wei Wang, Niki
+  Trigoni, and Andrew Markham.
+\newblock mid: Tracking and identifying people with millimeter wave radar.
+\newblock In {\em 2019 15th International Conference on Distributed Computing
+  in Sensor Systems (DCOSS)}, pages 33--40, 2019.
+
 \bibitem{Gustaffson_NLOS_radar}
 Magnus Gustafsson, Åsa Andersson, Tommy Johansson, Stefan Nilsson, Ain Sume,
   and Anders Örbom.
@@ -188,6 +210,12 @@ Marcus Henninger, Silvio Mandelli, Maximilian Arnold, and Stephan Ten~Brink.
 \newblock In {\em 2022 IEEE Wireless Communications and Networking Conference
   (WCNC)}, page 210–215, Austin, TX, USA, April 2022. IEEE.
 
+\bibitem{SASPWEB2011}
+Julius~O. Smith.
+\newblock {\em {Spectral Audio Signal Processing}}.
+\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed 2024.
+\newblock online book, 2011 edition.
+
 \bibitem{Welch_period}
 P.~Welch.
 \newblock {The use of fast Fourier transform for the estimation of power
@@ -200,12 +228,6 @@ U.~Spagnolini.
 \newblock {\em Statistical Signal Processing in Engineering}, chapter~14, pages
   267--309.
 \newblock John Wiley \& Sons, Ltd, 2018.
-
-\bibitem{SASPWEB2011}
-Julius~O. Smith.
-\newblock {\em {Spectral Audio Signal Processing}}.
-\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed 2024.
-\newblock online book, 2011 edition.
 
 \bibitem{Richards_Scheer_Holm_2010}
 M.~A. Richards, J.~Scheer, and W.A. Holm.

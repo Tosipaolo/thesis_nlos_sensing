@@ -16,7 +16,7 @@ OFDM efficiently distributes the signal over a discrete-time and discrete-freque
 \end{figure}
 
 \subsection{Subcarriers and frequency spacing}
-An OFDM system is based on the use of \textit{N} subcarriers, namely with frequencies $f_0$ to $f_{N-1}$, and M time-slots that will limit the temporal length of the OFDM signal.
+An OFDM system is based on the use of \textit{N} subcarriers, namely with frequencies $f_0$ to $f_{N-1}$, and $M$ time-slots that will limit the temporal length of the OFDM signal.
 Each set of modulated data transmitted in a single time slot will be referred as an OFDM \textit{symbol}, while the entirety $N\times M$ symbols is referred to as an OFDM \textit{frame}.
 
 Orthogonality of subcarriers is guaranteed by a frequency spacing $\Delta f$ of $1/T$, where $T$ is the duration of a single rectangular baseband pulse.
@@ -33,7 +33,7 @@ The relation between the discrete samples of OFDM in the time and frequency doma
 Sampling the signal at time $T/N$ we obtain a discrete version
 
 \begin{equation}
-    s_k = s(t)|_{t=k \frac{T}{N}} = \sqrt{\frac{1}{T}}\sum_{k=0}^{N-1} a_k \cdot e^{j2\pi ki/N}
+    s_k = s(t)|_{t=k \frac{T}{N}} = \sqrt{\frac{1}{T}}\sum_{k=0}^{N-1} a_k \cdot e^{j2\pi ki/N},
 \end{equation}
 
 which is a \gls{dfs}. When \textit{N} is a power of 2, the \gls{dfs} can be implemented in an efficient way by the \gls{ifft} algorithm.
@@ -108,42 +108,45 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     Following Braun's notation \cite{Braun2014OFDMRA}, each transmitted \gls{ofdm} frame is indicated as
     \begin{equation}
         \mathbf F_{Tx} = \begin{pmatrix}
-            c_{0,0} & \cdots & c_{0,M} \\
-            c_{1,0} & \cdots & c_{1,M} \\
+            a_{0,0} & \cdots & a_{0,M} \\
+            a_{1,0} & \cdots & a_{1,M} \\
             \vdots   & \ddots & \vdots \\
-            c_{N-1, 0} & \cdots & c_{N-1, M} \\
+            a_{N-1, 0} & \cdots & a_{N-1, M} \\
         \end{pmatrix} \in \mathbbm{C}^{N\times M},
     \end{equation}
     
-    where rows are different subcarriers and columns are different time slots.
-    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of \gls{cp} from each OFDM symbol, and computing the \gls{fft} of length $N$ for every column of the matrix, as presented in Figure \ref{fig:fig:ofdm_receive}.
+    where rows are different subcarriers, columns are different time slots and $a$ is a symbol belonging to a complex modulation.
+    The received frame matrix $\mathbf F_{Rx}$ is obtained by analog/digital conversion of the signal, removal of \gls{cp} from each OFDM symbol, and computing the \gls{fft} of length $N$ for every column of the matrix, as presented in Figure~\ref{fig:ofdm_receive}.
     
     \subsection{Effect of targets on OFDM frames}
+    Figure \ref{fig:sensing_operation} depicts the scheme of a radar system.
     Each target reflection will affect different elements of the frame in a different way:
-    
     \begin{enumerate}
         \item A Doppler frequency shift $f_D$ is equivalent to modulating the elements of each row of $\mathbf F_{Tx}$ by a factor $e^{j2\pi f_D T_S l},\quad  l = 0, \cdots, M-1$.
-        \item A round trip delay $\tau$ will influence each subcarrier differently, based on its frequency. The corresponding phase shift on the k-th subcarrier is $e^{-j2\pi (k\Delta f + f_0)\tau} \quad  k = 0, \cdots, N-1$.
+        \item A round trip delay $\tau$ will influence each subcarrier differently, based on its frequency. The corresponding phase shift on the k-th subcarrier is \\$e^{-j2\pi (k\Delta f + f_0)\tau} \quad  k = 0, \cdots, N-1$.
     \end{enumerate}
-    
     For the single target case, $H=1$, the received OFDM frame will become
-    
     \begin{equation}
         (\mathbf F_{Rx})_{k,l} = b_0(\mathbf F_{Tx})_{k,l} \cdot e^{j2\pi T_S f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + (\mathbf{\Tilde{Z}})_{k,l}.
     \end{equation}
-    
-    \alert{The \gls{csi} is obtained from the received frame $\mathbf{F}_{Rx}$ by removing the known transmitted frame $\mathbf{F}_{Tx}$, which serves no purpose for radar estimation. After element-wise division, the \gls{csi} is}
-    
+    The received frame $\mathbf{F}_{Rx}$ contains contributions from the parameters $\tau$ and $f_D$, the phase and magnitude parameters $\varphi$ and $b$, and from the transmitted frame $\mathbf F_{Tx}$.
+    The latter does not contribute to the sensing purpose, and it can be removed from $\mathbf F_{Rx}$ by element-wise division.
+    The \gls{csi} $\mathbf F$ is obtained as
     \begin{equation}
         (\mathbf F)_{k,l} = \frac{(\mathbf F_{Rx})_{k,l}}{(\mathbf F_{Tx})_{k,l}} = b_0 \cdot e^{j2\pi T_S f_{D,0} l}\cdot e^{-j2\pi k \tau_0 \Delta f} \cdot e^{j\varphi_0} + \frac{(\mathbf{\Tilde{Z}})_{k,l}}{(\mathbf F_{Tx})_{k,l}}\label{eq:CSI_frame}.    
     \end{equation}
-    
     An alternative noise matrix $(\mathbf{Z})_{k,l}$ can be defined since the noise process will be white if $(\mathbf{\Tilde{Z}})$ is white after division by the transmitted frame.
     Finally, we generalize the result to H targets by reintroducing the sum from~\eqref{eq:received_signal_mltiple_targets}:
-    
     \begin{equation}
         (\mathbf F)_{k,l} =  \sum_{h=0}^{H-1} b_h \cdot e^{j2\pi T_S f_{D,h} l}\cdot e^{-j2\pi k \tau_h \Delta f} \cdot e^{j\varphi_h} + (\mathbf{Z})_{k,l}.
     \end{equation}
+    
+    \begin{figure}[t]
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{Images/introduction/sensing_operation.png}
+    	\caption{Schematic of a sensing (radar) system. Each target reflection affects the signal by introducing a round-trip delay $\tau$ and a Doppler shift $f_D$.}
+    	\label{fig:sensing_operation}
+    \end{figure}
     
     \subsection{Radar problem formulation}
     
@@ -179,9 +182,13 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
         
         \begin{itemize}
             \item Max unambiguous range
-            $$ d_{unamb} = \frac{c_0 \tau_{unamb}}{2} = \frac{c_0}{2\Delta f}.$$
+            \begin{equation}
+            	d_{unamb} = \frac{c_0 \tau_{unamb}}{2} = \frac{c_0}{2\Delta f}.
+            \end{equation}
             \item Max unambiguous speed
-            $$ v_{unamb} = \frac{f_{D,unamb} c_0}{2f_C} = \frac{c_0}{2f_C T_S}.$$
+            \begin{equation}
+				v_{unamb} = \frac{f_{D,unamb} c_0}{2f_C} = \frac{c_0}{2f_C T_S}.
+			\end{equation}
         \end{itemize}
         
         As long as the target range and speed fall under $d < d_{unamb}$ and $|v| < v_{unamb}$ there will be no errors due to aliasing.
@@ -192,9 +199,13 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
         
         \begin{itemize}
             \item Range resolution
-            $$ d_{res} =  \frac{c_0}{2\Delta f M}. $$
+            \begin{equation}
+            	d_{res} =  \frac{c_0}{2\Delta f M}.
+            \end{equation}
             \item Speed resolution
-            $$ v_{res} = \frac{c_0}{2 T_S f_C N}. $$
+            \begin{equation}
+            	v_{res} = \frac{c_0}{2 T_S f_C N}.
+            \end{equation}
         \end{itemize}
         
 
@@ -236,13 +247,13 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
     These frequencies are converted into distance and relative speed as
 
     \begin{equation}
-        \hat{d} = \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta f} = \frac{\hat{n}c_0}{2\Delta f N_\text{Per}}, 
+        \hat{d} = \frac{1}{2}\hat{\tau}c_0 = \frac{\hat{\Omega}_d c_0}{2 (2\pi) \Delta f} = \frac{\hat{n}c_0}{2\Delta f N_\text{Per}}
     \end{equation}
     
     and
     \begin{equation}
-    	\hat{v} = \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_S} =  \frac{\hat{m}c_0}{2f_cT_S M_{\text{Per}}}.
-    \end{equation},
+    	\hat{v} = \frac{\hat{f}_D c_0 }{2 f_C} = \frac{\hat{\Omega}_v c_0}{2(2\pi)f_CT_S} =  \frac{\hat{m}c_0}{2f_cT_S M_{\text{Per}}}.,
+    \end{equation}
     respectively.
     
     % TODO: add from Braun's page 25
@@ -256,7 +267,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 	
 	Window functions are commonly applied to signals when computing the periodogram. This operation is done to tune the sidelobe level and enable precise detection of targets. 
 	
-	The two dimensional window matrix to be applied to the periodogram $\mathbf W \in \mathbb{R}^{N\times M}$ is multiplied element-wise with the matrix $\mathbf F$. When computing the periodogram, equation \eqref{eq:periodogram_full} becomes
+	The two dimensional window matrix to be applied to the periodogram $\mathbf W \in \mathbb{R}^{N\times M}$ is multiplied element-wise with the matrix $\mathbf F$. When computing the periodogram, Equation~\eqref{eq:periodogram_full} becomes
 	
 	
 	   \begin{align}
@@ -265,7 +276,7 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 		\end{align}
 	 
 	 If no windowing is considered, then $(\mathbf W)_{k,l} = 1$ as in a simple boxcar window.
-	 In the proposed \gls{ofdm} radar system, the following window types are of interest (Figure \ref{fig:OFDMwin_functions}):
+	 In the proposed \gls{ofdm} radar system, the following window types are of interest (Figure~\ref{fig:OFDMwin_functions})~\cite{Braun2014OFDMRA},~\cite{SASPWEB2011}:
 	 
 	 \begin{itemize}
 	 	\item Rectangular (Boxcar) windows.
@@ -304,7 +315,8 @@ A more thorough theoretical examination of \gls{ofdm}, multicarrier communicatio
 	
 	\subsection{Welch's method}
 	
-	This method, also known as \gls{wosa}, is a method for reducing the noise of the spectra estimated by calculating the periodogram, in exchange for a reduction in frequency resolution \cite{Welch_period}, \cite{Spagnolini_ch14}.
+	This method, also known as \gls{wosa}, is a method for reducing the noise of the estimated spectra, by averaging independent periodograms, in exchange for a reduction in frequency resolution.
+	It is based on averaging of the periodograms after the segmentation of the data into smaller segments, with some overlap if windowing is adopted \cite{Welch_period}, \cite{Spagnolini_ch14}.
 	The signal is divided into $K$ data segments of $J$ samples, the periodogram is then computed separately for each segment and then averaged.
 	For a one-dimensional time signal $x(t)$ \cite{SASPWEB2011}, the $k$th windowed frame is
 	

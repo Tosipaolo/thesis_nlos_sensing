@@ -64,7 +64,7 @@
 				\subsubsection{Estimation of noise power}
 	
 					Noise power is estimated from the periodogram by averaging over bins where the target is not expected.
-					From Assumption 3 from section \ref{sub:assumptions_ofdm_radar}, the maximum target delay and consequently, the maximum range bin in which we can observe a target depends on the guard interval defined by the \gls{cp}. They are calculated as 
+					From Assumption 3 from Section \ref{sub:assumptions_ofdm_radar}, the maximum target delay and consequently, the maximum range bin in which we can observe a target depends on the guard interval defined by the \gls{cp}. They are calculated as 
 					\begin{align}
 						\tau_{\text{max}} =& \frac{N_{\text{max}}}{N_{\text{Per}}}\cdot T = T_\text{CP} ,\\
 						N_{\text{max}} =& \frac{T_\text{CP}}{T}\cdot N_{\text{Per}}.
@@ -77,7 +77,7 @@
 						\hat{\sigma_n}^2 = \frac{1}{M_{\text{Per}}K} \sum_{k=1}^K \sum_{m=1}^{M_{\text{Per}}} \text{Per}_{\bm{F}}(N_{\text{max}}+k, m).
 					\end{align}
 			
-			Standard \gls{cfar} is an established method, however it was observed that estimating a fixed threshold across the periodogram based only on the level of the noise floor leads to  numerous above-threshold cells due to the sidelobes of the target returns, as shown in Figure \ref{fig:RadThesh_CFAR_abv_thresh_doubl}.
+			It was observed that, when using \gls{cfar}, estimating a fixed threshold across the periodogram based only on the level of the noise floor leads to  numerous above-threshold cells due to the sidelobes of the target returns, as shown in Figure \ref{fig:RadThesh_CFAR_abv_thresh_doubl}.
 			
 				\begin{figure}[H]
 				\centering
@@ -89,7 +89,7 @@
 					\includegraphics[scale=0.45]{Images/radar_detect_threshold/cfar_abv_thresh_PER.eps}%
 				}
 				
-				\caption[]{Example of \gls{cfar} thresholding, it can be observed that the largest target positioned at 23 m (a wall) presents strong sidelobes that are detected as target returns.}
+				\caption[]{Example of \gls{cfar} thresholding. It can be observed that the largest target positioned at 23 m (a wall) presents strong sidelobes that are detected as target returns.}
 				\label{fig:RadThesh_CFAR_abv_thresh_doubl}
 			\end{figure}
 			
@@ -120,16 +120,15 @@ In the \gls{ofdm} radar problem a two-dimensional range-Doppler \gls{cfar} windo
 
 The \gls{cacfar} threshold is defined by the product of the noise power estimate and a \gls{cfar} constant
 
-\begin{align*}
+\begin{align}
 	\eta_{\text{CA-CFAR},CUT} = \alpha_{\text{CA}} \hat{\sigma_n}^2.
-\end{align*}
+\end{align}
 
-The \gls{cfar} constant $\alpha_{\text{CA}}$ is a function of the probability of false alarm $p_{\text{FA}}$ and of the number of contribution cells $N$ and is derived as in chapter 16.5 of \cite{Richards_Scheer_Holm_2010}. The estimated noise power is calculated as in \ref{align: threshold_noise_power} by averaging over the contributing cells
+The \gls{cfar} constant $\alpha_{\text{CA}}$ is a function of the probability of false alarm $p_{\text{FA}}$ and of the number of contribution cells $N$ and is derived as in Chapter 16 of \cite{Richards_Scheer_Holm_2010}. The estimated noise power is calculated as in \eqref{align: threshold_noise_power} by averaging over the contributing cells as:
 
-\begin{align*}
-	\alpha_{\text{CA}} =& N[p_{\text{FA}}^{-1/N} - 1] \\
-	\hat{\sigma_n}^2 =& \frac{1}{N}\sum_{n=1}^N z_n.
-\end{align*}
+\begin{equation}
+	\alpha_{\text{CA}} = N[p_{\text{FA}}^{-1/N} - 1] \quad \text{and} \quad \hat{\sigma_n}^2 = \frac{1}{N}\sum_{n=1}^N z_n.
+\end{equation}
 
 The number of operations can be reduced by simplifying the normalization by $\frac{1}{N}$ by defining a noise statistics $\hat{g}_{\text{CA}}' = \sum_{n=1}^N z_n$ and by incorporating it in the CFAR constant $\alpha_{\text{CA}}' = p_{\text{FA}}^{-1/N} - 1$.
 
@@ -143,17 +142,7 @@ Furthermore, spread targets generate bigger responses than a point scatterer, im
 
 In a heterogeneous radar frame, multiple targets and changes in the interference power degrade \gls{cfar} performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are areas in which there is a sudden change in the statistics of the interfering power, which leads to higher threshold and missed detection.
 Performance is also strongly influenced by the design of the reference window. The window should be designed to be as small as possible, in order to reduce the computational load due to the convolution operation and not to include interfering statistics far away from the \gls{cut}. The guard interval should be sized according to the point spread function of the target return. An extended target could be counted in the reference window and lead to \textit{self masking}.
-
-In a \gls{nlos} sensing scenario, \gls{cacfar} suffers from these drawbacks due to the lower \gls{snr} of target returns caused by multiple reflections and the presence of strong static clutter components.
-Additionally, target returns can occupy multiple bins in the periodogram, leading to self masking. 
-As a result, they do not appear as distinct peaks, but rather are spread across neighbouring bins, which raises the \gls{cacfar} threshold and leads to missed detections, as shown in Figure \ref{fig:RadThesh_CA_CFAR_missed_detect_doubl}.
-
-\subsubsection{Robust CA-CFAR}
-More complex \gls{cacfar} algorithms may provide better results under certain heterogeneous conditions, but at the expense of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
-
-Some of the more common variations of the algorithm are the greatest-of CA-CFAR (GOCA-CFAR) and the censored statistics CA-CFAR (CSCA-CFAR), which are designed to suppress clutter-edge false alarms and mutual target masking, respectively.
-
-	\begin{figure}[H]
+\begin{figure}[t]
 	\centering
 	
 	\subfloat[Above-threshold bins using CA-CFAR.\label{fig:RadThesh_CA_CFAR_missed_detect}]{%
@@ -163,13 +152,22 @@ Some of the more common variations of the algorithm are the greatest-of CA-CFAR 
 		\includegraphics[scale=0.45]{Images/radar_detect_threshold/ca_cfar_no_nlos_PER_1.png}%
 	}
 	
-	\caption[]{\small Clutter-like return observed in NLOS (top-left area denoted by the blue box): CA-CFAR uses part of the point cloud to estimate noise levels and the target is not detected.}
+	\caption[]{\small Clutter-like return observed in NLOS (top-left area denoted by the blue box): CA-CFAR uses part of the point cloud to estimate noise levels and the target is not detected due to target masking.}
 	\label{fig:RadThesh_CA_CFAR_missed_detect_doubl}
 \end{figure}
 
+In a \gls{nlos} sensing scenario, \gls{cacfar} suffers from these drawbacks due to the lower \gls{snr} of target returns caused by multiple reflections and the presence of strong static clutter components.
+Additionally, target returns can occupy multiple bins in the periodogram, leading to self masking. 
+As a result, they do not appear as distinct peaks, but rather are spread across neighbouring bins, which raises the \gls{cacfar} threshold and leads to missed detections, as shown in Figure \ref{fig:RadThesh_CA_CFAR_missed_detect_doubl}.
+
+\subsubsection{Robust CA-CFAR}
+More complex \gls{cacfar} algorithms may provide better results under certain heterogeneous conditions, but at the expense of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
+
+Some of the more common variants of the algorithm are the greatest-of CA-CFAR (GOCA-CFAR) and the censored statistics CA-CFAR (CSCA-CFAR), which are designed to suppress clutter-edge false alarms and mutual target masking, respectively.
+
 
 \paragraph{Greatest-of CA-CFAR:}
-the interference power is calculated in the lagging and leading reference windows separately and the largest of the two is selected as the reference statistics. In the \gls{ofdm} radar signal the leading/lagging definition can be applied only in the doppler dimension, since interference statistics is assumed homogeneous in range.
+The interference power is calculated in the lagging and leading reference windows separately and the largest of the two is selected as the reference statistics. In the \gls{ofdm} radar signal the leading/lagging definition can be applied only in the Doppler dimension, since interference statistics is assumed homogeneous in range.
 
 GOCA-CFAR can, in general, avoid false alarm caused by clutter returns and clutter-edge conditions. However, in NLOS sensing, where the power of the target returns is comparable to the one of spectral artifacts and clutter sidelobes, GOCA-CFAR increases the possibility of masking, especially for slow-moving targets.
  
