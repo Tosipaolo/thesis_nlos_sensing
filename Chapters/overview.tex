@@ -148,65 +148,7 @@ The network will be able to adapt and use information about the surrounding envi
 	
 
 
-\section{Proof of concept architecture}
-	\label{sec:intro-PoCarchitecture}
-	
-	The architecture considered in this work is based on \gls{fr2} 5G commercially available communication hardware.
-	The system consists in a mmWave \gls{gnb} \gls{ru}, extended by a dedicated \gls{ru} called \textit{Sniffer} and a server called \gls{spu}. 
-	The sniffer is synchronized with the \gls{gnb} by the same synchronization source. 
-	The \gls{spu} receives the complex IQ signal,  after \gls{fft} and removal of the \gls{cp}, as input for further sensing processing on a per-radio frame basis \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}.
-	
-	Using option 7-2 of the proposed 5G splits, it is possible to use the same type of \gls{ru} for both communication and sensing.
-	Option 7-2 splits the network at the \gls{phy} level, which handles the conversion of digital data to the analogue radio signal in \gls{dl}, while doing the opposite in \gls{ul}.
-	This split defines the \gls{fft}/\gls{ifft} performed in the \gls{ru}, while the frequency domain IQ is transported on the fronthaul.
-	The \gls{gnb} \gls{ru} operates in \gls{tdd} mode, where \gls{ul} is separated from \gls{dl} by the allocation of different time slots in the same frequency band. 	
-	The sniffer operates always in \gls{ul} mode, receiving both the signal transmitted by \glspl{ue} and the reflected signals. 
-	
-	This work considers a \gls{poc} deployment where the primary \gls{gnb} \gls{ru} and the sniffer are mounted in proximity and are co-located, allowing the system to behave as a monostatic radar. 
-	The scope of this work does not cover the case of bistatic radar.
-	
-	The SPU processing chain for sensing is structured as follows:
-	
-	\begin{itemize}
-		\item \textit{Reference and reflected signal reception}. Receive and process packets from \gls{gnb} and Sniffer. Each radio frame has dimension $N\times M$, where $N$ is the number of subcarriers and $M$ the number of \gls{ofdm} symbols.
-		\item \textit{Channel computation}. Channel information is obtained by division of the received by the transmitted frames.
-		\item \textit{Clutter removal}. Before every measurement, the channel of the corresponding scenario without targets is saved during a calibration step and, based on that, the clutter components are removed from the reflected signal at runtime.
-		\item \textit{Periodogram computation}. The spectral response of the channel information is obtained by computing $N$ \glspl{fft} followed by $M$ \glspl{ifft} on the result. The response is then converted in a 2D range-Doppler map of the observed targets. 
-		\item \textit{Peak extraction}. Identifying the peaks in the periodogram allows to retrieve the range-speed information of targets present on the scene.
-		\item \textit{Target tracking}. A \gls{kf} can be used to track the detected targets. 
-	\end{itemize} 
-	A more detailed description on how the processing chain is structured,  based on \cite{Braun2014OFDMRA}, will be presented in Chapter \ref{chap:theoretical_OFDM}.
-	
-	
-	The system specifications are indicated in table \ref{table:PoCparams}.
-	They correspond to parameters for 5G \gls{NR} systems with the numerology $\mu=3$ specified in \cite{TS138211}. 
-	
-	The system is equipped with analog beamforming and measurements can be obtained using a fixed beam for both \gls{gnb} \gls{ru} and sniffer, chosen from a beam codebook.
-	
-	\begin{table}[H]
-		%\caption*{\textbf{Title of Table (optional)}}
-		\centering 
-		\caption{List of system parameters from Nokia proof of concept installation.}
-		\label{table:PoCparams}
-		\begin{tabular}{|p{9em} c c |}
-			\hline
-			\rowcolor{bluepoli!40} % comment this line to remove the color
-			\textbf{Parameter} & \textbf{Description} & \textbf{Value}  \T\B \\
-			\hline \hline
-			$\mu$ & 5G numerology & 3 \T\B \\
-			$f_C$ & carrier frequency & 27.4 GHz \T\B \\
-			$B$ & bandwidth & 200 MHz \T\B\\
-			$\Delta_f$ & subcarrier spacing & 120 kHz  \T\B\\
-			$T_S = 1/\Delta_f + T_{CP}$ & symbol time & 8.92 $\mu s$  \T\B\\
-			$T_{CP}$ & cyclic prefix time & 0.59 $\mu s$  \T\B\\
-			$N$ & number of subcarriers & 1584  \T\B\\
-			$M$ & number of symbols & 1120  \B\\
-			
-			\hline
-		\end{tabular}
-		\\[10pt]
-	\end{table}
-	
+
 	
 
 
