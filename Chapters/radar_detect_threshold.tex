@@ -140,7 +140,14 @@ The general assumption that each radar return occupies one single bin in the ran
 Zero padding and windowing in the periodogram define the width of the main lobe of the sinusoids in the 2D plane, while a large time aperture of the acquisition generally leads to a larger return due to high speed resolution and range-Doppler spreading.
 Furthermore, spread targets generate bigger responses than a point scatterer, impacting neighbouring periodogram bins.
 
-In a heterogeneous radar frame, multiple targets and changes in the interference power degrade \gls{cfar} performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are areas in which there is a sudden change in the statistics of the interfering power, which leads to higher threshold and missed detection.
+In a heterogeneous radar frame, multiple targets and changes in the interference power degrade \gls{cfar} performance. If target returns are present in the reference window, they will bias the threshold and lead to a missed detection. This phenomenon is called \textit{target masking}. An example of target masking in 1D CA-CFAR is shown in Figure~\ref{fig:target_masking_richards}~\cite{Richards_Scheer_Holm_2010}.
+Another source of performance degradation is the presence of clutter, where \textit{clutter boundaries} are areas in which there is a sudden change in the statistics of the interfering power, which leads to higher threshold and missed detection.
+\begin{figure}[b!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/radar_detect_threshold/target_masking_richards.png}
+	\caption{\small Example of mutual target masking in CA-CFAR from \cite{Richards_Scheer_Holm_2010}. Dashed line indicates the ideal Neyman-Pearson threshold.}
+	\label{fig:target_masking_richards}
+\end{figure}
 Performance is also strongly influenced by the design of the reference window. The window should be designed to be as small as possible, in order to reduce the computational load due to the convolution operation and not to include interfering statistics far away from the \gls{cut}. The guard interval should be sized according to the point spread function of the target return. An extended target could be counted in the reference window and lead to \textit{self masking}.
 \begin{figure}[t]
 	\centering
@@ -156,26 +163,19 @@ Performance is also strongly influenced by the design of the reference window. T
 	\label{fig:RadThesh_CA_CFAR_missed_detect_doubl}
 \end{figure}
 
-In a \gls{nlos} sensing scenario, \gls{cacfar} suffers from these drawbacks due to the lower \gls{snr} of target returns caused by multiple reflections and the presence of strong static clutter components.
+\subsubsection{Robust CA-CFAR}
+Especially in a \gls{nlos} sensing scenario, \gls{cacfar} suffers from these drawbacks due to the lower \gls{snr} of target returns caused by multiple reflections and the presence of strong static clutter components.
 Additionally, target returns can occupy multiple bins in the periodogram, leading to self masking. 
 As a result, they do not appear as distinct peaks, but rather are spread across neighbouring bins, which raises the \gls{cacfar} threshold and leads to missed detections, as shown in Figure \ref{fig:RadThesh_CA_CFAR_missed_detect_doubl}.
-
-\subsubsection{Robust CA-CFAR}
 More complex \gls{cacfar} algorithms may provide better results under certain heterogeneous conditions, but at the expense of increased computational complexity, higher cost, or lower performance under non-ideal conditions.
 
 Some of the more common variants of the algorithm are the greatest-of CA-CFAR (GOCA-CFAR) and the censored statistics CA-CFAR (CSCA-CFAR), which are designed to suppress clutter-edge false alarms and mutual target masking, respectively.
-
-
 \paragraph{Greatest-of CA-CFAR:}
 The interference power is calculated in the lagging and leading reference windows separately and the largest of the two is selected as the reference statistics. In the \gls{ofdm} radar signal the leading/lagging definition can be applied only in the Doppler dimension, since interference statistics is assumed homogeneous in range.
-
 GOCA-CFAR can, in general, avoid false alarm caused by clutter returns and clutter-edge conditions. However, in NLOS sensing, where the power of the target returns is comparable to the one of spectral artifacts and clutter sidelobes, GOCA-CFAR increases the possibility of masking, especially for slow-moving targets.
- 
- 
 \paragraph{Censored-statistics CA-CFAR:}
-this algorithm considers the largest $L_c$ samples to be containing returns from interfering targets, and therefore does not consider them when computing the interference statistics. CSCA-CFAR is in general assumed to be capable of removing up to $L_c$ interfering targets.
+This algorithm considers the largest $L_c$ samples to be containing returns from interfering targets, and therefore does not consider them when computing the interference statistics. CSCA-CFAR is in general assumed to be capable of removing up to $L_c$ interfering targets.
 This algorithm can be also generalised by censoring an arbitary number of samples in order to be adapted to different environments. 
-
 The main limitation posed by this algorithm is the increased computational cost due to the necessary ordering of the interference samples.
 
 
@@ -185,21 +185,17 @@ The main limitation posed by this algorithm is the increased computational cost 
 	In \cite{Wagner_Feger_Stelzer_2017}, a different approach to thresholding was proposed for detecting large point clouds of radar returns in the 2D range-Doppler plane. Similar to the \gls{ofdm} radar case in this work, due to the relatively high speed resolution, returns occupy multiple cells in the periodogram and are not correctly detected by \gls{cacfar}.
 	
 	The idea is to adjust the threshold level accounting for the propagation loss of the target reflection, which is proportional to the square of the distance from the sensing hardware. 
-	
 	This solution was implemented combining the \gls{cfar} threshold, set as a lower bound, and the range-dependent exponential adjustement.
 	The threshold for a range-bin corresponding to returns at range $d$ is
-	
-	\begin{align*}
+	\begin{align}
 		\eta_{\text{exp}} = \eta_{\text{CFAR}} + \frac{\alpha}{d^2},
-	\end{align*} 
-	
+	\end{align} 
 	where $\alpha$ is an adjustment factor for the exponential term. For this particular implementation it was defined as the square root of the maximum return in the periodogram
-	
-	\begin{align*}
+	\begin{align}
 		\alpha = \sqrt{\max{ \left\{\text{Per}_{\mathbf F}(n,m)\right\} }}.
-	\end{align*}
+	\end{align}
 	
-	Unlike \gls{cacfar} where, in general, local peaks are dected, this approach will select large point clouds whithin the periodogram, as shown in Figure \ref{fig:RadThesh_exp_thresh}.
+	Unlike \gls{cacfar} where, in general, local peaks are detected, this approach will select large point clouds whithin the periodogram, as shown in Figure \ref{fig:RadThesh_exp_thresh}.
 	Targets can then be detected by searching for local peaks in the areas above threshold. A more refined result can be obtained by applying clustering algorithms, such as DBSCAN.
 	
 		\begin{figure}[H]
@@ -258,16 +254,16 @@ The main limitation posed by this algorithm is the increased computational cost 
 	This approach is successful in removing the static clutter from the periodogram, at the cost of losing information on static targets and applying some distortion to targets moving at low speed.
 	\paragraph{Clutter Removal with Acquisitions Under Phase Noise (CRAP):}
 	CRAP introduces a novel approach by vectorizing the \gls{csi} matrices and preserving all information in both domains, unlike ECA-C which only works on each subcarrier separately and focuses solely on the time domain of the signal \cite{Henninger_CRAP_2023}.
-	A detailed comparison between the two approaches can be seen in Figure \ref{fig:Rad_clutter_crap-ecac}. CRAP is able to remove static clutter without distorting the position of the target.
+	A detailed comparison between the two approaches can be seen in Figure \ref{fig:Rad_clutter_crap-ecac}. CRAP is able to remove static clutter without distorting the position of the target. \alert{ARGOMENTARE MEGLIO LA FIGURA}
 	
 	
 	\subsubsection{Clutter presence in NLOS}
 	
 	In a \gls{nlos} sensing setup, it is fairly easy to distinguish moving targets from the underlying noise floor.
-	However, \gls{nlos} returns generated by static objects of interest will appear in the periodogram area where static clutter is more prevalent, as shown in Figure \ref{fig:Rad_clutter_comparison}.
-	This makes the effective separation through radar thresholding and identification of the target difficult.
+	However, static \gls{nlos} taergets cannot be easily distinguished from clutter. Static clutter in \gls{nlos} is generated by any multipath reflection of objects in the environment returning to the RX. Furthermore, these component are typically attenuated by the clutter removal algorithm.
+	Figure \ref{fig:Rad_clutter_comparison} compares the appearance of a \gls{nlos} target return when the target is moving \subref{fig:Rad_clutter_mov_target} and is static \subref{fig:Rad_clutter_stat_target}.
 
-	For intrusion detection purposes, it is sufficient to focus the radar search on moving targets. 
+	For \gls{nlos} intrusion detection purposes, it is sufficient to detect an intruder only when it moves, as moving targets are more likely to represent potential threats or dangerous activities. 
 	Therefore, the static bins of the periodogram are discarded for \gls{nlos} processing.
 	\begin{figure}[H]
 		\centering
@@ -289,15 +285,21 @@ The main limitation posed by this algorithm is the increased computational cost 
 	
 		\subsection{Line-of-sight and Non-line-of-sight separation}
 		\label{sec:los_nlos_separation}
-		
+			
+			A first necessary step for \gls{nlos} sensing is to determine which of the returns in the periodogram are generated by targets in \gls{nlos} conditions.
+			It can be assumed that, in order to ensure \gls{nlos} coverage, the signal must be directed towards a large obstacle, before being reflected towards the actual target.
+			Any target return with a detected range greater than that of the large obstacle can then be considered a \gls{nlos} return.
 		
 		
 			In addition to clutter removal, calibration measurements provide valuable information for determining the distance threshold at which targets can be assumed to be in \gls{nlos}. 
 			A portion of the calibration frames can be processed as radar frames, with a focus on the analysis of the zero-Doppler component.
+			Figure \ref{fig:Test1_cali_static_per} depicts the sensing range information for static targets detected during calibration. 
+			A target with large \gls{rcs} is detected approximately $25$ m away from the system. 
+			It can be assumed that any return associated with a range greater than $25$ m is generated by a signal reflected from the largest static target.
+			The figure also indicates that static clutter has a larger amplitude for ranges greater than $25$ m compared to lower ranges.
+			This is due to the part of the beam that is reflected from the wall towards the environment and the associated returns.
 			
-			Shown in Figure \ref{fig:Test1_cali_static_per}, a target with large \gls{rcs} is detected approximately $25$ m away from the system. It can be assumed that any return associated with a range greater than $25$ m is generated by a signal reflected from the largest static target. The figure also indicates that static clutter has a larger amplitude for ranges greater than $25$ m compared to lower ranges. This is due to the part of the beam that is reflected from the wall towards the environment and the associated returns.
-			
-			The distance between the gNB and the reflector of the \gls{nlos} components can be estimated during the calibration step by averaging over the available measures.
+			The distance between the \gls{gnb} and the reflector of the \gls{nlos} components can be estimated during the calibration step by extracting the range of the strongest static clutter component during calibration.
 			
 			
 			\begin{figure}[H]
@@ -309,8 +311,9 @@ The main limitation posed by this algorithm is the increased computational cost 
 		
 	
 		\subsection{Modified periodogram}
-		
-			Figure \ref{fig:Rad_nlos_los_separation} highlights the regions of interest within the periodogram.
+			
+			From the standard periodogram, considering clutter presence and the assumptions on the intrusion detection use case, regions of interest for \gls{nlos} sensing are defined.		
+			Figure~\ref{fig:Rad_nlos_los_separation} highlights the regions of interest within the periodogram.
 			The red area, which corresponds to static targets, is discarded. The periodogram is then divided horizontally into two regions, based on the range of the reflector for \gls{nlos}.
 			
 			\begin{figure}[H]
