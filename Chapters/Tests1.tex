@@ -5,11 +5,24 @@ The \gls{csi} processing approaches and radar algorithms presented in the previo
 \section{Measurements setup}
 \label{sec:Test1_meas_scenario}
 
-The system was mounted in an indoor industrial test facility, with gNB and sniffer positioned at a height of $5.12$ m. The transmitter was oriented towards a wide  indoor area free of obstacles. The antenna pole was located approximately 23 metres from a warehouse rack (installed in front of a concrete wall) and a cargo door.
-Figure \ref{fig:Test1_arena_plan} shows a scheme of the test area layout.
+The system was mounted in an indoor industrial test facility, with gNB and sniffer positioned at a height of $5.12$ m.
+The transmitter was oriented towards a wide  indoor area free of obstacles. The antenna pole was located approximately 23 metres from a warehouse rack (installed in front of a concrete wall) and a cargo door.
+In Figure \ref{fig:arena_pics}, two pictures of the sensing setup are presented. The \gls{gnb} and sniffer are shown in Figure \ref{fig:arena_ru_installed}, while Figure \ref{fig:arena_view_from_ru} shows the view towards the test area observed by the \glspl{ru}.
 The observed measurement area was free of any major obstructions or occlusions that could be used to create a \gls{nlos} scenario under normal conditions.
 Nonetheless, it was possible to generate \gls{nlos} conditions by directing the signal over the target and towards the wall, observing the reflected returns.
-\alert{Foto ARENA!!!}
+Figure \ref{fig:Test1_arena_plan} shows a scheme of the test area layout.
+\begin{figure}[b!]
+	\centering
+	
+	\subfloat[\footnotesize View of the test area observed by the RUs.\label{fig:arena_view_from_ru}]{%
+		\includegraphics[scale=0.9]{Images/Test1/Arena_pics/arena_view_from_ru.png}%
+	}\hfill
+	\subfloat[\footnotesize Deployment of gNB and Sniffer in the quasi-monostatic setup, observing test area in~\protect\subref{fig:arena_view_from_ru}. \label{fig:arena_ru_installed}]{%
+			\includegraphics[scale=0.08]{Images/Test1/Arena_pics/ARENA-RUs-installed_labelled.png}%
+		}
+	\caption[]{\small ARENA 2036 deployment of Nokia's ISAC PoC in Stuttger, Germany.}
+	\label{fig:arena_pics}
+\end{figure}
 
  
 The tests were carried out using:
@@ -25,7 +38,7 @@ Before each test, a short calibration measure is performed, which includes only 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.6\textwidth]{Images/Test1/arena_plan}
-	\caption{Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.}
+	\caption{\small Scheme of the PoC deployment layout in ARENA 2036, Stuttgart.}
 	\label{fig:Test1_arena_plan}
 \end{figure}
 
@@ -45,17 +58,17 @@ The observed \gls{los} component is critical for this study, as it represents a 
 It must be noted that this additional information does not have any bearing on the \gls{nlos} detection capabilities of the sensing setup but, given 
 the knowledge of the geometry of the test area, it is used to obtain an estimate of the position and velocity of the NLOS return. 
 
-\begin{figure}[H]
+\begin{figure}[t]
 	\centering
 	
-	\subfloat[\small Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.
+	\subfloat[\footnotesize Lateral view of measurement scenario. NLOS return (red) is coupled with a LOS component (orange) generated from the secondary lobe.
 	\label{fig:Test1_base-lateral_view}]{\includegraphics[width=1\textwidth]{Images/Test1/base-lateral_view_los_geometry}
 	}
 	\\
-	\subfloat[\small Top view of measurement scenario. \label{fig:Test1_base-top_view}]{
+	\subfloat[\footnotesize Top view of measurement scenario. \label{fig:Test1_base-top_view}]{
 		\includegraphics[width=1\textwidth]{Images/Test1/base-top_view}
 	}
-	\caption{Scheme of the measurement scenario}
+	\caption{\small Scheme of the measurement scenario}
 	\label{fig:Test1_base_and_top_view}
 \end{figure}
 
@@ -65,7 +78,6 @@ Accurate range and velocity measurements are obtained after interpolation of eac
 
 In order to make use of the \gls{los} return, its speed and range values are used to validate if any \gls{nlos} peak corresponds with a target.
 The expected range and speed values of the \gls{nlos} return are estimated as:
-
 \begin{itemize}
 	\item Expected speed:
 	$$ \hat{v}_{\text{NLOS}} = -v_{\text{LOS}}$$
@@ -76,8 +88,6 @@ The expected range and speed values of the \gls{nlos} return are estimated as:
 
 \textit{Detection rate} is defined as the metric used to evaluate the experiment: at each update, if the speed and range of the \gls{nlos} return matches the expected values calculated from the \gls{los} data ($d_{\text{NLOS}} \approx  \hat{d}_{\text{NLOS}}$ and $v_{\text{NLOS}} \approx \hat{v}_{\text{NLOS}}$), detection is considered positive.
 The detection rate is then obtained as the ratio between the number of updates in which the \gls{nlos} component is above threshold, and the total number of updates in which the \gls{los} component is detected.
-
-
 \begin{equation*}
 	\text{Detection rate} = \frac{\text{updates with NLOS}}{\text{updates with LOS}}
 \end{equation*}
@@ -85,6 +95,7 @@ The detection rate is then obtained as the ratio between the number of updates i
 Due to the multiple reflections, the \gls{nlos} return shows considerably smaller power compared to \gls{los}.
 This meant that due to the presence of large clutter returns and their sidelobes, this return is not necessarily the strongest one in the \gls{nlos} region of the periodogram.
 The five strongest detected peaks in \gls{nlos} are considered and detection rate evaluated based on whether one of those peaks corresponds with the \gls{nlos} return.
+
 \section{Evaluation on detection rate of a strong reflector}
 
 	\begin{figure}[H]
@@ -127,14 +138,7 @@ By passing the NLOS measurements to a Kalman filter it is possible to track the 
 
 The detection rate for measurements with a walking actor was compared for the various frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. To increase time-aperture, subsequent frames were combined, and the observation time window stride was set to be lower than the number 
 of concatenated frames, allowing for more updates through the measurement.
-Clutter removal was performed to ensure precise estimation of the expected target position in NLOS conditions. 
-CRAP has showed to outperform ECA-C in previously investigated LOS scenarios due to its ability to isolate static targets and better separate them \cite{Henninger_CRAP_2023}.
-In NLOS, both algorithms were tested as the information about static targets, lost with ECA-C, is anyway discarded.
-Detection rate was obtained by using CRAP for the \gls{los} region, and compared for the two approaches in \gls{nlos}.
-After obtaining the periodogram, target returns are detected by using the range-adjusted exponential threshold presented in Section \ref{sec:radar_search_detection}.
-Comparison of a sample radar update after CRAP and ECA-C is shown in Figure \ref{fig:Test1_huma_crap-ecac}.
-
-	\begin{figure}[H]
+\begin{figure}[t]
 	\centering
 	
 	\subfloat[Periodogram after applying CRAP.\label{fig:Test1_mhuman_crap}]{%
@@ -148,6 +152,14 @@ Comparison of a sample radar update after CRAP and ECA-C is shown in Figure \ref
 		In \subref{fig:Test1_mhuman_crap} the NLOS return presents a single, but its power is comparable with the one of the nearby artefacts. In \subref{fig:Test1_mhuman_ecac} the NLOS return is enhanced, however the sidelobes of the LOS component are enhanced and its peak is slightly shifted.}
 	\label{fig:Test1_huma_crap-ecac}
 \end{figure}
+Clutter removal was performed to ensure precise estimation of the expected target position in NLOS conditions. 
+CRAP has showed to outperform ECA-C in previously investigated LOS scenarios due to its ability to isolate static targets and better separate them \cite{Henninger_CRAP_2023}.
+In NLOS, both algorithms were tested as the information about static targets, lost with ECA-C, is anyway discarded.
+Detection rate was obtained by using CRAP for the \gls{los} region, and compared for the two approaches in \gls{nlos}.
+After obtaining the periodogram, target returns are detected by using the range-adjusted exponential threshold presented in Section \ref{sec:radar_search_detection}.
+Comparison of a sample radar update after CRAP and ECA-C is shown in Figure \ref{fig:Test1_huma_crap-ecac}.
+
+
 
 
 
