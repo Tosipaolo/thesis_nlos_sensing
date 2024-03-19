@@ -1,4 +1,4 @@
-\chapter{NLOS measurements results}
+\chapter{NLOS Measurements Results}
 
 The \gls{csi} processing approaches and radar algorithms presented in the previous sections were evaluated with real measurements obtained using Nokia's \gls{isac} \gls{fr2} prototype described in Section \ref{sec:intro-PoCarchitecture}.
 
@@ -20,7 +20,7 @@ Figure \ref{fig:Test1_arena_plan} shows a scheme of the test area layout.
 	\subfloat[\footnotesize Deployment of gNB and Sniffer in the quasi-monostatic setup, observing test area in~\protect\subref{fig:arena_view_from_ru}. \label{fig:arena_ru_installed}]{%
 			\includegraphics[scale=0.08]{Images/Test1/Arena_pics/ARENA-RUs-installed_labelled.png}%
 		}
-	\caption[]{\small ARENA 2036 deployment of Nokia's ISAC PoC in Stuttger, Germany.}
+	\caption[]{\small ARENA 2036 deployment of Nokia's ISAC PoC in Stuttgart, Germany.}
 	\label{fig:arena_pics}
 \end{figure}
 
@@ -54,7 +54,7 @@ The target moved radially between the transmitter and reflector. The test subjec
 Due to the rather large beamwidth of the system, $\pm$7\textdegree\hspace{1pt} in azimuth and elevation, and its sidelobes, both \gls{los} and \gls{nlos} components can be jointly observed in our measurements, as shown in Figure \ref{fig:Test1_base-lateral_view}.
 
 During the measurement, the direct component was always visible as no other obstacle was positioned in the scene. 
-The observed \gls{los} component is critical for this study, as it represents a source of ground truth and can be used as a correct estimate of the target position in the test area.
+The observed \gls{los} component is critical for this study as it represents a source of ground truth and can be used as a correct estimate of the target position in the test area.
 It must be noted that this additional information does not have any bearing on the \gls{nlos} detection capabilities of the sensing setup but, given 
 the knowledge of the geometry of the test area, it is used to obtain an estimate of the position and velocity of the NLOS return. 
 
@@ -76,6 +76,7 @@ Considering the processing scheme proposed in Section \ref{sec:nlos_proc_pipelin
 A standard strongest peak search is performed for the \gls{los} region, while multiple peak detection is conducted in \gls{nlos}. This assumption is made since the test is conducted in a single target scenario and a single moving return in \gls{los} is expected.
 Accurate range and velocity measurements are obtained after interpolation of each peak with the adjacent bins.
 
+\newpage
 In order to make use of the \gls{los} return, its speed and range values are used to validate if any \gls{nlos} peak corresponds with a target.
 The expected range and speed values of the \gls{nlos} return are estimated as:
 \begin{itemize}
@@ -134,7 +135,7 @@ By passing the NLOS measurements to a Kalman filter it is possible to track the 
 \end{figure}
 
 
-\subsection{Human target detection}
+\section{Human target detection}
 
 The detection rate for measurements with a walking actor was compared for the various frame processing strategies presented in chapter \ref{chap:TDD pattern of the OFDM frame}. To increase time-aperture, subsequent frames were combined, and the observation time window stride was set to be lower than the number 
 of concatenated frames, allowing for more updates through the measurement.
@@ -170,11 +171,11 @@ The measured detection rate for various \gls{csi} decimation strategies are show
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist/detect_hist_human_LMsans.png}
-	\caption{Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP. $n=10$ observed NLOS targets.}
+	\caption{\small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with CRAP. $n=10$ observed NLOS targets.}
 	\label{fig:Test1_detect_hist}
 \end{figure}
 
-The time-aperture increase significantly improved the detection rate due to the larger \gls{snr}.
+The increased time-aperture significantly improved the detection rate due to the larger \gls{snr}.
 In most cases, the \gls{nlos} target return was not strong enough to be detected, due to lower peak power compared to noise and artefacts.
 Target returns occasionally suffered from channel fading, causing their power to change between consecutive updates. On the contrary, the power of artefacts remained relatively constant and proportional to the number of processed frames.
 The detection rate was observed throughout the entire measurement, including frames where the target changed direction and was either static or moving slowly. Processing these time instants resulted in a missed detection, since the static target information in \gls{nlos} was discarded. 
@@ -185,7 +186,7 @@ Therefore, the actual detection rate, which can be measured only when the target
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Images/Test1/detect_hist/detect_hist_human_ECAC_LMsans.png}
-	\caption{\small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region. $n=10$ observed peaks.}
+	\caption{\small Detection rate observed for human target in mixed LOS/NLOS measurement. Clutter removal performed with ECA-C for the NLOS region. $n=10$ observed peaks. Stride of the acquisition time-window is indicated in number of frames.}
 	\label{fig:Test1_detect_hist_crap-ecac}
 \end{figure}
 CRAP has proven to be superior to ECA-C for \gls{los} scenarios \cite{Henninger_CRAP_2023}, while the power of the \gls{nlos} return is considerably reduced, negatively affecting sensing performance.
@@ -197,7 +198,7 @@ Ground truth from the \gls{los} component was obtained by using CRAP on a separa
 Figure \ref{fig:Test1_detect_hist_crap-ecac} shows the obtained detection rate, which shows improved performance.
 
 
-\subsection{Moving average of detection rate}
+\section{Moving average of detection rate}
 
 With the focus on intrusion detection, it is sufficient to detect the presence of the intruder once and raise an alarm accordingly.
 A possible approach for discriminating the presence of actual targets from false alarms is to verify that \gls{nlos} peaks are continuously detected within a window of consecutive updates.

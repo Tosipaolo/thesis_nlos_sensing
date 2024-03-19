@@ -3,16 +3,17 @@
 This thesis investigated the feasibility of \gls{isac} in the context of 5G Advanced and 6G wireless systems for \gls{nlos} intrusion detection on factory floors.
 The main objective of this work was to explore the potential of \gls{nlos} sensing techniques and their applications in integrated radar systems at mmWave. 
 
-The results obtained from processing real-word measurements suggest that use cases with NLOS conditions should be considered in future studies in ISAC.
-With a focus on intrusion detection this work suggests that, with further analysis of the NLOS radar returns and the corresponding processing techniques, NLOS sensing at mmWave is possible.
-
 The main contributions of this work can be summarized as follows:
 
 \begin{itemize}
-	\item Real-word NLOS sensing trials and identification of challenges due to communication requirements.
-	\item Proposal of \gls{csi} processing approaches for avoiding unwanted replicas in the periodogram.
+	\item Proposal of pre-processing step applied to the \gls{csi} for avoiding unwanted replicas in the periodogram. By resampling and concatenating multiple frames higher speed resolution is obtained, while avoiding spectral holes due to the \gls{tdd} pattern of the \gls{gnb}. These approaches are not specific to the \gls{nlos} case and can be applied to other \gls{isac} tasks.
+	\item Evaluation of threshold detection methods and their performance when applied to \gls{nlos} data from the \gls{isac} \gls{poc}.
+	\item Real-world NLOS sensing trials and identification of challenges due to communication requirements.
 	\item Definition of requirements for NLOS sensing and validation on measurements from the prototype.
 \end{itemize}
 
-This investigations on \gls{nlos} \gls{isac} for intrusion detection use cases only represent an introductory study on the matter.
+These investigations on \gls{nlos} \gls{isac} for intrusion detection use cases only represent an introductory study on the matter.
 Follow-up investigations will be required to fully explore new solutions and exploit the capabilities of the system in different scenarios.
+
+The results obtained from processing real-world measurements suggest that use cases involving \gls{nlos} conditions should be considered in future studies in \gls{isac}.
+With a focus on intrusion detection this work suggests that, with further analysis of the NLOS radar returns and the corresponding processing techniques, \gls{nlos} sensing at mmWave is possible.

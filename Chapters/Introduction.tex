@@ -2,7 +2,7 @@
 \label{chap_intro}
 
 The world of cellular mobile communications has changed substantially since its beginnings in the late 20th century.
-New generations of mobile networks have been developed on a ten-year basis. The key drivers for wireless networks development were enabling widespread connectivity, faster data rates, improved access to media and the objective of a fully-connected society.
+New generations of mobile networks have been developed on a ten-year basis. The key drivers for wireless networks development were enabling widespread connectivity, faster data rates, improved access to media, and the objective of a fully-connected society.
 
 The first generation (1G) networks in the 1980s introduced basic voice calls, subsequently the second generation (2G) networks brought us text messaging capabilities. The arrival of third generation (3G) networks enabled faster internet access and the ability to browse the web on our mobile devices. 
 Fourth generation (4G) networks aimed at providing faster data speeds and allowing for video streaming and online gaming on our smartphones. 
@@ -11,33 +11,28 @@ Currently, we can see the \gls{5G} introduction, which promises ultra-fast speed
 Mobile cellular networks beyond fifth and wireless systems (\gls{5G}-Advanced and 6G) are set to provide connectivity not only to end-users with improved capabilities, but also to different types of devices such as buildings, vehicles, and appliances.
 The main focus of \gls{5G} is on connecting devices from the \gls{iot} and helping to automate industrial systems, 6G aims at unifying the human experience across the physical, digital, and human world creating connected intelligence \cite{6G-explained-NOKIA}.
 
-% TODO: search image from Thorsten's article
-
 The sixth generation will build on top of \gls{5G} and \gls{5G}-Advanced systems, driving their adoption through optimization of the network and cost reduction. 
 One of the most notable advancements in 6G technology will be the ability to perceive the surrounding environment, including people and objects, called network sensing. This capability converts the network into a source of valuable situational data by capturing and interpreting signals reflected by various entities. 
 By determining characteristics such as type, shape, relative position, speed, and even material properties, advanced sensing empowers the creation of true-to-model digital twins.
 Moreover, when this data is fused with information from other sensors, artificial intelligence and machine learning, it unlocks new insights from the physical world, enhancing the network's cognitive abilities.
 
+\section{Thesis contribution}
 
-%\section{Thesis Outline}
-\subsubsection{Thesis Outline}
+This thesis makes a contribution to the field of \gls{isac} by presenting an exploration of periodogram-based sensing utilizing \gls{ofdm} signals within the mmWave band, employing measured data obtained from a \gls{poc} sensing setup.
+The primary contributions are summarized in the investigation of the feasibility and potential use cases for \gls{isac} systems that operate in \gls{nlos} conditions, accounting for the the limits in available system performance due to the transmission pattern used for the communication task.
+Different established radar detection methods are compared and a solution specific to \gls{isac} is proposed.
+A processing pipeline for \gls{nlos} intrusion detection is proposed and validated using real-world measurements obtained from Nokia's mmWave prototype deployed in the ARENA 2036 industrial research facility in Stuttgart, Germany.
 
-The aim of this work is to explore the feasibility and potential use cases for integrated sensing and communication systems that operate in \gls{nlos} conditions.
-The proposed approaches were validated using real-world measurements obtained from Nokia's mmWave prototype deployed in the ARENA 2036 industrial research facility in Stuttgart, Germany.
+\section{Thesis outline}
+%\subsubsection{Thesis Outline}
 
 The thesis comprises six chapters and is structured as follows:
-
-\paragraph{Chapter 2} provides an introduction to the technological components that enable \gls{isac} in \gls{5G} Advanced and 6G, the architecture of Nokia's mmWave prototype, and a description of possible use cases with a focus on non-line-of-sight sensing.
-
-\paragraph{Chapter 3} introduces the theoretical concepts for \gls{ofdm} radar and provides a description of the signal model.
-
+\paragraph{Chapter 2} provides an introduction to the technological components that enable \gls{isac} in \gls{5G} Advanced and 6G, the architecture of Nokia's mmWave prototype, and a description of possible use cases with a focus on \gls{nlos} sensing.
+\paragraph{Chapter 3} introduces the theoretical concepts for \gls{ofdm} radar and provides a description of Nokia's \gls{isac} prototype.
 \paragraph{Chapter 4} describes the contributions of this work. Firstly, the impact of communication constraints on the sensing performance of the prototype is described. Alternative processing strategies are proposed, highlighting the tradeoff that they require.
 Secondly, algorithms focused on general radar processing of the periodogram are introduced, focusing on detection algorithms of the \gls{cfar} family and their performance.
 Then clutter characteristics in our system are introduced, addressing the processes used for clutter removal.
 Finally, the overall process \gls{nlos}-focused sensing is described.
-
 \paragraph{Chapter 5} comprises a detailed description of the measurement objectives and setup. The obtained results and corresponding considerations are presented.
-
 \paragraph{Chapter 6} provides a summary of the contributions of this work and its future outlook.
 
-\alert{THESIS CONTRIBUTION}

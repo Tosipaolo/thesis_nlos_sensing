@@ -6,25 +6,25 @@
 In recent years, research into cellular networks has focused on extending their capabilities, allowing them to do more than just transmit data.
 Positioning of active \glspl{ue} was one of the first examples of these capabilities, defined in the \gls{3GPP} \Gls{lte} standard (Release 9).
 \gls{lte} introduced support for positioning based on a wide range on methods.
-These methods mostly rely on \gls{cid}, \gls{toa}, \gls{aoa}. Due to the accuracy requirements in different deployment conditions (\ie indoor or outdoor, urban or rural areas), \gls{lte} positioning normally employed two or more methods at the same time \cite{Razavi_Gunnarsson_2018}.
+These methods mostly rely on \gls{cid}, \gls{toa} and \gls{aoa}. Due to the accuracy requirements in different deployment conditions (\ie indoor or outdoor, urban or rural areas), \gls{lte} positioning normally employed two or more methods at the same time \cite{Razavi_Gunnarsson_2018}.
 The fifth generation of cellular networks, with 5G \gls{NR}, expanded this capabilities. The introduction of beam-based operation and large antenna arrays, especially at mmWave, will enable higher positioning accuracy by exploiting more precise angular information in combination with time measurements \cite{Keating_Saily_Hulkkonen_Karjalainen_2019}.
 Furthermore, the high available bandwidths will help in resolving multipath, thus facilitating correcting \gls{toa} estimation.
 The \gls{NR} positioning protocol can also integrate satellite positioning systems and can be deployed as a private network solution with high accuracy indoor active user localization as described in  \cite{Henninger_Abrudan_Mandelli_Arnold_Saur_Kolmonen_Klein_Schlitter_Brink_2022}. 
 
 The current standards, however, do not allow to detect passive devices, which refers to objects not directly connected to the network.
 With the objective of expanding the capabilities of the mobile network, \gls{isac}, also known as JCAS or ICAS, is currently a topic of interest in the 6G research community \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
-According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations or users do not only carry data, they are affected by the movement of the transmitter or receiver, obstacles, movements of illuminated objects or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
+According to \cite{Viswanathan_Wild_2021}: "6G will function as a network with a \textit{sixth sense}". Radio signals transmitted by base stations or users do not only carry data, they are also affected by the movement of the transmitter or receiver, obstacles, movements of illuminated objects or changes in the propagation medium. Radio channels bear information about the environment in which the signal is transmitted. 
 Channel information can, \eg, be obtained by removing the influence of the known, transmitted signal from the received one after target reflection. By analysing the channel response, it is possible to extract details about position, relative speed, type and shape of illuminated objects.
 
-For 6G, the radio sensing capabilities should be integrated sharing the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an \gls{isac} scenario as described in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction a cellular system is shown equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating high-rate, low-latency communication to multiple users.
+For 6G, the radio sensing capabilities should be integrated sharing the same spectrum for both communication and sensing purposes. Figure \ref{fig:isac-scheme-1} illustrates a fundamental sketch of an \gls{isac} scenario as described in \cite{Wild_Grudnitsky_Mandelli_Henninger_Guan_Schaich_2023}. In this depiction a cellular system is shown equipped with array antennas capable of beamforming, serving the dual purpose of sensing and facilitating communication to multiple users.
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Images/introduction/isac-scheme-1.png}
-	\caption{Illustration of an \gls{isac} scenario.}
+	\caption{\small Illustration of an \gls{isac} scenario.}
 	\label{fig:isac-scheme-1}
 \end{figure}
 \Gls{isac} essentially aims at operating the network as a radar, while benefiting from the massive deployment of cellular networks and their coverage, making use of existing hardware and extending its capabilities with sensing.
-The network will be able to adapt and use information about the surrounding environment, combined with active positioning of \glspl{ue}, as a source of situational knowledge.
+The network will be able to adapt and use information about the surrounding environment, combined with active positioning of \glspl{ue}, as a source of situational knowledge~\cite{Viswanathan_communications_6G_era}.
 
 
 
@@ -34,22 +34,22 @@ The network will be able to adapt and use information about the surrounding envi
 	
 	\subsection{Spectrum choice for 6G sensing}
 
-	One of the goals set for 6G is to make efficient usage of the available spectrum, which is one of the scarcest resource in communications.
-	Future systems will probably make use of larger frequency bands, exploiting high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, to 100 MHz to 400 MHz in 5G NR and mmWave \gls{NR}, it can be expected that \gls{5G} evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth will allow for increased range resolution for sensing.
+	One of the goals set for 6G is to make efficient use of the available spectrum, which is a scarce resource in communications.
+	Future systems will likely use larger frequency bands to exploit high bandwidth to perform high-resolution sensing. From 20 MHz carriers in LTE, to 100 MHz to 400 MHz in 5G NR and mmWave \gls{NR}, it can be expected that \gls{5G} evolution and 6G systems will use bandwidths in the order of 1 GHz or more. A large usable bandwidth will allow for increased range resolution for sensing.
 	
-	Spectrum choice will be the determining factor for the definition of overall capabilities of the system. The frequency ranges that are being considered for 6G are~\cite{Hexa}:
+	Spectrum choice will be the determining factor for the definition of the overall capabilities of the system. The frequency ranges that are being considered for 6G are~\cite{Hexa}:
 	
 	\begin{itemize}
 		\item \Gls{fr1}: from 600 MHz to 6 GHz;
 		\item \Gls{fr2}: mmWave, from 24 GHz to 71 GHz;
-		\item \gls{fr3}, new and not yet specified: likely from 7 to 20 GHz
+		\item \gls{fr3} (new and not yet specified): likely from 7 to 20 GHz
 	\end{itemize}
 	
 	\Gls{fr1} is currently used for \Gls{5G} capacity layers, providing a bandwidth of up to 100 MHz. For 6G, the main capacity layer will be placed in the "Golden Band" in 6-14 GHz, offering up to 400 MHz of bandwidth. \Gls{fr2} in the millimetre frequency bands will start at 24 GHz and offer significantly more bandwidth, up to 1 GHz.
 	\Gls{fr3} and \Gls{fr2} are the most relevant candidates for defining the sensing spectrum in 6G. Their selection would make sense for wide area sensing and high resolution sensing, respectively.
 	
 	Feasible use cases and possible scenarios will be driven by the characteristics and specifications offered by the frequency band of choice. It can be expected that \Gls{fr2} will be used in micro-cellular deployments. They will, \eg, be deployed in indoor environments, such as factory floors. Sensing targets in such environment will likely be pedestrians, passive factory objects and vehicles.
-	Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will be vehicles for traffic monitoring, roadside safety and even detection of \gls{uav}, such as drones \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
+	Macro-cellular environments in the Golden Bands will dominate outdoors, where targets of interest will be vehicles for traffic monitoring, roadside safety, and even detection of \gls{uav}, such as drones~\cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 	
 	\subsection{Waveform candidates for ISAC}
 	
@@ -86,7 +86,7 @@ The network will be able to adapt and use information about the surrounding envi
 	Due to the expansion of 5G and 6G systems towards mmWave, tackling this challenge is fundamental for ensuring high performance under these circumstances.
 	
 	\Gls{otfs} has been proposed as a modulation effective in tackling these problems. \Gls{otfs} operates in the delay-Doppler domain. 
-	The fading, time-variant channel seen by an \gls{otfs} signal is transformed into a non-fading, time-independent channel through a 2D Fourier transform \cite{OTFS_Hadani_2017}. 
+	The fading, time-variant channel seen by an \gls{otfs} signal is transformed into a non-fading, time-independent channel through a 2D Fourier transform \cite{OTFS_Hadani_2017_mmWave}. 
 	Applying this transformation and equalization within this domain, each symbol will experience similar gain during transmission.
 	
 	\gls{otfs} can be interpreted as the sequence of two transformations. 
@@ -96,11 +96,11 @@ The network will be able to adapt and use information about the surrounding envi
 	\gls{otfs} is a suitable waveform for integrating sensing and communication due to its inherent property of operating in the delay-Doppler domain.
 	
 	Although \gls{otfs} has proved to achieve some advantage compared to \gls{ofdm} in highly fading and mobility scenarios \cite{OTFS_Hadani_2017}, its implementation in real communication systems is hindered by some challenges. 
-	The primary challenge is to develop an efficient decoding method for \gls{otfs} symbols.
+	The first is the development of an efficient decoding method for \gls{otfs}.
 	The output signal in the delay-Doppler domain is a 2D circular convolution of the transmitted data symbols and the channel response. Although optimal detectors, such as \gls{map} detectors, can mitigate channel interference and perfectly retrieve the original symbols, they are too complex and costly~\cite{Raviteja_Viterbo_OTFS_decoding}.
 	
 	In this thesis, we cosider the use of \gls{ofdm}, as it is the waveform currently used in 5G systems and in the proof of concept by Nokia. 
-	As the current standard \gls{ofdm} is well established with widely available hardware support, and has been able to provide high speed communications with high spectral efficiency and robustness to multipath and frequency-selective fading.
+	As the current standard, \gls{ofdm} is well established with widely available hardware support, and has been able to provide high speed communications with high spectral efficiency and robustness to multipath and frequency-selective fading.
 	Furthermore, \gls{ofdm} systems are able to perform simple channel equalization by using the single-tap equalizer technique.
 	
 	 
@@ -128,9 +128,10 @@ The network will be able to adapt and use information about the surrounding envi
 	The general idea is to intelligently combine the signals received from multiple antennas to achieve high signal-to-noise ratios and data rates.
 	
 	In \gls{5G}, beamforming commonly employs an all-digital approach at lower frequencies. However, for mmWave frequencies and above, analogue or hybrid beamforming is typically used. 
-	Hybrid beamforming allows to scan multiple beams at the same time, controlled by $P >1$ RF chains, where $P < Q$, where $Q$ is the number of antennas. 
+	Hybrid beamforming allows to scan multiple beams at the same time, controlled by $P >1$ RF chains, where $P < Q$, with $Q$ being the number of antennas. 
+	If $P = 1$ the system is analogue and can steer only a single beam.
 	The transmitting cells can perform a beam sweep, where the signal is steered over different angles. 
-	Using beam sweeps for \gls{isac} allows to collect complete spatial information about the environment surrounding the cell.
+	Using beam sweeps for \gls{isac} could allow to collect complete spatial information about the environment surrounding the cell.
 	
 	\subsection{Signal processing enhanced by AI/ML}
 	Radar returns can, in general, bear additional information beyond the simple range-Doppler profile. 
@@ -154,21 +155,21 @@ The network will be able to adapt and use information about the surrounding envi
 
 \section{Sensing use-cases}
 
-	Several use cases have been proposed \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
-	In order to understand system requirements and research approaches, it is essential to define likely scenarios in which \gls{isac} systems will be deployed.
+	Several use cases involving \gls{isac} have been proposed in \cite{Mandelli_Henninger_Bauhofer_Wild_2023}, \cite{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022} and  key requirements for each application have been estimated in \cite{Wild_Braun_Viswanathan_2021}.
+	In order to understand system requirements and research approaches, it is essential to define likely scenarios in which \gls{isac} systems will be deployed. The following Section introduces some of the fields where \gls{isac} can be applied, such as automotive radar, drone detection, human activities detection, as well as possible applications for \gls{nlos} sensing.
 	
-	\subsubsection{Automotive radar}
+	
+	\subsection{Automotive applications}
 	
 	Automotive radar is essential for new generations of cars and future autonomous driving vehicles.
 	Communication capabilities are also necessary to establish vehicle networks for sharing information on the surrounding environment.
 	Modern vehicles have evolved from simple means of transport to smart vehicles equipped with a variety of sensors and communication equipment.
 	The market for \gls{v2x} networks has been growing significantly in recent years \cite{Liu_Masouros_2021}.
-	This network requires high communication performance, throughput and low latency, as well as precise positional information on surrounding objects.
+	These networks require high communication performance, throughput and low latency, as well as precise positional information on surrounding objects.
 	
-	\gls{isac} is an ideal candidate to fulfil these requirements, enabling efficient use of the spectrum and enhancing the physical layer security of the \gls{v2x} network.
-	\gls{isac} systems must be capable of performing tasks such as vehicle and traffic counting, collision avoidance, and pedestrian and animal detection.
+	In addition to automotive radar for vehichles, \gls{isac} systems could be deployed as sources of information for \gls{v2x} networks. The ideal applications are roadside monitoring, traffic counting and detection of emergency situation for enhanced roadway safety \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 	
-	\subsubsection{Outdoor Drone Detection}
+	\subsection{Outdoor drone detection}
 	
 	Detection of \gls{uav} may be necessary in various deployment scenarios, including rooftops of buildings, airports, and open urban areas \cite{Mandelli_Henninger_Bauhofer_Wild_2023}.
 	\glspl{uav} are typically equipped with sensors, cameras, and radars for surveillance and monitoring. Additionally, \glspl{uav} are used to provide connectivity in hazardous or data-intensive environments.
@@ -181,14 +182,12 @@ The network will be able to adapt and use information about the surrounding envi
 	
 	Micro Doppler tracking and feature extraction, combined with machine learning, can help distinguish between targets or extract additional information about activity and human presence in the monitored area~\cite{Zhao_tracking_identifying_people_mmWave}.	
 	One such use case is the monitoring of roadways and industrial floors to enhance safety. \Gls{isac} can exploit the deployed network equipment of smart factory floors. Potential hazards can be detected in real-time, allowing for accident prevention. 
-	Another valuable application of \gls{isac} is crowd monitoring \alert{REFERENCE}. 
+	Another valuable application of \gls{isac} could be crowd monitoring. 
 	The system can analyse crowd movements, density and motion patterns. 
-	Crowd flows can be monitored by \gls{isac} systems while respecting the privacy of the individuals, compared to standard camera systems, as the identity of the targets is not disclosed to the system supervisor and cannot be extracted through face recognition algorithms.
+	Crowd flows could be monitored by \gls{isac} systems while respecting the privacy of the individuals, compared to standard camera systems, as the identity of the targets is not disclosed to the system supervisor and cannot be extracted through face recognition algorithms.
 
 	
 	\subsection{Non-line-of-sight sensing}
-	
-	
 	
 	The term \textit{line-of-sight} (LOS)  denotes the existence of a direct, unobstructed line of sight between the transmitter and the target. On the contrary, \textit{non-line-of-sight} (NLOS) denotes the condition in which the target is reached by the transmitted signal via one or multiple reflections on another entity. 
 	Feasibility of monostatic \gls{isac} in \gls{nlos} environments is still a rather unexplored area of research, as commonly studied use cases assume the target to be in \gls{los} \cite{Gustaffson_NLOS_radar}.

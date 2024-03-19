@@ -47,6 +47,11 @@ Thorsten Wild, Artjom Grudnitsky, Silvio Mandelli, Marcus Henninger, Junqing
 \newblock In {\em 2023 20th European Radar Conference (EuRAD)}, page 355–358,
   September 2023.
 
+\bibitem{Viswanathan_communications_6G_era}
+Harish Viswanathan and Preben~E. Mogensen.
+\newblock {Communications in the 6G Era}.
+\newblock {\em IEEE Access}, 8:57063--57074, 2020.
+
 \bibitem{Hexa}
 {Hexa Project: An European project aiming at the sustainable, inclusive, and
   trustworthy 6G platform.}
@@ -68,7 +73,7 @@ B.~Friedlander.
 
 \bibitem{Levanon_ofdm}
 N.~Levanon.
-\newblock Multifrequency radar signals.
+\newblock {Multifrequency radar signals}.
 \newblock In {\em Record of the IEEE 2000 International Radar Conference [Cat.
   No. 00CH37037]}, pages 683--688, 2000.
 
@@ -78,7 +83,7 @@ Christian Sturm and Werner Wiesbeck.
   Communications and Radar Sensing}.
 \newblock {\em Proceedings of the IEEE}, 99(7):1236–1259, July 2011.
 
-\bibitem{OTFS_Hadani_2017}
+\bibitem{OTFS_Hadani_2017_mmWave}
 R.~Hadani, S.~Rakib, A.~F. Molisch, C.~Ibars, A.~Monk, M.~Tsatsanis,
   J.~Delfeld, A.~Goldsmith, and R.~Calderbank.
 \newblock {Orthogonal Time Frequency Space (OTFS) modulation for
@@ -86,10 +91,17 @@ R.~Hadani, S.~Rakib, A.~F. Molisch, C.~Ibars, A.~Monk, M.~Tsatsanis,
 \newblock In {\em 2017 IEEE MTT-S International Microwave Symposium (IMS)},
   page 681–683, June 2017.
 
+\bibitem{OTFS_Hadani_2017}
+R.~Hadani, S.~Rakib, M.~Tsatsanis, A.~Monk, A.~J. Goldsmith, A.~F. Molisch, and
+  R.~Calderbank.
+\newblock {Orthogonal Time Frequency Space Modulation}.
+\newblock In {\em 2017 IEEE Wireless Communications and Networking Conference
+  (WCNC)}, pages 1--6, 2017.
+
 \bibitem{Raviteja_Viterbo_OTFS_decoding}
 P.~Raviteja, Khoa~T. Phan, Yi~Hong, and Emanuele Viterbo.
-\newblock Interference cancellation and iterative detection for orthogonal time
-  frequency space modulation.
+\newblock {Interference Cancellation and Iterative Detection for Orthogonal
+  Time Frequency Space Modulation}.
 \newblock {\em IEEE Transactions on Wireless Communications},
   17(10):6501--6515, 2018.
 
@@ -108,28 +120,17 @@ Line M.~P. Larsen, Aleksandra Checko, and Henrik~L. Christiansen.
 
 \bibitem{survey_radar_AIML}
 Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li~Liu, and Mohammed Bennamoun.
-\newblock Deep learning for 3d point clouds: A survey.
+\newblock {Deep Learning for 3D Point Clouds: A Survey}.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   43(12):4338--4364, 2021.
 
 \bibitem{30_years_ai_survey}
 Jingjing Wang, Chunxiao Jiang, Haijun Zhang, Yong Ren, Kwang-Cheng Chen, and
   Lajos Hanzo.
-\newblock Thirty years of machine learning: The road to pareto-optimal wireless
-  networks.
+\newblock {Thirty Years of Machine Learning: The Road to Pareto-Optimal
+  Wireless Networks}.
 \newblock {\em IEEE Communications Surveys \& Tutorials}, 22(3):1472--1514,
   2020.
-
-\bibitem{Braun2014OFDMRA}
-K.~Braun.
-\newblock {\em {OFDM Radar Algorithms in Mobile Communication Networks}}.
-\newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
-  2014.
-
-\bibitem{TS138211}
-{3GPP Technical Specification Group Radio Access Network}.
-\newblock {NR; Physical channels and modulation}.
-\newblock Technical Specification TS 138 211, ETSI, 2019.
 
 \bibitem{Wang_Varshney_Gentile_Blandino_Chuang_Golmie_2022}
 Jian Wang, Neeraj Varshney, Camillo Gentile, Steve Blandino, Jack Chuang, and
@@ -147,21 +148,21 @@ Thorsten Wild, Volker Braun, and Harish Viswanathan.
 
 \bibitem{Liu_Masouros_2021}
 Fan Liu and Christos Masouros.
-\newblock A tutorial on joint radar and communication transmission for
-  vehicular networks—part i: Background and fundamentals.
+\newblock {A Tutorial on Joint Radar and Communication Transmission for
+  Vehicular Networks—Part I: Background and Fundamentals}.
 \newblock {\em IEEE Communications Letters}, 25(2):322–326, February 2021.
 
 \bibitem{wifi_human_detection}
 Wei Wang, Alex~X. Liu, Muhammad Shahzad, Kang Ling, and Sanglu Lu.
-\newblock Understanding and modeling of wifi signal based human activity
-  recognition.
+\newblock {Understanding and Modeling of WiFi Signal Based Human Activity
+  Recognition}.
 \newblock In {\em Proceedings of the 21st Annual International Conference on
   Mobile Computing and Networking}, MobiCom '15, page 65–76, New York, NY,
   USA, 2015. Association for Computing Machinery.
 
 \bibitem{vital_signs_monitoring}
 Fadel Adib, Hongzi Mao, Zachary Kabelac, Dina Katabi, and Robert~C. Miller.
-\newblock Smart homes that monitor breathing and heart rate.
+\newblock {Smart Homes that Monitor Breathing and Heart Rate}.
 \newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
   Factors in Computing Systems}, CHI '15, page 837–846, New York, NY, USA,
   2015. Association for Computing Machinery.
@@ -169,15 +170,15 @@ Fadel Adib, Hongzi Mao, Zachary Kabelac, Dina Katabi, and Robert~C. Miller.
 \bibitem{Zhao_tracking_identifying_people_mmWave}
 Peijun Zhao, Chris~Xiaoxuan Lu, Jianan Wang, Changhao Chen, Wei Wang, Niki
   Trigoni, and Andrew Markham.
-\newblock mid: Tracking and identifying people with millimeter wave radar.
+\newblock {mID: Tracking and Identifying People with Millimeter Wave Radar}.
 \newblock In {\em 2019 15th International Conference on Distributed Computing
   in Sensor Systems (DCOSS)}, pages 33--40, 2019.
 
 \bibitem{Gustaffson_NLOS_radar}
 Magnus Gustafsson, Åsa Andersson, Tommy Johansson, Stefan Nilsson, Ain Sume,
   and Anders Örbom.
-\newblock Extraction of human micro-doppler signature in an urban environment
-  using a “sensing-behind-the-corner” radar.
+\newblock {Extraction of Human Micro-Doppler Signature in an Urban Environment
+  Using a “Sensing-Behind-the-Corner” Radar}.
 \newblock {\em IEEE Geoscience and Remote Sensing Letters}, 13(2):187--191,
   2016.
 
@@ -196,6 +197,12 @@ Ramjee Prasad.
 J.G. Proakis.
 \newblock {\em Digital Communications}.
 \newblock Electrical engineering series. McGraw-Hill, 2001.
+
+\bibitem{Braun2014OFDMRA}
+K.~Braun.
+\newblock {\em {OFDM Radar Algorithms in Mobile Communication Networks}}.
+\newblock Thesis dissertation, Karlsruher Institut für Technologie (KIT),
+  2014.
 
 \bibitem{Stoica_New_Method_Parameter_Estimation}
 Petre Stoica, Prabhu Babu, and Jian Li.
@@ -229,6 +236,18 @@ U.~Spagnolini.
   267--309.
 \newblock John Wiley \& Sons, Ltd, 2018.
 
+\bibitem{Henninger_CRAP_2023}
+Marcus Henninger, Silvio Mandelli, Artjom Grudnitsky, Thorsten Wild, and
+  Stephan ten Brink.
+\newblock {CRAP: Clutter Removal with Acquisitions Under Phase Noise}.
+\newblock In {\em 2023 2nd International Conference on 6G Networking (6GNet)},
+  pages 1--8, October 2023.
+
+\bibitem{TS138211}
+{3GPP Technical Specification Group Radio Access Network}.
+\newblock {NR; Physical channels and modulation}.
+\newblock Technical Specification TS 138 211, ETSI, 2019.
+
 \bibitem{Richards_Scheer_Holm_2010}
 M.~A. Richards, J.~Scheer, and W.A. Holm.
 \newblock {\em {Principles of Modern Radar}}.
@@ -247,22 +266,15 @@ Thomas Wagner, Reinhard Feger, and Andreas Stelzer.
 
 \bibitem{Wan_Cheng_Gong_Zhao_Shao_2012}
 X.~Wan, F.~Cheng, Z.~Gong, Z.~Zhao, and Q.~Shao.
-\newblock Multipath clutter rejection for digital radio mondiale-based hf
-  passive bistatic radar with ofdm waveform.
+\newblock {Multipath clutter rejection for digital radio mondiale-based HF
+  passive bistatic radar with OFDM waveform}.
 \newblock {\em IET Radar, Sonar \& Navigation}, 6(9):867–872, December 2012.
 
 \bibitem{Colone_ECA_2009}
 F.~Colone, D.~W. O’Hagan, P.~Lombardo, and C.~J. Baker.
-\newblock A multistage processing algorithm for disturbance removal and target
-  detection in passive bistatic radar.
+\newblock {A Multistage Processing Algorithm for Disturbance Removal and Target
+  Detection in Passive Bistatic Radar}.
 \newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
   45(2):698–722, April 2009.
-
-\bibitem{Henninger_CRAP_2023}
-Marcus Henninger, Silvio Mandelli, Artjom Grudnitsky, Thorsten Wild, and
-  Stephan ten Brink.
-\newblock {CRAP: Clutter Removal with Acquisitions Under Phase Noise}.
-\newblock In {\em 2023 2nd International Conference on 6G Networking (6GNet)},
-  pages 1--8, October 2023.
 
 \end{thebibliography}

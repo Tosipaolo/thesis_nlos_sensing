@@ -168,7 +168,7 @@ Validation measurements were performed focusing on human intrusion detection sce
 The objective is to define an initial approach for NLOS radar sensing based on periodogram spectral analysis, which can be exploited for more advanced sensing functionalities.
 \\
 \\
-\textbf{Keywords:} ISAC, 6G, OFDM radar, monostatic sensing, non-line-of-sight sensing % Keywords
+\textbf{Keywords:} isac, 6G, ofdm radar, monostatic sensing, non-line-of-sight sensing % Keywords
 
 % ABSTRACT IN ITALIAN
 \chapter*{Abstract in lingua italiana}
@@ -178,15 +178,15 @@ Il concetto di radar OFDM mira a estrarre informazioni sulla distanza e sulla ve
 Le ampie larghezze di banda e le grandi aperture d'antenna disponibili nelle reti mobili di prossima generazione faciliteranno l'uso del radar OFDM per la raccolta di informazioni di rilevamento. 
 La combinazione di queste funzioni e delle capacità cellulari sottostanti è denominata Integrated Sensing and Communications (ISAC). 
 Le applicazioni tipicamente considerate per l'ISAC includono il rilevamento di veicoli (automobili o droni), il rilevamento di attività umane e la sicurezza industriale. 
-In questi casi d'uso presupposto tipico è che il bersaglio venga illuminato in linea diretta dal segnale radio, condizione denominata \textit{line-of-sight} (\gls{los}). Tuttavia, un ambito non ancora esplorato in modo esaustivo è quello in cui il bersaglio non si trova in linea diretta, ma viene raggiunto dal segnale solo dopo riflessi da altri ostacoli, condizione indicata come \textit{non-line-of-sight} (NLOS).
-L'obiettivo di questo lavoro di tesi è studiare la fattibilità di sistemi ISAC in condizioni di NLOS e la definizione di un primo approccio per il rilevamento radar in NLOS basato sull'analisi spettrale del periodogramma, affrontando i vincoli sulle prestazioni imposti dai requisiti di comunicazione, dallo sviluppo di algoritmi, dall'identificazione di nuovi scenari applicativi per il sistema.
+In questi casi d'uso il presupposto tipico è che il bersaglio venga illuminato in linea diretta dal segnale radio, condizione denominata \textit{line-of-sight} (\gls{los}). Tuttavia, un ambito non ancora esplorato in modo esaustivo è quello in cui il bersaglio non si trova in linea diretta, ma viene raggiunto dal segnale solo dopo riflessi da altri ostacoli, condizione indicata come \textit{non-line-of-sight} (NLOS).
+L'obiettivo di questa tesi è lo studio della fattibilità di sistemi ISAC in condizioni di NLOS e la definizione di un primo approccio per il rilevamento radar in NLOS basato sull'analisi spettrale del periodogramma, affrontando i vincoli sulle prestazioni imposti dai requisiti di comunicazione, dallo sviluppo di algoritmi, dall'identificazione di nuovi scenari applicativi per il sistema.
 Gli approcci proposti sono stati convalidati utilizzando misure reali
 ottenute dal prototipo ISAC mmWave di Nokia, installato in
-una struttura di ricerca industriale a ARENA 2036, Stoccarda, Germania. 
+una struttura di ricerca industriale ad ARENA 2036, Stoccarda, Germania. 
 Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme alle specifiche del 3rd Generation Partnership Project (3GPP) per le forme d'onda di quinta generazione (5G) per le forme d'onda di quinta generazione (5G) nelle bande di frequenza mmWave. 
 \\
 \\
-\textbf{Parole chiave:} ISAC, 6G, radar OFDM, radar monostatico, rilevamento NLOS % Keywords (italian)
+\textbf{Parole chiave:} isac, 6g, radar ofdm, radar monostatico, rilevamento nlos % Keywords (italian)
 
 %----------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES/SYMBOLS
@@ -249,13 +249,14 @@ Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme 
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 % \bibliographystyle{IEEEtran}
+\singlespacing
 \bibliography{Thesis_bibliography} % The references information are stored in the file named "Thesis_bibliography.bib"
-
+\doublespacing
 %-------------------------------------------------------------------------
 %	APPENDICES
 %-------------------------------------------------------------------------
 
-\cleardoublepage
+%\cleardoublepage
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
 % ABBREVIATIONS
@@ -293,7 +294,7 @@ Il prototipo è basato su un sistema commerciale che opera a 27,4 GHz, conforme 
 		$\varphi$ & phase term & \\[2px]
 		$p_{\text{FA}}$ & probability of false alarm &  \\[2px]
 		$p_{\text{FA},bin}$ & probability of false alarm per bin &  \\[2px]
-		$Per_{\mathbf F}$ & 2D periodogram &  \\[2px]
+		$Per_{\mathbf F}(n,m)$ & 2D periodogram &  \\[2px]
 		$\sigma_n^2$ & estimate of AWGN power &  \\[2px]
 		$\tau$ & time delay & s \\[2px]
 		$\tau_{max}$ & maximum time delay observable from a target & s \\[2px]
